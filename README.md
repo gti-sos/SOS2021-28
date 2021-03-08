@@ -4,7 +4,7 @@
 - **Team**
   - [José Manuel Martín de los Santos](https://github.com/spartano27)
   - [Marina Barragán Candel](https://github.com/MarinaBC)
-  - [Student 3](https://github.com/404)
+  - [Fernando Olmedo Delgado](https://github.com/Fernasilver)
 - **Project description**: Investigación y Analisis de las ventas de videojuegos y su relacion con la cantidad de consolas vendidas y los premios que haya obtenido dicho videojuego
 - **Repository**: [gti-sos/SOS2021-28](https://github.com/gti-sos/SOS2021-28)
 - **URL**: [http://sos2021-28.herokuapp.com](http://sos2021-28.herokuapp.com)
