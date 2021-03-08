@@ -13,8 +13,3 @@
     - [https://sos2021-28.herokuapp.com/api/v1/my-awesome-resource-2/docs](https://sos2021-28.herokuapp.com/api/v1/my-awesome-resource-1/docs) (developed by [Marina Barragán Candel](https://github.com/MarinaBC))
     - [https://sos2021-00.herokuapp.com/api/v1/my-awesome-resource-3/docs](https://sos2021-00.herokuapp.com/api/v1/my-awesome-resource-3/docs) (developed by [Student 3](https://github.com/404))
 
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 0ef64879983c39f5cfd545f8ffbec829e69e1eec
