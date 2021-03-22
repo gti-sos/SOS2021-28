@@ -1,0 +1,15 @@
+Este proyecto ha sido creado para generar el:
+http://sos2021-28.herokuapp.com/
+(Para que funcione solo hay que poner el enlace, o meterte en heroku -> app -> open app)
+
+Y para generar el /info/platform:
+https://sos2021-28.herokuapp.com/info/platform
+
+Y para generar el /info/game:
+https://sos2021-28.herokuapp.com/info/game
+
+Y para generar el /info/awards:
+https://sos2021-28.herokuapp.com/info/game
+
+Aquí tambien está el public, solo hay que cargar el npm start y copiar la ip con el puerto, se va a cargar la pagina de SOS2021-28 con todos los datos
+
