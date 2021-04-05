@@ -9,7 +9,7 @@
 - **Repository**: [gti-sos/SOS2021-28](https://github.com/gti-sos/SOS2021-28)
 - **URL**: [http://sos2021-28.herokuapp.com](http://sos2021-28.herokuapp.com)
 -  **APIs**:
-    - [https://sos2021-28.herokuapp.com/info/awards](https://sos2021-28.herokuapp.com/info/awards) (developed by [José Manuel Martín de los Santos](https://github.com/spartano27))
-    - [https://sos2021-28.herokuapp.com/info/platforms](https://sos2021-28.herokuapp.com/info/platforms) (developed by [Marina Barragán Candel](https://github.com/MarinaBC))
-    - [https://sos2021-28.herokuapp.com/info/game](https://sos2021-28.herokuapp.com/info/game) (developed by [Fernando Olmedo Delgado](https://github.com/Fernasilver))
+    - [https://sos2021-28.herokuapp.com/api/v1/awards](https://sos2021-28.herokuapp.com/api/v1/awards) (developed by [José Manuel Martín de los Santos](https://github.com/spartano27))
+    - [https://sos2021-28.herokuapp.com/api/v1/platforms](https://sos2021-28.herokuapp.com/api/v1/platforms) (developed by [Marina Barragán Candel](https://github.com/MarinaBC))
+    - [https://sos2021-28.herokuapp.com/api/v1/games](https://sos2021-28.herokuapp.com/api/v1/games) (developed by [Fernando Olmedo Delgado](https://github.com/Fernasilver))
 
