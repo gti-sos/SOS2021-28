@@ -132,11 +132,11 @@ app.get(BASE_API_PATH + "/awards",(req,res)=>{
 });
 
 //6.2 POST : Crea un nuevo recurso
-app.post(BASE_API_PATH + 'awards',(req,res)=>{
+app.post(BASE_API_PATH + '/awards',(req,res)=>{
 
 	var newObject = req.body;
 	console.log(`Nuevo elemento creado: <${JSON.stringify(newObject,null,2)}>`);
-	return res.send(JSON.stringify(newObject,null,2));
+	awardsData.push(newObject);
 	res.sendStatus(201);
 
 });
