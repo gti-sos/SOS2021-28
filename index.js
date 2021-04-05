@@ -1,16 +1,31 @@
-var cool = require("cool-ascii-faces");
+//MODULOS
 var express = require("express");
-var app = express();
-var port = 10000;
+var cool = require("cool-ascii-faces");
 var path = require("path");
+var bodyParser = require('body-parser');
+const { Console } = require("console");
+const { parse } = require("path");
+const { resourceUsage } = require("process");
 
-app.get("/cool",(request,response) => {
-	
-	response.send(cool());
-	console.log("New Request to /cool has arrived");
-	
+//VARIABLES PARA LOS SERVIDORES
+var app = express();
+var BASE_API_PATH = "/api/v1";
+var port = process.env.PORT || 10000;
+
+//USOS DEL SERVIDOR
+app.use("/", express.static(path.join(__dirname, "public")));
+app.use(bodyParser.json());
+app.use(express.json());
+
+
+//Recurso /cool - F02
+app.get("/cool", (request, response) => {
+  response.send(cool());
+  console.log("new request to /cool has arrived");
 });
 
+
+//Recurso /info - F03
 app.get("/info/platforms", (req, res) => {
 	res.send("<html><body><h1></h1><meta http-equiv='Content-Type' content='text/html; charset=utf-8'><link type='text/css' rel='stylesheet' href='resources/sheet.css' ><style type='text/css'>.ritz .waffle a { color: inherit; }.ritz .waffle .s1{background-color:#f8f9fa;text-align:center;color:#202124;font-family:'docs-Montserrat',Arial;font-size:10pt;vertical-align:bottom;white-space:normal;overflow:hidden;word-wrap:break-word;direction:ltr;padding:0px 3px 0px 3px;}.ritz .waffle .s0{background-color:#f3f3f3;text-align:center;font-weight:bold;font-style:italic;color:#000000;font-family:'docs-Calibri',Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:0px 3px 0px 3px;}.ritz .waffle .s2{background-color:#f3f3f3;text-align:center;color:#000000;font-family:'docs-Montserrat',Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:0px 3px 0px 3px;}</style><h1>Últimas cifras de ventas de consolas por países</h1><div class='ritz grid-container' dir='ltr'><table class='waffle' cellspacing='0' cellpadding='0'><thead><tr><th class='row-header freezebar-origin-ltr'></th><th id='45584241C0' style='width:100px;' class='column-headers-background'></th><th id='45584241C1' style='width:100px;' class='column-headers-background'></th><th id='45584241C2' style='width:100px;' class='column-headers-background'></th><th id='45584241C3' style='width:100px;' class='column-headers-background'></th><th id='45584241C4' style='width:100px;' class='column-headers-background'></th></tr></thead><tbody><tr style='height: 20px'><th id='45584241R0' style='height: 20px;' class='row-headers-background'><div class='row-header-wrapper' style='line-height: 20px'></div></th><td class='s0' dir='ltr'>country</td><td class='s0' dir='ltr'>platform</td><td class='s0' dir='ltr'>year</td><td class='s0' dir='ltr'>sold-unit</td><td class='s0' dir='ltr'>generation</td></tr><tr style='height: 20px'><th id='45584241R1' style='height: 20px;' class='row-headers-background'><div class='row-header-wrapper' style='line-height: 20px'></div></th><td class='s1' dir='ltr'>Japan</td><td class='s2' dir='ltr'>Nintendo 3DS</td><td class='s2' dir='ltr'>2016</td><td class='s2' dir='ltr'>202885</td><td class='s2' dir='ltr'>8</td></tr><tr style='height: 20px'><th id='45584241R2' style='height: 20px;' class='row-headers-background'><div class='row-header-wrapper' style='line-height: 20px'></div></th><td class='s2' dir='ltr'>U.S</td><td class='s2' dir='ltr'>Nintendo 3DS</td><td class='s2' dir='ltr'>2015</td><td class='s2' dir='ltr'>15000000</td><td class='s2' dir='ltr'>8</td></tr><tr style='height: 20px'><th id='45584241R3' style='height: 20px;' class='row-headers-background'><div class='row-header-wrapper' style='line-height: 20px'></div></th><td class='s2' dir='ltr'>UK</td><td class='s2' dir='ltr'>PlayStation4</td><td class='s2' dir='ltr'>2016</td><td class='s2' dir='ltr'>3000000</td><td class='s2' dir='ltr'>8</td></tr><tr style='height: 20px'><th id='45584241R4' style='height: 20px;' class='row-headers-background'><div class='row-header-wrapper' style='line-height: 20px'></div></th>	<td class='s2' dir='ltr'>Germany</td><td class='s2' dir='ltr'>PlayStation4</td><td class='s2' dir='ltr'>2015</td><td class='s2' dir='ltr'>2800000</td><td class='s2' dir='ltr'>8</td></tr><tr style='height: 20px'><th id='45584241R5' style='height: 20px;' class='row-headers-background'><div class='row-header-wrapper' style='line-height: 20px'></div></th><td class='s2' dir='ltr'>Spain</td><td class='s2' dir='ltr'>Nintendo 3DS</td><td class='s2' dir='ltr'>2014</td><td class='s2' dir='ltr'>900000</td><td class='s2' dir='ltr'>8</td></tr><tr style='height: 20px'><th id='45584241R6' style='height: 20px;' class='row-headers-background'><div class='row-header-wrapper' style='line-height: 20px'></div></th><td class='s2' dir='ltr'>France</td><td class='s2' dir='ltr'>Nintendo 3DS</td><td class='s2' dir='ltr'>2015</td><td class='s2' dir='ltr'>4000000</td><td class='s2' dir='ltr'>8</td></tr><tr style='height: 20px'><th id='45584241R7' style='height: 20px;' class='row-headers-background'><div class='row-header-wrapper' style='line-height: 20px'></div></th><td class='s2' dir='ltr'>Portugal</td><td class='s2' dir='ltr'>PlayStation4</td><td class='s2' dir='ltr'>2015</td><td class='s2' dir='ltr'>100000</td><td class='s2' dir='ltr'>8</td></tr><tr style='height: 20px'><th id='45584241R8' style='height: 20px;' class='row-headers-background'><div class='row-header-wrapper' style='line-height: 20px'></div></th><td class='s2' dir='ltr'>China</td><td class='s2' dir='ltr'>PlayStation4</td><td class='s2' dir='ltr'>2015</td><td class='s2' dir='ltr'>73112</td><td class='s2' dir='ltr'>8</td></tr></tbody></table></div></body></html>");
 });
@@ -22,14 +37,347 @@ app.get("/info/game", (req, res) => {
 });
 
 
+
 app.get("/info/awards", (req, res) =>{
 	res.send("<html><body><meta http-equiv='Content-Type' content='text/html; charset=utf-8'><link type='text/css' rel='stylesheet' href='resources/sheet.css' ><style type='text/css'>.ritz .waffle a { color: inherit; }.ritz .waffle .s1{background-color:#f8f9fa;text-align:center;color:#202124;font-family:'docs-Montserrat',Arial;font-size:10pt;vertical-align:bottom;white-space:normal;overflow:hidden;word-wrap:break-word;direction:ltr;padding:0px 3px 0px 3px;}.ritz .waffle .s0{background-color:#f3f3f3;text-align:center;font-weight:bold;font-style:italic;color:#000000;font-family:'docs-Calibri',Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:0px 3px 0px 3px;}.ritz .waffle .s2{background-color:#f3f3f3;text-align:center;color:#000000;font-family:'docs-Montserrat',Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:0px 3px 0px 3px;}</style><h1>Premios obtenidos de un videojuego</h1><div class='ritz grid-container' dir='ltr'><table class='waffle' cellspacing='0' cellpadding='0'><thead><tr><th class='row-header freezebar-origin-ltr'></th><th id='45584241C0' style='width:100px;' class='column-headers-background'></th><th id='45584241C1' style='width:100px;' class='column-headers-background'></th><th id='45584241C2' style='width:100px;' class='column-headers-background'></th><th id='45584241C3' style='width:100px;' class='column-headers-background'></th><th id='45584241C4' style='width:100px;' class='column-headers-background'></th><th id='45584241C5' style='width:100px;' class='column-headers-background'></th></tr></thead><tbody><tr style='height: 20p'><th id='45584241R0' style='height: 20px;' class='row-headers-background'><div class='row-header-wrapper' style='line-height: 20px'></div></th><td class='s0' dir='ltr'>country</td><td class='s0' dir='ltr'>year</td><td class='s0' dir='ltr'>gala</td><td class='s0' dir='ltr'>winner</td><td class='s0' dir='ltr'>n-platform</td><td class='s0' dir='ltr'>n-award</td></tr><tr style='height: 20px'><th id='45584241R1' style='height: 20px;' class='row-headers-background'><div class='row-header-wrapper' style='line-height: 20px'></div></th><td class='s1' dir='ltr'>Francia</td><td class='s2' dir='ltr'>2014</td><td class='s2' dir='ltr'>2014</td><td class='s2' dir='ltr'>Valiant Hearts: The Great War</td><td class='s2' dir='ltr'>7</td><td class='s2' dir='ltr'>2</td></tr><tr style='height: 20px'><th id='45584241R2' style='height: 20px;' class='row-headers-background'><div class='row-header-wrapper' style='line-height: 20px'></div></th><td class='s2' dir='ltr'>Canadá</td><td class='s2' dir='ltr'>2014</td><td class='s2' dir='ltr'>2014</td><td class='s2' dir='ltr'>Dragon Age: Inquisition</td><td class='s2' dir='ltr'>5</td><td class='s2' dir='ltr'>2</td></tr><tr style='height: 20px'><th id='45584241R3' style='height: 20px;' class='row-headers-background'><div class='row-header-wrapper' style='line-height: 20px'></div></th><td class='s2' dir='ltr'>USA</td><td class='s2' dir='ltr'>2014</td><td class='s2' dir='ltr'>2014</td><td class='s2' dir='ltr'>Shovel Knight</td><td class='s2' dir='ltr'>3</td><td class='s2' dir='ltr'>1</td></tr><tr style='height: 20px'><th id='45584241R4' style='height: 20px;' class='row-headers-background'><div class='row-header-wrapper' style='line-height: 20px'></div></th><td class='s2' dir='ltr'>USA</td><td class='s2' dir='ltr'>2014</td><td class='s2' dir='ltr'>2014</td><td class='s2' dir='ltr'>Hearthstone: Heroes of Warcraft</td><td class='s2' dir='ltr'>3</td><td class='s2' dir='ltr'>1</td></tr><tr style='height: 20px'><th id='45584241R5' style='height: 20px;' class='row-headers-background'><div class='row-header-wrapper' style='line-height: 20px'></div></th><td class='s2' dir='ltr'>Canada</td><td class='s2' dir='ltr'>2014</td><td class='s2' dir='ltr'>2014</td><td class='s2' dir='ltr'>Child of Light</td><td class='s2' dir='ltr'>7</td><td class='s2' dir='ltr'>1</td></tr><tr style='height: 20px'><th id='45584241R6' style='height: 20px;' class='row-headers-background'><div class='row-header-wrapper' style='line-height: 20px'></div></th><td class='s2' dir='ltr'>Reino Unido</td><td class='s2' dir='ltr'>2014</td><td class='s2' dir='ltr'>2014</td><td class='s2' dir='ltr'>Alien: Isolation</td><td class='s2' dir='ltr'>6</td><td class='s2' dir='ltr'>1</td></tr><tr style='height: 20px'><th id='45584241R7' style='height: 20px;' class='row-headers-background'><div class='row-header-wrapper' style='line-height: 20px'></div></th><td class='s2' dir='ltr'>USA</td><td class='s2' dir='ltr'>2014</td><td class='s2' dir='ltr'>2014</td><td class='s2' dir='ltr'>Destiny</td><td class='s2' dir='ltr'>4</td><td class='s2' dir='ltr'>2</td></tr><tr style='height: 20px'><th id='45584241R8' style='height: 20px;' class='row-headers-background'><div class='row-header-wrapper' style='line-height: 20px'></div></th><td class='s2' dir='ltr'>USA</td><td class='s2' dir='ltr'>2013</td><td class='s2' dir='ltr'>2014</td><td class='s2' dir='ltr'>Grand Theft Auto V</td><td class='s2' dir='ltr'>4</td><td class='s2' dir='ltr'>1</td></tr></tbody></table></div></body></html>");
 });
 
-app.use("/", express.static(path.join(__dirname, "public")));
+//-----------------------------Recurso /api/v1 - F04-------------------------------
 
-app.listen(port,() => {  
+//________________Platforms_____________________
+//5.2  GET: CREAR 2 O MÁS RECURSOS
+var platformsData = [];
+
+app.get(BASE_API_PATH + "/platforms/loadInitialData", (req, res) => {
+	platformsData = [
+        {
+            "country":"Japan",
+            "platform":"Nintendo 3DS",
+            "year":2016,
+            "sold-unit":202885,
+            "generation":8
+        },
+        {
+            "country":"U.S",
+            "platform":"Nintendo 3DS",
+            "year":2015,
+            "sold-unit":15000000,
+            "generation":8
+        },
+        {
+            "country":"UK",
+            "platform":"PlayStation4",
+            "year":2016,
+            "sold-unit":3000000,
+            "generation":8
+        },
+        {
+            "country":"Germany",
+            "platform":"PlayStation4",
+            "year":2015,
+            "sold-unit":2800000,
+            "generation":8
+        }
+    ];
+    console.log(`Initial data: <${JSON.stringify(platformsData, null, 2)}>`);
+    res.sendStatus(200);
+  });
+
+
+//6.1 GET: Devuelve la lista de recursos (array JSON)
+//GET /api/v1/YYYYYY 
+//Devuelve una lista con todos los recursos (un array de objetos en JSON)
+app.get(BASE_API_PATH + "/platforms", (req, res) => {
+  if (platformsData.length != 0) {
+    console.log(`requested platforms dataset`);
+    return res.send(JSON.stringify(platformsData, null, 2));
+  } else {
+    console.log("No data found");
+    return res.sendStatus(404);
+  }
+
+
+  return res.sendStatus(200);
+
+});
+/*
+//POST /api/v1/YYYYYY 
+//crea un nuevo recurso.
+//6.2 POST: Crea un nuevo recurso
+app.post(BASE_API_PATH+"/platforms", (req,res)=>{
+	var newPlatformsData = req.body;
+	platformsData.push(newPlatformsData);
+    console.log("Resource created");
+	res.sendStatus(201);
+});
+*/
+
+
+//POST /api/v1/YYYYYY 
+//crea un nuevo recurso.
+app.post(BASE_API_PATH + '/platforms', (req, res) => {
+	var newObject = req.body;
+	console.log(`Nuevo elemento creado: <${JSON.stringify(newObject, null, 2)}>`);
+	return res.send(JSON.stringify(newObject, null, 2));
+	res.sendStatus(201);
+});
+
+
+//6.3 GET: Get a un recurso -> devuelve ese recurso(objeto JSON)
+//GET /api/v1/YYYYYY/XXX/ZZZ 
+app.get(BASE_API_PATH + "/platforms/:country/:year", (req, res) => {
+  var country = req.params.country;
+  var year = parseInt(req.params.year);
+
+  console.log(`GET stat by country: <${country}> and year: <${year}>`);
+  for (var stat of platformsData) {
+    if (stat.country === country && stat.year === year) {
+      return res.status(200).json(stat);
+    }
+  }
+
+  return res.sendStatus(404);
+});
+
+
+
+
+//6.4 DELETE: Delete a un recurso -> borra ese recurso(JSON)
+//DELETE un recurso
+app.delete(BASE_API_PATH+ "/platforms/:country/:year", (req,res) => {
+  var del_data = req.params;
+  for(var i=0; i < platformsData.length; i++){
+    if(platformsData[i].country=== del_data.country && platformsData[i].year === parseInt(del_data.year)){
+      platformsData.splice(i, 1); /*al metodo splice le pasamos el índice del objeto a partir del cual vamos a borrar objetos del array y el número de objetos a eliminar*/
+      console.log(`El recurso: <${del_data.country}>  <${del_data.year}> ha sido eliminado`);
+      return res.sendStatus(200);
+    }
+  }
+  return res.sendStatus(404);
+});
+
+
+//6.5 PUT: Put a un recurso -> actualiza ese recurso
+//PUT a un recurso
+//PUT a un recurso
+//Put modificar elemento
+
+app.put(BASE_API_PATH+"/platforms/:country/:year", function(req, res) { 
+	//Recorremos el array en busca del elemento a modificar
+	for(var e in platformsData){
+		if(platformsData[e].country == String(req.params.country) && platformsData[e].year == String(req.params.year)){
+			var newData = req.body;
+			platformsData[e] = newData;
+			break;
+		}
+	}
+	//Eliminamos repetidos en caso de que se haya realizado un cambio para añadirlo
+	platformsData = platformsData.map(e => JSON.stringify(e)); //Lo pasamos a JSON para poder compararlos
+	platformsData = new Set(platformsData); //Lo convertimos a conjunto para eliminar repetidos
+	platformsData = [...platformsData] //Lo convertimos de nuevo a array
+	platformsData = platformsData.map(e => JSON.parse(e)) //Lo pasamos de nuevo a objetos
+	res.status(200).send("Modificacion correcta");
+});
+
+
+
+
+
+
+  
+//6.6 POST: Post a un recurso -> error de método no permitido
+app.post(BASE_API_PATH + "/platforms/:country/:year", (req, res) => {
+    console.log("Method not allowed");
+    return res.sendStatus(405);
+  }); 
+  
+
+//6.7 PUT: Put a la lista de recursos -> debe dar un error de método no permitido
+app.put(BASE_API_PATH + "/platforms", (req, res) => {
+    console.log("Method not allowed");
+    return res.sendStatus(405);
+ });
+
+
+//6.8 DELETE: Borra todos los recursos
+app.delete(BASE_API_PATH + "/platforms", (req, res) => {
+    platformsData.length = 0;
+    console.log('Resources deleted');
+    return res.sendStatus(200);
+  });
+
+//____________awards_______________
+//5.2 Get crear 2 o mas recursos
+var awardsData = [];
+
+app.get(BASE_API_PATH + "/awards/loadInitialData",(req,res)=>{
+	awardsData = [
+	{
+		"country":"Francia",
+		"year":2014,
+		"gala":2014,
+		"winner":"Valiant Hearts: The Great War",
+		"n-platform":7,
+		"n-award":2
 	
-	console.log("Server ready listening on port " + port );
+	},
+	{
+		"country":"Canadá",
+		"year":2014,
+		"gala":2014,
+		"winner":"Dragon Age: Inquisition",
+		"n-platform":5,
+		"n-award":2
+	},
+	{
+		"country":"USA",
+		"year":2014,
+		"gala":2014,
+		"winner":"Shovel Knight",
+		"n-platform":3,
+		"n-award":1
+		
+	},
+	{
+		"country":"USA",
+		"year":2014,
+		"gala":2014,
+		"winner":"Hearthstone: Heroes of Warcraft",
+		"n-platform":3,
+		"n-award":1
+	},
+	{
+		"country":"Canadá",
+		"year":2014,
+		"gala":2014,
+		"winner":"Child of Light",
+		"n-platform":7,
+		"n-award":1
+	},
+	{
+		"country":"Reino Unido",
+		"year":2014,
+		"gala":2014,
+		"winner":"Alien: Isolation",
+		"n-platform":6,
+		"n-award":1
+	},
+	{
+		"country":"USA",
+		"year":2014,
+		"gala":2014,
+		"winner":"Destiny",
+		"n-platform":4,
+		"n-award":2
+	},
+	{
+		"country":"USA",
+		"year":2013,
+		"gala":2014,
+		"winner":"Grand Theft Auto V",
+		"n-platform":4,
+		"n-award":1
+
+	}
+	];
+	console.log(`Initial Data: <${JSON.stringify(awardsData,null,2)}>`);
+	res.sendStatus(200);
+});
+
+//6.1 GET : devuelve una lista de recursos 
+
+app.get(BASE_API_PATH + "/awards",(req,res)=>{
+	if (awardsData.length != 0){
+		console.log(`requested awards dataset`);
+		return res.send(JSON.stringify(awardsData,null,2));
+	} else {
+		console.log("No data found");
+		return res.sendStatus(404);
+	}
+	return res.send.sendStatus(200);
 	
+});
+
+//6.2 POST : Crea un nuevo recurso
+app.post(BASE_API_PATH + 'awards',(req,res)=>{
+
+	var newObject = req.body;
+	console.log(`Nuevo elemento creado: <${JSON.stringify(newObject,null,2)}>`);
+	return res.send(JSON.stringify(newObject,null,2));
+	res.sendStatus(201);
+
+});
+
+//6.3 GET: get a un recurso -> devuelve un recurso json
+app.get(BASE_API_PATH + "/awards/:country/:year",(req,res)=>{
+	var country = req.params.country;
+	var year = parseInt(req.params.year);
+
+	console.log(`GET stat by country: <${country}> and year: <${year}>`);
+	for (var stat of awardsData){
+		if(stat.country === country && stat.year === year) {
+			return res.status(200).json(stat);
+		}
+	}
+	return res.sendStatus(404);
+});
+
+//6.4 DELETE : delete un recurso json
+app.delete(BASE_API_PATH+ "/awards/:country/:year", (req,res)=>{
+	var del_data = req.params;
+	for (var i = 0; i <  awardsData.length; i++){
+		if(awardsData[i].country === del_data.country && awardsData[i].year === parseInt(del_data.year)){
+			platformsData.splice(i,1);
+			console.log(`El recurso: <${del_data.country}> <${del_data.year}> ha sido eliminado`);
+			return res.sendStatus(200);
+		}
+	}
+	return res.sendStatus(404);
+});
+
+//6.5 PUT: put un recurso (atualiza)
+app.put(BASE_API_PATH + "/awards/:country/:year", function(req,res){
+	for(var i in awardsData){
+		if(awardsData[i].country == String(req.params.country) && awardsData[i].year == String(req.params.year)){
+			var newData = req.body;
+			awardsData[i] = newData;
+			break;
+		}
+	}
+	awardsData = awardsData.map(i => JSON.stringify(i));
+	awardsData = new Set(awardsData);
+	awardsData = [...awardsData]
+	awardsData = awardsData.map(i => JSON.parse(i))
+	res.status(200).send("Modificacion correcta");
+});
+
+//6.6 post a un recurso (da error)
+app.post(BASE_API_PATH +"/awards/:country/:year", (req,res) =>{
+	console.log("Method not allowed");
+	return res.sendStatus(405);
+});
+
+//6.7 put a la lista de recursos (error)
+app.put(BASE_API_PATH + "/awards", (req,res) =>{
+	console.log("Method not allowed");
+	return res.sendStatus(405);
+});
+
+//6.8 DELETE: borra todo los recursos
+app.delete(BASE_API_PATH + "/awards", (req,res)=>{
+	awardsData.length = 0 ;
+	console.log('Resources deleted');
+	return res.sendStatus(200);
+});
+
+
+
+
+//Pruebas
+app.post("/hello", (req, res) => {
+	res.send("<html><body><h1>POST Hello from this tiny server</h1></body></html>");
+});
+
+app.listen(port, () =>{
+	console.log(`Server ready listening on port ${port}`);
 });
