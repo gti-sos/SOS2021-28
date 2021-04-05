@@ -1,3 +1,4 @@
+----F03:
 Este proyecto ha sido creado para generar el:
 http://sos2021-28.herokuapp.com/
 (Para que funcione solo hay que poner el enlace, o meterte en heroku -> app -> open app)
@@ -9,7 +10,95 @@ Y para generar el /info/game:
 https://sos2021-28.herokuapp.com/info/game
 
 Y para generar el /info/awards:
-https://sos2021-28.herokuapp.com/info/game
+https://sos2021-28.herokuapp.com/info/awards
 
 Aquí tambien está el public, solo hay que cargar el npm start y copiar la ip con el puerto, se va a cargar la pagina de SOS2021-28 con todos los datos
+
+
+---F04:
+
+//Vale----------------------------------------------------------------------------------------------
+
+//GET /api/v1/YYYYYY 
+//Devuelve una lista con todos los recursos (un array de objetos en JSON)
+Hay que poner en el navegador: puerto + /api/v1/platforms
+-> Aparecerá en el navegador una lista vacía, despues se haría el /api/v1/platforms/loadInitialData
+para que se carguen los datos y si se vuelve a hacer el /api/v1/platforms ya aparecen la lista de 
+los objetos.
+
+//Vale----------------------------------------------------------------------------------------------
+
+//GET /api/v1/YYYYYY/loadInitialData 
+//Crea 2 o más recursos.
+Hay que poner en el navegador: puerto + /api/v1/platforms/loadInitialData
+-> Aparecerá el OK(del 200) y en la terminal aparecerán los dos recursos que se han creado.
+
+
+
+//Vale----------------------------------------------------------------------------------------------
+
+//POST /api/v1/YYYYYY 
+//crea un nuevo recurso.
+Hay que poner en el postman: puerto + /api/v1/platforms
+Body-> raw -> JSON:
+{
+    "country" : "Españita",
+    "platform" : "W",
+    "year" : 2021,
+    "sold-unit" : 1,
+    "generation" : 1
+}
+-> Aparecerá en el terminal: Nuevo elemento creado: <{
+    "country" : "Españita",
+    "platform" : "W",
+    "year" : 2021,
+    "sold-unit" : 1,
+    "generation" : 1
+}> 
+y en el postman debe aparecer en status:201 Created
+
+
+//Vale----------------------------------------------------------------------------------------------
+
+//GET /api/v1/YYYYYY/XXX/ZZZ 
+Hay que poner en el nvegador: puerto + /api/v1/platforms/:country/:year  y en :country y en :year sustituirlo por el elemento a buscar, por ejemplo: /api/v1/platforms/Japan/2016
+
+//Vale----------------------------------------------------------------------------------------------
+
+//6.4 DELETE: Delete a un recurso -> borra ese recurso(JSON)
+//DELETE un recurso
+Hay que poner en el postman: puerto + /api/v1/platforms/:country/:year  y en :country y en :year sustituirlo por el elemento a buscar, por ejemplo: /api/v1/platforms/Japan/2016
+-> En el terminal aparece: El recurso: <Japan> <2016> ha sido eliminado 
+-> y en el postman aparece OK
+
+//Vale----------------------------------------------------------------------------------------------
+//6.5 PUT: Put a un recurso -> actualiza ese recurso
+Hay que poner en el postman: puerto + /api/v1/platforms/Japan/2016 (si se ha borrado antes, hacerlo con /api/v1/platforms/U.S/2015 )
+Body-> raw -> JSON:
+{
+    "country" : "E",
+    "platform" : "W",
+    "year" : 2021,
+    "sold-unit" : 1,
+    "generation" : 1
+}
+-> Aparecerá en el terminal del postman: Modificacion correcta 
+(Si hacemos un get a ese recurso no aparecera pero si lo hacemos a puerto + /api/v1/platforms ya aparece actualizado )
+
+//Vale----------------------------------------------------------------------------------------------
+
+//6.6 POST: Post a un recurso -> error de método no permitido
+Hay que poner en el postman: puerto + /api/v1/platforms/:country/:year  y en :country y en :year sustituirlo por el elemento a buscar, por ejemplo: /api/v1/platforms/Japan/2016
+-> En el terminal aparece: Method not allowed
+
+//Vale----------------------------------------------------------------------------------------------
+
+//6.7 PUT: Put a la lista de recursos -> debe dar un error de método no permitido
+Hay que poner en el postman: puerto + /api/v1/platforms
+-> En el terminal aparece: Method not allowed
+
+//Vale----------------------------------------------------------------------------------------------
+//6.8 DELETE: Borra todos los recursos
+ay que poner en el postman: puerto + /api/v1/platforms
+-> En el terminal del postman aparece: OK y en este: Resources deleted
 

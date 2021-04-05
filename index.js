@@ -4,8 +4,6 @@ var cool = require("cool-ascii-faces");
 var path = require("path");
 var bodyParser = require('body-parser');
 const { Console } = require("console");
-const { parse } = require("path");
-const { resourceUsage } = require("process");
 
 //VARIABLES PARA LOS SERVIDORES
 var app = express();
@@ -31,11 +29,9 @@ app.get("/info/platforms", (req, res) => {
 });
 
 
-
-app.get("/info/game", (req, res) => {
-	res.send("<html><body><h1><meta http-equiv='Content-Type' content='text/html; charset=utf-8'><link type='text/css' rel='stylesheet' href='resources/sheet.css' ><style type='text/css'>.ritz .waffle a { color: inherit; }.ritz .waffle .s4{border-left: none;background-color:#f3f3f3;text-align:center;color:#000000;font-family:'docs-Calibri',Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:0px 3px 0px 3px;}.ritz .waffle .s5{border-left: none;border-right: none;background-color:#f3f3f3;text-align:center;color:#000000;font-family:'docs-Calibri',Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:0px 3px 0px 3px;}.ritz .waffle .s2{background-color:#f3f3f3;text-align:center;color:#000000;font-family:'docs-Calibri',Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:0px 3px 0px 3px;}.ritz .waffle .s1{background-color:#f3f3f3;text-align:center;font-weight:bold;font-style:italic;color:#000000;font-family:'docs-Calibri',Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:0px 3px 0px 3px;}.ritz .waffle .s3{border-right: none;background-color:#f3f3f3;text-align:center;color:#000000;font-family:'docs-Calibri',Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:0px 3px 0px 3px;}.ritz .waffle .s0{border-left: none;background-color:#f3f3f3;text-align:center;font-weight:bold;font-style:italic;color:#000000;font-family:'docs-Calibri',Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:0px 3px 0px 3px;}</style><div class='ritz grid-container' dir='ltr'><table class='waffle' cellspacing='0' cellpadding='0'><thead><tr><th class='row-header freezebar-vertical-handle'></th><th id='667844323C0' style='width:93px;' class='column-headers-background'>A</th><th id='667844323C1' style='width:173px;' class='column-headers-background'>B</th><th id='667844323C2' style='width:93px;' class='column-headers-background'>C</th><th id='667844323C3' style='width:111px;' class='column-headers-background'>D</th><th id='667844323C4' style='width:93px;' class='column-headers-background'>E</th></tr></thead><tbody><tr style='height: 20px'><th id='667844323R0' style='height: 20px;' class='row-headers-background'><div class='row-header-wrapper' style='line-height: 20px'>1</div></th><td class='s0 softmerge' dir='ltr'><div class='softmerge-inner' style='width:98px;left:-9px'>country-made</div></td><td class='s1' dir='ltr'>game</td><td class='s1' dir='ltr'>year</td><td class='s1' dir='ltr'>sold-copies</td><td class='s1' dir='ltr'>company</td></tr><tr><th style='height:3px;' class='freezebar-cell freezebar-horizontal-handle'></th><td class='freezebar-cell'></td><td class='freezebar-cell'></td><td class='freezebar-cell'></td><td class='freezebar-cell'></td><td class='freezebar-cell'></td></tr><tr style='height: 20px'><th id='667844323R1' style='height: 20px;' class='row-headers-background'><div class='row-header-wrapper' style='line-height: 20px'>2</div></th><td class='s2' dir='ltr'>Japan</td><td class='s2' dir='ltr'>Super Mario Bros.</td><td class='s2' dir='ltr'>1985</td><td class='s2' dir='ltr'>40.24 m</td><td class='s2' dir='ltr'>Nintendo</td></tr><tr style='height: 20px'><th id='667844323R2' style='height: 20px;' class='row-headers-background'><div class='row-header-wrapper' style='line-height: 20px'>3</div></th><td class='s3' dir='ltr'>Japan</td><td class='s4 softmerge' dir='ltr'><div class='softmerge-inner' style='width:172px;left:-3px'>Pokemon Gold/Silver/Crystal</div></td><td class='s2' dir='ltr'>1999</td><td class='s2' dir='ltr'>31.38 m</td><td class='s2' dir='ltr'>Game Freak</td></tr><tr style='height: 20px'><th id='667844323R3' style='height: 20px;' class='row-headers-background'><div class='row-header-wrapper' style='line-height: 20px'>4</div></th><td class='s3' dir='ltr'>EEUU</td><td class='s4 softmerge' dir='ltr'><div class='softmerge-inner' style='width:172px;left:-3px'>Call of Duty Modern Warfare 3</div></td><td class='s2' dir='ltr'>2011</td><td class='s2' dir='ltr'>26.5 m</td><td class='s2' dir='ltr'>Activision</td></tr><tr style='height: 20px'><th id='667844323R4' style='height: 20px;' class='row-headers-background'><div class='row-header-wrapper' style='line-height: 20px'>5</div></th><td class='s3' dir='ltr'>EEUU</td><td class='s4 softmerge' dir='ltr'><div class='softmerge-inner' style='width:172px;left:-3px'>Grand Theft Auto San Andreas</div></td><td class='s2' dir='ltr'>2004</td><td class='s3' dir='ltr'>27.5 m</td><td class='s5 softmerge' dir='ltr'><div class='softmerge-inner' style='width:193px;left:-3px'>Rockstar Games</div></td></tr><tr style='height: 20px'><th id='667844323R5' style='height: 20px;' class='row-headers-background'><div class='row-header-wrapper' style='line-height: 20px'>6</div></th><td class='s2' dir='ltr'>EEUU</td><td class='s2' dir='ltr'>The Sims 2</td><td class='s2' dir='ltr'>2004</td><td class='s2' dir='ltr'>20 m</td><td class='s2' dir='ltr'>Electronic Arts</td></tr><tr style='height: 20px'><th id='667844323R6' style='height: 20px;' class='row-headers-background'><div class='row-header-wrapper' style='line-height: 20px'>7</div></th><td class='s2' dir='ltr'>Sweden</td><td class='s2' dir='ltr'>Minecraft</td><td class='s2' dir='ltr'>2011</td><td class='s2' dir='ltr'>200 m</td><td class='s2' dir='ltr'>Mojang</td></tr><tr style='height: 20px'><th id='667844323R7' style='height: 20px;' class='row-headers-background'><div class='row-header-wrapper' style='line-height: 20px'>8</div></th><td class='s2' dir='ltr'>EEUU</td><td class='s2' dir='ltr'>FIFA 18</td><td class='s2' dir='ltr'>2017</td><td class='s2' dir='ltr'>24 m</td><td class='s2' dir='ltr'>EA Sports</td></tr><tr style='height: 20px'><th id='667844323R8' style='height: 20px;' class='row-headers-background'><div class='row-header-wrapper' style='line-height: 20px'>9</div></th><td class='s2' dir='ltr'>EEUU</td><td class='s2' dir='ltr'>Terraria</td><td class='s2' dir='ltr'>2011</td><td class='s2' dir='ltr'>20 m</td><td class='s2' dir='ltr'>505 Games</td></tr></tbody></table></div></h1></body></html>");
+app.get("/info/games", (req, res) => {
+	res.send("<html><body><h1><meta http-equiv='Content-Type' content='text/html; charset=utf-8'><link type='text/css' rel='stylesheet' href='resources/sheet.css' ><style type='text/css'>.ritz .waffle a { color: inherit; }.ritz .waffle .s4{border-left: none;background-color:#f3f3f3;text-align:center;color:#000000;font-family:'docs-Calibri',Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:0px 3px 0px 3px;}.ritz .waffle .s5{border-left: none;border-right: none;background-color:#f3f3f3;text-align:center;color:#000000;font-family:'docs-Calibri',Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:0px 3px 0px 3px;}.ritz .waffle .s2{background-color:#f3f3f3;text-align:center;color:#000000;font-family:'docs-Calibri',Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:0px 3px 0px 3px;}.ritz .waffle .s1{background-color:#f3f3f3;text-align:center;font-weight:bold;font-style:italic;color:#000000;font-family:'docs-Calibri',Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:0px 3px 0px 3px;}.ritz .waffle .s3{border-right: none;background-color:#f3f3f3;text-align:center;color:#000000;font-family:'docs-Calibri',Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:0px 3px 0px 3px;}.ritz .waffle .s0{border-left: none;background-color:#f3f3f3;text-align:center;font-weight:bold;font-style:italic;color:#000000;font-family:'docs-Calibri',Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:0px 3px 0px 3px;}</style><div class='ritz grid-container' dir='ltr'><table class='waffle' cellspacing='0' cellpadding='0'><thead><tr><th class='row-header freezebar-vertical-handle'></th><th id='667844323C0' style='width:93px;' class='column-headers-background'>A</th><th id='667844323C1' style='width:173px;' class='column-headers-background'>B</th><th id='667844323C2' style='width:93px;' class='column-headers-background'>C</th><th id='667844323C3' style='width:111px;' class='column-headers-background'>D</th><th id='667844323C4' style='width:93px;' class='column-headers-background'>E</th></tr></thead><tbody><tr style='height: 20px'><th id='667844323R0' style='height: 20px;' class='row-headers-background'><div class='row-header-wrapper' style='line-height: 20px'>1</div></th><td class='s0 softmerge' dir='ltr'><div class='softmerge-inner' style='width:98px;left:-9px'>country</div></td><td class='s1' dir='ltr'>game</td><td class='s1' dir='ltr'>year</td><td class='s1' dir='ltr'>sold-unit</td><td class='s1' dir='ltr'>company</td></tr><tr><th style='height:3px;' class='freezebar-cell freezebar-horizontal-handle'></th><td class='freezebar-cell'></td><td class='freezebar-cell'></td><td class='freezebar-cell'></td><td class='freezebar-cell'></td><td class='freezebar-cell'></td></tr><tr style='height: 20px'><th id='667844323R1' style='height: 20px;' class='row-headers-background'><div class='row-header-wrapper' style='line-height: 20px'>2</div></th><td class='s2' dir='ltr'>Japan</td><td class='s2' dir='ltr'>Super Mario Bros.</td><td class='s2' dir='ltr'>1985</td><td class='s2' dir='ltr'>40240000</td><td class='s2' dir='ltr'>Nintendo</td></tr><tr style='height: 20px'><th id='667844323R2' style='height: 20px;' class='row-headers-background'><div class='row-header-wrapper' style='line-height: 20px'>3</div></th><td class='s3' dir='ltr'>Japan</td><td class='s4 softmerge' dir='ltr'><div class='softmerge-inner' style='width:172px;left:-3px'>Pokemon Gold/Silver/Crystal</div></td><td class='s2' dir='ltr'>1999</td><td class='s2' dir='ltr'>31380000</td><td class='s2' dir='ltr'>Game Freak</td></tr><tr style='height: 20px'><th id='667844323R3' style='height: 20px;' class='row-headers-background'><div class='row-header-wrapper' style='line-height: 20px'>4</div></th><td class='s3' dir='ltr'>EEUU</td><td class='s4 softmerge' dir='ltr'><div class='softmerge-inner' style='width:172px;left:-3px'>Call of Duty Modern Warfare 3</div></td><td class='s2' dir='ltr'>2011</td><td class='s2' dir='ltr'>26500000</td><td class='s2' dir='ltr'>Activision</td></tr><tr style='height: 20px'><th id='667844323R4' style='height: 20px;' class='row-headers-background'><div class='row-header-wrapper' style='line-height: 20px'>5</div></th><td class='s3' dir='ltr'>EEUU</td><td class='s4 softmerge' dir='ltr'><div class='softmerge-inner' style='width:172px;left:-3px'>Grand Theft Auto San Andreas</div></td><td class='s2' dir='ltr'>2004</td><td class='s3' dir='ltr'>27500000</td><td class='s5 softmerge' dir='ltr'><div class='softmerge-inner' style='width:193px;left:-3px'>Rockstar Games</div></td></tr><tr style='height: 20px'><th id='667844323R5' style='height: 20px;' class='row-headers-background'><div class='row-header-wrapper' style='line-height: 20px'>6</div></th><td class='s2' dir='ltr'>EEUU</td><td class='s2' dir='ltr'>The Sims 2</td><td class='s2' dir='ltr'>2004</td><td class='s2' dir='ltr'>20000000</td><td class='s2' dir='ltr'>Electronic Arts</td></tr><tr style='height: 20px'><th id='667844323R6' style='height: 20px;' class='row-headers-background'><div class='row-header-wrapper' style='line-height: 20px'>7</div></th><td class='s2' dir='ltr'>Sweden</td><td class='s2' dir='ltr'>Minecraft</td><td class='s2' dir='ltr'>2011</td><td class='s2' dir='ltr'>200000000</td><td class='s2' dir='ltr'>Mojang</td></tr><tr style='height: 20px'><th id='667844323R7' style='height: 20px;' class='row-headers-background'><div class='row-header-wrapper' style='line-height: 20px'>8</div></th><td class='s2' dir='ltr'>EEUU</td><td class='s2' dir='ltr'>FIFA 18</td><td class='s2' dir='ltr'>2017</td><td class='s2' dir='ltr'>24000000</td><td class='s2' dir='ltr'>EA Sports</td></tr><tr style='height: 20px'><th id='667844323R8' style='height: 20px;' class='row-headers-background'><div class='row-header-wrapper' style='line-height: 20px'>9</div></th><td class='s2' dir='ltr'>EEUU</td><td class='s2' dir='ltr'>Terraria</td><td class='s2' dir='ltr'>2011</td><td class='s2' dir='ltr'>20000000</td><td class='s2' dir='ltr'>505 Games</td></tr></tbody></table></div></h1></body></html>");
 });
-
 
 
 app.get("/info/awards", (req, res) =>{
@@ -43,169 +39,6 @@ app.get("/info/awards", (req, res) =>{
 });
 
 //-----------------------------Recurso /api/v1 - F04-------------------------------
-
-//________________Platforms_____________________
-//5.2  GET: CREAR 2 O MÁS RECURSOS
-var platformsData = [];
-
-app.get(BASE_API_PATH + "/platforms/loadInitialData", (req, res) => {
-	platformsData = [
-        {
-            "country":"Japan",
-            "platform":"Nintendo 3DS",
-            "year":2016,
-            "sold-unit":202885,
-            "generation":8
-        },
-        {
-            "country":"U.S",
-            "platform":"Nintendo 3DS",
-            "year":2015,
-            "sold-unit":15000000,
-            "generation":8
-        },
-        {
-            "country":"UK",
-            "platform":"PlayStation4",
-            "year":2016,
-            "sold-unit":3000000,
-            "generation":8
-        },
-        {
-            "country":"Germany",
-            "platform":"PlayStation4",
-            "year":2015,
-            "sold-unit":2800000,
-            "generation":8
-        }
-    ];
-    console.log(`Initial data: <${JSON.stringify(platformsData, null, 2)}>`);
-    res.sendStatus(200);
-  });
-
-
-//6.1 GET: Devuelve la lista de recursos (array JSON)
-//GET /api/v1/YYYYYY 
-//Devuelve una lista con todos los recursos (un array de objetos en JSON)
-app.get(BASE_API_PATH + "/platforms", (req, res) => {
-  if (platformsData.length != 0) {
-    console.log(`requested platforms dataset`);
-    return res.send(JSON.stringify(platformsData, null, 2));
-  } else {
-    console.log("No data found");
-    return res.sendStatus(404);
-  }
-
-
-  return res.sendStatus(200);
-
-});
-/*
-//POST /api/v1/YYYYYY 
-//crea un nuevo recurso.
-//6.2 POST: Crea un nuevo recurso
-app.post(BASE_API_PATH+"/platforms", (req,res)=>{
-	var newPlatformsData = req.body;
-	platformsData.push(newPlatformsData);
-    console.log("Resource created");
-	res.sendStatus(201);
-});
-*/
-
-
-//POST /api/v1/YYYYYY 
-//crea un nuevo recurso.
-app.post(BASE_API_PATH + '/platforms', (req, res) => {
-	var newObject = req.body;
-	console.log(`Nuevo elemento creado: <${JSON.stringify(newObject, null, 2)}>`);
-	return res.send(JSON.stringify(newObject, null, 2));
-	res.sendStatus(201);
-});
-
-
-//6.3 GET: Get a un recurso -> devuelve ese recurso(objeto JSON)
-//GET /api/v1/YYYYYY/XXX/ZZZ 
-app.get(BASE_API_PATH + "/platforms/:country/:year", (req, res) => {
-  var country = req.params.country;
-  var year = parseInt(req.params.year);
-
-  console.log(`GET stat by country: <${country}> and year: <${year}>`);
-  for (var stat of platformsData) {
-    if (stat.country === country && stat.year === year) {
-      return res.status(200).json(stat);
-    }
-  }
-
-  return res.sendStatus(404);
-});
-
-
-
-
-//6.4 DELETE: Delete a un recurso -> borra ese recurso(JSON)
-//DELETE un recurso
-app.delete(BASE_API_PATH+ "/platforms/:country/:year", (req,res) => {
-  var del_data = req.params;
-  for(var i=0; i < platformsData.length; i++){
-    if(platformsData[i].country=== del_data.country && platformsData[i].year === parseInt(del_data.year)){
-      platformsData.splice(i, 1); /*al metodo splice le pasamos el índice del objeto a partir del cual vamos a borrar objetos del array y el número de objetos a eliminar*/
-      console.log(`El recurso: <${del_data.country}>  <${del_data.year}> ha sido eliminado`);
-      return res.sendStatus(200);
-    }
-  }
-  return res.sendStatus(404);
-});
-
-
-//6.5 PUT: Put a un recurso -> actualiza ese recurso
-//PUT a un recurso
-//PUT a un recurso
-//Put modificar elemento
-
-app.put(BASE_API_PATH+"/platforms/:country/:year", function(req, res) { 
-	//Recorremos el array en busca del elemento a modificar
-	for(var e in platformsData){
-		if(platformsData[e].country == String(req.params.country) && platformsData[e].year == String(req.params.year)){
-			var newData = req.body;
-			platformsData[e] = newData;
-			break;
-		}
-	}
-	//Eliminamos repetidos en caso de que se haya realizado un cambio para añadirlo
-	platformsData = platformsData.map(e => JSON.stringify(e)); //Lo pasamos a JSON para poder compararlos
-	platformsData = new Set(platformsData); //Lo convertimos a conjunto para eliminar repetidos
-	platformsData = [...platformsData] //Lo convertimos de nuevo a array
-	platformsData = platformsData.map(e => JSON.parse(e)) //Lo pasamos de nuevo a objetos
-	res.status(200).send("Modificacion correcta");
-});
-
-
-
-
-
-
-  
-//6.6 POST: Post a un recurso -> error de método no permitido
-app.post(BASE_API_PATH + "/platforms/:country/:year", (req, res) => {
-    console.log("Method not allowed");
-    return res.sendStatus(405);
-  }); 
-  
-
-//6.7 PUT: Put a la lista de recursos -> debe dar un error de método no permitido
-app.put(BASE_API_PATH + "/platforms", (req, res) => {
-    console.log("Method not allowed");
-    return res.sendStatus(405);
- });
-
-
-//6.8 DELETE: Borra todos los recursos
-app.delete(BASE_API_PATH + "/platforms", (req, res) => {
-    platformsData.length = 0;
-    console.log('Resources deleted');
-    return res.sendStatus(200);
-  });
-
 //____________awards_______________
 //5.2 Get crear 2 o mas recursos
 var awardsData = [];
@@ -369,7 +202,303 @@ app.delete(BASE_API_PATH + "/awards", (req,res)=>{
 	console.log('Resources deleted');
 	return res.sendStatus(200);
 });
+//________________Platforms_____________________
+//5.2  GET: CREAR 2 O MÁS RECURSOS
 
+var platformsData = [];
+
+
+//6.1 GET: Devuelve la lista de recursos (array JSON)
+//GET /api/v1/YYYYYY 
+app.get(BASE_API_PATH + '/platforms', (req, res)=>{
+	res.send(JSON.stringify(platformsData, null, 2));
+});
+
+app.get(BASE_API_PATH + "/platforms/loadInitialData", (req, res) => {
+	platformsData = [
+        {
+            "country":"Japan",
+            "platform":"Nintendo 3DS",
+            "year":2016,
+            "sold-unit":202885,
+            "generation":8
+        },
+        {
+            "country":"U.S",
+            "platform":"Nintendo 3DS",
+            "year":2015,
+            "sold-unit":15000000,
+            "generation":8
+        },
+        {
+            "country":"UK",
+            "platform":"PlayStation4",
+            "year":2016,
+            "sold-unit":3000000,
+            "generation":8
+        },
+        {
+            "country":"Germany",
+            "platform":"PlayStation4",
+            "year":2015,
+            "sold-unit":2800000,
+            "generation":8
+        },
+		{
+            "country":"Spain",
+            "platform":"Nintendo 3DS",
+            "year":2014,
+            "sold-unit":900000,
+            "generation":8
+        },
+		{
+            "country":"France",
+            "platform":"Nintendo 3DS",
+            "year":2015,
+            "sold-unit":4000000,
+            "generation":8
+        },
+		{
+            "country":"Portugal",
+            "platform":"PlayStation4",
+            "year":2015,
+            "sold-unit":100000,
+            "generation":8
+        },
+		{
+            "country":"China",
+            "platform":"PlayStation4",
+            "year":2015,
+            "sold-unit":73112,
+            "generation":8
+        }
+    ];
+    //console.log(`Initial data: <${JSON.stringify(platformsData, null, 2)}>`);
+    //res.sendStatus(200);
+	res.send(JSON.stringify(platformsData, null, 2));
+  });
+
+
+
+//POST /api/v1/YYYYYY 
+//crea un nuevo recurso.
+app.post(BASE_API_PATH + '/platforms', (req, res)=>{
+	var newPlatfrom = req.body;
+	console.log(`New platform to be added: <${JSON.stringify(newPlatfrom, null, 2)}>`);
+	platformsData.push(newPlatfrom);
+	res.sendStatus(201);
+});
+
+
+//6.3 GET: Get a un recurso -> devuelve ese recurso(objeto JSON)
+//GET /api/v1/YYYYYY/XXX/ZZZ 
+app.get(BASE_API_PATH + "/platforms/:country/:year", (req, res) => {
+  var country = req.params.country;
+  var year = parseInt(req.params.year);
+
+  console.log(`GET stat by country: <${country}> and year: <${year}>`);
+  for (var stat of platformsData) {
+    if (stat.country === country && stat.year === year) {
+      return res.status(200).json(stat);
+    }
+  }
+
+  return res.sendStatus(404);
+});
+
+
+
+
+//6.4 DELETE: Delete a un recurso -> borra ese recurso(JSON)
+//DELETE /api/v1/YYYYYY/XXX/ZZZ
+//DELETE un recurso
+app.delete(BASE_API_PATH+ "/platforms/:country/:year", (req,res) => {
+  var del_data = req.params;
+  for(var i=0; i < platformsData.length; i++){
+    if(platformsData[i].country=== del_data.country && platformsData[i].year === parseInt(del_data.year)){
+      platformsData.splice(i, 1); /*al metodo splice le pasamos el índice del objeto a partir del cual vamos a borrar objetos del array y el número de objetos a eliminar*/
+      console.log(`El recurso: <${del_data.country}>  <${del_data.year}> ha sido eliminado`);
+      return res.sendStatus(200);
+    }
+  }
+  return res.sendStatus(404);
+});
+
+
+//6.5 PUT: Put a un recurso -> actualiza ese recurso
+//PUT a un recurso
+//Put modificar elemento
+app.put(BASE_API_PATH+"/platforms/:country/:year", function(req, res) { 
+	//Recorremos el array en busca del elemento a modificar
+	for(var e in platformsData){
+		if(platformsData[e].country == String(req.params.country) && platformsData[e].year == String(req.params.year)){
+			var newData = req.body;
+			platformsData[e] = newData;
+			break;
+		}
+	}
+	//Eliminamos repetidos en caso de que se haya realizado un cambio para añadirlo
+	platformsData = platformsData.map(e => JSON.stringify(e)); //Lo pasamos a JSON para poder compararlos
+	platformsData = new Set(platformsData); //Lo convertimos a conjunto para eliminar repetidos
+	platformsData = [...platformsData] //Lo convertimos de nuevo a array
+	platformsData = platformsData.map(e => JSON.parse(e)) //Lo pasamos de nuevo a objetos
+	res.status(200).send("Modificacion correcta");
+});
+
+
+ 
+//6.6 POST: Post a un recurso -> error de método no permitido
+app.post(BASE_API_PATH + "/platforms/:country/:year", (req, res) => {
+    console.log("Method not allowed");
+    return res.sendStatus(405);
+  }); 
+  
+
+//6.7 PUT: Put a la lista de recursos -> debe dar un error de método no permitido
+app.put(BASE_API_PATH + "/platforms", (req, res) => {
+    console.log("Method not allowed");
+    return res.sendStatus(405);
+ });
+
+
+//6.8 DELETE: Borra todos los recursos
+app.delete(BASE_API_PATH + "/platforms", (req, res) => {
+    platformsData.length = 0;
+    console.log('Resources deleted');
+    return res.sendStatus(200);
+  });
+
+//________________Games_____________________
+var BASE_API_PATH_GAMES = "/api/v1/games";
+
+var games = [];
+
+app.get(BASE_API_PATH_GAMES, (req, res)=>{
+	res.send(JSON.stringify(games, null, 2));
+});
+
+app.get(BASE_API_PATH_GAMES + "/loadInitData", (req, res)=>{
+	
+	games = [
+		{
+			"country" : "Japan",
+			"game" : "Super Mario Bros.",
+			"year" : 1985,
+			"sold-unit" : 40240000,
+			"company" : "Nintendo"
+		},
+		{
+			"country" : "Japan",
+			"game" : "Pokemon Gold/Silver/Crystal",
+			"year" : 1999,
+			"sold-unit" : 31380000,
+			"company" : "Nintendo"
+		},
+		{
+			"country" : "EEUU",
+			"game" : "Call of Duty Modern Warfare 3",
+			"year" : 2011,
+			"sold-unit" : 26500000,
+			"company" : "Activision"
+		},
+		{
+			"country" : "EEUU",
+			"game" : "Grand Theft Auto San Andreas",
+			"year" : 2004,
+			"sold-unit" : 27500000,
+			"company" : "Rockstar Games"
+		},
+		{
+			"country" : "EEUU",
+			"game" : "The Sims 2",
+			"year" : 2004,
+			"sold-unit" : 20000000,
+			"company" : "Electronic Arts"
+		},
+		{
+			"country" : "Sweden",
+			"game" : "Minecraft",
+			"year" : 2011,
+			"sold-unit" : 200000000,
+			"company" : "Mojang"
+		},
+		{
+			"country" : "EEUU",
+			"game" : "FIFA 18",
+			"year" : 2017,
+			"sold-unit" : 24000000,
+			"company" : "EA Sports"
+		},
+		{
+			"country" : "EEUU",
+			"game" : "Terraria",
+			"year" : 2011,
+			"sold-unit" : 20000000,
+			"company" : "505 Games"
+		}
+	];
+	
+	res.send(JSON.stringify(games, null, 2));
+});
+app.post(BASE_API_PATH_GAMES, (req, res)=>{
+	var newGame = req.body;
+	console.log(`new game to be added: <${JSON.stringify(newGame, null, 2)}>`);
+	games.push(newGame);
+	res.sendStatus(201);
+});
+
+app.get(BASE_API_PATH_GAMES + "/:country/:year", (req, res) => {
+  var country = req.params.country;
+  var year = parseInt(req.params.year);
+  for (var stat of games) {
+    if (stat.country === country && stat.year === year) {
+      return res.status(200).json(stat);
+    }
+  }
+  return res.sendStatus(404);
+});
+
+app.delete(BASE_API_PATH_GAMES + "/:country/:year", (req,res) => {
+  var delGame = req.params;
+  for(var i=0; i < games.length; i++){
+    if(games[i].country=== delGame.country && games[i].year === parseInt(delGame.year)){
+      games.splice(i, 1);
+      return res.sendStatus(200);
+    }
+  }
+  return res.sendStatus(404);
+});
+
+
+app.put(BASE_API_PATH_GAMES + "/:country/:year", function(req, res) { 
+	for(var e in games){
+		if(games[e].country == String(req.params.country) && games[e].year == String(req.params.year)){
+			var newData = req.body;
+			games[e] = newData;
+			break;
+		}
+	}
+	games = games.map(e => JSON.stringify(e));
+	games = new Set(games);
+	games = [...games] //Añadir ; ?
+	games = games.map(e => JSON.parse(e)) //Añadir ; ?
+	res.status(200).send("Modificacion correcta");
+});
+
+app.post(BASE_API_PATH_GAMES + "/:country/:year", (req, res) => {
+    return res.sendStatus(405);
+  }); 
+  
+
+app.put(BASE_API_PATH_GAMES, (req, res) => {
+    return res.sendStatus(405);
+ });
+
+
+app.delete(BASE_API_PATH_GAMES, (req, res) => {
+    games.length = 0;
+    return res.sendStatus(200);
+  });
 
 
 
@@ -381,3 +510,5 @@ app.post("/hello", (req, res) => {
 app.listen(port, () =>{
 	console.log(`Server ready listening on port ${port}`);
 });
+
+
