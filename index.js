@@ -377,7 +377,7 @@ app.get(BASE_API_PATH_GAMES, (req, res)=>{
 	res.send(JSON.stringify(games, null, 2));
 });
 
-app.get(BASE_API_PATH_GAMES + "/loadInitData", (req, res)=>{
+app.get(BASE_API_PATH_GAMES + "/loadInitialData", (req, res)=>{
 	
 	games = [
 		{
