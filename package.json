@@ -7,9 +7,8 @@
     "node": "14.x"
   },
   "scripts": {
-    "start": "node index",
-    "test": "echo \"Error: no test specified\" && exit 1"
-    
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index"
   },
   "repository": {
     "type": "git",
@@ -24,7 +23,7 @@
   "dependencies": {
     "body-parser": "^1.19.0",
     "cool-ascii-faces": "^1.3.4",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "heroku": "^7.52.0"
   }
- 
 }
