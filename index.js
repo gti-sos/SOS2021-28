@@ -45,6 +45,7 @@ app.get("/info/awards", (req, res) =>{
 var apiAwards = require("./awards");
 apiAwards.register(app);
 
+//API PLATFORMS
 
 var apiPlatforms =  require("./platforms");
 apiPlatforms.register(app);
