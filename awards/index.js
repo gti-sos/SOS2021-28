@@ -124,7 +124,7 @@ app.delete(BASE_API_PATH+ "/awards/:country/:year", (req,res)=>{
 	var del_data = req.params;
 	for (var i = 0; i <  awardsData.length; i++){
 		if(awardsData[i].country === del_data.country && awardsData[i].year === parseInt(del_data.year)){
-			platformsData.splice(i,1);
+			awardsData.splice(i,1);
 			console.log(`El recurso: <${del_data.country}> <${del_data.year}> ha sido eliminado`);
 			return res.sendStatus(200);
 		}
