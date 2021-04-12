@@ -166,4 +166,7 @@ app.delete(BASE_API_PATH + "/awards", (req,res)=>{
 	console.log('Resources deleted');
 	return res.sendStatus(200);
 });
+
+
+
 }

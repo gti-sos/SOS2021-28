@@ -44,6 +44,9 @@ app.get("/info/awards", (req, res) =>{
 
 var apiAwards = require("./awards");
 apiAwards.register(app);
+
+
+
 //________________Platforms_____________________
 //5.2  GET: CREAR 2 O MÁS RECURSOS
 
