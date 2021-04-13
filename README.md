@@ -14,4 +14,5 @@
     - [https://sos2021-28.herokuapp.com/api/v1/games](https://sos2021-28.herokuapp.com/api/v1/games) (developed by [Fernando Olmedo Delgado](https://github.com/Fernasilver))
 - **Postman documentation**
     - [Postman sobre awards](https://documenter.getpostman.com/view/14941757/TzJoE12q) (developed by [José Manuel Martín de los Santos](https://github.com/spartano27))
+    - [Postman sobre games](https://documenter.getpostman.com/view/14967482/TzJoELSM) (developed by [Fernando Olmedo Delgado](https://github.com/Fernasilver))
 
