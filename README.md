@@ -15,5 +15,5 @@
 - **Postman documentation**
     - [Postman sobre awards](https://documenter.getpostman.com/view/14941757/TzJoE12q) (developed by [José Manuel Martín de los Santos](https://github.com/spartano27))
     - [Postman sobre games](https://documenter.getpostman.com/view/14967482/TzJoELSM) (developed by [Fernando Olmedo Delgado](https://github.com/Fernasilver))
-    - [Postman sobre platforms](https://documenter.getpostman.com/view/14944973/TzJsexax) (developed by [Marina Barragán Candel](https://github.com/MarinaBC))
+    - [Postman sobre platforms](https://documenter.getpostman.com/view/14944973/TzJsexb1) (developed by [Marina Barragán Candel](https://github.com/MarinaBC))
 
