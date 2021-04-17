@@ -199,7 +199,7 @@ app.post(BASE_API_PATH + '/platforms', (req, res)=>{
 	var newPlatfrom = req.body;
 	
 	var newCountry = req.body.country;
-    var newYear = parseInt(req.body.date);
+    var newYear = parseInt(req.body.year);
 	
 	//console.log(`New platform to be added: <${JSON.stringify(newPlatfrom, null, 2)}>`);
 	//platformsData.push(newPlatfrom);
