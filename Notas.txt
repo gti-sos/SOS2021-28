@@ -1,3 +1,8 @@
+//Instalar: npm install cool-ascii-faces
+//Instalar: npm install express
+//Instalar: npm install body-parser
+//instalar: npm install nedb
+
 ----F03:
 Este proyecto ha sido creado para generar el:
 http://sos2021-28.herokuapp.com/
@@ -25,6 +30,8 @@ Hay que poner en el navegador: puerto + /api/v1/platforms
 -> Aparecerá en el navegador una lista vacía, despues se haría el /api/v1/platforms/loadInitialData
 para que se carguen los datos y si se vuelve a hacer el /api/v1/platforms ya aparecen la lista de 
 los objetos.
+
+La busqueda se hace: puerto + /api/v1/platforms?limit=x&offset=y siendo x e y dos numeros
 
 //Vale----------------------------------------------------------------------------------------------
 
