@@ -99,9 +99,18 @@ app.get(BASE_API_PATH + "/awards",(req,res)=>{
 app.post(BASE_API_PATH + '/awards',(req,res)=>{
 
 	var newObject = req.body;
-	console.log(`Nuevo elemento creado: <${JSON.stringify(newObject,null,2)}>`);
-	awardsData.push(newObject);
-	res.sendStatus(201);
+	
+	if (awardsData.length ==0){
+		console.log(`Nuevo elemento creado: <${JSON.stringify(newObject,null,2)}>`);
+		awardsData.push(newObject);
+		res.sendStatus(201);
+	} else{
+		console.log("conflicto, el recurso ya existe")
+		return res.sendStatus(409);
+		
+		
+	}
+	
 	
 });
 
