@@ -10,6 +10,10 @@ var app = express();
 var BASE_API_PATH = "/api/v1";
 var port = process.env.PORT || 10000;
 
+// base de datos
+var Datastore = require("nedb");
+var db = new Datastore();
+
 //USOS DEL SERVIDOR
 app.use("/", express.static(path.join(__dirname, "public")));
 app.use(bodyParser.json());
@@ -43,7 +47,7 @@ app.get("/info/awards", (req, res) =>{
 // API AWARDS
 
 var apiAwards = require("./awards");
-apiAwards.register(app);
+apiAwards.register(app,db);
 
 //API PLATFORMS
 
