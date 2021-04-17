@@ -180,7 +180,7 @@ app.get(BASE_API_PATH + "/platforms/loadInitialData", (req, res) => {
                 if (data.length == 0) {
                     db.insert(platformsData);
                     console.log(`Loaded initial data: <${JSON.stringify(platformsData, null, 2)}>`);
-                    res.sendStatus(200);
+                    res.sendStatus(201);
                 } else {
                     console.error(`initial data already exists`);
                     res.sendStatus(409);
