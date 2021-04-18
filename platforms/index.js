@@ -16,7 +16,7 @@ var platformsData = [];
 
 module.exports.register = (app) => {
 	
-
+/*
 //6.1 GET: Devuelve la lista de recursos (array JSON)
 //GET /api/v1/YYYYYY 
 //Devuelve una lista con todos los recursos (un array de objetos en JSON)
@@ -108,9 +108,9 @@ app.get(BASE_API_PATH + '/platforms', (req, res)=>{
 	//res.send(JSON.stringify(platformsData, null, 2));
 });
 	
+	*/
 	
-	
-
+/*
 app.get(BASE_API_PATH + "/platforms/loadInitialData", (req, res) => {
 	platformsData = [
         {
@@ -192,7 +192,119 @@ app.get(BASE_API_PATH + "/platforms/loadInitialData", (req, res) => {
 	//res.send(JSON.stringify(platformsData, null, 2));
   });
 
+*/
+	
+app.get(BASE_API_PATH + "/platforms/loadInitialData", (req, res) => {
+	platformsData = [
+        {
+            "country":"Japan",
+            "platform":"Nintendo 3DS",
+            "year":2016,
+            "sold-unit":202885,
+            "generation":8
+        },
+        {
+            "country":"U.S",
+            "platform":"Nintendo 3DS",
+            "year":2015,
+            "sold-unit":15000000,
+            "generation":8
+        },
+        {
+            "country":"UK",
+            "platform":"PlayStation4",
+            "year":2016,
+            "sold-unit":3000000,
+            "generation":8
+        },
+        {
+            "country":"Germany",
+            "platform":"PlayStation4",
+            "year":2015,
+            "sold-unit":2800000,
+            "generation":8
+        },
+		{
+            "country":"Spain",
+            "platform":"Nintendo 3DS",
+            "year":2014,
+            "sold-unit":900000,
+            "generation":8
+        },
+		{
+            "country":"France",
+            "platform":"Nintendo 3DS",
+            "year":2015,
+            "sold-unit":4000000,
+            "generation":8
+        },
+		{
+            "country":"Portugal",
+            "platform":"PlayStation4",
+            "year":2015,
+            "sold-unit":100000,
+            "generation":8
+        },
+		{
+            "country":"China",
+            "platform":"PlayStation4",
+            "year":2015,
+            "sold-unit":73112,
+            "generation":8
+        }
+    ];
+	db.insert(platformsData);
+	console.log(`Initial Data: <${JSON.stringify(platformsData,null,2)}>`);
+	res.sendStatus(200);
+    //console.log(`Initial data: <${JSON.stringify(platformsData, null, 2)}>`);
+    //res.sendStatus(200);
+	//res.send(JSON.stringify(platformsData, null, 2));
+  });
 
+
+	app.get(BASE_API_PATH + "/platforms",(req,res)=>{
+
+	var limit = parseInt(req.query.limit);
+	var offset = parseInt(req.query.offset);
+	var busqueda = {};
+
+	if(req.query.country) busqueda["country"] = req.query.country;
+	if(req.query.platform) busqueda["platform"] = req.query.platform;
+	if(req.query.year) busqueda["year"] = parseInt(req.query.year);
+	if(req.query.sunit) busqueda["sold-unit"] = parseInt(req.query.nunit)
+	if(req.query.generation) busqueda["generation"] = parseInt(req.query.generation);
+	
+	
+	
+
+	db.find(busqueda).skip(offset).limit(limit).exec((err,platforms)=>{
+		if(err){
+			console.error("ERROR accessing DB in GET");
+			res.sendStatus(500);
+		}else {
+			if (platforms.length != 0){
+				platforms.forEach((a)=>{delete a._id; }); 
+				console.log(busqueda)
+				return res.send(JSON.stringify(platforms,null,2));
+				return res.sendStatus(200);
+			} else {
+				console.log(busqueda)
+				console.log("No data found");
+				return res.sendStatus(404);
+			}
+			
+
+		}
+	});
+
+});
+	
+	
+	
+	
+	
+	
+	
 //POST /api/v1/YYYYYY 
 //crea un nuevo recurso.
 app.post(BASE_API_PATH + '/platforms', (req, res)=>{
