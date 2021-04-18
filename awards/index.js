@@ -191,7 +191,7 @@ app.put(BASE_API_PATH + "/awards/:country/:year", function(req,res){
 			console.error("ERROR accessing DB in GET");
 			res.sendStatus(500);
 		}else {
-			if (sc == req.body.country || sy == req.body.year){
+			if (sc == req.body.country && sy == req.body.year){
 				db.remove({country : sc, year : sy},{multi:true},function (err,numAwards){});
 				db.insert(req.body)
 				console.log(`requested updated award dataset`);
