@@ -245,7 +245,7 @@ app.put(BASE_API_PATH + "/awards/:country/:year", function(req,res){
 				
 				
 			} else{
-					res.sendStatus(400);
+					res.sendStatus(409);
 					
 			}
 			
