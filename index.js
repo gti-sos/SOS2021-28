@@ -10,9 +10,10 @@ var app = express();
 var BASE_API_PATH = "/api/v1";
 var port = process.env.PORT || 10000;
 
-// base de datos
+// base de datos awards 
 var Datastore = require("nedb");
-var db = new Datastore();
+var awardsFile = path.join(__dirname, "awards/awards.db");
+var dbAwards = new Datastore({filename : awardsFile, autoload : true});
 
 //USOS DEL SERVIDOR
 app.use("/", express.static(path.join(__dirname, "public")));
@@ -47,7 +48,7 @@ app.get("/info/awards", (req, res) =>{
 // API AWARDS
 
 var apiAwards = require("./awards");
-apiAwards.register(app,db);
+apiAwards.register(app,dbAwards);
 
 //API PLATFORMS
 

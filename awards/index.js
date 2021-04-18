@@ -94,9 +94,8 @@ app.get(BASE_API_PATH + "/awards",(req,res)=>{
 			res.sendStatus(500);
 		}else {
 			if (awards.length != 0){
-				awards.forEach((a)=>{delete a._id; 
-				}); 
-				console.log(`requested awards dataset`);
+				awards.forEach((a)=>{delete a._id; }); 
+				
 				return res.send(JSON.stringify(awards,null,2));
 				return res.sendStatus(200);
 			} else {
@@ -114,16 +113,23 @@ app.get(BASE_API_PATH + "/awards",(req,res)=>{
 app.post(BASE_API_PATH + '/awards',(req,res)=>{
 
 	var newObject = req.body;
-
+	llaves = Object.keys(req.body).length
 	db.find({country : newObject.country},(err, awards)=>{
 		if(err){
 			console.error("ERROR accessing DB in POST");
 			res.sendStatus(500);
 		}else{
 			if(awards.length == 0){
-				console.log(`Nuevo elemento creado: <${JSON.stringify(newObject,null,2)}>`);
-				db.insert(newObject);
-				res.sendStatus(201);
+				if(llaves == 6){
+					console.log(`Nuevo elemento creado: <${JSON.stringify(newObject,null,2)}>`);
+					db.insert(newObject);
+					res.sendStatus(201);
+
+				}else{
+					console.log('mal uso de las llaves, ERROR');
+					res.sendStatus(400);
+				}
+				
 			}else{
 				res.sendStatus(409);
 			}
@@ -171,9 +177,9 @@ app.delete(BASE_API_PATH+ "/awards/:country/:year", (req,res)=>{
 			res.sendStatus(500);
 		}else{
 			if(numAwards==0){
-				return res.sendStatus(404)
+				return res.sendStatus(404);
 			}else{
-				return res.sendStatus(200)
+				return res.sendStatus(200);
 			}
 
 		}
@@ -182,23 +188,30 @@ app.delete(BASE_API_PATH+ "/awards/:country/:year", (req,res)=>{
 
 //6.5 PUT: put un recurso (atualiza)
 app.put(BASE_API_PATH + "/awards/:country/:year", function(req,res){
-
-
 	var sc = req.params.country;
 	var sy = parseInt(req.params.year);
+	llaves = Object.keys(req.body).length 
 	db.find({country : sc, year : sy},(err, awards)=>{
 		if(err){
 			console.error("ERROR accessing DB in GET");
 			res.sendStatus(500);
 		}else {
 			if (sc == req.body.country && sy == req.body.year){
-				db.remove({country : sc, year : sy},{multi:true},function (err,numAwards){});
-				db.insert(req.body)
-				console.log(`requested updated award dataset`);
-				res.sendStatus(200);
+				if(llaves == 6){
+					db.remove({country : sc, year : sy},{multi:true},function (err,numAwards){});
+					db.insert(req.body);
+					console.log(`requested updated award dataset`);
+					res.sendStatus(200);
+
+				}else{
+					console.log("mal uso de las llaves");
+					res.sendStatus(400);
+
+				}
+				
 				
 			} else{
-					res.sendStatus(400)
+					res.sendStatus(400);
 					
 			}
 			
@@ -227,9 +240,9 @@ app.delete(BASE_API_PATH + "/awards", (req,res)=>{
 			res.sendStatus(500);
 		}else{
 			if(numAwards==0){
-				return res.sendStatus(404)
+				return res.sendStatus(404);
 			}else{
-				return res.sendStatus(200)
+				return res.sendStatus(200);
 			}
 
 		}
