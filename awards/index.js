@@ -87,7 +87,7 @@ app.get(BASE_API_PATH + "/awards/loadInitialData",(req,res)=>{
 
 //6.1 GET : devuelve una lista de recursos 
 
-app.get(BASE_API_PATH + "/awards",(req,res)=>{
+/*app.get(BASE_API_PATH + "/awards",(req,res)=>{
 	db.find({},(err, awards)=>{
 		if(err){
 			console.error("ERROR accessing DB in GET");
@@ -108,7 +108,41 @@ app.get(BASE_API_PATH + "/awards",(req,res)=>{
 	});
 		
 });
+*/
+app.get(BASE_API_PATH + "/awards",(req,res)=>{
 
+	var limit = parseInt(req.query.limit);
+	var offset = parseInt(req.query.offset);
+	var busqueda = {};
+
+	if(req.query.country) busqueda["country"] = req.query.country;
+	if(req.query.year) busqueda["year"] = parseInt(req.query.year);
+	if(req.query.gala) busqueda["gala"] = parseInt(req.query.gala);
+	if(req.query.winner) busqueda["winner"] = req.query.winner
+	if(req.query.nplatform) busqueda["n-platform"] = parseInt(req.query.nplatform)
+	if(req.query.naward) busqueda["n-award"] = parseInt(req.query.naward)
+
+	db.find(busqueda).skip(offset).limit(limit).exec((err,awards)=>{
+		if(err){
+			console.error("ERROR accessing DB in GET");
+			res.sendStatus(500);
+		}else {
+			if (awards.length != 0){
+				awards.forEach((a)=>{delete a._id; }); 
+				console.log(busqueda)
+				return res.send(JSON.stringify(awards,null,2));
+				return res.sendStatus(200);
+			} else {
+				console.log(busqueda)
+				console.log("No data found");
+				return res.sendStatus(404);
+			}
+			
+
+		}
+	});
+
+});
 //6.2 POST : Crea un nuevo recurso
 app.post(BASE_API_PATH + '/awards',(req,res)=>{
 
