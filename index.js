@@ -15,6 +15,11 @@ var Datastore = require("nedb");
 var awardsFile = path.join(__dirname, "awards/awards.db");
 var dbAwards = new Datastore({filename : awardsFile, autoload : true});
 
+// base de datos platforms 
+var DatastorePlatforms = require("nedb");
+var platformsFile = path.join(__dirname, "platforms/platforms.db");
+var dbPlatforms = new DatastorePlatforms({filename : platformsFile, autoload : true});
+
 //USOS DEL SERVIDOR
 app.use("/", express.static(path.join(__dirname, "public")));
 app.use(bodyParser.json());
