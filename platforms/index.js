@@ -9,7 +9,7 @@ var datafile = path.join(__dirname, 'platforms.db');
 var db = new Datastore({ filename: datafile, autoload: true });
 var platformsData = [];
 
-
+///
 //________________Platforms_____________________
 //5.2  GET: CREAR 2 O MÁS RECURSOS
 
