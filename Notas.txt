@@ -2,7 +2,9 @@
 //Instalar: npm install express
 //Instalar: npm install body-parser
 //Instalar: npm install heroku
-//instalar: npm install nedb
+//Instalar: npm install nedb
+//Instalar: npm install npx
+//Instalar: npm install newman
 
 ----F03:
 Este proyecto ha sido creado para generar el:
