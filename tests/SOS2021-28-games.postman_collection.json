@@ -1,7 +1,8 @@
 {
 	"info": {
-		"_postman_id": "9f284acf-b80b-418b-a793-b1c9baf4b4a5",
-		"name": "SOS2021-28",
+		"_postman_id": "2a2cc884-6ace-4a3b-8a1e-6863e5667c93",
+		"name": "Postman sobre SOS2021-28-games",
+		"description": "funciones sobre la api sos-2021-28-games",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
@@ -12,12 +13,11 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {\r",
-							"    pm.response.to.have.status(200);\r",
+							"pm.test(\"Status code is 404\", function () {\r",
+							"    pm.response.to.have.status(404);\r",
 							"});\r",
-							"pm.test(\"Lista vacia\", function () {\r",
-							"    var jsonData = pm.response.json();\r",
-							"    pm.expect(jsonData.length).to.eql(0);\r",
+							"pm.test(\"Response time is less than 10000ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(10000);\r",
 							"});"
 						],
 						"type": "text/javascript"
@@ -41,7 +41,8 @@
 						"games",
 						""
 					]
-				}
+				},
+				"description": "info/games"
 			},
 			"response": []
 		},
@@ -54,6 +55,9 @@
 						"exec": [
 							"pm.test(\"Status code is 200\", function () {\r",
 							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Response time is less than 10000ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(10000);\r",
 							"});"
 						],
 						"type": "text/javascript"
@@ -77,7 +81,8 @@
 						"games",
 						"loadInitialData"
 					]
-				}
+				},
+				"description": "load initial data de games"
 			},
 			"response": []
 		},
@@ -117,7 +122,8 @@
 						"games",
 						""
 					]
-				}
+				},
+				"description": "un get para ver la api games"
 			},
 			"response": []
 		},
@@ -130,6 +136,9 @@
 						"exec": [
 							"pm.test(\"Status code is 201\", function () {\r",
 							"    pm.response.to.have.status(201);\r",
+							"});\r",
+							"pm.test(\"Response time is less than 10000ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(10000);\r",
 							"});"
 						],
 						"type": "text/javascript"
@@ -162,6 +171,55 @@
 						"games",
 						""
 					]
+				},
+				"description": "post el cual crea un nuevo elemento en la api"
+			},
+			"response": []
+		},
+		{
+			"name": "/api/v1/games?country=Japan&year=1985",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Response time is less than 10000ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(10000);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://sos2021-28.herokuapp.com/api/v1/games?country=Japan&year=1985",
+					"protocol": "https",
+					"host": [
+						"sos2021-28",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"games"
+					],
+					"query": [
+						{
+							"key": "country",
+							"value": "Japan"
+						},
+						{
+							"key": "year",
+							"value": "1985"
+						}
+					]
 				}
 			},
 			"response": []
@@ -175,6 +233,9 @@
 						"exec": [
 							"pm.test(\"Status code is 200\", function () {\r",
 							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Response time is less than 10000ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(10000);\r",
 							"});"
 						],
 						"type": "text/javascript"
@@ -211,7 +272,8 @@
 						"Japan",
 						"1985"
 					]
-				}
+				},
+				"description": "get para conseguir un elemento de la api segun su pais y año"
 			},
 			"response": []
 		},
@@ -224,6 +286,9 @@
 						"exec": [
 							"pm.test(\"Status code is 200\", function () {\r",
 							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Response time is less than 10000ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(10000);\r",
 							"});"
 						],
 						"type": "text/javascript"
@@ -257,7 +322,8 @@
 						"Japan",
 						"1985"
 					]
-				}
+				},
+				"description": "actualiza un elemento de la api, especificando pais y año"
 			},
 			"response": []
 		},
@@ -270,6 +336,9 @@
 						"exec": [
 							"pm.test(\"Status code is 405\", function () {\r",
 							"    pm.response.to.have.status(405);\r",
+							"});\r",
+							"pm.test(\"Response time is less than 10000ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(10000);\r",
 							"});"
 						],
 						"type": "text/javascript"
@@ -304,7 +373,8 @@
 						"1999",
 						""
 					]
-				}
+				},
+				"description": "ERROR post a un elemento"
 			},
 			"response": []
 		},
@@ -317,6 +387,9 @@
 						"exec": [
 							"pm.test(\"Status code is 405\", function () {\r",
 							"    pm.response.to.have.status(405);\r",
+							"});\r",
+							"pm.test(\"Response time is less than 10000ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(10000);\r",
 							"});"
 						],
 						"type": "text/javascript"
@@ -349,7 +422,8 @@
 						"games",
 						""
 					]
-				}
+				},
+				"description": "ERROR put a la api"
 			},
 			"response": []
 		},
@@ -362,6 +436,9 @@
 						"exec": [
 							"pm.test(\"Status code is 200\", function () {\r",
 							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Response time is less than 10000ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(10000);\r",
 							"});"
 						],
 						"type": "text/javascript"
@@ -396,12 +473,13 @@
 						"2000",
 						""
 					]
-				}
+				},
+				"description": "elimina un elemento de la api"
 			},
 			"response": []
 		},
 		{
-			"name": "/api/v1/games/Japan/2000/",
+			"name": "/api/v1/games/",
 			"event": [
 				{
 					"listen": "test",
@@ -409,6 +487,9 @@
 						"exec": [
 							"pm.test(\"Status code is 200\", function () {\r",
 							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Response time is less than 10000ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(10000);\r",
 							"});"
 						],
 						"type": "text/javascript"
@@ -441,7 +522,8 @@
 						"games",
 						""
 					]
-				}
+				},
+				"description": "elimina toda la api"
 			},
 			"response": []
 		}
