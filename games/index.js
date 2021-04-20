@@ -103,7 +103,7 @@ app.get(BASE_API_PATH_GAMES, (req, res) => {
 	});
 });
 
-
+/*
 app.post(BASE_API_PATH_GAMES, (req, res)=>{
 	var newGame = req.body;
 	var newCountry = req.body.country;
@@ -117,15 +117,48 @@ app.post(BASE_API_PATH_GAMES, (req, res)=>{
 		if(err){
             res.sendStatus(500);
         }else{
-			if(games.length == 0){
+			if(!newGame.country || !newGame.year || !newGame.nunit || !newGame.company || !newGame.game){
+				return res.sendStatus(400);
+			}else{
+				if(games.length == 0){
            		console.log(`new game to be added: <${JSON.stringify(newGame, null, 2)}>`);
            		db.insert(newGame);
            		res.sendStatus(201);
 			}else{
 				res.sendStatus(409);
 			}
+			}
+			
         }
 	});
+});
+*/
+	//6.2 POST : Crea un nuevo recurso
+app.post(BASE_API_PATH_GAMES,(req,res)=>{
+
+	var newObject = req.body;
+	llaves = Object.keys(req.body).length
+	db.find({country : newObject.country},(err, games)=>{
+		if(err){
+			console.error("ERROR accessing DB in POST");
+			res.sendStatus(500);
+		}else{
+			if(games.length == 0){
+				if(llaves == 6){
+					console.log(`Nuevo elemento creado: <${JSON.stringify(newObject,null,2)}>`);
+					db.insert(newObject);
+					res.sendStatus(201);
+
+				}else{
+					console.log('mal uso de las llaves, ERROR');
+					res.sendStatus(400);
+				}
+				
+			}else{
+				res.sendStatus(409);
+			}
+		}
+	});	
 });
 
 
