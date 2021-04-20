@@ -79,10 +79,10 @@ app.get(BASE_API_PATH_GAMES, (req, res) => {
 	var busqueda = {};
 	
 	if(req.query.country) busqueda["country"] = req.query.country;
-	if(req.query.game) busqueda["game"] = parseInt(req.query.game);
+	if(req.query.game) busqueda["game"] = req.query.game;
 	if(req.query.year) busqueda["year"] = parseInt(req.query.year);
 	if(req.query.sunit) busqueda["sold-unit"] = parseInt(req.query.nunit)
-	if(req.query.company) busqueda["company"] = parseInt(req.query.company)
+	if(req.query.company) busqueda["company"] = req.query.company
 	
   db.find(busqueda).skip(offset).limit(limit).exec((err,games)=>{
 		if(err){
@@ -103,7 +103,7 @@ app.get(BASE_API_PATH_GAMES, (req, res) => {
 	});
 });
 
-/*
+
 app.post(BASE_API_PATH_GAMES, (req, res)=>{
 	var newGame = req.body;
 	var newCountry = req.body.country;
@@ -132,7 +132,8 @@ app.post(BASE_API_PATH_GAMES, (req, res)=>{
         }
 	});
 });
-*/
+
+	/*
 	//6.2 POST : Crea un nuevo recurso
 app.post(BASE_API_PATH_GAMES,(req,res)=>{
 
@@ -144,7 +145,7 @@ app.post(BASE_API_PATH_GAMES,(req,res)=>{
 			res.sendStatus(500);
 		}else{
 			if(games.length == 0){
-				if(llaves == 6){
+				if(llaves == 5){
 					console.log(`Nuevo elemento creado: <${JSON.stringify(newObject,null,2)}>`);
 					db.insert(newObject);
 					res.sendStatus(201);
@@ -160,7 +161,7 @@ app.post(BASE_API_PATH_GAMES,(req,res)=>{
 		}
 	});	
 });
-
+*/
 
 app.get(BASE_API_PATH_GAMES + "/:country/:year", (req, res) => {
 	var country = req.params.country;
