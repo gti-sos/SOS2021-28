@@ -189,7 +189,7 @@ app.get(BASE_API_PATH + "/awards/:country/:year",(req,res)=>{
 				awards.forEach((a)=>{delete a._id; 
 				}); 
 				console.log(`requested awards dataset`);
-				return res.send(JSON.stringify(awards,null,2));
+				return res.send(JSON.stringify(awards[0],null,2));
 				return res.sendStatus(200);
 			} else {
 				console.log("No data found");
