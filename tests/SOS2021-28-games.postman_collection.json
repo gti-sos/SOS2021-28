@@ -274,7 +274,7 @@
 						}
 					]
 				},
-				"description": "get para conseguir un elemento de la api en Japon con año 1985"
+				"description": "paginacion games"
 			},
 			"response": []
 		},
