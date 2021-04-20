@@ -1,7 +1,10 @@
 //Instalar: npm install cool-ascii-faces
 //Instalar: npm install express
 //Instalar: npm install body-parser
-//instalar: npm install nedb
+//Instalar: npm install heroku
+//Instalar: npm install nedb
+//Instalar: npm install npx
+//Instalar: npm install newman
 
 
 //required modules
