@@ -14,4 +14,4 @@ jobs:
       - run: npm start &
       - run: npx newman run tests/Awards_Postman.json
       - run: npx newman run tests/SOS2021-28-platforms.postman_collection.json
-
+      - run: npx newman run tests/SOS2021-28-games.postman_collection.json
