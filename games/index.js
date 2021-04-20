@@ -117,19 +117,17 @@ app.post(BASE_API_PATH_GAMES, (req, res)=>{
 		if(err){
             res.sendStatus(500);
         }else{
-			if(!newGame.country || !newGame.year || !newGame.nunit || !newGame.company || !newGame.game){
-				return res.sendStatus(400);
-			}else{
-				if(games.length == 0){
+			//if(!newGame.country || !newGame.year || !newGame.nunit || !newGame.company || !newGame.game){
+				//return res.sendStatus(400);
+			//}else{
+			if(games.length == 0){
            		console.log(`new game to be added: <${JSON.stringify(newGame, null, 2)}>`);
            		db.insert(newGame);
            		res.sendStatus(201);
 			}else{
 				res.sendStatus(409);
 			}
-			}
-			
-        }
+		}
 	});
 });
 
