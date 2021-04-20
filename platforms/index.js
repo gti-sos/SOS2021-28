@@ -1,3 +1,8 @@
+//Instalar: npm install cool-ascii-faces
+//Instalar: npm install express
+//Instalar: npm install body-parser
+//instalar: npm install nedb
+
 
 //required modules
 var path = require('path');
@@ -303,7 +308,7 @@ app.get(BASE_API_PATH + "/platforms/loadInitialData", (req, res) => {
 	
 	
 	
-	
+	/*
 	
 //POST /api/v1/YYYYYY 
 //crea un nuevo recurso.
@@ -321,17 +326,53 @@ app.post(BASE_API_PATH + '/platforms', (req, res)=>{
 			console.error("ERROR de acceso a la DB en el POST");
             res.sendStatus(500);
         } else {
+			if(data.length == 0){
+			   if(!newPlatfrom.newCountry)
+			   }else{
 			//Insertamos el recurso
             console.log(`new platforms to be added: <${JSON.stringify(newPlatfrom, null, 2)}>`);
             db.insert(newPlatfrom);
             res.sendStatus(201);
+			}
+			else {
+				response.sendStatus(409);
+				console.log("There is already a resource with that country and year in the DB");
+			}
         }
+		
                 
             
 });
 	//console.log(`New platform to be added: <${JSON.stringify(newPlatfrom, null, 2)}>`);
 	//platformsData.push(newPlatfrom);
 	//res.sendStatus(201);
+});
+*/
+	app.post(BASE_API_PATH + '/platforms',(req,res)=>{
+
+	var newObject = req.body;
+	llaves = Object.keys(req.body).length
+	db.find({country : newObject.country},(err, platform)=>{
+		if(err){
+			console.error("ERROR accessing DB in POST");
+			res.sendStatus(500);
+		}else{
+			if(platform.length == 0){
+				if(llaves == 5){
+					console.log(`Nuevo elemento creado: <${JSON.stringify(newObject,null,2)}>`);
+					db.insert(newObject);
+					res.sendStatus(201);
+
+				}else{
+					console.log('mal uso de las llaves, ERROR');
+					res.sendStatus(400);
+				}
+
+			}else{
+				res.sendStatus(409);
+			}
+		}
+	});	
 });
 
 
@@ -384,6 +425,9 @@ app.delete(BASE_API_PATH+ "/platforms/:country/:year", (req,res) => {
     });
  
 });
+	
+	
+
 
 
 //6.5 PUT: Put a un recurso -> actualiza ese recurso
