@@ -42,7 +42,7 @@
 						""
 					]
 				},
-				"description": "info/games"
+				"description": "info/games (vacio)"
 			},
 			"response": []
 		},
@@ -220,7 +220,61 @@
 							"value": "1985"
 						}
 					]
+				},
+				"description": "get para conseguir un elemento de la api en Japon con año 1985"
+			},
+			"response": []
+		},
+		{
+			"name": "/api/v1/games?offset=2&&limit=3",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Response time is less than 10000ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(10000);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
 				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://sos2021-28.herokuapp.com/api/v1/games?offset=2&&limit=3",
+					"protocol": "https",
+					"host": [
+						"sos2021-28",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"games"
+					],
+					"query": [
+						{
+							"key": "offset",
+							"value": "2"
+						},
+						{
+							"key": null,
+							"value": null
+						},
+						{
+							"key": "limit",
+							"value": "3"
+						}
+					]
+				},
+				"description": "get para conseguir un elemento de la api en Japon con año 1985"
 			},
 			"response": []
 		},
