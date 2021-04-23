@@ -1,54 +1,19 @@
-{"country":"Japan","game":"Super Mario Bros.","year":1985,"sold-unit":40240000,"company":"Nintendo","_id":"KZ17OWUYmbXzb2KJ"}
-{"country":"Japan","game":"Pokemon Gold/Silver/Crystal","year":1999,"sold-unit":31380000,"company":"Nintendo","_id":"5l75fRkT7tRmI4Fk"}
-{"country":"EEUU","game":"Call of Duty Modern Warfare 3","year":2011,"sold-unit":26500000,"company":"Activision","_id":"bWqLxNDe54kk0DSe"}
-{"country":"EEUU","game":"Grand Theft Auto San Andreas","year":2004,"sold-unit":27500000,"company":"Rockstar Games","_id":"1dM0KqjwkMVl5Nr0"}
-{"country":"EEUU","game":"The Sims 2","year":2004,"sold-unit":20000000,"company":"Electronic Arts","_id":"Zmwx5gfiZYkpIRWm"}
-{"country":"Sweden","game":"Minecraft","year":2011,"sold-unit":200000000,"company":"Mojang","_id":"KnGSmTZtcVKhPtLX"}
-{"country":"EEUU","game":"FIFA 18","year":2017,"sold-unit":24000000,"company":"EA Sports","_id":"mO34oDT3DJWH9fVo"}
-{"country":"EEUU","game":"Terraria","year":2011,"sold-unit":20000000,"company":"505 Games","_id":"4rdSlD1pYKM8TsEg"}
-{"$$deleted":true,"_id":"1dM0KqjwkMVl5Nr0"}
-{"$$deleted":true,"_id":"4rdSlD1pYKM8TsEg"}
-{"$$deleted":true,"_id":"5l75fRkT7tRmI4Fk"}
-{"$$deleted":true,"_id":"KZ17OWUYmbXzb2KJ"}
-{"$$deleted":true,"_id":"KnGSmTZtcVKhPtLX"}
-{"$$deleted":true,"_id":"Zmwx5gfiZYkpIRWm"}
-{"$$deleted":true,"_id":"bWqLxNDe54kk0DSe"}
-{"$$deleted":true,"_id":"mO34oDT3DJWH9fVo"}
-{"country":"Japan","game":"Super Mario Bros.","year":1985,"sold-unit":40240000,"company":"Nintendo","_id":"uBSALPSepORkfnFf"}
-{"country":"Japan","game":"Pokemon Gold/Silver/Crystal","year":1999,"sold-unit":31380000,"company":"Nintendo","_id":"k9gdM2auZxUma3Xi"}
-{"country":"EEUU","game":"Call of Duty Modern Warfare 3","year":2011,"sold-unit":26500000,"company":"Activision","_id":"jpLmLrpuQ2ObZDzR"}
-{"country":"EEUU","game":"Grand Theft Auto San Andreas","year":2004,"sold-unit":27500000,"company":"Rockstar Games","_id":"VYof93SckYTvn6Oe"}
-{"country":"EEUU","game":"The Sims 2","year":2004,"sold-unit":20000000,"company":"Electronic Arts","_id":"W8CDo3mUfRpSDOwC"}
-{"country":"Sweden","game":"Minecraft","year":2011,"sold-unit":200000000,"company":"Mojang","_id":"YdPCBtGsit1UYVVP"}
-{"country":"EEUU","game":"FIFA 18","year":2017,"sold-unit":24000000,"company":"EA Sports","_id":"uyeR3I5SeK2aQxtN"}
-{"country":"EEUU","game":"Terraria","year":2011,"sold-unit":20000000,"company":"505 Games","_id":"mCq1M2mvRdHr8AQu"}
-{"country":"Japan","game":"Xenosaga","year":2000,"sold-unit":30240000,"company":"Sony","_id":"vaTWdIfdeLUnbYU8"}
-{"country":"Japan","game":"Super Luigi Bros.","year":1985,"sold-unit":9240000,"company":"Nintendo","_id":"uBSALPSepORkfnFf"}
-{"$$deleted":true,"_id":"vaTWdIfdeLUnbYU8"}
-{"$$deleted":true,"_id":"VYof93SckYTvn6Oe"}
-{"$$deleted":true,"_id":"W8CDo3mUfRpSDOwC"}
-{"$$deleted":true,"_id":"YdPCBtGsit1UYVVP"}
-{"$$deleted":true,"_id":"jpLmLrpuQ2ObZDzR"}
-{"$$deleted":true,"_id":"k9gdM2auZxUma3Xi"}
-{"$$deleted":true,"_id":"mCq1M2mvRdHr8AQu"}
-{"$$deleted":true,"_id":"uBSALPSepORkfnFf"}
-{"$$deleted":true,"_id":"uyeR3I5SeK2aQxtN"}
-{"country":"Japan","game":"Super Mario Bros.","year":1985,"sold-unit":40240000,"company":"Nintendo","_id":"aQExV7UFXf14lYgN"}
-{"country":"Japan","game":"Pokemon Gold/Silver/Crystal","year":1999,"sold-unit":31380000,"company":"Nintendo","_id":"DPD1WRuHpDJLYTBY"}
-{"country":"EEUU","game":"Call of Duty Modern Warfare 3","year":2011,"sold-unit":26500000,"company":"Activision","_id":"8zoPuOI6t6KLsp5E"}
-{"country":"EEUU","game":"Grand Theft Auto San Andreas","year":2004,"sold-unit":27500000,"company":"Rockstar Games","_id":"uo8T53TWjFZS03il"}
-{"country":"EEUU","game":"The Sims 2","year":2004,"sold-unit":20000000,"company":"Electronic Arts","_id":"ug9BTjDso0sGYXtc"}
-{"country":"Sweden","game":"Minecraft","year":2011,"sold-unit":200000000,"company":"Mojang","_id":"zFkFDq2q0hNcdzV6"}
-{"country":"EEUU","game":"FIFA 18","year":2017,"sold-unit":24000000,"company":"EA Sports","_id":"O0blAm9xwFxvQztv"}
-{"country":"EEUU","game":"Terraria","year":2011,"sold-unit":20000000,"company":"505 Games","_id":"4Eg3W4emYtXb1OqC"}
-{"country":"Japan","game":"Xenosaga","year":2000,"sold-unit":30240000,"company":"Sony","_id":"KJpFPDJZjEwyfsfR"}
-{"country":"Japan","game":"Super Luigi Bros.","year":1985,"sold-unit":9240000,"company":"Nintendo","_id":"aQExV7UFXf14lYgN"}
-{"$$deleted":true,"_id":"KJpFPDJZjEwyfsfR"}
-{"$$deleted":true,"_id":"4Eg3W4emYtXb1OqC"}
-{"$$deleted":true,"_id":"8zoPuOI6t6KLsp5E"}
-{"$$deleted":true,"_id":"DPD1WRuHpDJLYTBY"}
-{"$$deleted":true,"_id":"O0blAm9xwFxvQztv"}
-{"$$deleted":true,"_id":"aQExV7UFXf14lYgN"}
-{"$$deleted":true,"_id":"ug9BTjDso0sGYXtc"}
-{"$$deleted":true,"_id":"uo8T53TWjFZS03il"}
-{"$$deleted":true,"_id":"zFkFDq2q0hNcdzV6"}
+{"country":"Japan","game":"Super Mario Bros.","year":1985,"sold-unit":40240000,"company":"Nintendo","_id":"2v4wqFz3AuEjlhh7"}
+{"country":"Japan","game":"Pokemon Gold/Silver/Crystal","year":1999,"sold-unit":31380000,"company":"Nintendo","_id":"ymgm5AavfvhHompq"}
+{"country":"EEUU","game":"Call of Duty Modern Warfare 3","year":2011,"sold-unit":26500000,"company":"Activision","_id":"NRBiROlmi0eQMpFq"}
+{"country":"EEUU","game":"Grand Theft Auto San Andreas","year":2004,"sold-unit":27500000,"company":"Rockstar Games","_id":"fZv0p8lmsf12AFLx"}
+{"country":"EEUU","game":"The Sims 2","year":2004,"sold-unit":20000000,"company":"Electronic Arts","_id":"BxpdNHBFjt9XfDtE"}
+{"country":"Sweden","game":"Minecraft","year":2011,"sold-unit":200000000,"company":"Mojang","_id":"vVZ3vT10dW3QJHhf"}
+{"country":"EEUU","game":"FIFA 18","year":2017,"sold-unit":24000000,"company":"EA Sports","_id":"u46Ep0MbWf20dMwy"}
+{"country":"EEUU","game":"Terraria","year":2011,"sold-unit":20000000,"company":"505 Games","_id":"iMebFwuKtK6B6fYg"}
+{"country":"Japan","game":"Xenosaga","year":2000,"sold-unit":30240000,"company":"Sony","_id":"2SjgC3DUI2KQx9il"}
+{"country":"Japan","game":"Super Luigi Bros.","year":1985,"sold-unit":9240000,"company":"Nintendo","_id":"2v4wqFz3AuEjlhh7"}
+{"$$deleted":true,"_id":"2SjgC3DUI2KQx9il"}
+{"$$deleted":true,"_id":"2v4wqFz3AuEjlhh7"}
+{"$$deleted":true,"_id":"BxpdNHBFjt9XfDtE"}
+{"$$deleted":true,"_id":"NRBiROlmi0eQMpFq"}
+{"$$deleted":true,"_id":"fZv0p8lmsf12AFLx"}
+{"$$deleted":true,"_id":"iMebFwuKtK6B6fYg"}
+{"$$deleted":true,"_id":"u46Ep0MbWf20dMwy"}
+{"$$deleted":true,"_id":"vVZ3vT10dW3QJHhf"}
+{"$$deleted":true,"_id":"ymgm5AavfvhHompq"}
