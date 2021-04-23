@@ -108,12 +108,12 @@ app.post(BASE_API_PATH_GAMES,(req,res)=>{
 
 	var newObject = req.body;
 	llaves = Object.keys(req.body).length
-	db.find({country : newObject.country},(err, games)=>{
+	db.find({game : newObject.game},(err, games)=>{
 		if(err){
 			console.error("ERROR accessing DB in POST");
 			res.sendStatus(500);
 		}else{
-			if(games.length != 0){
+			if(games.length == 0){
 				if(llaves == 5){
 					console.log(`Nuevo elemento creado: <${JSON.stringify(newObject,null,2)}>`);
 					db.insert(newObject);
