@@ -47,55 +47,6 @@
 			"response": []
 		},
 		{
-			"name": "/api/v1/games/",
-			"event": [
-				{
-					"listen": "test",
-					"script": {
-						"exec": [
-							"pm.test(\"Status code is 409\", function () {\r",
-							"    pm.response.to.have.status(409);\r",
-							"});\r",
-							"pm.test(\"Response time is less than 10000ms\", function () {\r",
-							"    pm.expect(pm.response.responseTime).to.be.below(10000);\r",
-							"});"
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n\"country\": \"Japan\",\r\n\"game\": \"Xenosaga\",\r\n\"year\": 2000,\r\n\"sold-unit\": 30240000\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "https://sos2021-28.herokuapp.com/api/v1/games/",
-					"protocol": "https",
-					"host": [
-						"sos2021-28",
-						"herokuapp",
-						"com"
-					],
-					"path": [
-						"api",
-						"v1",
-						"games",
-						""
-					]
-				},
-				"description": "post error 409"
-			},
-			"response": []
-		},
-		{
 			"name": "/api/v1/games/loadInitialData",
 			"event": [
 				{
@@ -222,55 +173,6 @@
 					]
 				},
 				"description": "post el cual crea un nuevo elemento en la api"
-			},
-			"response": []
-		},
-		{
-			"name": "/api/v1/games/",
-			"event": [
-				{
-					"listen": "test",
-					"script": {
-						"exec": [
-							"pm.test(\"Status code is 400\", function () {\r",
-							"    pm.response.to.have.status(400);\r",
-							"});\r",
-							"pm.test(\"Response time is less than 10000ms\", function () {\r",
-							"    pm.expect(pm.response.responseTime).to.be.below(10000);\r",
-							"});"
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n\"country\": \"Japan\",\r\n\"game\": \"Xenosaga\",\r\n\"year\": 2000,\r\n\"sold-unit\": 30240000\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "https://sos2021-28.herokuapp.com/api/v1/games/",
-					"protocol": "https",
-					"host": [
-						"sos2021-28",
-						"herokuapp",
-						"com"
-					],
-					"path": [
-						"api",
-						"v1",
-						"games",
-						""
-					]
-				},
-				"description": "post erro 400"
 			},
 			"response": []
 		},
