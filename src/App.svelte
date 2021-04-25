@@ -1,5 +1,6 @@
 <script>
 	import TableGames from './TableGames.svelte'
+	import TablePlatforms from './TablePlatforms.svelte'
 	export let name;
 
 </script>
@@ -20,8 +21,21 @@
 	</div>
 	
 	
+	<h1></h1>
+	<input type="button" value="Platforms" onClick="document.getElementById('nuevoOculto').style.visibility='visible'">
+	<input type="button" value="Ocultar" onClick="document.getElementById('nuevoOculto').style.visibility='hidden'">
+	
+	<div id="nuevoOculto" style="visibility:hidden">
+		<TablePlatforms/>
+	</div>
+    <h1></h1>
+	
 </main>
 
+
+
+	
+	
 <style>
 	main {
 		text-align: center;
