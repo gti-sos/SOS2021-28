@@ -38,11 +38,11 @@
     <Table bordered>
         <thead>
             <tr>
-                <td>country</td>
-                <td>game</td>
-                <td>year</td>
-                <td>sold-unit</td>
-                <td>company</td>
+                <td>País</td>
+                <td>Juego</td>
+                <td>Año</td>
+                <td>Unidades vendidas</td>
+                <td>Compañía</td>
                 
             </tr>
         </thead>
