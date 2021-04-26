@@ -13,7 +13,7 @@
         if(res.ok){
             console.log("Ok.");
             const json = await res.json();
-            games = json;
+            platforms = json;
             console.log(`We have received ${platforms.length} platforms.`);
         }else{
             console.log("Error!");

@@ -1,6 +1,6 @@
 <script>
-	import TableGames from './TableGames.svelte'
-	import TablePlatforms from './TablePlatforms.svelte'
+	import TableGames from './TableGames.svelte';
+	import TablePlatforms from './TablePlatforms.svelte';
 	export let name;
 
 </script>
@@ -12,7 +12,7 @@
 		
 	-->
 	<a href="oldindex.html">Antiguo index</a>
-	<br>
+	
 	<input type="button" value="Games" onClick="document.getElementById('oculto').style.visibility='visible'">
 	<input type="button" value="Ocultar" onClick="document.getElementById('oculto').style.visibility='hidden'">
 	
@@ -22,10 +22,11 @@
 	
 	
 	<h1></h1>
-	<input type="button" value="Platforms" onClick="document.getElementById('nuevoOculto').style.visibility='visible'">
-	<input type="button" value="Ocultar" onClick="document.getElementById('nuevoOculto').style.visibility='hidden'">
+	<br>
+	<input type="button" value="Platforms" onClick="document.getElementById('oculto').style.visibility='visible'">
+	<input type="button" value="Ocultar" onClick="document.getElementById('oculto').style.visibility='hidden'">
 	
-	<div id="nuevoOculto" style="visibility:hidden">
+	<div id="oculto" style="visibility:hidden">
 		<TablePlatforms/>
 	</div>
     <h1></h1>

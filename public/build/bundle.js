@@ -1321,12 +1321,12 @@ var app = (function () {
     			td4 = element("td");
     			t8 = text(t8_value);
     			t9 = space();
-    			add_location(td0, file$1, 51, 20, 1187);
-    			add_location(td1, file$1, 52, 20, 1231);
-    			add_location(td2, file$1, 53, 20, 1276);
-    			add_location(td3, file$1, 54, 20, 1317);
-    			add_location(td4, file$1, 55, 20, 1366);
-    			add_location(tr, file$1, 50, 16, 1162);
+    			add_location(td0, file$1, 51, 20, 1191);
+    			add_location(td1, file$1, 52, 20, 1235);
+    			add_location(td2, file$1, 53, 20, 1280);
+    			add_location(td3, file$1, 54, 20, 1321);
+    			add_location(td4, file$1, 55, 20, 1370);
+    			add_location(tr, file$1, 50, 16, 1166);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, tr, anchor);
@@ -1346,7 +1346,13 @@ var app = (function () {
     			append_dev(td4, t8);
     			append_dev(tr, t9);
     		},
-    		p: noop,
+    		p: function update(ctx, dirty) {
+    			if (dirty & /*platforms*/ 1 && t0_value !== (t0_value = /*data*/ ctx[2].country + "")) set_data_dev(t0, t0_value);
+    			if (dirty & /*platforms*/ 1 && t2_value !== (t2_value = /*data*/ ctx[2].platform + "")) set_data_dev(t2, t2_value);
+    			if (dirty & /*platforms*/ 1 && t4_value !== (t4_value = /*data*/ ctx[2].year + "")) set_data_dev(t4, t4_value);
+    			if (dirty & /*platforms*/ 1 && t6_value !== (t6_value = /*data*/ ctx[2]["sold-unit"] + "")) set_data_dev(t6, t6_value);
+    			if (dirty & /*platforms*/ 1 && t8_value !== (t8_value = /*data*/ ctx[2].generation + "")) set_data_dev(t8, t8_value);
+    		},
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(tr);
     		}
@@ -1411,14 +1417,14 @@ var app = (function () {
     				each_blocks[i].c();
     			}
 
-    			add_location(td0, file$1, 40, 16, 888);
-    			add_location(td1, file$1, 41, 16, 921);
-    			add_location(td2, file$1, 42, 16, 955);
-    			add_location(td3, file$1, 43, 16, 985);
-    			add_location(td4, file$1, 44, 16, 1020);
-    			add_location(tr, file$1, 39, 12, 867);
-    			add_location(thead, file$1, 38, 8, 847);
-    			add_location(tbody, file$1, 48, 8, 1100);
+    			add_location(td0, file$1, 40, 16, 892);
+    			add_location(td1, file$1, 41, 16, 925);
+    			add_location(td2, file$1, 42, 16, 959);
+    			add_location(td3, file$1, 43, 16, 989);
+    			add_location(td4, file$1, 44, 16, 1024);
+    			add_location(tr, file$1, 39, 12, 871);
+    			add_location(thead, file$1, 38, 8, 851);
+    			add_location(tbody, file$1, 48, 8, 1104);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, thead, anchor);
@@ -1501,7 +1507,7 @@ var app = (function () {
     		c: function create() {
     			main = element("main");
     			create_component(table.$$.fragment);
-    			add_location(main, file$1, 29, 0, 713);
+    			add_location(main, file$1, 29, 0, 717);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -1514,7 +1520,7 @@ var app = (function () {
     		p: function update(ctx, [dirty]) {
     			const table_changes = {};
 
-    			if (dirty & /*$$scope*/ 32) {
+    			if (dirty & /*$$scope, platforms*/ 33) {
     				table_changes.$$scope = { dirty, ctx };
     			}
 
@@ -1558,7 +1564,7 @@ var app = (function () {
     		if (res.ok) {
     			console.log("Ok.");
     			const json = await res.json();
-    			games = json;
+    			$$invalidate(0, platforms = json);
     			console.log(`We have received ${platforms.length} platforms.`);
     		} else {
     			console.log("Error!");
@@ -1615,16 +1621,16 @@ var app = (function () {
     	let t3;
     	let a;
     	let t5;
-    	let br;
-    	let t6;
     	let input0;
-    	let t7;
+    	let t6;
     	let input1;
-    	let t8;
+    	let t7;
     	let div0;
     	let tablegames;
-    	let t9;
+    	let t8;
     	let h11;
+    	let t9;
+    	let br;
     	let t10;
     	let input2;
     	let t11;
@@ -1649,16 +1655,16 @@ var app = (function () {
     			a = element("a");
     			a.textContent = "Antiguo index";
     			t5 = space();
-    			br = element("br");
-    			t6 = space();
     			input0 = element("input");
-    			t7 = space();
+    			t6 = space();
     			input1 = element("input");
-    			t8 = space();
+    			t7 = space();
     			div0 = element("div");
     			create_component(tablegames.$$.fragment);
-    			t9 = space();
+    			t8 = space();
     			h11 = element("h1");
+    			t9 = space();
+    			br = element("br");
     			t10 = space();
     			input2 = element("input");
     			t11 = space();
@@ -1669,38 +1675,38 @@ var app = (function () {
     			t13 = space();
     			h12 = element("h1");
     			attr_dev(h10, "class", "svelte-1tky8bj");
-    			add_location(h10, file, 8, 1, 147);
+    			add_location(h10, file, 8, 1, 149);
     			attr_dev(a, "href", "oldindex.html");
-    			add_location(a, file, 13, 1, 297);
-    			add_location(br, file, 14, 1, 340);
+    			add_location(a, file, 13, 1, 299);
     			attr_dev(input0, "type", "button");
     			input0.value = "Games";
     			attr_dev(input0, "onclick", "document.getElementById('oculto').style.visibility='visible'");
-    			add_location(input0, file, 15, 1, 346);
+    			add_location(input0, file, 15, 1, 344);
     			attr_dev(input1, "type", "button");
     			input1.value = "Ocultar";
     			attr_dev(input1, "onclick", "document.getElementById('oculto').style.visibility='hidden'");
-    			add_location(input1, file, 16, 1, 454);
+    			add_location(input1, file, 16, 1, 452);
     			attr_dev(div0, "id", "oculto");
     			set_style(div0, "visibility", "hidden");
-    			add_location(div0, file, 18, 1, 565);
+    			add_location(div0, file, 18, 1, 563);
     			attr_dev(h11, "class", "svelte-1tky8bj");
-    			add_location(h11, file, 23, 1, 638);
+    			add_location(h11, file, 23, 1, 636);
+    			add_location(br, file, 24, 1, 647);
     			attr_dev(input2, "type", "button");
     			input2.value = "Platforms";
-    			attr_dev(input2, "onclick", "document.getElementById('nuevoOculto').style.visibility='visible'");
-    			add_location(input2, file, 24, 1, 649);
+    			attr_dev(input2, "onclick", "document.getElementById('oculto').style.visibility='visible'");
+    			add_location(input2, file, 25, 1, 653);
     			attr_dev(input3, "type", "button");
     			input3.value = "Ocultar";
-    			attr_dev(input3, "onclick", "document.getElementById('nuevoOculto').style.visibility='hidden'");
-    			add_location(input3, file, 25, 1, 766);
-    			attr_dev(div1, "id", "nuevoOculto");
+    			attr_dev(input3, "onclick", "document.getElementById('oculto').style.visibility='hidden'");
+    			add_location(input3, file, 26, 1, 765);
+    			attr_dev(div1, "id", "oculto");
     			set_style(div1, "visibility", "hidden");
-    			add_location(div1, file, 27, 1, 882);
+    			add_location(div1, file, 28, 1, 876);
     			attr_dev(h12, "class", "svelte-1tky8bj");
-    			add_location(h12, file, 30, 4, 963);
+    			add_location(h12, file, 31, 4, 952);
     			attr_dev(main, "class", "svelte-1tky8bj");
-    			add_location(main, file, 7, 0, 139);
+    			add_location(main, file, 7, 0, 141);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -1714,16 +1720,16 @@ var app = (function () {
     			append_dev(main, t3);
     			append_dev(main, a);
     			append_dev(main, t5);
-    			append_dev(main, br);
-    			append_dev(main, t6);
     			append_dev(main, input0);
-    			append_dev(main, t7);
+    			append_dev(main, t6);
     			append_dev(main, input1);
-    			append_dev(main, t8);
+    			append_dev(main, t7);
     			append_dev(main, div0);
     			mount_component(tablegames, div0, null);
-    			append_dev(main, t9);
+    			append_dev(main, t8);
     			append_dev(main, h11);
+    			append_dev(main, t9);
+    			append_dev(main, br);
     			append_dev(main, t10);
     			append_dev(main, input2);
     			append_dev(main, t11);
