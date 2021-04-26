@@ -38,11 +38,11 @@
     <Table bordered>
         <thead>
             <tr>
-                <td>country</td>
-                <td>platform</td>
-                <td>year</td>
-                <td>sold-unit</td>
-                <td>generation</td>
+                <td>País</td>
+                <td>Plataforma</td>
+                <td>Año</td>
+                <td>Unidades vendidas</td>
+                <td>Generación</td>
                 
             </tr>
         </thead>
