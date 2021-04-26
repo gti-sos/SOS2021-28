@@ -1,6 +1,7 @@
 <script>
 	import TableGames from './TableGames.svelte';
 	import TablePlatforms from './TablePlatforms.svelte';
+    import TableAwards from './TableAwards.svelte';
 	export let name;
 
 </script>
@@ -113,6 +114,14 @@
 		<TablePlatforms/>
 	</div>
     <h1></h1>
+
+    <input type="button" value="Awards" onClick="document.getElementById('ocultoAwards').style.visibility='visible'">
+	<input type="button" value="Ocultar" onClick="document.getElementById('ocultoAwards').style.visibility='hidden'">
+	
+	<div id="ocultoAwards" style="visibility:hidden">
+		<TableAwards/>
+	</div>
+
 	
 </main>
 
