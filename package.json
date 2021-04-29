@@ -41,6 +41,7 @@
     "nedb": "^1.8.0",
     "newman": "^5.2.2",
     "npx": "^10.2.2",
+    "svelte-spa-router": "^3.1.0",
     "sveltestrap": "^3.14.1"
   }
 }

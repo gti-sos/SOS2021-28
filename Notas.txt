@@ -5,6 +5,8 @@
 //Instalar: npm install nedb
 //Instalar: npm install npx
 //Instalar: npm install newman
+//Instalar: npm install svelte-spa-router
+//Instalar: npm install sveltestrap
 
 ----F03:
 Este proyecto ha sido creado para generar el:
