@@ -7,6 +7,8 @@
 //Instalar: npm install newman
 //Instalar: npm install svelte-spa-router
 //Instalar: npm install sveltestrap
+//npm install
+//npm run dev
 
 ----F03:
 Este proyecto ha sido creado para generar el:

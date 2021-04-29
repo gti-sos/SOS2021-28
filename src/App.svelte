@@ -1,8 +1,9 @@
 <script>
-	import TableGames from './TableGames.svelte';
-	import TablePlatforms from './TablePlatforms.svelte';
-    import TableAwards from './TableAwards.svelte';
-	export let name;
+	import TableGames from './front/GamesAPI/TableGames.svelte';
+	import TablePlatforms from './front/PlatformsAPI/TablePlatforms.svelte';
+    import TableAwards from './front/AwardsAPI/TableAwards.svelte';
+	
+	
 
 </script>
 
@@ -105,7 +106,7 @@
 	</div>
 	
 	
-	<h1></h1>
+	
 	<br>
 	<input type="button" value="Platforms" onClick="document.getElementById('noculto').style.visibility='visible'">
 	<input type="button" value="Ocultar" onClick="document.getElementById('noculto').style.visibility='hidden'">
@@ -113,7 +114,6 @@
 	<div id="noculto" style="visibility:hidden">
 		<TablePlatforms/>
 	</div>
-    <h1></h1>
 
     <input type="button" value="Awards" onClick="document.getElementById('ocultoAwards').style.visibility='visible'">
 	<input type="button" value="Ocultar" onClick="document.getElementById('ocultoAwards').style.visibility='hidden'">
