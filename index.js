@@ -54,12 +54,12 @@ app.get("/info/awards", (req, res) =>{
 
 // API AWARDS
 
-var apiAwards = require("./awards");
+var apiAwards = require("./src/back/awards");
 apiAwards.register(app,dbAwards);
 
 //API PLATFORMS
 
-var apiPlatforms =  require("./platforms");
+var apiPlatforms =  require("./src/back/platforms");
 apiPlatforms.register(app);
 
 
@@ -68,7 +68,7 @@ apiPlatforms.register(app);
 
 // API GAMES
 
-var apiGames = require("./games");
+var apiGames = require("./src/back/games");
 apiGames.register(app);
 
 
