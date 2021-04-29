@@ -12,7 +12,7 @@ var port = process.env.PORT || 10000;
 
 // base de datos awards 
 var Datastore = require("nedb");
-var awardsFile = path.join(__dirname, "awards/awards.db");
+var awardsFile = path.join(__dirname, "./src/back/awards/awards.db");
 var dbAwards = new Datastore({filename : awardsFile, autoload : true});
 
 /*
