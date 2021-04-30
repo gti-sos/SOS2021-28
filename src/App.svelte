@@ -1,14 +1,19 @@
 <script>
     import Router from 'svelte-spa-router';
 	
+	
 	import TableGames from './front/GamesAPI/TableGames.svelte';
 	import TablePlatforms from './front/PlatformsAPI/TablePlatforms.svelte';
     import TableAwards from './front/AwardsAPI/TableAwards.svelte';
+   
+   
     import Home from './Pages/Home.svelte';
     import NotFound from './Pages/NotFound.svelte';
+    import Info from './Pages/Info.svelte';
 	
     const routes = {
         "/": Home,
+		"/info":Info,
         "*": NotFound
 
     }

@@ -78,7 +78,7 @@
           >
         </CardBody>
         <CardFooter
-          >developed by
+          >
           <a href="https://github.com/spartano27">José Manuel Martín de los Santos</a>
 		  </CardFooter>
       </Card>
@@ -100,12 +100,12 @@
           <a href="/#/platforms">
             <Button color="primary">Interfaz</Button>
           </a>
-          <a href="hhttps://documenter.getpostman.com/view/14944973/TzJsexb1">
+          <a href="https://documenter.getpostman.com/view/14944973/TzJsexb1">
             <Button color="info">Documentación de Postman</Button>
           </a>
         </CardBody>
         <CardFooter
-          >developed by
+          >
           <a href="https://github.com/MarinaBC">Marina Barragán Candel</a>
         </CardFooter>
       </Card>
@@ -131,7 +131,7 @@
           </a>
         </CardBody>
         <CardFooter
-          >developed by
+          >
           <a href="https://github.com/Fernasilver">Fernando Olmedo Delgado</a>
         </CardFooter>
       </Card>

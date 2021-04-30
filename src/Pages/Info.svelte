@@ -54,8 +54,7 @@
     <Row>
       <Col>
         <a href="http://github.com/gti-sos/SOS2021-28">
-          <Button color="primary">GitHub</Button></a
-        >
+          <Button color="primary">GitHub</Button></a>
       </Col>
     </Row>
   </Container>
@@ -71,21 +70,17 @@
           <CardSubtitle />
           
           <a href="https://sos2021-28.herokuapp.com/api/v1/awards">
-            <Button color="primary">API</Button></a
-          >
+            <Button color="primary">API</Button></a>
           <a href="/#/awards">
             <Button color="primary">Interfaz</Button>
           </a>
 		  
-          <a href="https://documenter.getpostman.com/view/14941757/TzJoE12q"
-            ><Button color="info">Documentacion de Postman</Button></a
-          >
+          <a href="https://documenter.getpostman.com/view/14941757/TzJoE12q">
+		  <Button color="info">Documentacion de Postman</Button></a>
         </CardBody>
-        <CardFooter
-          >developed by
-          <a href="https://github.com/spartano27">José Manuel Martín de los Santos</a
-          ></CardFooter
-        >
+        <CardFooter>
+          <a href="https://github.com/spartano27">José Manuel Martín de los Santos</a>
+		  </CardFooter>
       </Card>
     </Col>
 	
@@ -111,8 +106,7 @@
             <Button color="info">Documentacion de Postman</Button>
           </a>
         </CardBody>
-        <CardFooter
-          >developed by
+        <CardFooter>
           <a href="https://github.com/MarinaBC">Marina Barragán Candel</a>
         </CardFooter>
       </Card>
@@ -131,20 +125,15 @@
           <CardSubtitle />
           
           <a href="https://sos2021-28.herokuapp.com/api/v1/games">
-            ><Button color="primary">API</Button></a
-          >
-          <a href="/#/games"
-            ><Button color="primary">Interfaz</Button></a
-          >
-          <a href="https://documenter.getpostman.com/view/14967482/TzJu8cmV"
-            ><Button color="info">Documentacion de Postman</Button></a
-          >
+            <Button color="primary">API</Button></a>
+          <a href="/#/games">
+		  <Button color="primary">Interfaz</Button></a>
+          <a href="https://documenter.getpostman.com/view/14967482/TzJu8cmV">
+		  <Button color="info">Documentacion de Postman</Button></a>
         </CardBody>
-        <CardFooter
-          >developed by
-          <a href="https://github.com/Fernasilver">Fernando Olmedo Delgado</a
-          ></CardFooter
-        >
+        <CardFooter>
+          <a href="https://github.com/Fernasilver">Fernando Olmedo Delgado</a>
+		</CardFooter>
       </Card>
     </Col>
   </Container>
