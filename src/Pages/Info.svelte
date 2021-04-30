@@ -70,15 +70,15 @@
         <CardBody>
           <CardSubtitle />
           
-          <a href="https://sos2021-01.herokuapp.com/api/v1/awards">
+          <a href="https://sos2021-28.herokuapp.com/api/v1/awards">
             <Button color="primary">API</Button></a
           >
-          <a href="/#/dawards">
-            <Button color="primary">Frontend</Button>
+          <a href="/#/awards">
+            <Button color="primary">Interfaz</Button>
           </a>
 		  
           <a href="https://documenter.getpostman.com/view/14941757/TzJoE12q"
-            ><Button color="info">Postman Documentation</Button></a
+            ><Button color="info">Documentacion de Postman</Button></a
           >
         </CardBody>
         <CardFooter
@@ -101,14 +101,14 @@
         <CardBody>
           <CardSubtitle />
          
-          <a href="https://sos2021-01.herokuapp.com/api/v1/platforms">
+          <a href="https://sos2021-28.herokuapp.com/api/v1/platforms">
             <Button color="primary">API</Button>
           </a>
           <a href="/#/pltforms">
-            <Button color="primary">Frontend</Button>
+            <Button color="primary">Interfaz</Button>
           </a>
           <a href="https://documenter.getpostman.com/view/14944973/TzJsexb1">
-            <Button color="info">Postman Documentation</Button>
+            <Button color="info">Documentacion de Postman</Button>
           </a>
         </CardBody>
         <CardFooter
@@ -130,14 +130,14 @@
         <CardBody>
           <CardSubtitle />
           
-          <a href="/api/v1/games"
+          <a href="https://sos2021-28.herokuapp.com/api/v1/games">
             ><Button color="primary">API</Button></a
           >
           <a href="/#/games"
-            ><Button color="primary">Frontend</Button></a
+            ><Button color="primary">Interfaz</Button></a
           >
           <a href="https://documenter.getpostman.com/view/14967482/TzJu8cmV"
-            ><Button color="info">Postman Documentation</Button></a
+            ><Button color="info">Documentacion de Postman</Button></a
           >
         </CardBody>
         <CardFooter
