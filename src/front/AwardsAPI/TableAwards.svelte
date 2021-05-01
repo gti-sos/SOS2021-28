@@ -35,6 +35,22 @@
         }
     }
 
+    async function getLoadAwards(){
+        console.log("Fetching awards ...");
+        const res = await fetch(BASE +"/awards/LoadInitialData");
+        if(res.ok){
+            console.log("Ok.");
+            const json = await res.json();
+            awards = json;
+            console.log(`We have received ${awards.length} awards.`).then( (res) => {
+                               getAwards();
+                           })
+            
+        }else{
+            console.log("Error!");
+        }
+    }
+
     async function insertAwards(){
         console.log("Inserting award "+ JSON.stringify(newAward));
 
@@ -101,6 +117,7 @@
                 <td><input type=number bind:value={newAward["n-award"]}></td>
                 <td><Button on:click={insertAwards}>insertar</Button></td>
             </tr>
+            
             {#each awards as data}
                 <tr>
                     <td><a href="#/awards/{data.country}/{data.year}">{data.country}</a></td>
@@ -112,12 +129,40 @@
                     <td><Button on:click={deleteAwards(data.country,data.year)}>Borrar</Button></td>
                     
                 </tr>
+            
             {/each}
             
-            
+                   
             
                 
         </tbody>
     </Table>
+    <tr>
+        <td> <Button on:click={deleteAllAwards}>Borrar Todo</Button> </td>
+        <td> <Button on:click={getLoadAwards}>Cargar Valores Iniciales</Button> </td>
+    </tr> 
     
 </main>
+
+<style>
+    main {
+      text-align: center;
+      padding: 1em;
+      max-width: 240px;
+      margin: 0 auto;
+    }
+    h1 {
+      color: #ff3e00;
+      text-transform: uppercase;
+      font-size: 3em;
+      font-weight: 100;
+    }
+    b {
+      color: #00c1ff;
+    }
+    @media (min-width: 640px) {
+      main {
+        max-width: none;
+      }
+    }
+  </style>

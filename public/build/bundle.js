@@ -2932,12 +2932,12 @@ var app = (function () {
 
     function get_each_context(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[12] = list[i];
+    	child_ctx[13] = list[i];
     	return child_ctx;
     }
 
-    // (102:20) <Button on:click={insertAwards}>
-    function create_default_slot_2$3(ctx) {
+    // (118:20) <Button on:click={insertAwards}>
+    function create_default_slot_4$2(ctx) {
     	let t;
 
     	const block = {
@@ -2954,17 +2954,17 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_2$3.name,
+    		id: create_default_slot_4$2.name,
     		type: "slot",
-    		source: "(102:20) <Button on:click={insertAwards}>",
+    		source: "(118:20) <Button on:click={insertAwards}>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (112:24) <Button on:click={deleteAwards(data.country,data.year)}>
-    function create_default_slot_1$3(ctx) {
+    // (129:24) <Button on:click={deleteAwards(data.country,data.year)}>
+    function create_default_slot_3$2(ctx) {
     	let t;
 
     	const block = {
@@ -2981,42 +2981,42 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_1$3.name,
+    		id: create_default_slot_3$2.name,
     		type: "slot",
-    		source: "(112:24) <Button on:click={deleteAwards(data.country,data.year)}>",
+    		source: "(129:24) <Button on:click={deleteAwards(data.country,data.year)}>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (104:12) {#each awards as data}
+    // (121:12) {#each awards as data}
     function create_each_block(ctx) {
     	let tr;
     	let td0;
     	let a;
-    	let t0_value = /*data*/ ctx[12].country + "";
+    	let t0_value = /*data*/ ctx[13].country + "";
     	let t0;
     	let a_href_value;
     	let t1;
     	let td1;
-    	let t2_value = /*data*/ ctx[12].year + "";
+    	let t2_value = /*data*/ ctx[13].year + "";
     	let t2;
     	let t3;
     	let td2;
-    	let t4_value = /*data*/ ctx[12].gala + "";
+    	let t4_value = /*data*/ ctx[13].gala + "";
     	let t4;
     	let t5;
     	let td3;
-    	let t6_value = /*data*/ ctx[12].winner + "";
+    	let t6_value = /*data*/ ctx[13].winner + "";
     	let t6;
     	let t7;
     	let td4;
-    	let t8_value = /*data*/ ctx[12]["n-platform"] + "";
+    	let t8_value = /*data*/ ctx[13]["n-platform"] + "";
     	let t8;
     	let t9;
     	let td5;
-    	let t10_value = /*data*/ ctx[12]["n-award"] + "";
+    	let t10_value = /*data*/ ctx[13]["n-award"] + "";
     	let t10;
     	let t11;
     	let td6;
@@ -3026,14 +3026,14 @@ var app = (function () {
 
     	button = new Button({
     			props: {
-    				$$slots: { default: [create_default_slot_1$3] },
+    				$$slots: { default: [create_default_slot_3$2] },
     				$$scope: { ctx }
     			},
     			$$inline: true
     		});
 
     	button.$on("click", function () {
-    		if (is_function(/*deleteAwards*/ ctx[3](/*data*/ ctx[12].country, /*data*/ ctx[12].year))) /*deleteAwards*/ ctx[3](/*data*/ ctx[12].country, /*data*/ ctx[12].year).apply(this, arguments);
+    		if (is_function(/*deleteAwards*/ ctx[4](/*data*/ ctx[13].country, /*data*/ ctx[13].year))) /*deleteAwards*/ ctx[4](/*data*/ ctx[13].country, /*data*/ ctx[13].year).apply(this, arguments);
     	});
 
     	const block = {
@@ -3061,16 +3061,16 @@ var app = (function () {
     			td6 = element("td");
     			create_component(button.$$.fragment);
     			t12 = space();
-    			attr_dev(a, "href", a_href_value = "#/awards/" + /*data*/ ctx[12].country + "/" + /*data*/ ctx[12].year);
-    			add_location(a, file$j, 105, 24, 3365);
-    			add_location(td0, file$j, 105, 20, 3361);
-    			add_location(td1, file$j, 106, 20, 3456);
-    			add_location(td2, file$j, 107, 20, 3498);
-    			add_location(td3, file$j, 108, 20, 3540);
-    			add_location(td4, file$j, 109, 20, 3584);
-    			add_location(td5, file$j, 110, 20, 3635);
-    			add_location(td6, file$j, 111, 20, 3683);
-    			add_location(tr, file$j, 104, 16, 3335);
+    			attr_dev(a, "href", a_href_value = "#/awards/" + /*data*/ ctx[13].country + "/" + /*data*/ ctx[13].year);
+    			add_location(a, file$j, 122, 24, 3903);
+    			add_location(td0, file$j, 122, 20, 3899);
+    			add_location(td1, file$j, 123, 20, 3994);
+    			add_location(td2, file$j, 124, 20, 4036);
+    			add_location(td3, file$j, 125, 20, 4078);
+    			add_location(td4, file$j, 126, 20, 4122);
+    			add_location(td5, file$j, 127, 20, 4173);
+    			add_location(td6, file$j, 128, 20, 4221);
+    			add_location(tr, file$j, 121, 16, 3873);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, tr, anchor);
@@ -3100,20 +3100,20 @@ var app = (function () {
     		},
     		p: function update(new_ctx, dirty) {
     			ctx = new_ctx;
-    			if ((!current || dirty & /*awards*/ 1) && t0_value !== (t0_value = /*data*/ ctx[12].country + "")) set_data_dev(t0, t0_value);
+    			if ((!current || dirty & /*awards*/ 1) && t0_value !== (t0_value = /*data*/ ctx[13].country + "")) set_data_dev(t0, t0_value);
 
-    			if (!current || dirty & /*awards*/ 1 && a_href_value !== (a_href_value = "#/awards/" + /*data*/ ctx[12].country + "/" + /*data*/ ctx[12].year)) {
+    			if (!current || dirty & /*awards*/ 1 && a_href_value !== (a_href_value = "#/awards/" + /*data*/ ctx[13].country + "/" + /*data*/ ctx[13].year)) {
     				attr_dev(a, "href", a_href_value);
     			}
 
-    			if ((!current || dirty & /*awards*/ 1) && t2_value !== (t2_value = /*data*/ ctx[12].year + "")) set_data_dev(t2, t2_value);
-    			if ((!current || dirty & /*awards*/ 1) && t4_value !== (t4_value = /*data*/ ctx[12].gala + "")) set_data_dev(t4, t4_value);
-    			if ((!current || dirty & /*awards*/ 1) && t6_value !== (t6_value = /*data*/ ctx[12].winner + "")) set_data_dev(t6, t6_value);
-    			if ((!current || dirty & /*awards*/ 1) && t8_value !== (t8_value = /*data*/ ctx[12]["n-platform"] + "")) set_data_dev(t8, t8_value);
-    			if ((!current || dirty & /*awards*/ 1) && t10_value !== (t10_value = /*data*/ ctx[12]["n-award"] + "")) set_data_dev(t10, t10_value);
+    			if ((!current || dirty & /*awards*/ 1) && t2_value !== (t2_value = /*data*/ ctx[13].year + "")) set_data_dev(t2, t2_value);
+    			if ((!current || dirty & /*awards*/ 1) && t4_value !== (t4_value = /*data*/ ctx[13].gala + "")) set_data_dev(t4, t4_value);
+    			if ((!current || dirty & /*awards*/ 1) && t6_value !== (t6_value = /*data*/ ctx[13].winner + "")) set_data_dev(t6, t6_value);
+    			if ((!current || dirty & /*awards*/ 1) && t8_value !== (t8_value = /*data*/ ctx[13]["n-platform"] + "")) set_data_dev(t8, t8_value);
+    			if ((!current || dirty & /*awards*/ 1) && t10_value !== (t10_value = /*data*/ ctx[13]["n-award"] + "")) set_data_dev(t10, t10_value);
     			const button_changes = {};
 
-    			if (dirty & /*$$scope*/ 32768) {
+    			if (dirty & /*$$scope*/ 65536) {
     				button_changes.$$scope = { dirty, ctx };
     			}
 
@@ -3138,15 +3138,15 @@ var app = (function () {
     		block,
     		id: create_each_block.name,
     		type: "each",
-    		source: "(104:12) {#each awards as data}",
+    		source: "(121:12) {#each awards as data}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (83:4) <Table bordered>
-    function create_default_slot$4(ctx) {
+    // (99:4) <Table bordered>
+    function create_default_slot_2$3(ctx) {
     	let thead;
     	let tr0;
     	let td0;
@@ -3190,13 +3190,13 @@ var app = (function () {
 
     	button = new Button({
     			props: {
-    				$$slots: { default: [create_default_slot_2$3] },
+    				$$slots: { default: [create_default_slot_4$2] },
     				$$scope: { ctx }
     			},
     			$$inline: true
     		});
 
-    	button.$on("click", /*insertAwards*/ ctx[2]);
+    	button.$on("click", /*insertAwards*/ ctx[3]);
     	let each_value = /*awards*/ ctx[0];
     	validate_each_argument(each_value);
     	let each_blocks = [];
@@ -3259,33 +3259,33 @@ var app = (function () {
     				each_blocks[i].c();
     			}
 
-    			add_location(td0, file$j, 85, 16, 2472);
-    			add_location(td1, file$j, 86, 16, 2503);
-    			add_location(td2, file$j, 87, 16, 2533);
-    			add_location(td3, file$j, 88, 16, 2564);
-    			add_location(td4, file$j, 89, 16, 2598);
-    			add_location(td5, file$j, 90, 16, 2646);
-    			add_location(tr0, file$j, 84, 12, 2450);
-    			add_location(thead, file$j, 83, 8, 2429);
-    			add_location(input0, file$j, 95, 20, 2774);
-    			add_location(td6, file$j, 95, 16, 2770);
+    			add_location(td0, file$j, 101, 16, 2996);
+    			add_location(td1, file$j, 102, 16, 3027);
+    			add_location(td2, file$j, 103, 16, 3057);
+    			add_location(td3, file$j, 104, 16, 3088);
+    			add_location(td4, file$j, 105, 16, 3122);
+    			add_location(td5, file$j, 106, 16, 3170);
+    			add_location(tr0, file$j, 100, 12, 2974);
+    			add_location(thead, file$j, 99, 8, 2953);
+    			add_location(input0, file$j, 111, 20, 3298);
+    			add_location(td6, file$j, 111, 16, 3294);
     			attr_dev(input1, "type", "number");
-    			add_location(input1, file$j, 96, 20, 2838);
-    			add_location(td7, file$j, 96, 16, 2834);
+    			add_location(input1, file$j, 112, 20, 3362);
+    			add_location(td7, file$j, 112, 16, 3358);
     			attr_dev(input2, "type", "number");
-    			add_location(input2, file$j, 97, 20, 2911);
-    			add_location(td8, file$j, 97, 16, 2907);
-    			add_location(input3, file$j, 98, 20, 2984);
-    			add_location(td9, file$j, 98, 16, 2980);
+    			add_location(input2, file$j, 113, 20, 3435);
+    			add_location(td8, file$j, 113, 16, 3431);
+    			add_location(input3, file$j, 114, 20, 3508);
+    			add_location(td9, file$j, 114, 16, 3504);
     			attr_dev(input4, "type", "number");
-    			add_location(input4, file$j, 99, 20, 3047);
-    			add_location(td10, file$j, 99, 16, 3043);
+    			add_location(input4, file$j, 115, 20, 3571);
+    			add_location(td10, file$j, 115, 16, 3567);
     			attr_dev(input5, "type", "number");
-    			add_location(input5, file$j, 100, 20, 3129);
-    			add_location(td11, file$j, 100, 16, 3125);
-    			add_location(td12, file$j, 101, 16, 3204);
-    			add_location(tr1, file$j, 94, 12, 2748);
-    			add_location(tbody, file$j, 93, 8, 2727);
+    			add_location(input5, file$j, 116, 20, 3653);
+    			add_location(td11, file$j, 116, 16, 3649);
+    			add_location(td12, file$j, 117, 16, 3728);
+    			add_location(tr1, file$j, 110, 12, 3272);
+    			add_location(tbody, file$j, 109, 8, 3251);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, thead, anchor);
@@ -3340,12 +3340,12 @@ var app = (function () {
 
     			if (!mounted) {
     				dispose = [
-    					listen_dev(input0, "input", /*input0_input_handler*/ ctx[4]),
-    					listen_dev(input1, "input", /*input1_input_handler*/ ctx[5]),
-    					listen_dev(input2, "input", /*input2_input_handler*/ ctx[6]),
-    					listen_dev(input3, "input", /*input3_input_handler*/ ctx[7]),
-    					listen_dev(input4, "input", /*input4_input_handler*/ ctx[8]),
-    					listen_dev(input5, "input", /*input5_input_handler*/ ctx[9])
+    					listen_dev(input0, "input", /*input0_input_handler*/ ctx[6]),
+    					listen_dev(input1, "input", /*input1_input_handler*/ ctx[7]),
+    					listen_dev(input2, "input", /*input2_input_handler*/ ctx[8]),
+    					listen_dev(input3, "input", /*input3_input_handler*/ ctx[9]),
+    					listen_dev(input4, "input", /*input4_input_handler*/ ctx[10]),
+    					listen_dev(input5, "input", /*input5_input_handler*/ ctx[11])
     				];
 
     				mounted = true;
@@ -3378,13 +3378,13 @@ var app = (function () {
 
     			const button_changes = {};
 
-    			if (dirty & /*$$scope*/ 32768) {
+    			if (dirty & /*$$scope*/ 65536) {
     				button_changes.$$scope = { dirty, ctx };
     			}
 
     			button.$set(button_changes);
 
-    			if (dirty & /*deleteAwards, awards*/ 9) {
+    			if (dirty & /*deleteAwards, awards*/ 17) {
     				each_value = /*awards*/ ctx[0];
     				validate_each_argument(each_value);
     				let i;
@@ -3445,9 +3445,63 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
+    		id: create_default_slot_2$3.name,
+    		type: "slot",
+    		source: "(99:4) <Table bordered>",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (141:13) <Button on:click={deleteAllAwards}>
+    function create_default_slot_1$3(ctx) {
+    	let t;
+
+    	const block = {
+    		c: function create() {
+    			t = text("Borrar Todo");
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, t, anchor);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(t);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_default_slot_1$3.name,
+    		type: "slot",
+    		source: "(141:13) <Button on:click={deleteAllAwards}>",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (142:13) <Button on:click={getLoadAwards}>
+    function create_default_slot$4(ctx) {
+    	let t;
+
+    	const block = {
+    		c: function create() {
+    			t = text("Cargar Valores Iniciales");
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, t, anchor);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(t);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
     		id: create_default_slot$4.name,
     		type: "slot",
-    		source: "(83:4) <Table bordered>",
+    		source: "(142:13) <Button on:click={getLoadAwards}>",
     		ctx
     	});
 
@@ -3459,16 +3513,43 @@ var app = (function () {
     	let h1;
     	let t1;
     	let table;
+    	let t2;
+    	let tr;
+    	let td0;
+    	let button0;
+    	let t3;
+    	let td1;
+    	let button1;
     	let current;
 
     	table = new Table({
     			props: {
     				bordered: true,
+    				$$slots: { default: [create_default_slot_2$3] },
+    				$$scope: { ctx }
+    			},
+    			$$inline: true
+    		});
+
+    	button0 = new Button({
+    			props: {
+    				$$slots: { default: [create_default_slot_1$3] },
+    				$$scope: { ctx }
+    			},
+    			$$inline: true
+    		});
+
+    	button0.$on("click", /*deleteAllAwards*/ ctx[5]);
+
+    	button1 = new Button({
+    			props: {
     				$$slots: { default: [create_default_slot$4] },
     				$$scope: { ctx }
     			},
     			$$inline: true
     		});
+
+    	button1.$on("click", /*getLoadAwards*/ ctx[2]);
 
     	const block = {
     		c: function create() {
@@ -3477,8 +3558,20 @@ var app = (function () {
     			h1.textContent = "Tabla relacionada con los premios a videojuegos";
     			t1 = space();
     			create_component(table.$$.fragment);
-    			add_location(h1, file$j, 81, 4, 2341);
-    			add_location(main, file$j, 80, 0, 2329);
+    			t2 = space();
+    			tr = element("tr");
+    			td0 = element("td");
+    			create_component(button0.$$.fragment);
+    			t3 = space();
+    			td1 = element("td");
+    			create_component(button1.$$.fragment);
+    			attr_dev(h1, "class", "svelte-ltgkn4");
+    			add_location(h1, file$j, 97, 4, 2865);
+    			add_location(td0, file$j, 140, 8, 4500);
+    			add_location(td1, file$j, 141, 8, 4576);
+    			add_location(tr, file$j, 139, 4, 4486);
+    			attr_dev(main, "class", "svelte-ltgkn4");
+    			add_location(main, file$j, 96, 0, 2853);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -3488,29 +3581,56 @@ var app = (function () {
     			append_dev(main, h1);
     			append_dev(main, t1);
     			mount_component(table, main, null);
+    			append_dev(main, t2);
+    			append_dev(main, tr);
+    			append_dev(tr, td0);
+    			mount_component(button0, td0, null);
+    			append_dev(tr, t3);
+    			append_dev(tr, td1);
+    			mount_component(button1, td1, null);
     			current = true;
     		},
     		p: function update(ctx, [dirty]) {
     			const table_changes = {};
 
-    			if (dirty & /*$$scope, awards, newAward*/ 32771) {
+    			if (dirty & /*$$scope, awards, newAward*/ 65539) {
     				table_changes.$$scope = { dirty, ctx };
     			}
 
     			table.$set(table_changes);
+    			const button0_changes = {};
+
+    			if (dirty & /*$$scope*/ 65536) {
+    				button0_changes.$$scope = { dirty, ctx };
+    			}
+
+    			button0.$set(button0_changes);
+    			const button1_changes = {};
+
+    			if (dirty & /*$$scope*/ 65536) {
+    				button1_changes.$$scope = { dirty, ctx };
+    			}
+
+    			button1.$set(button1_changes);
     		},
     		i: function intro(local) {
     			if (current) return;
     			transition_in(table.$$.fragment, local);
+    			transition_in(button0.$$.fragment, local);
+    			transition_in(button1.$$.fragment, local);
     			current = true;
     		},
     		o: function outro(local) {
     			transition_out(table.$$.fragment, local);
+    			transition_out(button0.$$.fragment, local);
+    			transition_out(button1.$$.fragment, local);
     			current = false;
     		},
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(main);
     			destroy_component(table);
+    			destroy_component(button0);
+    			destroy_component(button1);
     		}
     	};
 
@@ -3550,6 +3670,23 @@ var app = (function () {
     			const json = await res.json();
     			$$invalidate(0, awards = json);
     			console.log(`We have received ${awards.length} awards.`);
+    		} else {
+    			console.log("Error!");
+    		}
+    	}
+
+    	async function getLoadAwards() {
+    		console.log("Fetching awards ...");
+    		const res = await fetch(BASE + "/awards/LoadInitialData");
+
+    		if (res.ok) {
+    			console.log("Ok.");
+    			const json = await res.json();
+    			$$invalidate(0, awards = json);
+
+    			console.log(`We have received ${awards.length} awards.`).then(res => {
+    				getAwards();
+    			});
     		} else {
     			console.log("Error!");
     		}
@@ -3628,6 +3765,7 @@ var app = (function () {
     		newAward,
     		BASE,
     		getAwards,
+    		getLoadAwards,
     		insertAwards,
     		deleteAwards,
     		deleteAllAwards
@@ -3645,8 +3783,10 @@ var app = (function () {
     	return [
     		awards,
     		newAward,
+    		getLoadAwards,
     		insertAwards,
     		deleteAwards,
+    		deleteAllAwards,
     		input0_input_handler,
     		input1_input_handler,
     		input2_input_handler,
@@ -3675,7 +3815,7 @@ var app = (function () {
     const { console: console_1 } = globals;
     const file$i = "src\\front\\AwardsAPI\\TableAwardsEdit.svelte";
 
-    // (94:21) <Button outline  color="primary" on:click={updateAward}>
+    // (95:21) <Button outline  color="primary" on:click={updateAward}>
     function create_default_slot_2$2(ctx) {
     	let t;
 
@@ -3695,7 +3835,7 @@ var app = (function () {
     		block,
     		id: create_default_slot_2$2.name,
     		type: "slot",
-    		source: "(94:21) <Button outline  color=\\\"primary\\\" on:click={updateAward}>",
+    		source: "(95:21) <Button outline  color=\\\"primary\\\" on:click={updateAward}>",
     		ctx
     	});
 
@@ -3809,20 +3949,20 @@ var app = (function () {
     			add_location(th5, file$i, 82, 16, 2212);
     			add_location(tr0, file$i, 76, 12, 2016);
     			add_location(thead, file$i, 75, 8, 1995);
-    			add_location(td0, file$i, 87, 16, 2336);
-    			add_location(td1, file$i, 88, 16, 2379);
+    			add_location(td0, file$i, 88, 16, 2354);
+    			add_location(td1, file$i, 89, 16, 2397);
     			attr_dev(input0, "type", "number");
-    			add_location(input0, file$i, 89, 20, 2425);
-    			add_location(td2, file$i, 89, 16, 2421);
-    			add_location(input1, file$i, 90, 20, 2498);
-    			add_location(td3, file$i, 90, 16, 2494);
+    			add_location(input0, file$i, 90, 20, 2443);
+    			add_location(td2, file$i, 90, 16, 2439);
+    			add_location(input1, file$i, 91, 20, 2516);
+    			add_location(td3, file$i, 91, 16, 2512);
     			attr_dev(input2, "type", "number");
-    			add_location(input2, file$i, 91, 20, 2561);
-    			add_location(td4, file$i, 91, 16, 2557);
+    			add_location(input2, file$i, 92, 20, 2579);
+    			add_location(td4, file$i, 92, 16, 2575);
     			attr_dev(input3, "type", "number");
-    			add_location(input3, file$i, 92, 20, 2640);
-    			add_location(td5, file$i, 92, 16, 2636);
-    			add_location(td6, file$i, 93, 16, 2712);
+    			add_location(input3, file$i, 93, 20, 2658);
+    			add_location(td5, file$i, 93, 16, 2654);
+    			add_location(td6, file$i, 94, 16, 2730);
     			add_location(tr1, file$i, 86, 12, 2314);
     			add_location(tbody, file$i, 85, 8, 2293);
     		},
@@ -3938,7 +4078,7 @@ var app = (function () {
     	return block;
     }
 
-    // (98:0) {#if errorMsg}
+    // (99:0) {#if errorMsg}
     function create_if_block$1(ctx) {
     	let p;
     	let t0;
@@ -3950,7 +4090,7 @@ var app = (function () {
     			t0 = text("ERROR: ");
     			t1 = text(/*errorMsg*/ ctx[6]);
     			set_style(p, "color", "red");
-    			add_location(p, file$i, 98, 4, 2867);
+    			add_location(p, file$i, 99, 4, 2885);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -3969,14 +4109,14 @@ var app = (function () {
     		block,
     		id: create_if_block$1.name,
     		type: "if",
-    		source: "(98:0) {#if errorMsg}",
+    		source: "(99:0) {#if errorMsg}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (101:0) <Button outline color="secondary" on:click="{pop}">
+    // (102:0) <Button outline color="secondary" on:click="{pop}">
     function create_default_slot$3(ctx) {
     	let t;
 
@@ -3996,7 +4136,7 @@ var app = (function () {
     		block,
     		id: create_default_slot$3.name,
     		type: "slot",
-    		source: "(101:0) <Button outline color=\\\"secondary\\\" on:click=\\\"{pop}\\\">",
+    		source: "(102:0) <Button outline color=\\\"secondary\\\" on:click=\\\"{pop}\\\">",
     		ctx
     	});
 
@@ -4055,6 +4195,7 @@ var app = (function () {
     			create_component(button.$$.fragment);
     			add_location(strong, file$i, 73, 24, 1925);
     			add_location(h3, file$i, 73, 4, 1905);
+    			attr_dev(main, "class", "svelte-1c5583h");
     			add_location(main, file$i, 72, 0, 1893);
     		},
     		l: function claim(nodes) {
