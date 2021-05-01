@@ -38,11 +38,11 @@
   let platformsStats = [];
 
   let newStat = {
-    country: "",
-    platform: "",
-    year: "",
-    "sold-unit": "",
-    "generation": "",
+    "country": "",
+    "platform": "",
+    "year": 0,
+    "sold-unit": 0,
+    "generation": 0
   };
 
   //Alertas
@@ -245,38 +245,23 @@
     });
   }
 
-  async function insertStat() {
-    console.log("Inserting stat: " + JSON.stringify(newStat));
+  
+  async function insertStat(){
+        console.log("Inserting platform "+ JSON.stringify(newStat));
 
-	
-    newStat.year = parseInt(newStat.year);
-	newStat["sold-unit"] = parseInt(newStat["sold-unit"]);
-    newStat.generation = parseInt(newStat.generation);
-    
-
-    const res = await fetch(BASE_CONTACT_API_PATH + "/platforms/", {
-      method: "POST",
-      body: JSON.stringify(newStat),
-      headers: {
-        "Content-Type": "application/json",
-      },
-    }).then(function (res) {
-      if (res.ok) {
-        console.log("OK");
-        getStats();
-        errorMsg = "";
-        okMsg = "Operación realizada correctamente";
-      } else {
-        if(res.status===404){
-          errorMsg = "No se encuentra el dato a borrar";
-        }else if(res.status ===500){
-          errorMsg = "No se han podido acceder a la base de datos";
-        }        
-        okMsg = "";
-        console.log("ERROR!" + errorMsg);
-      }
-    });
-  }
+        const res = await fetch(BASE_CONTACT_API_PATH +"/platforms",
+                            {
+                                method: "POST",
+                                body: JSON.stringify(newStat),
+                                headers:{
+                                    "Content-Type": "application/json"
+                                }
+                            }
+                           ).then( (res) => {
+                               getStats();
+                           })
+    }
+  
 
   onMount(getStats);
   getNumTotal();

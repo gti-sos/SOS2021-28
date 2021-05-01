@@ -9832,7 +9832,7 @@ var app = (function () {
     	return child_ctx;
     }
 
-    // (288:6) <NavLink href="/">
+    // (273:6) <NavLink href="/">
     function create_default_slot_29$2(ctx) {
     	let t;
 
@@ -9852,14 +9852,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_29$2.name,
     		type: "slot",
-    		source: "(288:6) <NavLink href=\\\"/\\\">",
+    		source: "(273:6) <NavLink href=\\\"/\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (287:4) <NavItem>
+    // (272:4) <NavItem>
     function create_default_slot_28$2(ctx) {
     	let navlink;
     	let current;
@@ -9908,14 +9908,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_28$2.name,
     		type: "slot",
-    		source: "(287:4) <NavItem>",
+    		source: "(272:4) <NavItem>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (291:6) <NavLink href="#" on:click={toggle1}>
+    // (276:6) <NavLink href="#" on:click={toggle1}>
     function create_default_slot_27$2(ctx) {
     	let t;
 
@@ -9935,14 +9935,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_27$2.name,
     		type: "slot",
-    		source: "(291:6) <NavLink href=\\\"#\\\" on:click={toggle1}>",
+    		source: "(276:6) <NavLink href=\\\"#\\\" on:click={toggle1}>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (293:8) <ModalHeader {toggle1}>
+    // (278:8) <ModalHeader {toggle1}>
     function create_default_slot_26$2(ctx) {
     	let t;
 
@@ -9962,14 +9962,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_26$2.name,
     		type: "slot",
-    		source: "(293:8) <ModalHeader {toggle1}>",
+    		source: "(278:8) <ModalHeader {toggle1}>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (294:8) <ModalBody>
+    // (279:8) <ModalBody>
     function create_default_slot_25$2(ctx) {
     	let t;
 
@@ -9989,14 +9989,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_25$2.name,
     		type: "slot",
-    		source: "(294:8) <ModalBody>",
+    		source: "(279:8) <ModalBody>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (298:10) <Button color="primary" on:click={toggle1P}>
+    // (283:10) <Button color="primary" on:click={toggle1P}>
     function create_default_slot_24$2(ctx) {
     	let t;
 
@@ -10016,14 +10016,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_24$2.name,
     		type: "slot",
-    		source: "(298:10) <Button color=\\\"primary\\\" on:click={toggle1P}>",
+    		source: "(283:10) <Button color=\\\"primary\\\" on:click={toggle1P}>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (299:10) <Button color="secondary" on:click={toggle1}>
+    // (284:10) <Button color="secondary" on:click={toggle1}>
     function create_default_slot_23$2(ctx) {
     	let t;
 
@@ -10043,14 +10043,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_23$2.name,
     		type: "slot",
-    		source: "(299:10) <Button color=\\\"secondary\\\" on:click={toggle1}>",
+    		source: "(284:10) <Button color=\\\"secondary\\\" on:click={toggle1}>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (297:8) <ModalFooter>
+    // (282:8) <ModalFooter>
     function create_default_slot_22$2(ctx) {
     	let button0;
     	let t;
@@ -10129,14 +10129,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_22$2.name,
     		type: "slot",
-    		source: "(297:8) <ModalFooter>",
+    		source: "(282:8) <ModalFooter>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (292:6) <Modal isOpen={open1} {toggle1}>
+    // (277:6) <Modal isOpen={open1} {toggle1}>
     function create_default_slot_21$2(ctx) {
     	let modalheader;
     	let t0;
@@ -10235,14 +10235,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_21$2.name,
     		type: "slot",
-    		source: "(292:6) <Modal isOpen={open1} {toggle1}>",
+    		source: "(277:6) <Modal isOpen={open1} {toggle1}>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (290:4) <NavItem>
+    // (275:4) <NavItem>
     function create_default_slot_20$2(ctx) {
     	let navlink;
     	let t;
@@ -10321,14 +10321,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_20$2.name,
     		type: "slot",
-    		source: "(290:4) <NavItem>",
+    		source: "(275:4) <NavItem>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (308:6) {:else}
+    // (293:6) {:else}
     function create_else_block(ctx) {
     	let navlink;
     	let t;
@@ -10407,14 +10407,14 @@ var app = (function () {
     		block,
     		id: create_else_block.name,
     		type: "else",
-    		source: "(308:6) {:else}",
+    		source: "(293:6) {:else}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (304:6) {#if platformsStats.length === 0}
+    // (289:6) {#if platformsStats.length === 0}
     function create_if_block_2(ctx) {
     	let navlink;
     	let current;
@@ -10466,14 +10466,14 @@ var app = (function () {
     		block,
     		id: create_if_block_2.name,
     		type: "if",
-    		source: "(304:6) {#if platformsStats.length === 0}",
+    		source: "(289:6) {#if platformsStats.length === 0}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (309:8) <NavLink href="#" on:click={toggle2}>
+    // (294:8) <NavLink href="#" on:click={toggle2}>
     function create_default_slot_19$2(ctx) {
     	let t;
 
@@ -10493,14 +10493,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_19$2.name,
     		type: "slot",
-    		source: "(309:8) <NavLink href=\\\"#\\\" on:click={toggle2}>",
+    		source: "(294:8) <NavLink href=\\\"#\\\" on:click={toggle2}>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (311:10) <ModalHeader {toggle2}>
+    // (296:10) <ModalHeader {toggle2}>
     function create_default_slot_18$2(ctx) {
     	let t;
 
@@ -10520,14 +10520,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_18$2.name,
     		type: "slot",
-    		source: "(311:10) <ModalHeader {toggle2}>",
+    		source: "(296:10) <ModalHeader {toggle2}>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (312:10) <ModalBody>
+    // (297:10) <ModalBody>
     function create_default_slot_17$2(ctx) {
     	let t;
 
@@ -10547,14 +10547,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_17$2.name,
     		type: "slot",
-    		source: "(312:10) <ModalBody>",
+    		source: "(297:10) <ModalBody>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (314:12) <Button color="danger" on:click={toggle2P}>
+    // (299:12) <Button color="danger" on:click={toggle2P}>
     function create_default_slot_16$2(ctx) {
     	let t;
 
@@ -10574,14 +10574,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_16$2.name,
     		type: "slot",
-    		source: "(314:12) <Button color=\\\"danger\\\" on:click={toggle2P}>",
+    		source: "(299:12) <Button color=\\\"danger\\\" on:click={toggle2P}>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (315:12) <Button color="secondary" on:click={toggle2}>
+    // (300:12) <Button color="secondary" on:click={toggle2}>
     function create_default_slot_15$2(ctx) {
     	let t;
 
@@ -10601,14 +10601,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_15$2.name,
     		type: "slot",
-    		source: "(315:12) <Button color=\\\"secondary\\\" on:click={toggle2}>",
+    		source: "(300:12) <Button color=\\\"secondary\\\" on:click={toggle2}>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (313:10) <ModalFooter>
+    // (298:10) <ModalFooter>
     function create_default_slot_14$2(ctx) {
     	let button0;
     	let t;
@@ -10687,14 +10687,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_14$2.name,
     		type: "slot",
-    		source: "(313:10) <ModalFooter>",
+    		source: "(298:10) <ModalFooter>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (310:8) <Modal isOpen={open2} {toggle2}>
+    // (295:8) <Modal isOpen={open2} {toggle2}>
     function create_default_slot_13$2(ctx) {
     	let modalheader;
     	let t0;
@@ -10793,14 +10793,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_13$2.name,
     		type: "slot",
-    		source: "(310:8) <Modal isOpen={open2} {toggle2}>",
+    		source: "(295:8) <Modal isOpen={open2} {toggle2}>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (305:8) <NavLink disabled href="#" on:click={toggle2}           >
+    // (290:8) <NavLink disabled href="#" on:click={toggle2}           >
     function create_default_slot_12$2(ctx) {
     	let t;
 
@@ -10820,14 +10820,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_12$2.name,
     		type: "slot",
-    		source: "(305:8) <NavLink disabled href=\\\"#\\\" on:click={toggle2}           >",
+    		source: "(290:8) <NavLink disabled href=\\\"#\\\" on:click={toggle2}           >",
     		ctx
     	});
 
     	return block;
     }
 
-    // (303:4) <NavItem>
+    // (288:4) <NavItem>
     function create_default_slot_11$2(ctx) {
     	let current_block_type_index;
     	let if_block;
@@ -10900,14 +10900,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_11$2.name,
     		type: "slot",
-    		source: "(303:4) <NavItem>",
+    		source: "(288:4) <NavItem>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (286:2) <Nav>
+    // (271:2) <Nav>
     function create_default_slot_10$2(ctx) {
     	let navitem0;
     	let t0;
@@ -11005,14 +11005,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_10$2.name,
     		type: "slot",
-    		source: "(286:2) <Nav>",
+    		source: "(271:2) <Nav>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (326:2) {#if errorMsg}
+    // (311:2) {#if errorMsg}
     function create_if_block_1$1(ctx) {
     	let p;
     	let t0;
@@ -11024,7 +11024,7 @@ var app = (function () {
     			t0 = text("ERROR: ");
     			t1 = text(/*errorMsg*/ ctx[4]);
     			set_style(p, "color", "red");
-    			add_location(p, file$5, 326, 4, 8572);
+    			add_location(p, file$5, 311, 4, 8258);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -11043,14 +11043,14 @@ var app = (function () {
     		block,
     		id: create_if_block_1$1.name,
     		type: "if",
-    		source: "(326:2) {#if errorMsg}",
+    		source: "(311:2) {#if errorMsg}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (329:2) {#if okMsg}
+    // (314:2) {#if okMsg}
     function create_if_block$1(ctx) {
     	let p;
     	let t;
@@ -11060,7 +11060,7 @@ var app = (function () {
     			p = element("p");
     			t = text(/*okMsg*/ ctx[5]);
     			set_style(p, "color", "green");
-    			add_location(p, file$5, 329, 4, 8642);
+    			add_location(p, file$5, 314, 4, 8328);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -11078,14 +11078,14 @@ var app = (function () {
     		block,
     		id: create_if_block$1.name,
     		type: "if",
-    		source: "(329:2) {#if okMsg}",
+    		source: "(314:2) {#if okMsg}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (383:12) <Button color="primary" on:click={insertStat}>
+    // (368:12) <Button color="primary" on:click={insertStat}>
     function create_default_slot_9$2(ctx) {
     	let t;
 
@@ -11105,14 +11105,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_9$2.name,
     		type: "slot",
-    		source: "(383:12) <Button color=\\\"primary\\\" on:click={insertStat}>",
+    		source: "(368:12) <Button color=\\\"primary\\\" on:click={insertStat}>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (385:10) <Button color="secondary" on:click={searchStat}>
+    // (370:10) <Button color="secondary" on:click={searchStat}>
     function create_default_slot_8$2(ctx) {
     	let t;
 
@@ -11132,14 +11132,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_8$2.name,
     		type: "slot",
-    		source: "(385:10) <Button color=\\\"secondary\\\" on:click={searchStat}>",
+    		source: "(370:10) <Button color=\\\"secondary\\\" on:click={searchStat}>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (398:14) <Button color="primary">
+    // (383:14) <Button color="primary">
     function create_default_slot_7$2(ctx) {
     	let t;
 
@@ -11159,14 +11159,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_7$2.name,
     		type: "slot",
-    		source: "(398:14) <Button color=\\\"primary\\\">",
+    		source: "(383:14) <Button color=\\\"primary\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (402:13) <Button               color="danger"               on:click={deleteStat(stat.country, stat.year)}>
+    // (387:13) <Button               color="danger"               on:click={deleteStat(stat.country, stat.year)}>
     function create_default_slot_6$2(ctx) {
     	let t;
 
@@ -11186,14 +11186,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_6$2.name,
     		type: "slot",
-    		source: "(402:13) <Button               color=\\\"danger\\\"               on:click={deleteStat(stat.country, stat.year)}>",
+    		source: "(387:13) <Button               color=\\\"danger\\\"               on:click={deleteStat(stat.country, stat.year)}>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (389:6) {#each platformsStats as stat}
+    // (374:6) {#each platformsStats as stat}
     function create_each_block_1(ctx) {
     	let tr;
     	let td0;
@@ -11273,16 +11273,16 @@ var app = (function () {
     			td6 = element("td");
     			create_component(button1.$$.fragment);
     			t11 = space();
-    			add_location(td0, file$5, 390, 10, 10056);
-    			add_location(td1, file$5, 391, 4, 10084);
-    			add_location(td2, file$5, 392, 10, 10119);
-    			add_location(td3, file$5, 393, 10, 10150);
-    			add_location(td4, file$5, 394, 4, 10183);
+    			add_location(td0, file$5, 375, 10, 9742);
+    			add_location(td1, file$5, 376, 4, 9770);
+    			add_location(td2, file$5, 377, 10, 9805);
+    			add_location(td3, file$5, 378, 10, 9836);
+    			add_location(td4, file$5, 379, 4, 9869);
     			attr_dev(a, "href", a_href_value = "#/platforms/" + /*stat*/ ctx[36].country + "/" + /*stat*/ ctx[36].year);
-    			add_location(a, file$5, 396, 12, 10237);
-    			add_location(td5, file$5, 395, 10, 10220);
-    			add_location(td6, file$5, 400, 10, 10384);
-    			add_location(tr, file$5, 389, 8, 10041);
+    			add_location(a, file$5, 381, 12, 9923);
+    			add_location(td5, file$5, 380, 10, 9906);
+    			add_location(td6, file$5, 385, 10, 10070);
+    			add_location(tr, file$5, 374, 8, 9727);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, tr, anchor);
@@ -11359,14 +11359,14 @@ var app = (function () {
     		block,
     		id: create_each_block_1.name,
     		type: "each",
-    		source: "(389:6) {#each platformsStats as stat}",
+    		source: "(374:6) {#each platformsStats as stat}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (334:2) <Table borderer>
+    // (319:2) <Table borderer>
     function create_default_slot_5$2(ctx) {
     	let thead;
     	let tr0;
@@ -11497,42 +11497,42 @@ var app = (function () {
     				each_blocks[i].c();
     			}
 
-    			add_location(th0, file$5, 336, 8, 8754);
-    			add_location(th1, file$5, 337, 8, 8778);
-    			add_location(th2, file$5, 338, 8, 8808);
-    			add_location(th3, file$5, 339, 8, 8831);
-    			add_location(th4, file$5, 340, 8, 8868);
-    			add_location(th5, file$5, 341, 8, 8898);
-    			add_location(th6, file$5, 342, 8, 8924);
-    			add_location(tr0, file$5, 335, 6, 8741);
-    			add_location(thead, file$5, 334, 4, 8727);
+    			add_location(th0, file$5, 321, 8, 8440);
+    			add_location(th1, file$5, 322, 8, 8464);
+    			add_location(th2, file$5, 323, 8, 8494);
+    			add_location(th3, file$5, 324, 8, 8517);
+    			add_location(th4, file$5, 325, 8, 8554);
+    			add_location(th5, file$5, 326, 8, 8584);
+    			add_location(th6, file$5, 327, 8, 8610);
+    			add_location(tr0, file$5, 320, 6, 8427);
+    			add_location(thead, file$5, 319, 4, 8413);
     			attr_dev(input0, "type", "text");
     			attr_dev(input0, "placeholder", "Norway");
-    			add_location(input0, file$5, 347, 12, 9002);
-    			add_location(td0, file$5, 347, 8, 8998);
+    			add_location(input0, file$5, 332, 12, 8688);
+    			add_location(td0, file$5, 332, 8, 8684);
     			attr_dev(input1, "type", "text");
     			attr_dev(input1, "placeholder", "PlayStation4");
-    			add_location(input1, file$5, 352, 6, 9131);
-    			add_location(td1, file$5, 352, 2, 9127);
+    			add_location(input1, file$5, 337, 6, 8817);
+    			add_location(td1, file$5, 337, 2, 8813);
     			attr_dev(input2, "type", "number");
     			attr_dev(input2, "placeholder", "2021");
     			attr_dev(input2, "min", "1900");
-    			add_location(input2, file$5, 358, 11, 9284);
-    			add_location(td2, file$5, 357, 8, 9269);
+    			add_location(input2, file$5, 343, 11, 8970);
+    			add_location(td2, file$5, 342, 8, 8955);
     			attr_dev(input3, "type", "number");
     			attr_dev(input3, "placeholder", "1500000");
     			attr_dev(input3, "min", "1");
-    			add_location(input3, file$5, 366, 11, 9459);
-    			add_location(td3, file$5, 365, 8, 9444);
+    			add_location(input3, file$5, 351, 11, 9145);
+    			add_location(td3, file$5, 350, 8, 9130);
     			attr_dev(input4, "type", "number");
     			attr_dev(input4, "placeholder", "8");
     			attr_dev(input4, "min", "1");
-    			add_location(input4, file$5, 374, 11, 9641);
-    			add_location(td4, file$5, 373, 8, 9626);
-    			add_location(td5, file$5, 382, 8, 9809);
-    			add_location(td6, file$5, 383, 8, 9890);
-    			add_location(tr1, file$5, 346, 6, 8985);
-    			add_location(tbody, file$5, 345, 4, 8971);
+    			add_location(input4, file$5, 359, 11, 9327);
+    			add_location(td4, file$5, 358, 8, 9312);
+    			add_location(td5, file$5, 367, 8, 9495);
+    			add_location(td6, file$5, 368, 8, 9576);
+    			add_location(tr1, file$5, 331, 6, 8671);
+    			add_location(tbody, file$5, 330, 4, 8657);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, thead, anchor);
@@ -11700,14 +11700,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_5$2.name,
     		type: "slot",
-    		source: "(334:2) <Table borderer>",
+    		source: "(319:2) <Table borderer>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (414:4) <PaginationItem class={current_page === 1 ? "disabled" : ""}>
+    // (399:4) <PaginationItem class={current_page === 1 ? "disabled" : ""}>
     function create_default_slot_4$3(ctx) {
     	let paginationlink;
     	let current;
@@ -11746,14 +11746,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_4$3.name,
     		type: "slot",
-    		source: "(414:4) <PaginationItem class={current_page === 1 ? \\\"disabled\\\" : \\\"\\\"}>",
+    		source: "(399:4) <PaginationItem class={current_page === 1 ? \\\"disabled\\\" : \\\"\\\"}>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (423:8) <PaginationLink           previous           href="#/platforms"           on:click={() => changePage(page, (page - 1) * 10)}           >
+    // (408:8) <PaginationLink           previous           href="#/platforms"           on:click={() => changePage(page, (page - 1) * 10)}           >
     function create_default_slot_3$3(ctx) {
     	let t_value = /*page*/ ctx[33] + "";
     	let t;
@@ -11777,14 +11777,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_3$3.name,
     		type: "slot",
-    		source: "(423:8) <PaginationLink           previous           href=\\\"#/platforms\\\"           on:click={() => changePage(page, (page - 1) * 10)}           >",
+    		source: "(408:8) <PaginationLink           previous           href=\\\"#/platforms\\\"           on:click={() => changePage(page, (page - 1) * 10)}           >",
     		ctx
     	});
 
     	return block;
     }
 
-    // (422:6) <PaginationItem class={current_page === page ? "active" : ""}>
+    // (407:6) <PaginationItem class={current_page === page ? "active" : ""}>
     function create_default_slot_2$3(ctx) {
     	let paginationlink;
     	let current;
@@ -11841,14 +11841,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_2$3.name,
     		type: "slot",
-    		source: "(422:6) <PaginationItem class={current_page === page ? \\\"active\\\" : \\\"\\\"}>",
+    		source: "(407:6) <PaginationItem class={current_page === page ? \\\"active\\\" : \\\"\\\"}>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (421:4) {#each range(last_page, 1) as page}
+    // (406:4) {#each range(last_page, 1) as page}
     function create_each_block(ctx) {
     	let paginationitem;
     	let current;
@@ -11903,14 +11903,14 @@ var app = (function () {
     		block,
     		id: create_each_block.name,
     		type: "each",
-    		source: "(421:4) {#each range(last_page, 1) as page}",
+    		source: "(406:4) {#each range(last_page, 1) as page}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (431:4) <PaginationItem class={current_page === last_page ? "disabled" : ""}>
+    // (416:4) <PaginationItem class={current_page === last_page ? "disabled" : ""}>
     function create_default_slot_1$3(ctx) {
     	let paginationlink;
     	let current;
@@ -11949,14 +11949,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_1$3.name,
     		type: "slot",
-    		source: "(431:4) <PaginationItem class={current_page === last_page ? \\\"disabled\\\" : \\\"\\\"}>",
+    		source: "(416:4) <PaginationItem class={current_page === last_page ? \\\"disabled\\\" : \\\"\\\"}>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (413:2) <Pagination ariaLabel="Web pagination">
+    // (398:2) <Pagination ariaLabel="Web pagination">
     function create_default_slot$4(ctx) {
     	let paginationitem0;
     	let t0;
@@ -12105,7 +12105,7 @@ var app = (function () {
     		block,
     		id: create_default_slot$4.name,
     		type: "slot",
-    		source: "(413:2) <Pagination ariaLabel=\\\"Web pagination\\\">",
+    		source: "(398:2) <Pagination ariaLabel=\\\"Web pagination\\\">",
     		ctx
     	});
 
@@ -12178,11 +12178,11 @@ var app = (function () {
     			t7 = space();
     			create_component(pagination.$$.fragment);
     			attr_dev(h2, "class", "svelte-1uggtpz");
-    			add_location(h2, file$5, 320, 2, 8512);
-    			add_location(p0, file$5, 322, 2, 8536);
-    			add_location(p1, file$5, 324, 2, 8545);
+    			add_location(h2, file$5, 305, 2, 8198);
+    			add_location(p0, file$5, 307, 2, 8222);
+    			add_location(p1, file$5, 309, 2, 8231);
     			attr_dev(main, "class", "svelte-1uggtpz");
-    			add_location(main, file$5, 284, 0, 7202);
+    			add_location(main, file$5, 269, 0, 6888);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -12321,11 +12321,11 @@ var app = (function () {
     	let platformsStats = [];
 
     	let newStat = {
-    		country: "",
-    		platform: "",
-    		year: "",
-    		"sold-unit": "",
-    		"generation": ""
+    		"country": "",
+    		"platform": "",
+    		"year": 0,
+    		"sold-unit": 0,
+    		"generation": 0
     	};
 
     	//Alertas
@@ -12523,31 +12523,14 @@ var app = (function () {
     	}
 
     	async function insertStat() {
-    		console.log("Inserting stat: " + JSON.stringify(newStat));
-    		$$invalidate(3, newStat.year = parseInt(newStat.year), newStat);
-    		$$invalidate(3, newStat["sold-unit"] = parseInt(newStat["sold-unit"]), newStat);
-    		$$invalidate(3, newStat.generation = parseInt(newStat.generation), newStat);
+    		console.log("Inserting platform " + JSON.stringify(newStat));
 
-    		await fetch(BASE_CONTACT_API_PATH$1 + "/platforms/", {
+    		await fetch(BASE_CONTACT_API_PATH$1 + "/platforms", {
     			method: "POST",
     			body: JSON.stringify(newStat),
     			headers: { "Content-Type": "application/json" }
-    		}).then(function (res) {
-    			if (res.ok) {
-    				console.log("OK");
-    				getStats();
-    				$$invalidate(4, errorMsg = "");
-    				$$invalidate(5, okMsg = "Operación realizada correctamente");
-    			} else {
-    				if (res.status === 404) {
-    					$$invalidate(4, errorMsg = "No se encuentra el dato a borrar");
-    				} else if (res.status === 500) {
-    					$$invalidate(4, errorMsg = "No se han podido acceder a la base de datos");
-    				}
-
-    				$$invalidate(5, okMsg = "");
-    				console.log("ERROR!" + errorMsg);
-    			}
+    		}).then(res => {
+    			getStats();
     		});
     	}
 
