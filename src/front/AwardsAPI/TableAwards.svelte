@@ -62,7 +62,20 @@
                                getAwards();
                            })
     }
+
+    async function deleteAllAwards(){
+        console.log("Deleting contact with name ");
+
+        const res = await fetch(BASE +"/awards/",
+                            {
+                                method: "DELETE"
+                            }
+                           ).then( (res) => {
+                               getAwards();
+                           })
+    }
     onMount(getAwards);
+
 </script>
 
 <main>
@@ -76,17 +89,16 @@
                 <td>ganador</td>
                 <td>numero de plataformas</td>
                 <td>numero de premios ganados</td>
-                
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td><input bind:value="{newAward.country}"></td>
-                <td><input bind:value="{newAward.year}"></td>
-                <td><input bind:value="{newAward.gala}"></td>
-                <td><input bind:value="{newAward.winner}"></td>
-                <td><input bind:value="{newAward["n-platform"]}"></td>
-                <td><input bind:value="{newAward["n-award"]}"></td>
+                <td><input bind:value={newAward.country}></td>
+                <td><input type=number bind:value={newAward.year}></td>
+                <td><input type=number bind:value={newAward.gala}></td>
+                <td><input bind:value={newAward.winner}></td>
+                <td><input type=number bind:value={newAward["n-platform"]}></td>
+                <td><input type=number bind:value={newAward["n-award"]}></td>
                 <td><Button on:click={insertAwards}>insertar</Button></td>
             </tr>
             {#each awards as data}
@@ -98,8 +110,13 @@
                     <td>{data["n-platform"]}</td>
                     <td>{data["n-award"]}</td>
                     <td><Button on:click={deleteAwards(data.country,data.year)}>Borrar</Button></td>
+                    
                 </tr>
             {/each}
+            
+            
+            
+                
         </tbody>
     </Table>
     

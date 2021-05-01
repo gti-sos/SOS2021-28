@@ -21,7 +21,6 @@
     let errorMsg = "";
 
     onMount(getAward);
-
     async function getAward() {
 
         console.log("Fetching award...");
@@ -53,7 +52,7 @@ const res = await fetch("/api/v1/awards/" + params.country + "/" + params.year, 
     method: "PUT",
     body: JSON.stringify({
         "country": params.country,
-        "year": params.year,
+        "year": parseInt(params.year),
         "gala": updatedGala,
         "winner": updatedWinner,
         "n-platform": updatedNPlatforms,
@@ -87,11 +86,11 @@ const res = await fetch("/api/v1/awards/" + params.country + "/" + params.year, 
         <tbody>
             <tr>
                 <td>{params.country}</td>
-                <td>{params.year}</td>
-                <td><input bind:value="{updatedGala}"></td>
+                <td>  {updatedYear}</td>
+                <td><input type=number bind:value="{updatedGala}"></td>
                 <td><input bind:value="{updatedWinner}"></td>
-                <td><input bind:value="{updatedNPlatforms}"></td>
-                <td><input bind:value="{updatedNAwards}"></td>
+                <td><input type=number bind:value="{updatedNPlatforms}"></td>
+                <td><input type=number bind:value="{updatedNAwards}"></td>
                 <td> <Button outline  color="primary" on:click={updateAward}>Actualizar</Button> </td>
             </tr>
     </tbody>

@@ -1,47 +1,145 @@
-{"country":"españa","year":"2015","gala":"2015","winner":"aaa","n-platform":"02","n-award":"02","_id":"ZDUiaQnKdWoWlY92"}
-{"country":"","year":0,"gala":0,"winner":"","n-platform":0,"n-award":0,"_id":"jpl1WYwBFRxdWs2s"}
-{"country":"españa","year":"2015","gala":0,"winner":"XXXX","n-platform":0,"n-award":0,"_id":"ENAhir0Bd6cuBS7U"}
-{"country":"españa","year":"2015","gala":0,"winner":"XXXX","n-platform":0,"n-award":0,"_id":"PbNwJ9IIzme11S33"}
-{"country":"españa","year":"2015","gala":"055","winner":"XXXX","n-platform":0,"n-award":0,"_id":"twNQxXNJTcarG1BQ"}
-{"country":"españa","year":"2015","gala":"055","winner":"XXXX","n-platform":0,"n-award":0,"_id":"JvftbLBvnnvBSRgm"}
-{"$$deleted":true,"_id":"ENAhir0Bd6cuBS7U"}
-{"$$deleted":true,"_id":"JvftbLBvnnvBSRgm"}
-{"$$deleted":true,"_id":"PbNwJ9IIzme11S33"}
-{"$$deleted":true,"_id":"ZDUiaQnKdWoWlY92"}
-{"$$deleted":true,"_id":"jpl1WYwBFRxdWs2s"}
-{"$$deleted":true,"_id":"twNQxXNJTcarG1BQ"}
-{"country":"Francia","year":2014,"gala":2014,"winner":"Valiant Hearts: The Great War","n-platform":7,"n-award":2,"_id":"Coe9UGvOXJSTy7px"}
-{"country":"Canadá","year":2014,"gala":2014,"winner":"Dragon Age: Inquisition","n-platform":5,"n-award":2,"_id":"4KXeol93UMg3rtHt"}
-{"country":"USA","year":2014,"gala":2014,"winner":"Shovel Knight","n-platform":3,"n-award":1,"_id":"zTjEzKhyiVCvpLNP"}
-{"country":"USA","year":2014,"gala":2014,"winner":"Hearthstone: Heroes of Warcraft","n-platform":3,"n-award":1,"_id":"pSq1noBPzkbtSig0"}
-{"country":"Canadá","year":2014,"gala":2014,"winner":"Child of Light","n-platform":7,"n-award":1,"_id":"8cARjMjfoQJTXpGm"}
-{"country":"Reino Unido","year":2014,"gala":2014,"winner":"Alien: Isolation","n-platform":6,"n-award":1,"_id":"BKn9AsiRujQ3wjta"}
-{"country":"USA","year":2014,"gala":2014,"winner":"Destiny","n-platform":4,"n-award":2,"_id":"szTgtJPLH66wsBOp"}
-{"country":"USA","year":2013,"gala":2014,"winner":"Grand Theft Auto V","n-platform":4,"n-award":1,"_id":"GAdRphgsAl0h3NMH"}
-{"$$deleted":true,"_id":"4KXeol93UMg3rtHt"}
-{"$$deleted":true,"_id":"8cARjMjfoQJTXpGm"}
-{"country":"Canadá","year":"2014","gala":"2015","winner":"XXXX","n-platform":0,"n-award":0,"_id":"5l7HpM8f6D3ZbAKv"}
-{"$$deleted":true,"_id":"BKn9AsiRujQ3wjta"}
-{"country":"Reino Unido","year":"2014","gala":0,"winner":"gary","n-platform":0,"n-award":0,"_id":"CCF39NaVufN5VFKr"}
-{"$$deleted":true,"_id":"Coe9UGvOXJSTy7px"}
-{"country":"Francia","year":"2014","gala":2014,"winner":"Valiant Hearts: The Great War","n-platform":7,"n-award":2,"_id":"QdYVRe9192NCulP6"}
-{"$$deleted":true,"_id":"GAdRphgsAl0h3NMH"}
-{"$$deleted":true,"_id":"pSq1noBPzkbtSig0"}
-{"$$deleted":true,"_id":"szTgtJPLH66wsBOp"}
-{"$$deleted":true,"_id":"zTjEzKhyiVCvpLNP"}
-{"$$deleted":true,"_id":"5l7HpM8f6D3ZbAKv"}
-{"$$deleted":true,"_id":"CCF39NaVufN5VFKr"}
-{"$$deleted":true,"_id":"QdYVRe9192NCulP6"}
-{"country":"Francia","year":2014,"gala":2014,"winner":"Valiant Hearts: The Great War","n-platform":7,"n-award":2,"_id":"nHR9gHPkik3btEdK"}
-{"country":"Canadá","year":2014,"gala":2014,"winner":"Dragon Age: Inquisition","n-platform":5,"n-award":2,"_id":"WgWkggoacurAGmQo"}
-{"country":"USA","year":2014,"gala":2014,"winner":"Shovel Knight","n-platform":3,"n-award":1,"_id":"6hBOYDLGdiOOOCPU"}
-{"country":"USA","year":2014,"gala":2014,"winner":"Hearthstone: Heroes of Warcraft","n-platform":3,"n-award":1,"_id":"SbFAP8NV7W4hV7Q2"}
-{"country":"Canadá","year":2014,"gala":2014,"winner":"Child of Light","n-platform":7,"n-award":1,"_id":"8sevyYAbSm69wJHH"}
-{"country":"Reino Unido","year":2014,"gala":2014,"winner":"Alien: Isolation","n-platform":6,"n-award":1,"_id":"2r3CJ2vsNLEaQt6S"}
-{"country":"USA","year":2014,"gala":2014,"winner":"Destiny","n-platform":4,"n-award":2,"_id":"iSuslUIKfhHE4xSD"}
-{"country":"USA","year":2013,"gala":2014,"winner":"Grand Theft Auto V","n-platform":4,"n-award":1,"_id":"g2l5MdEKD4EO4gn7"}
-{"country":"España","year":"2015","gala":"2021","winner":"yo","n-platform":"2","n-award":"2","_id":"u3oGkKGfYlGRzDBm"}
-{"$$deleted":true,"_id":"6hBOYDLGdiOOOCPU"}
-{"$$deleted":true,"_id":"SbFAP8NV7W4hV7Q2"}
-{"$$deleted":true,"_id":"iSuslUIKfhHE4xSD"}
-{"country":"USA","year":"2014","gala":2014,"winner":"Shovel Knight323","n-platform":3,"n-award":1,"_id":"rPH8Q0na4dsQb6qo"}
+{"country":"USA","year":2014,"gala":2014,"winner":"Destiny","n-platform":4,"n-award":2,"_id":"6JPqZi2k1Krvt4yv"}
+{"country":"","year":0,"gala":0,"winner":"","n-platform":0,"n-award":0,"_id":"7EEaTbR2RaQAbLSA"}
+{"country":"USA","year":2013,"gala":2014,"winner":"Grand Theft Auto V","n-platform":4,"n-award":1,"_id":"99XziBQnhxt49Cjq"}
+{"country":"Reino Unido","year":2014,"gala":2014,"winner":"Alien: Isolation","n-platform":6,"n-award":1,"_id":"F2ODXkitz4Ut4Q6l"}
+{"country":"Canadá","year":2014,"gala":2014,"winner":"Dragon Age: Inquisition","n-platform":5,"n-award":2,"_id":"K1s3HUPCZHEZ7OMi"}
+{"country":"Francia","year":2014,"gala":2014,"winner":"Valiant Hearts: The Great War","n-platform":7,"n-award":2,"_id":"TZE7I5mEqD36jgaV"}
+{"country":"Canadá","year":2014,"gala":2014,"winner":"Child of Light","n-platform":7,"n-award":1,"_id":"frxl3CESvR7zlerB"}
+{"country":"USA","year":2014,"gala":2014,"winner":"Hearthstone: Heroes of Warcraft","n-platform":3,"n-award":1,"_id":"oMQeQwZG5eV73Mj3"}
+{"country":"USA","year":2014,"gala":2014,"winner":"Shovel Knight","n-platform":3,"n-award":1,"_id":"sbxr5QutX2RvLnoB"}
+{"$$deleted":true,"_id":"6JPqZi2k1Krvt4yv"}
+{"$$deleted":true,"_id":"7EEaTbR2RaQAbLSA"}
+{"$$deleted":true,"_id":"99XziBQnhxt49Cjq"}
+{"$$deleted":true,"_id":"F2ODXkitz4Ut4Q6l"}
+{"$$deleted":true,"_id":"K1s3HUPCZHEZ7OMi"}
+{"$$deleted":true,"_id":"TZE7I5mEqD36jgaV"}
+{"$$deleted":true,"_id":"frxl3CESvR7zlerB"}
+{"$$deleted":true,"_id":"oMQeQwZG5eV73Mj3"}
+{"$$deleted":true,"_id":"sbxr5QutX2RvLnoB"}
+{"country":"ww","year":0,"gala":0,"winner":"","n-platform":0,"n-award":0,"_id":"xy5PlGGwF49YOF4m"}
+{"country":"Francia","year":2014,"gala":2014,"winner":"Valiant Hearts: The Great War","n-platform":7,"n-award":2,"_id":"5r98NhlEA8EBwVIo"}
+{"country":"Canadá","year":2014,"gala":2014,"winner":"Dragon Age: Inquisition","n-platform":5,"n-award":2,"_id":"9k4L92M97smQMHal"}
+{"country":"USA","year":2014,"gala":2014,"winner":"Shovel Knight","n-platform":3,"n-award":1,"_id":"0DktsZOcqNgr1Z8V"}
+{"country":"USA","year":2014,"gala":2014,"winner":"Hearthstone: Heroes of Warcraft","n-platform":3,"n-award":1,"_id":"vbXwtGcdXEaVX6e4"}
+{"country":"Canadá","year":2014,"gala":2014,"winner":"Child of Light","n-platform":7,"n-award":1,"_id":"idmVzM2rjOsDshTP"}
+{"country":"Reino Unido","year":2014,"gala":2014,"winner":"Alien: Isolation","n-platform":6,"n-award":1,"_id":"8TMEF6OUsja5GTpU"}
+{"country":"USA","year":2014,"gala":2014,"winner":"Destiny","n-platform":4,"n-award":2,"_id":"DZrsnablNlNSogt2"}
+{"country":"USA","year":2013,"gala":2014,"winner":"Grand Theft Auto V","n-platform":4,"n-award":1,"_id":"SeOOKkmMb745gwKu"}
+{"$$deleted":true,"_id":"0DktsZOcqNgr1Z8V"}
+{"$$deleted":true,"_id":"5r98NhlEA8EBwVIo"}
+{"$$deleted":true,"_id":"8TMEF6OUsja5GTpU"}
+{"$$deleted":true,"_id":"9k4L92M97smQMHal"}
+{"$$deleted":true,"_id":"DZrsnablNlNSogt2"}
+{"$$deleted":true,"_id":"SeOOKkmMb745gwKu"}
+{"$$deleted":true,"_id":"idmVzM2rjOsDshTP"}
+{"$$deleted":true,"_id":"vbXwtGcdXEaVX6e4"}
+{"$$deleted":true,"_id":"xy5PlGGwF49YOF4m"}
+{"country":"Francia","year":2014,"gala":2014,"winner":"Valiant Hearts: The Great War","n-platform":7,"n-award":2,"_id":"4jV5qV9GXewUASdP"}
+{"country":"Canadá","year":2014,"gala":2014,"winner":"Dragon Age: Inquisition","n-platform":5,"n-award":2,"_id":"zmbQsrpA7evhulxu"}
+{"country":"USA","year":2014,"gala":2014,"winner":"Shovel Knight","n-platform":3,"n-award":1,"_id":"rUkijOF0DwxCf6gU"}
+{"country":"USA","year":2014,"gala":2014,"winner":"Hearthstone: Heroes of Warcraft","n-platform":3,"n-award":1,"_id":"LfH57Bi0riALCcIo"}
+{"country":"Canadá","year":2014,"gala":2014,"winner":"Child of Light","n-platform":7,"n-award":1,"_id":"348gc6H7Nf07Pb3T"}
+{"country":"Reino Unido","year":2014,"gala":2014,"winner":"Alien: Isolation","n-platform":6,"n-award":1,"_id":"rkpeLlqOaMwHlAhe"}
+{"country":"USA","year":2014,"gala":2014,"winner":"Destiny","n-platform":4,"n-award":2,"_id":"AtnZrYC05Pdams5v"}
+{"country":"USA","year":2013,"gala":2014,"winner":"Grand Theft Auto V","n-platform":4,"n-award":1,"_id":"wVPWN7k13aGVuWyZ"}
+{"$$deleted":true,"_id":"348gc6H7Nf07Pb3T"}
+{"$$deleted":true,"_id":"4jV5qV9GXewUASdP"}
+{"$$deleted":true,"_id":"AtnZrYC05Pdams5v"}
+{"$$deleted":true,"_id":"LfH57Bi0riALCcIo"}
+{"$$deleted":true,"_id":"rUkijOF0DwxCf6gU"}
+{"$$deleted":true,"_id":"rkpeLlqOaMwHlAhe"}
+{"$$deleted":true,"_id":"wVPWN7k13aGVuWyZ"}
+{"$$deleted":true,"_id":"zmbQsrpA7evhulxu"}
+{"country":"Francia","year":2014,"gala":2014,"winner":"Valiant Hearts: The Great War","n-platform":7,"n-award":2,"_id":"KQkwOpwaO0KpuHk6"}
+{"country":"Canadá","year":2014,"gala":2014,"winner":"Dragon Age: Inquisition","n-platform":5,"n-award":2,"_id":"jmx5bJLZV5Nscmci"}
+{"country":"USA","year":2014,"gala":2014,"winner":"Shovel Knight","n-platform":3,"n-award":1,"_id":"KIeY7SiQvBJ4ieJI"}
+{"country":"USA","year":2014,"gala":2014,"winner":"Hearthstone: Heroes of Warcraft","n-platform":3,"n-award":1,"_id":"aHc8ND4Jq1s1deyg"}
+{"country":"Canadá","year":2014,"gala":2014,"winner":"Child of Light","n-platform":7,"n-award":1,"_id":"f81HLaZe3Drugzux"}
+{"country":"Reino Unido","year":2014,"gala":2014,"winner":"Alien: Isolation","n-platform":6,"n-award":1,"_id":"pbJzXBOeonaUYYy1"}
+{"country":"USA","year":2014,"gala":2014,"winner":"Destiny","n-platform":4,"n-award":2,"_id":"KOoZcUB1ao4vvgrl"}
+{"country":"USA","year":2013,"gala":2014,"winner":"Grand Theft Auto V","n-platform":4,"n-award":1,"_id":"ksbUNgGNUF33a41S"}
+{"country":"uee","year":"21","gala":"21","winner":"fafa","n-platform":"3","n-award":"1","_id":"bzJXbU7sX7qiqHUs"}
+{"$$deleted":true,"_id":"KIeY7SiQvBJ4ieJI"}
+{"$$deleted":true,"_id":"KOoZcUB1ao4vvgrl"}
+{"country":"fran","year":"22","gala":"121","winner":"RHH","n-platform":"3","n-award":"2","_id":"A65gv9wVVU8aEGz3"}
+{"country":"SA","year":"03","gala":"03","winner":"SS","n-platform":"03","n-award":"03","_id":"Mjcw4zFbG9UdfmdY"}
+{"$$deleted":true,"_id":"A65gv9wVVU8aEGz3"}
+{"$$deleted":true,"_id":"KQkwOpwaO0KpuHk6"}
+{"$$deleted":true,"_id":"Mjcw4zFbG9UdfmdY"}
+{"$$deleted":true,"_id":"aHc8ND4Jq1s1deyg"}
+{"$$deleted":true,"_id":"bzJXbU7sX7qiqHUs"}
+{"$$deleted":true,"_id":"f81HLaZe3Drugzux"}
+{"$$deleted":true,"_id":"jmx5bJLZV5Nscmci"}
+{"$$deleted":true,"_id":"ksbUNgGNUF33a41S"}
+{"$$deleted":true,"_id":"pbJzXBOeonaUYYy1"}
+{"country":"Francia","year":2014,"gala":2014,"winner":"Valiant Hearts: The Great War","n-platform":7,"n-award":2,"_id":"V55of6vjAtYu3QRu"}
+{"country":"Canadá","year":2014,"gala":2014,"winner":"Dragon Age: Inquisition","n-platform":5,"n-award":2,"_id":"bdgPaIDdRB42Wq2c"}
+{"country":"USA","year":2014,"gala":2014,"winner":"Shovel Knight","n-platform":3,"n-award":1,"_id":"wU1tVcr8GIYY2ThO"}
+{"country":"USA","year":2014,"gala":2014,"winner":"Hearthstone: Heroes of Warcraft","n-platform":3,"n-award":1,"_id":"PJxHWlRserCUEvSg"}
+{"country":"Canadá","year":2014,"gala":2014,"winner":"Child of Light","n-platform":7,"n-award":1,"_id":"ym77aF0RDgxc5etU"}
+{"country":"Reino Unido","year":2014,"gala":2014,"winner":"Alien: Isolation","n-platform":6,"n-award":1,"_id":"LyTgYHp2C0L5RwS1"}
+{"country":"USA","year":2014,"gala":2014,"winner":"Destiny","n-platform":4,"n-award":2,"_id":"2BRYkilr3aNMZ7T3"}
+{"country":"USA","year":2013,"gala":2014,"winner":"Grand Theft Auto V","n-platform":4,"n-award":1,"_id":"nxMpFzV017x9AIIk"}
+{"country":"aaa","year":"21","gala":"21","winner":"sd","n-platform":"2","n-award":"2","_id":"TOsmlQglZXKsfW90"}
+{"country":"21","year":"21","gala":"1","winner":"21","n-platform":"21","n-award":1,"_id":"XdOrxtC1tCqQCix1"}
+{"$$deleted":true,"_id":"2BRYkilr3aNMZ7T3"}
+{"$$deleted":true,"_id":"LyTgYHp2C0L5RwS1"}
+{"$$deleted":true,"_id":"PJxHWlRserCUEvSg"}
+{"$$deleted":true,"_id":"TOsmlQglZXKsfW90"}
+{"$$deleted":true,"_id":"V55of6vjAtYu3QRu"}
+{"$$deleted":true,"_id":"XdOrxtC1tCqQCix1"}
+{"$$deleted":true,"_id":"bdgPaIDdRB42Wq2c"}
+{"$$deleted":true,"_id":"nxMpFzV017x9AIIk"}
+{"$$deleted":true,"_id":"wU1tVcr8GIYY2ThO"}
+{"$$deleted":true,"_id":"ym77aF0RDgxc5etU"}
+{"country":"Francia","year":2014,"gala":2014,"winner":"Valiant Hearts: The Great War","n-platform":7,"n-award":2,"_id":"CuUfgFQZxv8lWxjm"}
+{"country":"Canadá","year":2014,"gala":2014,"winner":"Dragon Age: Inquisition","n-platform":5,"n-award":2,"_id":"5MdzdtMbiV12oG9w"}
+{"country":"USA","year":2014,"gala":2014,"winner":"Shovel Knight","n-platform":3,"n-award":1,"_id":"HUkk6dvmj9djUdcg"}
+{"country":"USA","year":2014,"gala":2014,"winner":"Hearthstone: Heroes of Warcraft","n-platform":3,"n-award":1,"_id":"nje5GBCt0Ksmkqr8"}
+{"country":"Canadá","year":2014,"gala":2014,"winner":"Child of Light","n-platform":7,"n-award":1,"_id":"st0qFZgfnYYsKQeO"}
+{"country":"Reino Unido","year":2014,"gala":2014,"winner":"Alien: Isolation","n-platform":6,"n-award":1,"_id":"XKJ1mIdIBIzCx0EJ"}
+{"country":"USA","year":2014,"gala":2014,"winner":"Destiny","n-platform":4,"n-award":2,"_id":"ZG2NwaMnRxorSmz0"}
+{"country":"USA","year":2013,"gala":2014,"winner":"Grand Theft Auto V","n-platform":4,"n-award":1,"_id":"zDDBTsVGACdw5q3O"}
+{"country":"321","year":32,"gala":32,"winner":"32","n-platform":32,"n-award":32,"_id":"LvjOMQEwPw2v5uFY"}
+{"$$deleted":true,"_id":"LvjOMQEwPw2v5uFY"}
+{"country":"321","year":32,"gala":32,"winner":"32","n-platform":32,"n-award":32,"_id":"xZs4mlzezNbMl4xH"}
+{"$$deleted":true,"_id":"xZs4mlzezNbMl4xH"}
+{"country":"321","year":"32","gala":32,"winner":"32","n-platform":"3233","n-award":"3233","_id":"RB1fF2j7V3AyHYen"}
+{"country":"ae","year":null,"gala":null,"winner":"e","n-platform":null,"n-award":null,"_id":"5y408vTHCZBdm1xU"}
+{"country":"32","year":32,"gala":32,"winner":"32","n-platform":32,"n-award":32,"_id":"AOV6oKHvuglOO8m3"}
+{"$$deleted":true,"_id":"AOV6oKHvuglOO8m3"}
+{"country":"32","year":32,"gala":32,"winner":"32","n-platform":32,"n-award":32,"_id":"LdgvQfopdJf8eQbT"}
+{"$$deleted":true,"_id":"LdgvQfopdJf8eQbT"}
+{"country":"32","year":"32","gala":323,"winner":"323","n-platform":323,"n-award":323,"_id":"5co2QIaie29P4wVn"}
+{"$$deleted":true,"_id":"5MdzdtMbiV12oG9w"}
+{"$$deleted":true,"_id":"st0qFZgfnYYsKQeO"}
+{"country":"Canadá","year":"2014","gala":2014,"winner":"Dragon 3Age: Inquisition","n-platform":53,"n-award":23,"_id":"Fd0KRZczcye79srs"}
+{"$$deleted":true,"_id":"CuUfgFQZxv8lWxjm"}
+{"country":"Francia","year":"2014","gala":2014,"winner":"Valiant Hearts: The Greaeeeeeeeeeeeeet War","n-platform":7,"n-award":2,"_id":"eAkBkulry0Y6vyBV"}
+{"$$deleted":true,"_id":"XKJ1mIdIBIzCx0EJ"}
+{"country":"Reino Unido","year":2014,"gala":2014,"winner":"Alien: Isolationewe","n-platform":6,"n-award":1,"_id":"Y6ZPu7GWWjnIiK9E"}
+{"$$deleted":true,"_id":"5co2QIaie29P4wVn"}
+{"$$deleted":true,"_id":"5y408vTHCZBdm1xU"}
+{"$$deleted":true,"_id":"Fd0KRZczcye79srs"}
+{"$$deleted":true,"_id":"HUkk6dvmj9djUdcg"}
+{"$$deleted":true,"_id":"RB1fF2j7V3AyHYen"}
+{"$$deleted":true,"_id":"Y6ZPu7GWWjnIiK9E"}
+{"$$deleted":true,"_id":"ZG2NwaMnRxorSmz0"}
+{"$$deleted":true,"_id":"eAkBkulry0Y6vyBV"}
+{"$$deleted":true,"_id":"nje5GBCt0Ksmkqr8"}
+{"$$deleted":true,"_id":"zDDBTsVGACdw5q3O"}
+{"country":"Francia","year":2014,"gala":2014,"winner":"Valiant Hearts: The Great War","n-platform":7,"n-award":2,"_id":"f7DxkLPGia2w2em7"}
+{"country":"Canadá","year":2014,"gala":2014,"winner":"Dragon Age: Inquisition","n-platform":5,"n-award":2,"_id":"a8CD5rGqkfVaVWw9"}
+{"country":"USA","year":2014,"gala":2014,"winner":"Shovel Knight","n-platform":3,"n-award":1,"_id":"6pbrIaY6Vp7WOjqp"}
+{"country":"USA","year":2014,"gala":2014,"winner":"Hearthstone: Heroes of Warcraft","n-platform":3,"n-award":1,"_id":"tiHqQeGxwf0FwvWc"}
+{"country":"Canadá","year":2014,"gala":2014,"winner":"Child of Light","n-platform":7,"n-award":1,"_id":"BYj7MGhxKrcqgPxQ"}
+{"country":"Reino Unido","year":2014,"gala":2014,"winner":"Alien: Isolation","n-platform":6,"n-award":1,"_id":"TlPgktRfolYHcjRc"}
+{"country":"USA","year":2014,"gala":2014,"winner":"Destiny","n-platform":4,"n-award":2,"_id":"OAurEnp7m2BxRprd"}
+{"country":"USA","year":2013,"gala":2014,"winner":"Grand Theft Auto V","n-platform":4,"n-award":1,"_id":"TN4GrvXl7rcsWSZk"}
+{"$$deleted":true,"_id":"6pbrIaY6Vp7WOjqp"}
+{"$$deleted":true,"_id":"OAurEnp7m2BxRprd"}
+{"$$deleted":true,"_id":"tiHqQeGxwf0FwvWc"}
+{"country":"USA","year":2014,"gala":201433333333333340,"winner":"Shovel Knight3","n-platform":3,"n-award":1,"_id":"WeRJChGYjbIixvfX"}
+{"$$deleted":true,"_id":"WeRJChGYjbIixvfX"}
+{"$$deleted":true,"_id":"TN4GrvXl7rcsWSZk"}
+{"country":"USA","year":2013,"gala":2014333333333,"winner":"Grand Theft Auto V3","n-platform":43,"n-award":13,"_id":"zfcqWFctahQzfP1U"}

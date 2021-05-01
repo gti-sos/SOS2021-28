@@ -150,6 +150,9 @@ var app = (function () {
             }
         }
     }
+    function to_number(value) {
+        return value === '' ? null : +value;
+    }
     function children(element) {
         return Array.from(element.childNodes);
     }
@@ -2929,11 +2932,11 @@ var app = (function () {
 
     function get_each_context(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[11] = list[i];
+    	child_ctx[12] = list[i];
     	return child_ctx;
     }
 
-    // (90:20) <Button on:click={insertAwards}>
+    // (102:20) <Button on:click={insertAwards}>
     function create_default_slot_2$3(ctx) {
     	let t;
 
@@ -2953,14 +2956,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_2$3.name,
     		type: "slot",
-    		source: "(90:20) <Button on:click={insertAwards}>",
+    		source: "(102:20) <Button on:click={insertAwards}>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (100:24) <Button on:click={deleteAwards(data.country,data.year)}>
+    // (112:24) <Button on:click={deleteAwards(data.country,data.year)}>
     function create_default_slot_1$3(ctx) {
     	let t;
 
@@ -2980,40 +2983,40 @@ var app = (function () {
     		block,
     		id: create_default_slot_1$3.name,
     		type: "slot",
-    		source: "(100:24) <Button on:click={deleteAwards(data.country,data.year)}>",
+    		source: "(112:24) <Button on:click={deleteAwards(data.country,data.year)}>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (92:12) {#each awards as data}
+    // (104:12) {#each awards as data}
     function create_each_block(ctx) {
     	let tr;
     	let td0;
     	let a;
-    	let t0_value = /*data*/ ctx[11].country + "";
+    	let t0_value = /*data*/ ctx[12].country + "";
     	let t0;
     	let a_href_value;
     	let t1;
     	let td1;
-    	let t2_value = /*data*/ ctx[11].year + "";
+    	let t2_value = /*data*/ ctx[12].year + "";
     	let t2;
     	let t3;
     	let td2;
-    	let t4_value = /*data*/ ctx[11].gala + "";
+    	let t4_value = /*data*/ ctx[12].gala + "";
     	let t4;
     	let t5;
     	let td3;
-    	let t6_value = /*data*/ ctx[11].winner + "";
+    	let t6_value = /*data*/ ctx[12].winner + "";
     	let t6;
     	let t7;
     	let td4;
-    	let t8_value = /*data*/ ctx[11]["n-platform"] + "";
+    	let t8_value = /*data*/ ctx[12]["n-platform"] + "";
     	let t8;
     	let t9;
     	let td5;
-    	let t10_value = /*data*/ ctx[11]["n-award"] + "";
+    	let t10_value = /*data*/ ctx[12]["n-award"] + "";
     	let t10;
     	let t11;
     	let td6;
@@ -3030,7 +3033,7 @@ var app = (function () {
     		});
 
     	button.$on("click", function () {
-    		if (is_function(/*deleteAwards*/ ctx[3](/*data*/ ctx[11].country, /*data*/ ctx[11].year))) /*deleteAwards*/ ctx[3](/*data*/ ctx[11].country, /*data*/ ctx[11].year).apply(this, arguments);
+    		if (is_function(/*deleteAwards*/ ctx[3](/*data*/ ctx[12].country, /*data*/ ctx[12].year))) /*deleteAwards*/ ctx[3](/*data*/ ctx[12].country, /*data*/ ctx[12].year).apply(this, arguments);
     	});
 
     	const block = {
@@ -3058,16 +3061,16 @@ var app = (function () {
     			td6 = element("td");
     			create_component(button.$$.fragment);
     			t12 = space();
-    			attr_dev(a, "href", a_href_value = "#/awards/" + /*data*/ ctx[11].country + "/" + /*data*/ ctx[11].year);
-    			add_location(a, file$j, 93, 24, 2956);
-    			add_location(td0, file$j, 93, 20, 2952);
-    			add_location(td1, file$j, 94, 20, 3047);
-    			add_location(td2, file$j, 95, 20, 3089);
-    			add_location(td3, file$j, 96, 20, 3131);
-    			add_location(td4, file$j, 97, 20, 3175);
-    			add_location(td5, file$j, 98, 20, 3226);
-    			add_location(td6, file$j, 99, 20, 3274);
-    			add_location(tr, file$j, 92, 16, 2926);
+    			attr_dev(a, "href", a_href_value = "#/awards/" + /*data*/ ctx[12].country + "/" + /*data*/ ctx[12].year);
+    			add_location(a, file$j, 105, 24, 3365);
+    			add_location(td0, file$j, 105, 20, 3361);
+    			add_location(td1, file$j, 106, 20, 3456);
+    			add_location(td2, file$j, 107, 20, 3498);
+    			add_location(td3, file$j, 108, 20, 3540);
+    			add_location(td4, file$j, 109, 20, 3584);
+    			add_location(td5, file$j, 110, 20, 3635);
+    			add_location(td6, file$j, 111, 20, 3683);
+    			add_location(tr, file$j, 104, 16, 3335);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, tr, anchor);
@@ -3097,20 +3100,20 @@ var app = (function () {
     		},
     		p: function update(new_ctx, dirty) {
     			ctx = new_ctx;
-    			if ((!current || dirty & /*awards*/ 1) && t0_value !== (t0_value = /*data*/ ctx[11].country + "")) set_data_dev(t0, t0_value);
+    			if ((!current || dirty & /*awards*/ 1) && t0_value !== (t0_value = /*data*/ ctx[12].country + "")) set_data_dev(t0, t0_value);
 
-    			if (!current || dirty & /*awards*/ 1 && a_href_value !== (a_href_value = "#/awards/" + /*data*/ ctx[11].country + "/" + /*data*/ ctx[11].year)) {
+    			if (!current || dirty & /*awards*/ 1 && a_href_value !== (a_href_value = "#/awards/" + /*data*/ ctx[12].country + "/" + /*data*/ ctx[12].year)) {
     				attr_dev(a, "href", a_href_value);
     			}
 
-    			if ((!current || dirty & /*awards*/ 1) && t2_value !== (t2_value = /*data*/ ctx[11].year + "")) set_data_dev(t2, t2_value);
-    			if ((!current || dirty & /*awards*/ 1) && t4_value !== (t4_value = /*data*/ ctx[11].gala + "")) set_data_dev(t4, t4_value);
-    			if ((!current || dirty & /*awards*/ 1) && t6_value !== (t6_value = /*data*/ ctx[11].winner + "")) set_data_dev(t6, t6_value);
-    			if ((!current || dirty & /*awards*/ 1) && t8_value !== (t8_value = /*data*/ ctx[11]["n-platform"] + "")) set_data_dev(t8, t8_value);
-    			if ((!current || dirty & /*awards*/ 1) && t10_value !== (t10_value = /*data*/ ctx[11]["n-award"] + "")) set_data_dev(t10, t10_value);
+    			if ((!current || dirty & /*awards*/ 1) && t2_value !== (t2_value = /*data*/ ctx[12].year + "")) set_data_dev(t2, t2_value);
+    			if ((!current || dirty & /*awards*/ 1) && t4_value !== (t4_value = /*data*/ ctx[12].gala + "")) set_data_dev(t4, t4_value);
+    			if ((!current || dirty & /*awards*/ 1) && t6_value !== (t6_value = /*data*/ ctx[12].winner + "")) set_data_dev(t6, t6_value);
+    			if ((!current || dirty & /*awards*/ 1) && t8_value !== (t8_value = /*data*/ ctx[12]["n-platform"] + "")) set_data_dev(t8, t8_value);
+    			if ((!current || dirty & /*awards*/ 1) && t10_value !== (t10_value = /*data*/ ctx[12]["n-award"] + "")) set_data_dev(t10, t10_value);
     			const button_changes = {};
 
-    			if (dirty & /*$$scope*/ 16384) {
+    			if (dirty & /*$$scope*/ 32768) {
     				button_changes.$$scope = { dirty, ctx };
     			}
 
@@ -3135,14 +3138,14 @@ var app = (function () {
     		block,
     		id: create_each_block.name,
     		type: "each",
-    		source: "(92:12) {#each awards as data}",
+    		source: "(104:12) {#each awards as data}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (70:4) <Table bordered>
+    // (83:4) <Table bordered>
     function create_default_slot$4(ctx) {
     	let thead;
     	let tr0;
@@ -3256,29 +3259,33 @@ var app = (function () {
     				each_blocks[i].c();
     			}
 
-    			add_location(td0, file$j, 72, 16, 2081);
-    			add_location(td1, file$j, 73, 16, 2112);
-    			add_location(td2, file$j, 74, 16, 2142);
-    			add_location(td3, file$j, 75, 16, 2173);
-    			add_location(td4, file$j, 76, 16, 2207);
-    			add_location(td5, file$j, 77, 16, 2255);
-    			add_location(tr0, file$j, 71, 12, 2059);
-    			add_location(thead, file$j, 70, 8, 2038);
-    			add_location(input0, file$j, 83, 20, 2401);
-    			add_location(td6, file$j, 83, 16, 2397);
-    			add_location(input1, file$j, 84, 20, 2467);
-    			add_location(td7, file$j, 84, 16, 2463);
-    			add_location(input2, file$j, 85, 20, 2530);
-    			add_location(td8, file$j, 85, 16, 2526);
-    			add_location(input3, file$j, 86, 20, 2593);
-    			add_location(td9, file$j, 86, 16, 2589);
-    			add_location(input4, file$j, 87, 20, 2658);
-    			add_location(td10, file$j, 87, 16, 2654);
-    			add_location(input5, file$j, 88, 20, 2730);
-    			add_location(td11, file$j, 88, 16, 2726);
-    			add_location(td12, file$j, 89, 16, 2795);
-    			add_location(tr1, file$j, 82, 12, 2375);
-    			add_location(tbody, file$j, 81, 8, 2354);
+    			add_location(td0, file$j, 85, 16, 2472);
+    			add_location(td1, file$j, 86, 16, 2503);
+    			add_location(td2, file$j, 87, 16, 2533);
+    			add_location(td3, file$j, 88, 16, 2564);
+    			add_location(td4, file$j, 89, 16, 2598);
+    			add_location(td5, file$j, 90, 16, 2646);
+    			add_location(tr0, file$j, 84, 12, 2450);
+    			add_location(thead, file$j, 83, 8, 2429);
+    			add_location(input0, file$j, 95, 20, 2774);
+    			add_location(td6, file$j, 95, 16, 2770);
+    			attr_dev(input1, "type", "number");
+    			add_location(input1, file$j, 96, 20, 2838);
+    			add_location(td7, file$j, 96, 16, 2834);
+    			attr_dev(input2, "type", "number");
+    			add_location(input2, file$j, 97, 20, 2911);
+    			add_location(td8, file$j, 97, 16, 2907);
+    			add_location(input3, file$j, 98, 20, 2984);
+    			add_location(td9, file$j, 98, 16, 2980);
+    			attr_dev(input4, "type", "number");
+    			add_location(input4, file$j, 99, 20, 3047);
+    			add_location(td10, file$j, 99, 16, 3043);
+    			attr_dev(input5, "type", "number");
+    			add_location(input5, file$j, 100, 20, 3129);
+    			add_location(td11, file$j, 100, 16, 3125);
+    			add_location(td12, file$j, 101, 16, 3204);
+    			add_location(tr1, file$j, 94, 12, 2748);
+    			add_location(tbody, file$j, 93, 8, 2727);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, thead, anchor);
@@ -3349,11 +3356,11 @@ var app = (function () {
     				set_input_value(input0, /*newAward*/ ctx[1].country);
     			}
 
-    			if (dirty & /*newAward*/ 2 && input1.value !== /*newAward*/ ctx[1].year) {
+    			if (dirty & /*newAward*/ 2 && to_number(input1.value) !== /*newAward*/ ctx[1].year) {
     				set_input_value(input1, /*newAward*/ ctx[1].year);
     			}
 
-    			if (dirty & /*newAward*/ 2 && input2.value !== /*newAward*/ ctx[1].gala) {
+    			if (dirty & /*newAward*/ 2 && to_number(input2.value) !== /*newAward*/ ctx[1].gala) {
     				set_input_value(input2, /*newAward*/ ctx[1].gala);
     			}
 
@@ -3361,17 +3368,17 @@ var app = (function () {
     				set_input_value(input3, /*newAward*/ ctx[1].winner);
     			}
 
-    			if (dirty & /*newAward*/ 2 && input4.value !== /*newAward*/ ctx[1]["n-platform"]) {
+    			if (dirty & /*newAward*/ 2 && to_number(input4.value) !== /*newAward*/ ctx[1]["n-platform"]) {
     				set_input_value(input4, /*newAward*/ ctx[1]["n-platform"]);
     			}
 
-    			if (dirty & /*newAward*/ 2 && input5.value !== /*newAward*/ ctx[1]["n-award"]) {
+    			if (dirty & /*newAward*/ 2 && to_number(input5.value) !== /*newAward*/ ctx[1]["n-award"]) {
     				set_input_value(input5, /*newAward*/ ctx[1]["n-award"]);
     			}
 
     			const button_changes = {};
 
-    			if (dirty & /*$$scope*/ 16384) {
+    			if (dirty & /*$$scope*/ 32768) {
     				button_changes.$$scope = { dirty, ctx };
     			}
 
@@ -3440,7 +3447,7 @@ var app = (function () {
     		block,
     		id: create_default_slot$4.name,
     		type: "slot",
-    		source: "(70:4) <Table bordered>",
+    		source: "(83:4) <Table bordered>",
     		ctx
     	});
 
@@ -3470,8 +3477,8 @@ var app = (function () {
     			h1.textContent = "Tabla relacionada con los premios a videojuegos";
     			t1 = space();
     			create_component(table.$$.fragment);
-    			add_location(h1, file$j, 68, 4, 1950);
-    			add_location(main, file$j, 67, 0, 1938);
+    			add_location(h1, file$j, 81, 4, 2341);
+    			add_location(main, file$j, 80, 0, 2329);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -3486,7 +3493,7 @@ var app = (function () {
     		p: function update(ctx, [dirty]) {
     			const table_changes = {};
 
-    			if (dirty & /*$$scope, awards, newAward*/ 16387) {
+    			if (dirty & /*$$scope, awards, newAward*/ 32771) {
     				table_changes.$$scope = { dirty, ctx };
     			}
 
@@ -3568,6 +3575,14 @@ var app = (function () {
     		});
     	}
 
+    	async function deleteAllAwards() {
+    		console.log("Deleting contact with name ");
+
+    		await fetch(BASE + "/awards/", { method: "DELETE" }).then(res => {
+    			getAwards();
+    		});
+    	}
+
     	onMount(getAwards);
     	const writable_props = [];
 
@@ -3581,12 +3596,12 @@ var app = (function () {
     	}
 
     	function input1_input_handler() {
-    		newAward.year = this.value;
+    		newAward.year = to_number(this.value);
     		$$invalidate(1, newAward);
     	}
 
     	function input2_input_handler() {
-    		newAward.gala = this.value;
+    		newAward.gala = to_number(this.value);
     		$$invalidate(1, newAward);
     	}
 
@@ -3596,12 +3611,12 @@ var app = (function () {
     	}
 
     	function input4_input_handler() {
-    		newAward["n-platform"] = this.value;
+    		newAward["n-platform"] = to_number(this.value);
     		$$invalidate(1, newAward);
     	}
 
     	function input5_input_handler() {
-    		newAward["n-award"] = this.value;
+    		newAward["n-award"] = to_number(this.value);
     		$$invalidate(1, newAward);
     	}
 
@@ -3614,7 +3629,8 @@ var app = (function () {
     		BASE,
     		getAwards,
     		insertAwards,
-    		deleteAwards
+    		deleteAwards,
+    		deleteAllAwards
     	});
 
     	$$self.$inject_state = $$props => {
@@ -3659,7 +3675,7 @@ var app = (function () {
     const { console: console_1 } = globals;
     const file$i = "src\\front\\AwardsAPI\\TableAwardsEdit.svelte";
 
-    // (95:21) <Button outline  color="primary" on:click={updateAward}>
+    // (94:21) <Button outline  color="primary" on:click={updateAward}>
     function create_default_slot_2$2(ctx) {
     	let t;
 
@@ -3679,14 +3695,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_2$2.name,
     		type: "slot",
-    		source: "(95:21) <Button outline  color=\\\"primary\\\" on:click={updateAward}>",
+    		source: "(94:21) <Button outline  color=\\\"primary\\\" on:click={updateAward}>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (76:4) <Table bordered>
+    // (75:4) <Table bordered>
     function create_default_slot_1$2(ctx) {
     	let thead;
     	let tr0;
@@ -3709,7 +3725,6 @@ var app = (function () {
     	let t12;
     	let t13;
     	let td1;
-    	let t14_value = /*params*/ ctx[0].year + "";
     	let t14;
     	let t15;
     	let td2;
@@ -3740,7 +3755,7 @@ var app = (function () {
     			$$inline: true
     		});
 
-    	button.$on("click", /*updateAward*/ ctx[6]);
+    	button.$on("click", /*updateAward*/ ctx[7]);
 
     	const block = {
     		c: function create() {
@@ -3770,7 +3785,7 @@ var app = (function () {
     			t12 = text(t12_value);
     			t13 = space();
     			td1 = element("td");
-    			t14 = text(t14_value);
+    			t14 = text(/*updatedYear*/ ctx[1]);
     			t15 = space();
     			td2 = element("td");
     			input0 = element("input");
@@ -3786,27 +3801,30 @@ var app = (function () {
     			t19 = space();
     			td6 = element("td");
     			create_component(button.$$.fragment);
-    			add_location(th0, file$i, 78, 16, 2030);
-    			add_location(th1, file$i, 79, 16, 2061);
-    			add_location(th2, file$i, 80, 16, 2091);
-    			add_location(th3, file$i, 81, 16, 2122);
-    			add_location(th4, file$i, 82, 16, 2156);
-    			add_location(th5, file$i, 83, 16, 2204);
-    			add_location(tr0, file$i, 77, 12, 2008);
-    			add_location(thead, file$i, 76, 8, 1987);
-    			add_location(td0, file$i, 88, 16, 2328);
-    			add_location(td1, file$i, 89, 16, 2371);
-    			add_location(input0, file$i, 90, 20, 2415);
-    			add_location(td2, file$i, 90, 16, 2411);
-    			add_location(input1, file$i, 91, 20, 2476);
-    			add_location(td3, file$i, 91, 16, 2472);
-    			add_location(input2, file$i, 92, 20, 2539);
-    			add_location(td4, file$i, 92, 16, 2535);
-    			add_location(input3, file$i, 93, 20, 2606);
-    			add_location(td5, file$i, 93, 16, 2602);
-    			add_location(td6, file$i, 94, 16, 2666);
-    			add_location(tr1, file$i, 87, 12, 2306);
-    			add_location(tbody, file$i, 86, 8, 2285);
+    			add_location(th0, file$i, 77, 16, 2038);
+    			add_location(th1, file$i, 78, 16, 2069);
+    			add_location(th2, file$i, 79, 16, 2099);
+    			add_location(th3, file$i, 80, 16, 2130);
+    			add_location(th4, file$i, 81, 16, 2164);
+    			add_location(th5, file$i, 82, 16, 2212);
+    			add_location(tr0, file$i, 76, 12, 2016);
+    			add_location(thead, file$i, 75, 8, 1995);
+    			add_location(td0, file$i, 87, 16, 2336);
+    			add_location(td1, file$i, 88, 16, 2379);
+    			attr_dev(input0, "type", "number");
+    			add_location(input0, file$i, 89, 20, 2425);
+    			add_location(td2, file$i, 89, 16, 2421);
+    			add_location(input1, file$i, 90, 20, 2498);
+    			add_location(td3, file$i, 90, 16, 2494);
+    			attr_dev(input2, "type", "number");
+    			add_location(input2, file$i, 91, 20, 2561);
+    			add_location(td4, file$i, 91, 16, 2557);
+    			attr_dev(input3, "type", "number");
+    			add_location(input3, file$i, 92, 20, 2640);
+    			add_location(td5, file$i, 92, 16, 2636);
+    			add_location(td6, file$i, 93, 16, 2712);
+    			add_location(tr1, file$i, 86, 12, 2314);
+    			add_location(tbody, file$i, 85, 8, 2293);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, thead, anchor);
@@ -3833,19 +3851,19 @@ var app = (function () {
     			append_dev(tr1, t15);
     			append_dev(tr1, td2);
     			append_dev(td2, input0);
-    			set_input_value(input0, /*updatedGala*/ ctx[1]);
+    			set_input_value(input0, /*updatedGala*/ ctx[2]);
     			append_dev(tr1, t16);
     			append_dev(tr1, td3);
     			append_dev(td3, input1);
-    			set_input_value(input1, /*updatedWinner*/ ctx[2]);
+    			set_input_value(input1, /*updatedWinner*/ ctx[3]);
     			append_dev(tr1, t17);
     			append_dev(tr1, td4);
     			append_dev(td4, input2);
-    			set_input_value(input2, /*updatedNPlatforms*/ ctx[3]);
+    			set_input_value(input2, /*updatedNPlatforms*/ ctx[4]);
     			append_dev(tr1, t18);
     			append_dev(tr1, td5);
     			append_dev(td5, input3);
-    			set_input_value(input3, /*updatedNAwards*/ ctx[4]);
+    			set_input_value(input3, /*updatedNAwards*/ ctx[5]);
     			append_dev(tr1, t19);
     			append_dev(tr1, td6);
     			mount_component(button, td6, null);
@@ -3853,10 +3871,10 @@ var app = (function () {
 
     			if (!mounted) {
     				dispose = [
-    					listen_dev(input0, "input", /*input0_input_handler*/ ctx[7]),
-    					listen_dev(input1, "input", /*input1_input_handler*/ ctx[8]),
-    					listen_dev(input2, "input", /*input2_input_handler*/ ctx[9]),
-    					listen_dev(input3, "input", /*input3_input_handler*/ ctx[10])
+    					listen_dev(input0, "input", /*input0_input_handler*/ ctx[8]),
+    					listen_dev(input1, "input", /*input1_input_handler*/ ctx[9]),
+    					listen_dev(input2, "input", /*input2_input_handler*/ ctx[10]),
+    					listen_dev(input3, "input", /*input3_input_handler*/ ctx[11])
     				];
 
     				mounted = true;
@@ -3864,22 +3882,22 @@ var app = (function () {
     		},
     		p: function update(ctx, dirty) {
     			if ((!current || dirty & /*params*/ 1) && t12_value !== (t12_value = /*params*/ ctx[0].country + "")) set_data_dev(t12, t12_value);
-    			if ((!current || dirty & /*params*/ 1) && t14_value !== (t14_value = /*params*/ ctx[0].year + "")) set_data_dev(t14, t14_value);
+    			if (!current || dirty & /*updatedYear*/ 2) set_data_dev(t14, /*updatedYear*/ ctx[1]);
 
-    			if (dirty & /*updatedGala*/ 2 && input0.value !== /*updatedGala*/ ctx[1]) {
-    				set_input_value(input0, /*updatedGala*/ ctx[1]);
+    			if (dirty & /*updatedGala*/ 4 && to_number(input0.value) !== /*updatedGala*/ ctx[2]) {
+    				set_input_value(input0, /*updatedGala*/ ctx[2]);
     			}
 
-    			if (dirty & /*updatedWinner*/ 4 && input1.value !== /*updatedWinner*/ ctx[2]) {
-    				set_input_value(input1, /*updatedWinner*/ ctx[2]);
+    			if (dirty & /*updatedWinner*/ 8 && input1.value !== /*updatedWinner*/ ctx[3]) {
+    				set_input_value(input1, /*updatedWinner*/ ctx[3]);
     			}
 
-    			if (dirty & /*updatedNPlatforms*/ 8 && input2.value !== /*updatedNPlatforms*/ ctx[3]) {
-    				set_input_value(input2, /*updatedNPlatforms*/ ctx[3]);
+    			if (dirty & /*updatedNPlatforms*/ 16 && to_number(input2.value) !== /*updatedNPlatforms*/ ctx[4]) {
+    				set_input_value(input2, /*updatedNPlatforms*/ ctx[4]);
     			}
 
-    			if (dirty & /*updatedNAwards*/ 16 && input3.value !== /*updatedNAwards*/ ctx[4]) {
-    				set_input_value(input3, /*updatedNAwards*/ ctx[4]);
+    			if (dirty & /*updatedNAwards*/ 32 && to_number(input3.value) !== /*updatedNAwards*/ ctx[5]) {
+    				set_input_value(input3, /*updatedNAwards*/ ctx[5]);
     			}
 
     			const button_changes = {};
@@ -3913,14 +3931,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_1$2.name,
     		type: "slot",
-    		source: "(76:4) <Table bordered>",
+    		source: "(75:4) <Table bordered>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (99:0) {#if errorMsg}
+    // (98:0) {#if errorMsg}
     function create_if_block$1(ctx) {
     	let p;
     	let t0;
@@ -3930,9 +3948,9 @@ var app = (function () {
     		c: function create() {
     			p = element("p");
     			t0 = text("ERROR: ");
-    			t1 = text(/*errorMsg*/ ctx[5]);
+    			t1 = text(/*errorMsg*/ ctx[6]);
     			set_style(p, "color", "red");
-    			add_location(p, file$i, 99, 4, 2821);
+    			add_location(p, file$i, 98, 4, 2867);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -3940,7 +3958,7 @@ var app = (function () {
     			append_dev(p, t1);
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty & /*errorMsg*/ 32) set_data_dev(t1, /*errorMsg*/ ctx[5]);
+    			if (dirty & /*errorMsg*/ 64) set_data_dev(t1, /*errorMsg*/ ctx[6]);
     		},
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(p);
@@ -3951,14 +3969,14 @@ var app = (function () {
     		block,
     		id: create_if_block$1.name,
     		type: "if",
-    		source: "(99:0) {#if errorMsg}",
+    		source: "(98:0) {#if errorMsg}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (102:0) <Button outline color="secondary" on:click="{pop}">
+    // (101:0) <Button outline color="secondary" on:click="{pop}">
     function create_default_slot$3(ctx) {
     	let t;
 
@@ -3978,7 +3996,7 @@ var app = (function () {
     		block,
     		id: create_default_slot$3.name,
     		type: "slot",
-    		source: "(102:0) <Button outline color=\\\"secondary\\\" on:click=\\\"{pop}\\\">",
+    		source: "(101:0) <Button outline color=\\\"secondary\\\" on:click=\\\"{pop}\\\">",
     		ctx
     	});
 
@@ -4008,7 +4026,7 @@ var app = (function () {
     			$$inline: true
     		});
 
-    	let if_block = /*errorMsg*/ ctx[5] && create_if_block$1(ctx);
+    	let if_block = /*errorMsg*/ ctx[6] && create_if_block$1(ctx);
 
     	button = new Button({
     			props: {
@@ -4035,9 +4053,9 @@ var app = (function () {
     			if (if_block) if_block.c();
     			t4 = space();
     			create_component(button.$$.fragment);
-    			add_location(strong, file$i, 74, 24, 1917);
-    			add_location(h3, file$i, 74, 4, 1897);
-    			add_location(main, file$i, 73, 0, 1885);
+    			add_location(strong, file$i, 73, 24, 1925);
+    			add_location(h3, file$i, 73, 4, 1905);
+    			add_location(main, file$i, 72, 0, 1893);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -4060,13 +4078,13 @@ var app = (function () {
     			if ((!current || dirty & /*params*/ 1) && t1_value !== (t1_value = /*params*/ ctx[0].country + "")) set_data_dev(t1, t1_value);
     			const table_changes = {};
 
-    			if (dirty & /*$$scope, updatedNAwards, updatedNPlatforms, updatedWinner, updatedGala, params*/ 32799) {
+    			if (dirty & /*$$scope, updatedNAwards, updatedNPlatforms, updatedWinner, updatedGala, updatedYear, params*/ 32831) {
     				table_changes.$$scope = { dirty, ctx };
     			}
 
     			table.$set(table_changes);
 
-    			if (/*errorMsg*/ ctx[5]) {
+    			if (/*errorMsg*/ ctx[6]) {
     				if (if_block) {
     					if_block.p(ctx, dirty);
     				} else {
@@ -4140,14 +4158,14 @@ var app = (function () {
     			const json = await res.json();
     			award = json;
     			updatedCountry = award.country;
-    			updatedYear = award.year;
-    			$$invalidate(1, updatedGala = award.gala);
-    			$$invalidate(2, updatedWinner = award.winner);
-    			$$invalidate(3, updatedNPlatforms = award["n-platform"]);
-    			$$invalidate(4, updatedNAwards = award["n-award"]);
+    			$$invalidate(1, updatedYear = award.year);
+    			$$invalidate(2, updatedGala = award.gala);
+    			$$invalidate(3, updatedWinner = award.winner);
+    			$$invalidate(4, updatedNPlatforms = award["n-platform"]);
+    			$$invalidate(5, updatedNAwards = award["n-award"]);
     			console.log("Received contact.");
     		} else {
-    			$$invalidate(5, errorMsg = res.status + ": " + res.statusText);
+    			$$invalidate(6, errorMsg = res.status + ": " + res.statusText);
     			console.log("ERROR!" + errorMsg);
     		}
     	}
@@ -4159,7 +4177,7 @@ var app = (function () {
     			method: "PUT",
     			body: JSON.stringify({
     				"country": params.country,
-    				"year": params.year,
+    				"year": parseInt(params.year),
     				"gala": updatedGala,
     				"winner": updatedWinner,
     				"n-platform": updatedNPlatforms,
@@ -4178,23 +4196,23 @@ var app = (function () {
     	});
 
     	function input0_input_handler() {
-    		updatedGala = this.value;
-    		$$invalidate(1, updatedGala);
+    		updatedGala = to_number(this.value);
+    		$$invalidate(2, updatedGala);
     	}
 
     	function input1_input_handler() {
     		updatedWinner = this.value;
-    		$$invalidate(2, updatedWinner);
+    		$$invalidate(3, updatedWinner);
     	}
 
     	function input2_input_handler() {
-    		updatedNPlatforms = this.value;
-    		$$invalidate(3, updatedNPlatforms);
+    		updatedNPlatforms = to_number(this.value);
+    		$$invalidate(4, updatedNPlatforms);
     	}
 
     	function input3_input_handler() {
-    		updatedNAwards = this.value;
-    		$$invalidate(4, updatedNAwards);
+    		updatedNAwards = to_number(this.value);
+    		$$invalidate(5, updatedNAwards);
     	}
 
     	$$self.$$set = $$props => {
@@ -4223,12 +4241,12 @@ var app = (function () {
     		if ("params" in $$props) $$invalidate(0, params = $$props.params);
     		if ("award" in $$props) award = $$props.award;
     		if ("updatedCountry" in $$props) updatedCountry = $$props.updatedCountry;
-    		if ("updatedYear" in $$props) updatedYear = $$props.updatedYear;
-    		if ("updatedGala" in $$props) $$invalidate(1, updatedGala = $$props.updatedGala);
-    		if ("updatedWinner" in $$props) $$invalidate(2, updatedWinner = $$props.updatedWinner);
-    		if ("updatedNPlatforms" in $$props) $$invalidate(3, updatedNPlatforms = $$props.updatedNPlatforms);
-    		if ("updatedNAwards" in $$props) $$invalidate(4, updatedNAwards = $$props.updatedNAwards);
-    		if ("errorMsg" in $$props) $$invalidate(5, errorMsg = $$props.errorMsg);
+    		if ("updatedYear" in $$props) $$invalidate(1, updatedYear = $$props.updatedYear);
+    		if ("updatedGala" in $$props) $$invalidate(2, updatedGala = $$props.updatedGala);
+    		if ("updatedWinner" in $$props) $$invalidate(3, updatedWinner = $$props.updatedWinner);
+    		if ("updatedNPlatforms" in $$props) $$invalidate(4, updatedNPlatforms = $$props.updatedNPlatforms);
+    		if ("updatedNAwards" in $$props) $$invalidate(5, updatedNAwards = $$props.updatedNAwards);
+    		if ("errorMsg" in $$props) $$invalidate(6, errorMsg = $$props.errorMsg);
     	};
 
     	if ($$props && "$$inject" in $$props) {
@@ -4237,6 +4255,7 @@ var app = (function () {
 
     	return [
     		params,
+    		updatedYear,
     		updatedGala,
     		updatedWinner,
     		updatedNPlatforms,
