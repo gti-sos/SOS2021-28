@@ -246,7 +246,9 @@
   }
 
   
-  async function insertStat(){
+  
+	
+	 async function insertStat(){
         console.log("Inserting platform "+ JSON.stringify(newStat));
 
         const res = await fetch(BASE_CONTACT_API_PATH +"/platforms",
@@ -325,73 +327,39 @@
         <th> Unidades vendidas </th>
         <th> Generación </th>
         <th>Acciones</th>
-        <th>Acciones</th>
       </tr>
     </thead>
-    <tbody>
-      <tr>
-        <td><input
-            type="text"
-            placeholder="Norway"
-            bind:value={newStat.country}
-          /></td>
-		<td><input
-            type="text"
-            placeholder="PlayStation4"
-            bind:value={newStat.platform}
-          /></td>
-        <td
-          ><input
-            type="number"
-            placeholder="2021"
-            min="1900"
-            bind:value={newStat.year}
-          /></td
-        >
-        <td
-          ><input
-            type="number"
-            placeholder="1500000"
-            min="1"
-            bind:value={newStat["sol-unit"]}
-          /></td
-        >
-        <td
-          ><input
-            type="number"
-            placeholder="8"
-            min="1"
-            bind:value={newStat.generation}
-          /></td
-        >
-       
-        <td><Button color="primary" on:click={insertStat}>Insertar</Button></td>
-        <td>
-          <Button color="secondary" on:click={searchStat}>Buscar</Button>
-        </td>
-      </tr>
-
-      {#each platformsStats as stat}
-        <tr>
-          <td>{stat.country}</td>
-		  <td>{stat.platform}</td>
-          <td>{stat.year}</td>
-          <td>{stat["sold-unit"]}</td>
-		  <td>{stat.generation}</td>
-          <td>
-            <a href="#/platforms/{stat.country}/{stat.year}">
-              <Button color="primary">Editar</Button>
-            </a></td
-          >
-          <td
-            ><Button
-              color="danger"
-              on:click={deleteStat(stat.country, stat.year)}>Borrar</Button
-            ></td
-          >
-        </tr>
-      {/each}
-    </tbody>
+	
+	<tbody>
+            <tr>
+                <td><input bind:value={newStat.country}></td>
+				<td><input bind:value={newStat.platform}></td>
+                <td><input type=number bind:value={newStat.year}></td>
+				<td><input type=number bind:value={newStat["sold-unit"]}></td>
+                <td><input type=number bind:value={newStat.generation}></td>
+                
+                <td><Button on:click={insertStat}>insertar</Button></td>
+            </tr>
+            
+            {#each platformsStats as data}
+                <tr>
+                    <td><a href="#/platforms/{data.country}/{data.year}">{data.country}</a></td>
+                    <td>{data.platform}</td>
+                    <td>{data.year}</td>
+					<td>{data["sold-unit"]}</td>
+                    <td>{data.generation}</td>
+                    
+                    <td><Button on:click={deleteStat(data.country,data.year)}>Borrar</Button></td>
+                    
+                </tr>
+            
+            {/each}
+            
+                   
+            
+                
+        </tbody>
+    
   </Table>
 
   <!-- Pagination -->
