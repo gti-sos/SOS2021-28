@@ -60,11 +60,11 @@ const res = await fetch("/api/v1/platforms/" + params.country + "/" + params.yea
         "Content-Type": "application/json"
     }
 }).then(function (res) {
-	  okMsg = "Operación realizada correctamente, vuelva atras para ver todos los datos en la tabla";
+	 okMsg = "Operación realizada correctamente, vuelva atras para ver todos los datos en la tabla";
       if (res.ok) {
         console.log("OK");
         getStats();
-        errorMsg = "";
+        errorMsg = "Operación realizada correctamente, vuelva atras para ver todos los datos en la tabla";
         okMsg = "Operación realizada correctamente";
       } else {
         if(res.status===404){

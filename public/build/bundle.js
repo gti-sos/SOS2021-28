@@ -12941,28 +12941,28 @@ var app = (function () {
     			t18 = space();
     			td5 = element("td");
     			create_component(button.$$.fragment);
-    			add_location(th0, file$4, 99, 8, 2549);
-    			add_location(th1, file$4, 100, 8, 2573);
-    			add_location(th2, file$4, 101, 8, 2603);
-    			add_location(th3, file$4, 102, 8, 2626);
-    			add_location(th4, file$4, 103, 8, 2663);
-    			add_location(th5, file$4, 104, 8, 2693);
-    			add_location(tr0, file$4, 98, 6, 2536);
-    			add_location(thead, file$4, 97, 4, 2522);
-    			add_location(td0, file$4, 109, 8, 2767);
+    			add_location(th0, file$4, 99, 8, 2632);
+    			add_location(th1, file$4, 100, 8, 2656);
+    			add_location(th2, file$4, 101, 8, 2686);
+    			add_location(th3, file$4, 102, 8, 2709);
+    			add_location(th4, file$4, 103, 8, 2746);
+    			add_location(th5, file$4, 104, 8, 2776);
+    			add_location(tr0, file$4, 98, 6, 2619);
+    			add_location(thead, file$4, 97, 4, 2605);
+    			add_location(td0, file$4, 109, 8, 2850);
     			attr_dev(input0, "type", "text");
-    			add_location(input0, file$4, 110, 6, 2799);
-    			add_location(td1, file$4, 110, 2, 2795);
-    			add_location(td2, file$4, 111, 8, 2862);
+    			add_location(input0, file$4, 110, 6, 2882);
+    			add_location(td1, file$4, 110, 2, 2878);
+    			add_location(td2, file$4, 111, 8, 2945);
     			attr_dev(input1, "type", "number");
-    			add_location(input1, file$4, 112, 12, 2897);
-    			add_location(td3, file$4, 112, 8, 2893);
+    			add_location(input1, file$4, 112, 12, 2980);
+    			add_location(td3, file$4, 112, 8, 2976);
     			attr_dev(input2, "type", "number");
-    			add_location(input2, file$4, 113, 12, 2962);
-    			add_location(td4, file$4, 113, 8, 2958);
-    			add_location(td5, file$4, 114, 8, 3029);
-    			add_location(tr1, file$4, 108, 6, 2754);
-    			add_location(tbody, file$4, 107, 4, 2740);
+    			add_location(input2, file$4, 113, 12, 3045);
+    			add_location(td4, file$4, 113, 8, 3041);
+    			add_location(td5, file$4, 114, 8, 3112);
+    			add_location(tr1, file$4, 108, 6, 2837);
+    			add_location(tbody, file$4, 107, 4, 2823);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, thead, anchor);
@@ -13080,7 +13080,7 @@ var app = (function () {
     			t0 = text("ERROR: ");
     			t1 = text(/*errorMsg*/ ctx[4]);
     			set_style(p, "color", "red");
-    			add_location(p, file$4, 121, 4, 3194);
+    			add_location(p, file$4, 121, 4, 3277);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -13116,7 +13116,7 @@ var app = (function () {
     			p = element("p");
     			t = text(/*okMsg*/ ctx[5]);
     			set_style(p, "color", "green");
-    			add_location(p, file$4, 124, 2, 3262);
+    			add_location(p, file$4, 124, 2, 3345);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -13198,11 +13198,11 @@ var app = (function () {
     			if (if_block0) if_block0.c();
     			t7 = space();
     			if (if_block1) if_block1.c();
-    			add_location(strong0, file$4, 92, 1, 2420);
-    			add_location(strong1, file$4, 94, 4, 2460);
-    			add_location(h2, file$4, 90, 2, 2396);
+    			add_location(strong0, file$4, 92, 1, 2503);
+    			add_location(strong1, file$4, 94, 4, 2543);
+    			add_location(h2, file$4, 90, 2, 2479);
     			attr_dev(main, "class", "svelte-qkkln6");
-    			add_location(main, file$4, 83, 0, 2289);
+    			add_location(main, file$4, 83, 0, 2372);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -13361,7 +13361,7 @@ var app = (function () {
     			if (res.ok) {
     				console.log("OK");
     				getStats();
-    				$$invalidate(4, errorMsg = "");
+    				$$invalidate(4, errorMsg = "Operación realizada correctamente, vuelva atras para ver todos los datos en la tabla");
     				$$invalidate(5, okMsg = "Operación realizada correctamente");
     			} else {
     				if (res.status === 404) {
