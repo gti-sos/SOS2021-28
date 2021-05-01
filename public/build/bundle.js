@@ -12682,7 +12682,7 @@ var app = (function () {
     const { console: console_1 } = globals;
     const file$4 = "src/front/PlatformsAPI/EditPlatforms.svelte";
 
-    // (73:6) <NavLink href="#/platforms">
+    // (87:6) <NavLink href="#/platforms">
     function create_default_slot_4$2(ctx) {
     	let t;
 
@@ -12702,14 +12702,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_4$2.name,
     		type: "slot",
-    		source: "(73:6) <NavLink href=\\\"#/platforms\\\">",
+    		source: "(87:6) <NavLink href=\\\"#/platforms\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (72:4) <NavItem>
+    // (86:4) <NavItem>
     function create_default_slot_3$2(ctx) {
     	let navlink;
     	let current;
@@ -12734,7 +12734,7 @@ var app = (function () {
     		p: function update(ctx, dirty) {
     			const navlink_changes = {};
 
-    			if (dirty & /*$$scope*/ 8192) {
+    			if (dirty & /*$$scope*/ 16384) {
     				navlink_changes.$$scope = { dirty, ctx };
     			}
 
@@ -12758,14 +12758,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_3$2.name,
     		type: "slot",
-    		source: "(72:4) <NavItem>",
+    		source: "(86:4) <NavItem>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (71:2) <Nav>
+    // (85:2) <Nav>
     function create_default_slot_2$2(ctx) {
     	let navitem;
     	let current;
@@ -12789,7 +12789,7 @@ var app = (function () {
     		p: function update(ctx, dirty) {
     			const navitem_changes = {};
 
-    			if (dirty & /*$$scope*/ 8192) {
+    			if (dirty & /*$$scope*/ 16384) {
     				navitem_changes.$$scope = { dirty, ctx };
     			}
 
@@ -12813,14 +12813,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_2$2.name,
     		type: "slot",
-    		source: "(71:2) <Nav>",
+    		source: "(85:2) <Nav>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (102:10) <Button outline color="primary" on:click={updatePlatform}>
+    // (116:10) <Button outline color="primary" on:click={updatePlatforms}>
     function create_default_slot_1$2(ctx) {
     	let t;
 
@@ -12840,14 +12840,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_1$2.name,
     		type: "slot",
-    		source: "(102:10) <Button outline color=\\\"primary\\\" on:click={updatePlatform}>",
+    		source: "(116:10) <Button outline color=\\\"primary\\\" on:click={updatePlatforms}>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (83:2) <Table bordered>
+    // (97:2) <Table bordered>
     function create_default_slot$3(ctx) {
     	let thead;
     	let tr0;
@@ -12866,19 +12866,22 @@ var app = (function () {
     	let tbody;
     	let tr1;
     	let td0;
+    	let t12_value = /*params*/ ctx[0].country + "";
     	let t12;
     	let t13;
     	let td1;
-    	let t15;
-    	let td2;
-    	let t16;
-    	let t17;
-    	let td3;
     	let input0;
-    	let t18;
-    	let td4;
+    	let t14;
+    	let td2;
+    	let t15_value = /*params*/ ctx[0].year + "";
+    	let t15;
+    	let t16;
+    	let td3;
     	let input1;
-    	let t19;
+    	let t17;
+    	let td4;
+    	let input2;
+    	let t18;
     	let td5;
     	let button;
     	let current;
@@ -12895,9 +12898,7 @@ var app = (function () {
     			$$inline: true
     		});
 
-    	button.$on("click", function () {
-    		if (is_function(/*updatePlatform*/ ctx[7])) /*updatePlatform*/ ctx[7].apply(this, arguments);
-    	});
+    	button.$on("click", /*updatePlatforms*/ ctx[6]);
 
     	const block = {
     		c: function create() {
@@ -12924,46 +12925,44 @@ var app = (function () {
     			tbody = element("tbody");
     			tr1 = element("tr");
     			td0 = element("td");
-    			t12 = text(/*updateCountry*/ ctx[1]);
+    			t12 = text(t12_value);
     			t13 = space();
     			td1 = element("td");
-    			td1.textContent = `${/*updatePlatforms*/ ctx[8]}`;
-    			t15 = space();
-    			td2 = element("td");
-    			t16 = text(/*updateYear*/ ctx[2]);
-    			t17 = space();
-    			td3 = element("td");
     			input0 = element("input");
-    			t18 = space();
-    			td4 = element("td");
+    			t14 = space();
+    			td2 = element("td");
+    			t15 = text(t15_value);
+    			t16 = space();
+    			td3 = element("td");
     			input1 = element("input");
-    			t19 = space();
+    			t17 = space();
+    			td4 = element("td");
+    			input2 = element("input");
+    			t18 = space();
     			td5 = element("td");
     			create_component(button.$$.fragment);
-    			add_location(th0, file$4, 85, 8, 2083);
-    			add_location(th1, file$4, 86, 8, 2107);
-    			add_location(th2, file$4, 87, 8, 2137);
-    			add_location(th3, file$4, 88, 8, 2160);
-    			add_location(th4, file$4, 89, 8, 2197);
-    			add_location(th5, file$4, 90, 8, 2227);
-    			add_location(tr0, file$4, 84, 6, 2070);
-    			add_location(thead, file$4, 83, 4, 2056);
-    			add_location(td0, file$4, 95, 8, 2301);
-    			add_location(td1, file$4, 96, 2, 2328);
-    			add_location(td2, file$4, 97, 8, 2363);
-    			attr_dev(input0, "type", "number");
-    			attr_dev(input0, "placeholder", "200000");
-    			attr_dev(input0, "min", "1");
-    			add_location(input0, file$4, 98, 12, 2397);
-    			add_location(td3, file$4, 98, 8, 2393);
+    			add_location(th0, file$4, 99, 8, 2549);
+    			add_location(th1, file$4, 100, 8, 2573);
+    			add_location(th2, file$4, 101, 8, 2603);
+    			add_location(th3, file$4, 102, 8, 2626);
+    			add_location(th4, file$4, 103, 8, 2663);
+    			add_location(th5, file$4, 104, 8, 2693);
+    			add_location(tr0, file$4, 98, 6, 2536);
+    			add_location(thead, file$4, 97, 4, 2522);
+    			add_location(td0, file$4, 109, 8, 2767);
+    			attr_dev(input0, "type", "text");
+    			add_location(input0, file$4, 110, 6, 2799);
+    			add_location(td1, file$4, 110, 2, 2795);
+    			add_location(td2, file$4, 111, 8, 2862);
     			attr_dev(input1, "type", "number");
-    			attr_dev(input1, "placeholder", "8");
-    			attr_dev(input1, "min", "1");
-    			add_location(input1, file$4, 99, 12, 2493);
-    			add_location(td4, file$4, 99, 8, 2489);
-    			add_location(td5, file$4, 100, 8, 2586);
-    			add_location(tr1, file$4, 94, 6, 2288);
-    			add_location(tbody, file$4, 93, 4, 2274);
+    			add_location(input1, file$4, 112, 12, 2897);
+    			add_location(td3, file$4, 112, 8, 2893);
+    			attr_dev(input2, "type", "number");
+    			add_location(input2, file$4, 113, 12, 2962);
+    			add_location(td4, file$4, 113, 8, 2958);
+    			add_location(td5, file$4, 114, 8, 3029);
+    			add_location(tr1, file$4, 108, 6, 2754);
+    			add_location(tbody, file$4, 107, 4, 2740);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, thead, anchor);
@@ -12986,47 +12985,54 @@ var app = (function () {
     			append_dev(td0, t12);
     			append_dev(tr1, t13);
     			append_dev(tr1, td1);
-    			append_dev(tr1, t15);
+    			append_dev(td1, input0);
+    			set_input_value(input0, /*updatePlatform*/ ctx[1]);
+    			append_dev(tr1, t14);
     			append_dev(tr1, td2);
-    			append_dev(td2, t16);
-    			append_dev(tr1, t17);
+    			append_dev(td2, t15);
+    			append_dev(tr1, t16);
     			append_dev(tr1, td3);
-    			append_dev(td3, input0);
-    			set_input_value(input0, /*updateSold*/ ctx[3]);
-    			append_dev(tr1, t18);
+    			append_dev(td3, input1);
+    			set_input_value(input1, /*updateSold*/ ctx[2]);
+    			append_dev(tr1, t17);
     			append_dev(tr1, td4);
-    			append_dev(td4, input1);
-    			set_input_value(input1, /*updateGeneration*/ ctx[4]);
-    			append_dev(tr1, t19);
+    			append_dev(td4, input2);
+    			set_input_value(input2, /*updateGeneration*/ ctx[3]);
+    			append_dev(tr1, t18);
     			append_dev(tr1, td5);
     			mount_component(button, td5, null);
     			current = true;
 
     			if (!mounted) {
     				dispose = [
-    					listen_dev(input0, "input", /*input0_input_handler*/ ctx[9]),
-    					listen_dev(input1, "input", /*input1_input_handler*/ ctx[10])
+    					listen_dev(input0, "input", /*input0_input_handler*/ ctx[7]),
+    					listen_dev(input1, "input", /*input1_input_handler*/ ctx[8]),
+    					listen_dev(input2, "input", /*input2_input_handler*/ ctx[9])
     				];
 
     				mounted = true;
     			}
     		},
-    		p: function update(new_ctx, dirty) {
-    			ctx = new_ctx;
-    			if (!current || dirty & /*updateCountry*/ 2) set_data_dev(t12, /*updateCountry*/ ctx[1]);
-    			if (!current || dirty & /*updateYear*/ 4) set_data_dev(t16, /*updateYear*/ ctx[2]);
+    		p: function update(ctx, dirty) {
+    			if ((!current || dirty & /*params*/ 1) && t12_value !== (t12_value = /*params*/ ctx[0].country + "")) set_data_dev(t12, t12_value);
 
-    			if (dirty & /*updateSold*/ 8 && to_number(input0.value) !== /*updateSold*/ ctx[3]) {
-    				set_input_value(input0, /*updateSold*/ ctx[3]);
+    			if (dirty & /*updatePlatform*/ 2 && input0.value !== /*updatePlatform*/ ctx[1]) {
+    				set_input_value(input0, /*updatePlatform*/ ctx[1]);
     			}
 
-    			if (dirty & /*updateGeneration*/ 16 && to_number(input1.value) !== /*updateGeneration*/ ctx[4]) {
-    				set_input_value(input1, /*updateGeneration*/ ctx[4]);
+    			if ((!current || dirty & /*params*/ 1) && t15_value !== (t15_value = /*params*/ ctx[0].year + "")) set_data_dev(t15, t15_value);
+
+    			if (dirty & /*updateSold*/ 4 && to_number(input1.value) !== /*updateSold*/ ctx[2]) {
+    				set_input_value(input1, /*updateSold*/ ctx[2]);
+    			}
+
+    			if (dirty & /*updateGeneration*/ 8 && to_number(input2.value) !== /*updateGeneration*/ ctx[3]) {
+    				set_input_value(input2, /*updateGeneration*/ ctx[3]);
     			}
 
     			const button_changes = {};
 
-    			if (dirty & /*$$scope*/ 8192) {
+    			if (dirty & /*$$scope*/ 16384) {
     				button_changes.$$scope = { dirty, ctx };
     			}
 
@@ -13055,14 +13061,14 @@ var app = (function () {
     		block,
     		id: create_default_slot$3.name,
     		type: "slot",
-    		source: "(83:2) <Table bordered>",
+    		source: "(97:2) <Table bordered>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (107:2) {#if errorMsg}
+    // (121:2) {#if errorMsg}
     function create_if_block_1(ctx) {
     	let p;
     	let t0;
@@ -13072,9 +13078,9 @@ var app = (function () {
     		c: function create() {
     			p = element("p");
     			t0 = text("ERROR: ");
-    			t1 = text(/*errorMsg*/ ctx[5]);
+    			t1 = text(/*errorMsg*/ ctx[4]);
     			set_style(p, "color", "red");
-    			add_location(p, file$4, 107, 4, 2750);
+    			add_location(p, file$4, 121, 4, 3194);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -13082,7 +13088,7 @@ var app = (function () {
     			append_dev(p, t1);
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty & /*errorMsg*/ 32) set_data_dev(t1, /*errorMsg*/ ctx[5]);
+    			if (dirty & /*errorMsg*/ 16) set_data_dev(t1, /*errorMsg*/ ctx[4]);
     		},
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(p);
@@ -13093,14 +13099,14 @@ var app = (function () {
     		block,
     		id: create_if_block_1.name,
     		type: "if",
-    		source: "(107:2) {#if errorMsg}",
+    		source: "(121:2) {#if errorMsg}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (110:2) {#if okMsg}
+    // (124:2) {#if okMsg}
     function create_if_block(ctx) {
     	let p;
     	let t;
@@ -13108,16 +13114,16 @@ var app = (function () {
     	const block = {
     		c: function create() {
     			p = element("p");
-    			t = text(/*okMsg*/ ctx[6]);
+    			t = text(/*okMsg*/ ctx[5]);
     			set_style(p, "color", "green");
-    			add_location(p, file$4, 110, 2, 2818);
+    			add_location(p, file$4, 124, 2, 3262);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
     			append_dev(p, t);
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty & /*okMsg*/ 64) set_data_dev(t, /*okMsg*/ ctx[6]);
+    			if (dirty & /*okMsg*/ 32) set_data_dev(t, /*okMsg*/ ctx[5]);
     		},
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(p);
@@ -13128,7 +13134,7 @@ var app = (function () {
     		block,
     		id: create_if_block.name,
     		type: "if",
-    		source: "(110:2) {#if okMsg}",
+    		source: "(124:2) {#if okMsg}",
     		ctx
     	});
 
@@ -13146,16 +13152,12 @@ var app = (function () {
     	let t2;
     	let t3;
     	let strong1;
-    	let t4_value = /*params*/ ctx[0].platform + "";
+    	let t4_value = /*params*/ ctx[0].year + "";
     	let t4;
     	let t5;
-    	let strong2;
-    	let t6_value = /*params*/ ctx[0].year + "";
+    	let table;
     	let t6;
     	let t7;
-    	let table;
-    	let t8;
-    	let t9;
     	let current;
 
     	nav = new Nav({
@@ -13175,8 +13177,8 @@ var app = (function () {
     			$$inline: true
     		});
 
-    	let if_block0 = /*errorMsg*/ ctx[5] && create_if_block_1(ctx);
-    	let if_block1 = /*okMsg*/ ctx[6] && create_if_block(ctx);
+    	let if_block0 = /*errorMsg*/ ctx[4] && create_if_block_1(ctx);
+    	let if_block1 = /*okMsg*/ ctx[5] && create_if_block(ctx);
 
     	const block = {
     		c: function create() {
@@ -13191,20 +13193,16 @@ var app = (function () {
     			strong1 = element("strong");
     			t4 = text(t4_value);
     			t5 = space();
-    			strong2 = element("strong");
-    			t6 = text(t6_value);
-    			t7 = space();
     			create_component(table.$$.fragment);
-    			t8 = space();
+    			t6 = space();
     			if (if_block0) if_block0.c();
-    			t9 = space();
+    			t7 = space();
     			if (if_block1) if_block1.c();
-    			add_location(strong0, file$4, 78, 1, 1920);
-    			add_location(strong1, file$4, 79, 1, 1955);
-    			add_location(strong2, file$4, 80, 4, 1994);
-    			add_location(h2, file$4, 76, 2, 1896);
+    			add_location(strong0, file$4, 92, 1, 2420);
+    			add_location(strong1, file$4, 94, 4, 2460);
+    			add_location(h2, file$4, 90, 2, 2396);
     			attr_dev(main, "class", "svelte-qkkln6");
-    			add_location(main, file$4, 69, 0, 1789);
+    			add_location(main, file$4, 83, 0, 2289);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -13220,50 +13218,46 @@ var app = (function () {
     			append_dev(h2, t3);
     			append_dev(h2, strong1);
     			append_dev(strong1, t4);
-    			append_dev(h2, t5);
-    			append_dev(h2, strong2);
-    			append_dev(strong2, t6);
-    			append_dev(main, t7);
+    			append_dev(main, t5);
     			mount_component(table, main, null);
-    			append_dev(main, t8);
+    			append_dev(main, t6);
     			if (if_block0) if_block0.m(main, null);
-    			append_dev(main, t9);
+    			append_dev(main, t7);
     			if (if_block1) if_block1.m(main, null);
     			current = true;
     		},
     		p: function update(ctx, [dirty]) {
     			const nav_changes = {};
 
-    			if (dirty & /*$$scope*/ 8192) {
+    			if (dirty & /*$$scope*/ 16384) {
     				nav_changes.$$scope = { dirty, ctx };
     			}
 
     			nav.$set(nav_changes);
     			if ((!current || dirty & /*params*/ 1) && t2_value !== (t2_value = /*params*/ ctx[0].country + "")) set_data_dev(t2, t2_value);
-    			if ((!current || dirty & /*params*/ 1) && t4_value !== (t4_value = /*params*/ ctx[0].platform + "")) set_data_dev(t4, t4_value);
-    			if ((!current || dirty & /*params*/ 1) && t6_value !== (t6_value = /*params*/ ctx[0].year + "")) set_data_dev(t6, t6_value);
+    			if ((!current || dirty & /*params*/ 1) && t4_value !== (t4_value = /*params*/ ctx[0].year + "")) set_data_dev(t4, t4_value);
     			const table_changes = {};
 
-    			if (dirty & /*$$scope, updatePlatform, updateGeneration, updateSold, updateYear, updateCountry*/ 8350) {
+    			if (dirty & /*$$scope, updateGeneration, updateSold, params, updatePlatform*/ 16399) {
     				table_changes.$$scope = { dirty, ctx };
     			}
 
     			table.$set(table_changes);
 
-    			if (/*errorMsg*/ ctx[5]) {
+    			if (/*errorMsg*/ ctx[4]) {
     				if (if_block0) {
     					if_block0.p(ctx, dirty);
     				} else {
     					if_block0 = create_if_block_1(ctx);
     					if_block0.c();
-    					if_block0.m(main, t9);
+    					if_block0.m(main, t7);
     				}
     			} else if (if_block0) {
     				if_block0.d(1);
     				if_block0 = null;
     			}
 
-    			if (/*okMsg*/ ctx[6]) {
+    			if (/*okMsg*/ ctx[5]) {
     				if (if_block1) {
     					if_block1.p(ctx, dirty);
     				} else {
@@ -13315,10 +13309,10 @@ var app = (function () {
     	let { params = {} } = $$props;
     	let stat = {};
     	let updateCountry = "XXXX";
-    	let updatePlatforms = "XXXX";
-    	let updateYear = 1999;
-    	let updateSold = 999999;
-    	let updateGeneration = 99;
+    	let updatePlatform = "XXXX";
+    	let updateYear = 0;
+    	let updateSold = 0;
+    	let updateGeneration = 0;
     	let errorMsg = "";
     	let okMsg = "";
 
@@ -13330,25 +13324,25 @@ var app = (function () {
     			console.log("Ok:");
     			const json = await res.json();
     			stat = json;
-    			$$invalidate(1, updateCountry = stat.country);
-    			$$invalidate(7, updatePlatform = stat.pltform);
-    			$$invalidate(2, updateYear = stat.year);
-    			$$invalidate(3, updateSold = stat["sold-unit"]);
-    			$$invalidate(4, updateGeneration = stat.generation);
+    			updateCountry = stat.country;
+    			$$invalidate(1, updatePlatform = stat.pltform);
+    			updateYear = stat.year;
+    			$$invalidate(2, updateSold = stat["sold-unit"]);
+    			$$invalidate(3, updateGeneration = stat.generation);
     			console.log("Received stat.");
     		} else {
     			if (res.status === 404) {
-    				$$invalidate(5, errorMsg = "No se encuentra el dato solicitado");
+    				$$invalidate(4, errorMsg = "No se encuentra el dato solicitado");
     			} else if (res.status === 500) {
-    				$$invalidate(5, errorMsg = "No se han podido acceder a la base de datos");
+    				$$invalidate(4, errorMsg = "No se han podido acceder a la base de datos");
     			}
 
-    			$$invalidate(6, okMsg = "");
+    			$$invalidate(5, okMsg = "");
     			console.log("ERROR!" + errorMsg);
     		}
     	}
 
-    	async function updatePlatform() {
+    	async function updatePlatforms() {
     		console.log("Updating platform..." + JSON.stringify(params.country));
 
     		await fetch("/api/v1/platforms/" + params.country + "/" + params.year, {
@@ -13362,11 +13356,26 @@ var app = (function () {
     			}),
     			headers: { "Content-Type": "application/json" }
     		}).then(function (res) {
-    			getStat();
+    			$$invalidate(5, okMsg = "Operación realizada correctamente, vuelva atras para ver todos los datos en la tabla");
+
+    			if (res.ok) {
+    				console.log("OK");
+    				getStats();
+    				$$invalidate(4, errorMsg = "");
+    				$$invalidate(5, okMsg = "Operación realizada correctamente");
+    			} else {
+    				if (res.status === 404) {
+    					$$invalidate(4, errorMsg = "No se encuentra el dato a borrar");
+    				} else if (res.status === 500) {
+    					$$invalidate(4, errorMsg = "No se han podido acceder a la base de datos");
+    				}
+
+    				$$invalidate(5, okMsg = "");
+    				console.log("ERROR!" + errorMsg);
+    			}
     		});
     	}
 
-    	onMount(getStat);
     	const writable_props = ["params"];
 
     	Object.keys($$props).forEach(key => {
@@ -13374,13 +13383,18 @@ var app = (function () {
     	});
 
     	function input0_input_handler() {
-    		updateSold = to_number(this.value);
-    		$$invalidate(3, updateSold);
+    		updatePlatform = this.value;
+    		$$invalidate(1, updatePlatform);
     	}
 
     	function input1_input_handler() {
+    		updateSold = to_number(this.value);
+    		$$invalidate(2, updateSold);
+    	}
+
+    	function input2_input_handler() {
     		updateGeneration = to_number(this.value);
-    		$$invalidate(4, updateGeneration);
+    		$$invalidate(3, updateGeneration);
     	}
 
     	$$self.$$set = $$props => {
@@ -13398,26 +13412,26 @@ var app = (function () {
     		params,
     		stat,
     		updateCountry,
-    		updatePlatforms,
+    		updatePlatform,
     		updateYear,
     		updateSold,
     		updateGeneration,
     		errorMsg,
     		okMsg,
     		getStat,
-    		updatePlatform
+    		updatePlatforms
     	});
 
     	$$self.$inject_state = $$props => {
     		if ("params" in $$props) $$invalidate(0, params = $$props.params);
     		if ("stat" in $$props) stat = $$props.stat;
-    		if ("updateCountry" in $$props) $$invalidate(1, updateCountry = $$props.updateCountry);
-    		if ("updatePlatforms" in $$props) $$invalidate(8, updatePlatforms = $$props.updatePlatforms);
-    		if ("updateYear" in $$props) $$invalidate(2, updateYear = $$props.updateYear);
-    		if ("updateSold" in $$props) $$invalidate(3, updateSold = $$props.updateSold);
-    		if ("updateGeneration" in $$props) $$invalidate(4, updateGeneration = $$props.updateGeneration);
-    		if ("errorMsg" in $$props) $$invalidate(5, errorMsg = $$props.errorMsg);
-    		if ("okMsg" in $$props) $$invalidate(6, okMsg = $$props.okMsg);
+    		if ("updateCountry" in $$props) updateCountry = $$props.updateCountry;
+    		if ("updatePlatform" in $$props) $$invalidate(1, updatePlatform = $$props.updatePlatform);
+    		if ("updateYear" in $$props) updateYear = $$props.updateYear;
+    		if ("updateSold" in $$props) $$invalidate(2, updateSold = $$props.updateSold);
+    		if ("updateGeneration" in $$props) $$invalidate(3, updateGeneration = $$props.updateGeneration);
+    		if ("errorMsg" in $$props) $$invalidate(4, errorMsg = $$props.errorMsg);
+    		if ("okMsg" in $$props) $$invalidate(5, okMsg = $$props.okMsg);
     	};
 
     	if ($$props && "$$inject" in $$props) {
@@ -13426,16 +13440,15 @@ var app = (function () {
 
     	return [
     		params,
-    		updateCountry,
-    		updateYear,
+    		updatePlatform,
     		updateSold,
     		updateGeneration,
     		errorMsg,
     		okMsg,
-    		updatePlatform,
     		updatePlatforms,
     		input0_input_handler,
-    		input1_input_handler
+    		input1_input_handler,
+    		input2_input_handler
     	];
     }
 
