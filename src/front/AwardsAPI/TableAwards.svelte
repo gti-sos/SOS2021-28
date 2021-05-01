@@ -37,14 +37,14 @@
 
     async function getLoadAwards(){
         console.log("Fetching awards ...");
-        const res = await fetch(BASE +"/awards/LoadInitialData");
+        const res = await fetch(BASE +"/awards/LoadInitialData").then( (res) => {
+                               getAwards();
+                           })
         if(res.ok){
             console.log("Ok.");
             const json = await res.json();
             awards = json;
-            console.log(`We have received ${awards.length} awards.`).then( (res) => {
-                               getAwards();
-                           })
+            console.log(`We have received ${awards.length} awards.`)
             
         }else{
             console.log("Error!");

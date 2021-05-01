@@ -3062,15 +3062,15 @@ var app = (function () {
     			create_component(button.$$.fragment);
     			t12 = space();
     			attr_dev(a, "href", a_href_value = "#/awards/" + /*data*/ ctx[13].country + "/" + /*data*/ ctx[13].year);
-    			add_location(a, file$j, 122, 24, 3903);
-    			add_location(td0, file$j, 122, 20, 3899);
-    			add_location(td1, file$j, 123, 20, 3994);
-    			add_location(td2, file$j, 124, 20, 4036);
-    			add_location(td3, file$j, 125, 20, 4078);
-    			add_location(td4, file$j, 126, 20, 4122);
-    			add_location(td5, file$j, 127, 20, 4173);
-    			add_location(td6, file$j, 128, 20, 4221);
-    			add_location(tr, file$j, 121, 16, 3873);
+    			add_location(a, file$j, 122, 24, 3902);
+    			add_location(td0, file$j, 122, 20, 3898);
+    			add_location(td1, file$j, 123, 20, 3993);
+    			add_location(td2, file$j, 124, 20, 4035);
+    			add_location(td3, file$j, 125, 20, 4077);
+    			add_location(td4, file$j, 126, 20, 4121);
+    			add_location(td5, file$j, 127, 20, 4172);
+    			add_location(td6, file$j, 128, 20, 4220);
+    			add_location(tr, file$j, 121, 16, 3872);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, tr, anchor);
@@ -3259,33 +3259,33 @@ var app = (function () {
     				each_blocks[i].c();
     			}
 
-    			add_location(td0, file$j, 101, 16, 2996);
-    			add_location(td1, file$j, 102, 16, 3027);
-    			add_location(td2, file$j, 103, 16, 3057);
-    			add_location(td3, file$j, 104, 16, 3088);
-    			add_location(td4, file$j, 105, 16, 3122);
-    			add_location(td5, file$j, 106, 16, 3170);
-    			add_location(tr0, file$j, 100, 12, 2974);
-    			add_location(thead, file$j, 99, 8, 2953);
-    			add_location(input0, file$j, 111, 20, 3298);
-    			add_location(td6, file$j, 111, 16, 3294);
+    			add_location(td0, file$j, 101, 16, 2995);
+    			add_location(td1, file$j, 102, 16, 3026);
+    			add_location(td2, file$j, 103, 16, 3056);
+    			add_location(td3, file$j, 104, 16, 3087);
+    			add_location(td4, file$j, 105, 16, 3121);
+    			add_location(td5, file$j, 106, 16, 3169);
+    			add_location(tr0, file$j, 100, 12, 2973);
+    			add_location(thead, file$j, 99, 8, 2952);
+    			add_location(input0, file$j, 111, 20, 3297);
+    			add_location(td6, file$j, 111, 16, 3293);
     			attr_dev(input1, "type", "number");
-    			add_location(input1, file$j, 112, 20, 3362);
-    			add_location(td7, file$j, 112, 16, 3358);
+    			add_location(input1, file$j, 112, 20, 3361);
+    			add_location(td7, file$j, 112, 16, 3357);
     			attr_dev(input2, "type", "number");
-    			add_location(input2, file$j, 113, 20, 3435);
-    			add_location(td8, file$j, 113, 16, 3431);
-    			add_location(input3, file$j, 114, 20, 3508);
-    			add_location(td9, file$j, 114, 16, 3504);
+    			add_location(input2, file$j, 113, 20, 3434);
+    			add_location(td8, file$j, 113, 16, 3430);
+    			add_location(input3, file$j, 114, 20, 3507);
+    			add_location(td9, file$j, 114, 16, 3503);
     			attr_dev(input4, "type", "number");
-    			add_location(input4, file$j, 115, 20, 3571);
-    			add_location(td10, file$j, 115, 16, 3567);
+    			add_location(input4, file$j, 115, 20, 3570);
+    			add_location(td10, file$j, 115, 16, 3566);
     			attr_dev(input5, "type", "number");
-    			add_location(input5, file$j, 116, 20, 3653);
-    			add_location(td11, file$j, 116, 16, 3649);
-    			add_location(td12, file$j, 117, 16, 3728);
-    			add_location(tr1, file$j, 110, 12, 3272);
-    			add_location(tbody, file$j, 109, 8, 3251);
+    			add_location(input5, file$j, 116, 20, 3652);
+    			add_location(td11, file$j, 116, 16, 3648);
+    			add_location(td12, file$j, 117, 16, 3727);
+    			add_location(tr1, file$j, 110, 12, 3271);
+    			add_location(tbody, file$j, 109, 8, 3250);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, thead, anchor);
@@ -3566,12 +3566,12 @@ var app = (function () {
     			td1 = element("td");
     			create_component(button1.$$.fragment);
     			attr_dev(h1, "class", "svelte-ltgkn4");
-    			add_location(h1, file$j, 97, 4, 2865);
-    			add_location(td0, file$j, 140, 8, 4500);
-    			add_location(td1, file$j, 141, 8, 4576);
-    			add_location(tr, file$j, 139, 4, 4486);
+    			add_location(h1, file$j, 97, 4, 2864);
+    			add_location(td0, file$j, 140, 8, 4499);
+    			add_location(td1, file$j, 141, 8, 4575);
+    			add_location(tr, file$j, 139, 4, 4485);
     			attr_dev(main, "class", "svelte-ltgkn4");
-    			add_location(main, file$j, 96, 0, 2853);
+    			add_location(main, file$j, 96, 0, 2852);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -3677,16 +3677,16 @@ var app = (function () {
 
     	async function getLoadAwards() {
     		console.log("Fetching awards ...");
-    		const res = await fetch(BASE + "/awards/LoadInitialData");
+
+    		const res = await fetch(BASE + "/awards/LoadInitialData").then(res => {
+    			getAwards();
+    		});
 
     		if (res.ok) {
     			console.log("Ok.");
     			const json = await res.json();
     			$$invalidate(0, awards = json);
-
-    			console.log(`We have received ${awards.length} awards.`).then(res => {
-    				getAwards();
-    			});
+    			console.log(`We have received ${awards.length} awards.`);
     		} else {
     			console.log("Error!");
     		}
