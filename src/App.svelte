@@ -22,7 +22,7 @@
         "/awards": Awards,
         "/awards/:country/:year": AwardsPUT,
 		"/platforms": PlatformsAPI,
-		"/platfomrs/:country/:date": EditPlatformsAPI,
+		"/platforms/:country/:year": EditPlatformsAPI,
         "*": NotFound
         
         
