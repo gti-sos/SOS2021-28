@@ -6,13 +6,6 @@
     } from "svelte";
 
     import {
-    Nav,
-    Modal,
-    ModalBody,
-    ModalFooter,
-    ModalHeader,
-    NavItem,
-    NavLink,
     Button,
     Table,
     Pagination,
@@ -28,6 +21,17 @@
         "winner": "",
         "n-platform":0,
         "n-award":0
+        
+
+    }
+
+    let busqueda = {
+        "country": "",
+        "year": "",
+        "gala": "",
+        "winner": "",
+        "nplatform":"",
+        "naward":""
         
 
     }
@@ -66,13 +70,15 @@
       errorMsg = "";
       getNumTotal();
     } else {
-      if (awards.length != 0) {
+      if (awards.length === 0) {
         errorMsg = "No hay datos disponibles";
         console.log("ERROR!");
       }
       if (res.status === 500) {
         errorMsg = "No se han podido acceder a la base de datos";
-      }
+      }else if(res.status ===404){
+          errorMsg = "No se han encontrado datos";
+        }
       okMsg = "";
       console.log("ERROR!" + errorMsg);
     }
@@ -102,6 +108,11 @@
 
     async function insertAwards(){
         console.log("Inserting award "+ JSON.stringify(newAward));
+        if (newAward.country === "" || newAward.year === 0){
+            errorMsg = "debe introducir pais y año";
+            okMsg = "";
+            console.log("ERROR!" + errorMsg);
+        }else{
 
         const res = await fetch(BASE +"/awards",
                             {
@@ -112,9 +123,30 @@
                                 }
                             }
                            ).then( (res) => {
-                               getAwards();
-                           })
+                               
+                               if(res.ok){
+                                    console.log("Ok.");
+                                    getAwards();
+                                    errorMsg = ""
+                                    errorStatus = 0
+                                    okMsg = "Dato cargado correctamente"
+                                    
+                                }else{
+                                    if(res.status === 500) {
+                                        errorMsg = "No se han podido acceder a la base de datos";
+                                    }else if(res.status ===409){
+                                            errorMsg = "ya existe el recurso dado";
+                                        }else if(res.status ===400){
+                                            errorMsg = "se han introducido datos erroneos";
+                                        }
+                                    okMsg = "";
+                                    console.log("ERROR!" + errorMsg);
+            }
+        })
+        }
     }
+                
+    
     
     async function deleteAwards(AwardCountry,AwardYear){
         console.log("Deleting contact with name "+ AwardCountry + "/" + AwardYear);
@@ -181,18 +213,18 @@
 
   async function searchAward() {
     console.log("Searching award...");
-
+    
     var campos = new Map(
-      Object.entries(newAward).filter((o) => {
-        return o[1] != "";
-      })
+      Object.entries(busqueda)
     );
     let querySymbol = "?";
     for (var [clave, valor] of campos.entries()) {
+      if(valor != ""){  
       querySymbol += clave + "=" + valor + "&";
+      }
     }
     fullQuery = querySymbol.slice(0, -1);
-
+    console.log("la query es " + fullQuery)
     if (fullQuery != "") {
       const res = await fetch(
         BASE + "/awards/" + fullQuery
@@ -212,10 +244,12 @@
         okMsg = "";
         console.log("ERROR!" + errorMsg);
       }
-    } else {
-      errorMsg = "";
-      okMsg = "Búsqueda realizada correctamente";
-      getAwards();
+    }else {
+      errorMsg = "No se encuentra el dato solicitado";
+      okMsg = "";
+      console.log("ERROR!" + errorMsg);
+      
+      
     }
   }
 
@@ -287,6 +321,17 @@
                 <td><input type=number bind:value={newAward["n-platform"]}></td>
                 <td><input type=number bind:value={newAward["n-award"]}></td>
                 <td><Button on:click={insertAwards}>insertar</Button></td>
+                
+            </tr>
+
+            <tr>
+                <td><input bind:value={busqueda.country}></td>
+                <td><input type=number bind:value={busqueda.year}></td>
+                <td><input type=number bind:value={busqueda.gala}></td>
+                <td><input bind:value={busqueda.winner}></td>
+                <td><input type=number bind:value={busqueda.nplatform}></td>
+                <td><input type=number bind:value={busqueda.naward}></td>
+                
                 <td><Button color="secondary" on:click={searchAward}>Buscar</Button></td>
             </tr>
             

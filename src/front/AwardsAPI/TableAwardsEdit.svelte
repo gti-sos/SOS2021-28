@@ -67,12 +67,25 @@ const res = await fetch("/api/v1/awards/" + params.country + "/" + params.year, 
         "Content-Type": "application/json"
     }
 }).then(function (res) {
-    getAward();
-});
+      if (res.ok) {
+        console.log("OK");
+        getAward();
+        okMsg = "Operación realizada correctamente, vuelva atras para ver todos los datos en la tabla";
+      } else {
+        if(res.status===404){
+          errorMsg = "No se encuentra el dato a editar";
+        }else if(res.status ===500){
+          errorMsg = "No se han podido acceder a la base de datos";
+        }else if(res.status ===400){
+          errorMsg = "se han introducido datos erroneos";
+          }        
+        okMsg = "";
+        console.log("ERROR!" + errorMsg);
+      }
+    });
+  }
 
 
-
-}
 </script>
 
 <main>

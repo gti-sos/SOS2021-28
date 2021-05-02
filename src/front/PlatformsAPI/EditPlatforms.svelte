@@ -8,10 +8,10 @@
   let stat = {};
   
   let updateCountry = "XXXX";
-  let updatePlatform = "XXXX";
-  let updateYear = 0;
-  let updateSold = 0;
-  let updateGeneration = 0;
+  let updatePlatforms = "XXXX";
+  let updateYear = 1999;
+  let updateSold = 999999;
+  let updateGeneration = 99;
 
   let errorMsg = "";
   let okMsg = "";
@@ -45,7 +45,7 @@
     }
   }
 
-  async function updatePlatforms() {
+  async function updatePlatform() {
 console.log("Updating platform..." + JSON.stringify(params.country));
 const res = await fetch("/api/v1/platforms/" + params.country + "/" + params.year, {
     method: "PUT",
@@ -60,25 +60,11 @@ const res = await fetch("/api/v1/platforms/" + params.country + "/" + params.yea
         "Content-Type": "application/json"
     }
 }).then(function (res) {
-	 okMsg = "Operación realizada correctamente, vuelva atras para ver todos los datos en la tabla";
-      if (res.ok) {
-        console.log("OK");
-        getStats();
-        errorMsg = "Operación realizada correctamente, vuelva atras para ver todos los datos en la tabla";
-        okMsg = "Operación realizada correctamente";
-      } else {
-        if(res.status===404){
-          errorMsg = "No se encuentra el dato a borrar";
-        }else if(res.status ===500){
-          errorMsg = "No se han podido acceder a la base de datos";
-        }        
-        okMsg = "";
-        console.log("ERROR!" + errorMsg);
-      }
-    });
+    getStat();
+});
   }
 
-  
+  onMount(getStat);
 </script>
 
 <main>
@@ -91,7 +77,7 @@ const res = await fetch("/api/v1/platforms/" + params.country + "/" + params.yea
   <h2>
     Editar campo 
 	<strong>{params.country}</strong>
-	
+	<strong>{params.platform}</strong>
     <strong>{params.year}</strong>
   </h2>
   <Table bordered>
@@ -107,13 +93,13 @@ const res = await fetch("/api/v1/platforms/" + params.country + "/" + params.yea
     </thead>
     <tbody>
       <tr>
-        <td>{params.country}</td>
-		<td><input type="text" bind:value={updatePlatform} /></td>
-        <td>{params.year}</td>
-        <td><input type="number" bind:value={updateSold} /></td>
-        <td><input type="number" bind:value={updateGeneration} /></td>
+        <td>{updateCountry}</td>
+		<td>{updatePlatforms}</td>
+        <td>{updateYear}</td>
+        <td><input type="number" placeholder="200000" min="1"   bind:value={updateSold} /></td>
+        <td><input type="number" placeholder="8" min="1"   bind:value={updateGeneration} /></td>
         <td>
-          <Button outline color="primary" on:click={updatePlatforms}>Actualizar</Button>
+          <Button outline color="primary" on:click={updatePlatform}>Actualizar</Button>
         </td>
       </tr>
     </tbody>
