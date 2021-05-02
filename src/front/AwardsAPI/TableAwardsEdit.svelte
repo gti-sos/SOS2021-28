@@ -19,7 +19,7 @@
     let updatedNPlatforms = 0;
     let updatedNAwards = 0;
     let errorMsg = "";
-
+    let okMsg = "";
     onMount(getAward);
     async function getAward() {
 
@@ -38,10 +38,15 @@
             updatedNAwards = award["n-award"]
             
             console.log("Received contact.");
-        } else {
-            errorMsg = res.status + ": " + res.statusText;
-            console.log("ERROR!" + errorMsg);
-        }
+        }else {
+            if(res.status===404){
+                errorMsg = "No se encuentra el dato solicitado";
+                }else if(res.status ===500){
+                errorMsg = "No se han podido acceder a la base de datos";
+                }        
+                okMsg = "";
+                console.log("ERROR!" + errorMsg);
+            }
     }
 
     async function updateAward() {
@@ -96,9 +101,12 @@ const res = await fetch("/api/v1/awards/" + params.country + "/" + params.year, 
             </tr>
     </tbody>
     </Table>
-{#if errorMsg}
-    <p style="color: red">ERROR: {errorMsg}</p>
-{/if}
+    {#if errorMsg}
+        <p style="color: red">ERROR: {errorMsg}</p>
+    {/if}
+    {#if okMsg}
+        <p style="color: green">{okMsg}</p>
+    {/if}
 <Button outline color="secondary" on:click="{pop}">Atras</Button>
 
 </main>

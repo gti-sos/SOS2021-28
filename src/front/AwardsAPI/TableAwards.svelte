@@ -5,8 +5,20 @@
         onMount
     } from "svelte";
 
-    import Table from "sveltestrap/src/Table.svelte";
-    import Button from "sveltestrap/src/Button.svelte";
+    import {
+    Nav,
+    Modal,
+    ModalBody,
+    ModalFooter,
+    ModalHeader,
+    NavItem,
+    NavLink,
+    Button,
+    Table,
+    Pagination,
+    PaginationItem,
+    PaginationLink,
+  } from "sveltestrap";
 
     let awards = [];
     let newAward = {
@@ -20,35 +32,72 @@
 
     }
 
-    const BASE = "/api/v1";
+    let fullQuery = "";
 
+    //Pagination
+    let current_offset = 0;
+    let limit = 10;
+
+    let current_page = 1;
+    let last_page = 1;
+    let total = 0;
+
+    const BASE = "/api/v1";
+    let errorMsg = "";
+    let okMsg = "";
+    let errorStatus = 0;
+
+    
     async function getAwards(){
         console.log("Fetching awards ...");
-        const res = await fetch(BASE +"/awards");
-        if(res.ok){
-            console.log("Ok.");
-            const json = await res.json();
-            awards = json;
-            console.log(`We have received ${awards.length} awards.`);
-        }else{
-            console.log("Error!");
-        }
+        const res = await fetch(
+      BASE +
+        "/awards?limit=" +
+        limit +
+        "&offset=" +
+        current_offset
+    );
+
+    if (res.ok) {
+      console.log("Ok");
+      const json = await res.json();
+      awards = json;
+      console.log(`We have received ${awards.length} __.`);
+      errorMsg = "";
+      getNumTotal();
+    } else {
+      if (awards.length != 0) {
+        errorMsg = "No hay datos disponibles";
+        console.log("ERROR!");
+      }
+      if (res.status === 500) {
+        errorMsg = "No se han podido acceder a la base de datos";
+      }
+      okMsg = "";
+      console.log("ERROR!" + errorMsg);
     }
+  }
 
     async function getLoadAwards(){
         console.log("Fetching awards ...");
         const res = await fetch(BASE +"/awards/LoadInitialData").then( (res) => {
-                               getAwards();
-                           })
-        if(res.ok){
-            console.log("Ok.");
-            const json = await res.json();
-            awards = json;
-            console.log(`We have received ${awards.length} awards.`)
-            
-        }else{
-            console.log("Error!");
-        }
+                               
+                           
+            if(res.ok){
+                console.log("Ok.");
+                getAwards();
+                errorMsg = ""
+                errorStatus = 0
+                okMsg = "Datos cargados correctamente"
+                
+            }else{
+                if(res.status === 500) {
+                    errorMsg = "No se han podido acceder a la base de datos";
+                }
+                okMsg = "";
+                console.log("ERROR!" + errorMsg);
+            }
+        })
     }
 
     async function insertAwards(){
@@ -74,28 +123,150 @@
                             {
                                 method: "DELETE"
                             }
-                           ).then( (res) => {
-                               getAwards();
-                           })
-    }
+                           ).then(function (res) {
+      if (res.ok) {
+        console.log("OK");
+        
+        if (awards.length === 1) {
+          awards = [];
+          currentPage = 1;
+          
+        }
+        errorMsg = "";
+        okMsg = "Operación realizada correctamente";
+        getAwards();
+      } else {
+        if(res.status===404){
+          errorMsg = "No existe el dato a borrar";
+        }else if(res.status ===500){
+          errorMsg = "No se han podido acceder a la base de datos";
+        }        
+        okMsg = "";
+        console.log("ERROR!" + errorMsg);
+      }
+    });
+  }
 
     async function deleteAllAwards(){
-        console.log("Deleting contact with name ");
+        console.log("Deleting awards");
 
         const res = await fetch(BASE +"/awards/",
                             {
                                 method: "DELETE"
                             }
-                           ).then( (res) => {
-                               getAwards();
-                           })
+                           ).then(function (res) {
+                               
+          
+                            
+      if (res.ok) {
+        console.log("OK");
+        awards = []
+        errorMsg = "";
+        okMsg = "Operación realizada correctamente";
+        
+        
+      } else {
+        if(res.status===404){
+            
+          errorMsg = "No existen datos que borrar";
+          
+        }else if(res.status ===500){
+          errorMsg = "No se han podido acceder a la base de datos";
+        }        
+        okMsg = "";
+        console.log("ERROR!" + errorMsg);
+      }
+    });
+  }
+
+  async function searchAward() {
+    console.log("Searching award...");
+
+    var campos = new Map(
+      Object.entries(newAward).filter((o) => {
+        return o[1] != "";
+      })
+    );
+    let querySymbol = "?";
+    for (var [clave, valor] of campos.entries()) {
+      querySymbol += clave + "=" + valor + "&";
     }
+    fullQuery = querySymbol.slice(0, -1);
+
+    if (fullQuery != "") {
+      const res = await fetch(
+        BASE + "/awards/" + fullQuery
+      );
+      if (res.ok) {
+        console.log("OK");
+        const json = await res.json();
+        awards = json;
+        okMsg="Búsqueda realizada correctamente"
+      } else {
+        awards = [];
+        if (res.status === 404) {
+          errorMsg = "No se encuentra el dato solicitado";
+        } else if (res.status === 500) {
+          errorMsg = "No se han podido acceder a la base de datos";
+        }
+        okMsg = "";
+        console.log("ERROR!" + errorMsg);
+      }
+    } else {
+      errorMsg = "";
+      okMsg = "Búsqueda realizada correctamente";
+      getAwards();
+    }
+  }
+
+  //Total de datos en la BD
+  async function getNumTotal() {
+    const res = await fetch(BASE + "/awards");
+    if (res.ok) {
+      const json = await res.json();
+      total = json.length;
+      console.log("getTOTAL: " + total);
+      changePage(current_page, current_offset);
+    } else {
+      errorMsg = "No se han encontrado datos.";
+    }
+  }
+  //Calcula el rango entre ods valores
+  function range(size, startAt = 0) {
+    return [...Array(size).keys()].map((i) => i + startAt);
+  }
+
+  //Cambio de pagina
+  function changePage(page, offset) {
+    console.log("------Change page------");
+    console.log("Params page: " + page + " offset: " + offset);
+    last_page = Math.ceil(total / 10);
+    console.log("new last page: " + last_page);
+    if (page !== current_page) {
+      console.log("enter if");
+      current_offset = offset;
+      current_page = page;
+      console.log("page: " + page);
+      console.log("current_offset: " + current_offset);
+      console.log("current_page: " + current_page);
+      getAwards();
+    }
+    console.log("---------Exit change page-------");
+  }
+
+
     onMount(getAwards);
 
 </script>
 
 <main>
     <h1>Tabla relacionada con los premios a videojuegos</h1>
+    {#if errorMsg}
+    <p style="color: red">ERROR: {errorMsg}</p>
+    {/if}
+    {#if okMsg}
+    <p style="color: green">{okMsg}</p>
+    {/if}
     <Table bordered>
         <thead>
             <tr>
@@ -116,6 +287,7 @@
                 <td><input type=number bind:value={newAward["n-platform"]}></td>
                 <td><input type=number bind:value={newAward["n-award"]}></td>
                 <td><Button on:click={insertAwards}>insertar</Button></td>
+                <td><Button color="secondary" on:click={searchAward}>Buscar</Button></td>
             </tr>
             
             {#each awards as data}
@@ -141,7 +313,34 @@
         <td> <Button on:click={deleteAllAwards}>Borrar Todo</Button> </td>
         <td> <Button on:click={getLoadAwards}>Cargar Valores Iniciales</Button> </td>
     </tr> 
-    
+
+    <!-- Pagination -->
+  <Pagination ariaLabel="Web pagination">
+    <PaginationItem class={current_page === 1 ? "disabled" : ""}>
+      <PaginationLink
+        previous
+        href="#/awards"
+        on:click={() => changePage(current_page - 1, current_offset - 10)}
+      />
+    </PaginationItem>
+    {#each range(last_page, 1) as page}
+      <PaginationItem class={current_page === page ? "active" : ""}>
+        <PaginationLink
+          previous
+          href="#/awards"
+          on:click={() => changePage(page, (page - 1) * 10)}
+          >{page}</PaginationLink
+        >
+      </PaginationItem>
+    {/each}
+    <PaginationItem class={current_page === last_page ? "disabled" : ""}>
+      <PaginationLink
+        next
+        href="#/awards"
+        on:click={() => changePage(current_page + 1, current_offset + 10)}
+      />
+    </PaginationItem>
+  </Pagination>
 </main>
 
 <style>
