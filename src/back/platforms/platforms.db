@@ -1,41 +1,75 @@
-{"country":"Japan","platform":"Nintendo 3DS","year":2016,"sold-unit":202885,"generation":8,"_id":"PIJuOj7ivIkKA8Az"}
-{"country":"U.S","platform":"Nintendo 3DS","year":2015,"sold-unit":15000000,"generation":8,"_id":"bXLPLYbmsqaHJZq3"}
-{"country":"UK","platform":"PlayStation4","year":2016,"sold-unit":3000000,"generation":8,"_id":"3awocNGk8RNkEFQe"}
-{"country":"Germany","platform":"PlayStation4","year":2015,"sold-unit":2800000,"generation":8,"_id":"fYIQSOqNeIj3vajq"}
-{"country":"Spain","platform":"Nintendo 3DS","year":2014,"sold-unit":900000,"generation":8,"_id":"Mn2PYBhExNVfK7KR"}
-{"country":"France","platform":"Nintendo 3DS","year":2015,"sold-unit":4000000,"generation":8,"_id":"C2ZVyQf3C9kOQlhj"}
-{"country":"Portugal","platform":"PlayStation4","year":2015,"sold-unit":100000,"generation":8,"_id":"nuzVs5TuRbCljoLR"}
-{"country":"China","platform":"PlayStation4","year":2015,"sold-unit":73112,"generation":8,"_id":"xtZrlDVhlsq8KL38"}
-{"$$deleted":true,"_id":"3awocNGk8RNkEFQe"}
-{"$$deleted":true,"_id":"C2ZVyQf3C9kOQlhj"}
-{"$$deleted":true,"_id":"Mn2PYBhExNVfK7KR"}
-{"$$deleted":true,"_id":"PIJuOj7ivIkKA8Az"}
-{"$$deleted":true,"_id":"bXLPLYbmsqaHJZq3"}
-{"$$deleted":true,"_id":"fYIQSOqNeIj3vajq"}
-{"$$deleted":true,"_id":"nuzVs5TuRbCljoLR"}
-{"$$deleted":true,"_id":"xtZrlDVhlsq8KL38"}
-{"country":"Japan","platform":"Nintendo 3DS","year":2016,"sold-unit":202885,"generation":8,"_id":"s5xErvDqw02T9jWw"}
-{"country":"U.S","platform":"Nintendo 3DS","year":2015,"sold-unit":15000000,"generation":8,"_id":"eEW2B1PVCegUp3NV"}
-{"country":"UK","platform":"PlayStation4","year":2016,"sold-unit":3000000,"generation":8,"_id":"tS2NOaLPHrdcidu7"}
-{"country":"Germany","platform":"PlayStation4","year":2015,"sold-unit":2800000,"generation":8,"_id":"GA9mzMd4LNEqvqC4"}
-{"country":"Spain","platform":"Nintendo 3DS","year":2014,"sold-unit":900000,"generation":8,"_id":"kDwhG0cMsEFCx27G"}
-{"country":"France","platform":"Nintendo 3DS","year":2015,"sold-unit":4000000,"generation":8,"_id":"AD2MDibrYeCe8fup"}
-{"country":"Portugal","platform":"PlayStation4","year":2015,"sold-unit":100000,"generation":8,"_id":"kHt2mCVHGa12cBnK"}
-{"country":"China","platform":"PlayStation4","year":2015,"sold-unit":73112,"generation":8,"_id":"C9BbFD2Wf4NnAmes"}
-{"country":"France","platform":"Wii","year":"2015","sold-unit":555555,"generation":5,"_id":"AD2MDibrYeCe8fup"}
-{"$$deleted":true,"_id":"AD2MDibrYeCe8fup"}
-{"$$deleted":true,"_id":"C9BbFD2Wf4NnAmes"}
-{"$$deleted":true,"_id":"GA9mzMd4LNEqvqC4"}
-{"$$deleted":true,"_id":"eEW2B1PVCegUp3NV"}
-{"$$deleted":true,"_id":"kDwhG0cMsEFCx27G"}
-{"$$deleted":true,"_id":"kHt2mCVHGa12cBnK"}
-{"$$deleted":true,"_id":"s5xErvDqw02T9jWw"}
-{"$$deleted":true,"_id":"tS2NOaLPHrdcidu7"}
-{"country":"Japan","platform":"Nintendo 3DS","year":2016,"sold-unit":202885,"generation":8,"_id":"8vv3iToCD0czeyce"}
-{"country":"U.S","platform":"Nintendo 3DS","year":2015,"sold-unit":15000000,"generation":8,"_id":"f1CyqGvhJi6ctiJs"}
-{"country":"UK","platform":"PlayStation4","year":2016,"sold-unit":3000000,"generation":8,"_id":"KGUFN0j3t0klDU2e"}
-{"country":"Germany","platform":"PlayStation4","year":2015,"sold-unit":2800000,"generation":8,"_id":"84Y0GiepPrum9l0y"}
-{"country":"Spain","platform":"Nintendo 3DS","year":2014,"sold-unit":900000,"generation":8,"_id":"uspE9it7OZwj7LuN"}
-{"country":"France","platform":"Nintendo 3DS","year":2015,"sold-unit":4000000,"generation":8,"_id":"vCCLX31cfWaCnGmg"}
-{"country":"Portugal","platform":"PlayStation4","year":2015,"sold-unit":100000,"generation":8,"_id":"pOUbnAujdLPt1450"}
-{"country":"China","platform":"PlayStation4","year":2015,"sold-unit":73112,"generation":8,"_id":"Fl1x6Bx2Go2rM4mU"}
+{"country":"Spain","platform":"Nintendo 3DS","year":2014,"sold-unit":900000,"generation":8,"_id":"0F3c9kyWKBwKEOpw"}
+{"country":"U.S","platform":"Nintendo 3DS","year":2015,"sold-unit":15000000,"generation":8,"_id":"1QfbCs2IWoh3Pj4f"}
+{"country":"Germany","platform":"PlayStation4","year":2015,"sold-unit":2800000,"generation":8,"_id":"FhZziIZPL4xMceiZ"}
+{"country":"Portugal","platform":"PlayStation4","year":2015,"sold-unit":100000,"generation":8,"_id":"IRB26oAWzL0kH4VJ"}
+{"country":"Japan","platform":"Nintendo 3DS","year":2016,"sold-unit":202885,"generation":8,"_id":"IrRCRW8ibWYC2Pyh"}
+{"country":"UK","platform":"PlayStation4","year":2016,"sold-unit":3000000,"generation":8,"_id":"OoyflefTNzLgKZ4J"}
+{"country":"China","platform":"PlayStation4","year":2015,"sold-unit":73112,"generation":8,"_id":"rRa9Yqzu7I00ltcS"}
+{"country":"France","platform":"Nintendo 3DS","year":2015,"sold-unit":4000000,"generation":8,"_id":"ubWO3NdyBoC485if"}
+{"$$deleted":true,"_id":"0F3c9kyWKBwKEOpw"}
+{"$$deleted":true,"_id":"1QfbCs2IWoh3Pj4f"}
+{"$$deleted":true,"_id":"FhZziIZPL4xMceiZ"}
+{"$$deleted":true,"_id":"IRB26oAWzL0kH4VJ"}
+{"$$deleted":true,"_id":"IrRCRW8ibWYC2Pyh"}
+{"$$deleted":true,"_id":"OoyflefTNzLgKZ4J"}
+{"$$deleted":true,"_id":"rRa9Yqzu7I00ltcS"}
+{"$$deleted":true,"_id":"ubWO3NdyBoC485if"}
+{"country":"Japan","platform":"Nintendo 3DS","year":2016,"sold-unit":202885,"generation":8,"_id":"Ja6iNBsvfXRl2SSO"}
+{"country":"U.S","platform":"Nintendo 3DS","year":2015,"sold-unit":15000000,"generation":8,"_id":"lvYU8bSWK5fRKmoA"}
+{"country":"UK","platform":"PlayStation4","year":2016,"sold-unit":3000000,"generation":8,"_id":"9bohFSB9JmypLut4"}
+{"country":"Germany","platform":"PlayStation4","year":2015,"sold-unit":2800000,"generation":8,"_id":"JBBF2VOwuUrpNyCi"}
+{"country":"Spain","platform":"Nintendo 3DS","year":2014,"sold-unit":900000,"generation":8,"_id":"YPHhMEMXwaBZi1Fk"}
+{"country":"France","platform":"Nintendo 3DS","year":2015,"sold-unit":4000000,"generation":8,"_id":"g6H8iyluMoG7O9Kf"}
+{"country":"Portugal","platform":"PlayStation4","year":2015,"sold-unit":100000,"generation":8,"_id":"5IaKzvtuzJ9YOOc4"}
+{"country":"China","platform":"PlayStation4","year":2015,"sold-unit":73112,"generation":8,"_id":"gyNdIWxdmUwvIL7N"}
+{"country":"Japan","platform":"Nintendo 3DS","year":2016,"sold-unit":202885,"generation":8,"_id":"GKHurYu05GdXxMUt"}
+{"country":"U.S","platform":"Nintendo 3DS","year":2015,"sold-unit":15000000,"generation":8,"_id":"yS8Yr0G3cznobdf0"}
+{"country":"UK","platform":"PlayStation4","year":2016,"sold-unit":3000000,"generation":8,"_id":"bDYo89V2y94u5E8h"}
+{"country":"Germany","platform":"PlayStation4","year":2015,"sold-unit":2800000,"generation":8,"_id":"4CSOOJ1gajFpwT7i"}
+{"country":"Spain","platform":"Nintendo 3DS","year":2014,"sold-unit":900000,"generation":8,"_id":"Ja6xOoe6yT40Xb75"}
+{"country":"France","platform":"Nintendo 3DS","year":2015,"sold-unit":4000000,"generation":8,"_id":"c8ZjzK9sGCwlb43g"}
+{"country":"Portugal","platform":"PlayStation4","year":2015,"sold-unit":100000,"generation":8,"_id":"g5ZzH5cTqvaGFPQ5"}
+{"country":"China","platform":"PlayStation4","year":2015,"sold-unit":73112,"generation":8,"_id":"yjn2FW1kHlNAu0A4"}
+{"$$deleted":true,"_id":"4CSOOJ1gajFpwT7i"}
+{"$$deleted":true,"_id":"5IaKzvtuzJ9YOOc4"}
+{"$$deleted":true,"_id":"9bohFSB9JmypLut4"}
+{"$$deleted":true,"_id":"GKHurYu05GdXxMUt"}
+{"$$deleted":true,"_id":"JBBF2VOwuUrpNyCi"}
+{"$$deleted":true,"_id":"Ja6iNBsvfXRl2SSO"}
+{"$$deleted":true,"_id":"Ja6xOoe6yT40Xb75"}
+{"$$deleted":true,"_id":"YPHhMEMXwaBZi1Fk"}
+{"$$deleted":true,"_id":"bDYo89V2y94u5E8h"}
+{"$$deleted":true,"_id":"c8ZjzK9sGCwlb43g"}
+{"$$deleted":true,"_id":"g5ZzH5cTqvaGFPQ5"}
+{"$$deleted":true,"_id":"g6H8iyluMoG7O9Kf"}
+{"$$deleted":true,"_id":"gyNdIWxdmUwvIL7N"}
+{"$$deleted":true,"_id":"lvYU8bSWK5fRKmoA"}
+{"$$deleted":true,"_id":"yS8Yr0G3cznobdf0"}
+{"$$deleted":true,"_id":"yjn2FW1kHlNAu0A4"}
+{"country":"Japan","platform":"Nintendo 3DS","year":2016,"sold-unit":202885,"generation":8,"_id":"vF70PJycGukZRClr"}
+{"country":"U.S","platform":"Nintendo 3DS","year":2015,"sold-unit":15000000,"generation":8,"_id":"wE8e6H7BqTGI8uoN"}
+{"country":"UK","platform":"PlayStation4","year":2016,"sold-unit":3000000,"generation":8,"_id":"p3xkDv8emIZjNfcs"}
+{"country":"Germany","platform":"PlayStation4","year":2015,"sold-unit":2800000,"generation":8,"_id":"6LMgaFjd3FNoeCZE"}
+{"country":"Spain","platform":"Nintendo 3DS","year":2014,"sold-unit":900000,"generation":8,"_id":"NFrRs1vs5lWzQnHA"}
+{"country":"France","platform":"Nintendo 3DS","year":2015,"sold-unit":4000000,"generation":8,"_id":"ZW9zQLk9Ic2RedF1"}
+{"country":"Portugal","platform":"PlayStation4","year":2015,"sold-unit":100000,"generation":8,"_id":"tf3m3AD7P2RUbk5g"}
+{"country":"China","platform":"PlayStation4","year":2015,"sold-unit":73112,"generation":8,"_id":"36XHa1pt9nHVemWZ"}
+{"country":"espania","platform":"wii","year":2016,"sold-unit":28856,"generation":7,"_id":"2QIs4tIdvRFEqUtL"}
+{"$$deleted":true,"_id":"2QIs4tIdvRFEqUtL"}
+{"country":"China","platform":"wiii","year":"2015","sold-unit":2002,"generation":20,"_id":"36XHa1pt9nHVemWZ"}
+{"$$deleted":true,"_id":"36XHa1pt9nHVemWZ"}
+{"$$deleted":true,"_id":"6LMgaFjd3FNoeCZE"}
+{"$$deleted":true,"_id":"NFrRs1vs5lWzQnHA"}
+{"$$deleted":true,"_id":"ZW9zQLk9Ic2RedF1"}
+{"$$deleted":true,"_id":"p3xkDv8emIZjNfcs"}
+{"$$deleted":true,"_id":"tf3m3AD7P2RUbk5g"}
+{"$$deleted":true,"_id":"vF70PJycGukZRClr"}
+{"$$deleted":true,"_id":"wE8e6H7BqTGI8uoN"}
+{"country":"Japan","platform":"Nintendo 3DS","year":2016,"sold-unit":202885,"generation":8,"_id":"y3fCbusIz1FVJTcH"}
+{"country":"U.S","platform":"Nintendo 3DS","year":2015,"sold-unit":15000000,"generation":8,"_id":"0gVezZPvjajxERYH"}
+{"country":"UK","platform":"PlayStation4","year":2016,"sold-unit":3000000,"generation":8,"_id":"j9VyKwOl5Kx9jTUz"}
+{"country":"Germany","platform":"PlayStation4","year":2015,"sold-unit":2800000,"generation":8,"_id":"An14gW1IMCsUkuIp"}
+{"country":"Spain","platform":"Nintendo 3DS","year":2014,"sold-unit":900000,"generation":8,"_id":"jGMp8gf2ITB5sKRD"}
+{"country":"France","platform":"Nintendo 3DS","year":2015,"sold-unit":4000000,"generation":8,"_id":"oJl6YcNNB6cVJVWa"}
+{"country":"Portugal","platform":"PlayStation4","year":2015,"sold-unit":100000,"generation":8,"_id":"6XK9Qzy0RYFOpwxN"}
+{"country":"China","platform":"PlayStation4","year":2015,"sold-unit":73112,"generation":8,"_id":"2clexLs3h4gzRX92"}

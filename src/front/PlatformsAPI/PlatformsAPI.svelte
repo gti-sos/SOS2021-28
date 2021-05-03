@@ -36,6 +36,7 @@
   const BASE_CONTACT_API_PATH = "/api/v1";
 
   let platformsStats = [];
+  let resultQuery = [];
 
   let newStat = {
     "country": "",
@@ -43,6 +44,14 @@
     "year": 0,
     "sold-unit": 0,
     "generation": 0
+  };
+  
+  let queryStat = {
+    country: "",
+    platform: "",
+    year: "",
+    "sold-unit": "",
+    generation: "",
   };
 
   //Alertas
@@ -59,6 +68,28 @@
   let current_page = 1;
   let last_page = 1;
   let total = 0;
+  
+  
+  let isASearch = false;
+  // Functiones de ayuda
+  function resetInputs(flag) {
+    console.log("Reseting inputs: " + flag);
+    let resetStat = {
+      country: "",
+      platform: "",
+      year: "",
+      "sold-unit": "",
+      "women-born": "",
+      generation: "",
+    };
+    if (flag == 1) {
+      queryStat = resetStat;
+      current_page = 1;
+      current_offset = 0;
+    } else {
+      newStat = resetStat;
+    }
+  }
 
   //Functions
 
@@ -84,48 +115,86 @@
         console.log("ERROR!" + errorMsg);
       }
     });
+	
   }
 
   async function searchStat() {
     console.log("Searching stat...");
-
+    var msg = "";
+    if(isASearch==false){
+      current_offset=0;
+      current_page=1;
+    }
     var campos = new Map(
-      Object.entries(newStat).filter((o) => {
+      Object.entries(queryStat).filter((o) => {
         return o[1] != "";
       })
     );
     let querySymbol = "?";
     for (var [clave, valor] of campos.entries()) {
+      msg += clave + "=" + valor + " ";
       querySymbol += clave + "=" + valor + "&";
     }
     fullQuery = querySymbol.slice(0, -1);
-
     if (fullQuery != "") {
       const res = await fetch(
-        BASE_CONTACT_API_PATH + "/platforms/" + fullQuery
+        BASE_CONTACT_API_PATH +
+          "/platforms/" +
+          fullQuery +
+          "&limit=" +
+          limit +
+          "&offset=" +
+          current_offset
       );
       if (res.ok) {
         console.log("OK");
         const json = await res.json();
-        platformsStats = json;
-        okMsg="Búsqueda realizada correctamente"
+        resultQuery = json;
+        okMsg = "Resulado de la busqueda con " + msg;
+        isASearch = true;
+        getNumTotalQuery();
       } else {
-        platformsStats = [];
+        resultQuery = [];
         if (res.status === 404) {
-          errorMsg = "No se encuentra el dato solicitado";
+          errorMsg = "No existe un dato con " + msg;
         } else if (res.status === 500) {
-          errorMsg = "No se han podido acceder a la base de datos";
+          errorMsg = "No se ha podido acceder a la base de datos";
         }
         okMsg = "";
         console.log("ERROR!" + errorMsg);
       }
     } else {
-      errorMsg = "";
-      okMsg = "Búsqueda realizada correctamente";
-      getStats();
+      errorMsg = "Se necesita un campo a buscar";
+      okMsg = "";
     }
   }
+  //Total de datos de una query en la BD
+  async function getNumTotalQuery() {
+    console.log("Total entities of query");
+    const res = await fetch(
+      BASE_CONTACT_API_PATH + "/platforms" + fullQuery
+    );
+    if (res.ok) {
+      const json = await res.json();
+      total = json.length;
+      console.log("getTotal: " + total);
+      changePage(current_page, current_offset, isASearch);
+    } else {
+      errorMsg = "No se ha encontrado datos.";
+    }
+  }
+  
+  function restore() {
+    if (isASearch == true) {
+      resetInputs(1);
+      isASearch = false;
+    }
+    current_offset=0;
+    current_page=1;
+    getNumTotal();
+  }
 
+  
   //Total de datos en la BD
   async function getNumTotal() {
     const res = await fetch(BASE_CONTACT_API_PATH + "/platforms");
@@ -224,27 +293,27 @@
         method: "DELETE",
       }
     ).then(function (res) {
-      if (res.ok) {
-        console.log("OK");
-        if (platformsStats.length === 1) {
-          platformsStats = [];
-          currentPage = 1;
+        if (res.ok) {
+          console.log("OK");
+          if (platformsStats.length === 1) {
+            platformsStats = [];
+            currentPage = 1;
+          }
+          errorMsg = "";
+          okMsg = "Operación realizada correctamente";
+          getStats();
+        } else {
+          if(res.status===404){
+            errorMsg = "No existe el dato a borrar";
+          }else if(res.status ===500){
+            errorMsg = "No se han podido acceder a la base de datos";
+          }        
+          okMsg = "";
+          console.log("ERROR!" + errorMsg);
         }
-        errorMsg = "";
-        okMsg = "Operación realizada correctamente";
-        getStats();
-      } else {
-        if(res.status===404){
-          errorMsg = "No existe el dato a borrar";
-        }else if(res.status ===500){
-          errorMsg = "No se han podido acceder a la base de datos";
-        }        
-        okMsg = "";
-        console.log("ERROR!" + errorMsg);
-      }
-    });
-  }
-
+      });
+    }
+  
   
   
 	
@@ -268,6 +337,10 @@
   onMount(getStats);
   getNumTotal();
 </script>
+
+
+
+
 
 <main>
   <Nav>
@@ -305,7 +378,7 @@
       {/if}
     </NavItem>
   </Nav>
-  <h2>Plataformas</h2>
+  
 
   <p />
 
@@ -316,7 +389,37 @@
   {#if okMsg}
     <p style="color: green">{okMsg}</p>
   {/if}
+  
+  <!-- Pruebas -->
+  <h4>Buscador</h4>
+  <Table borderer>
+    <thead>
+      <tr>
+        <th> País </th>
+        <th> Plataforma </th>
+        <th> Año </th>
+        <th> Unidades vendidas </th>
+        <th> Generacion </th>
+        <th>Acciones</th>
+		<th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><input type="text" bind:value={queryStat.country}/></td>
+        <td><input type="text" bind:value={queryStat.platform}/></td>
+        <td><input type="number" bind:value={queryStat.year}/></td>
+        <td><input type="number" bind:value={queryStat["sold-unit"]}/></td>
+		<td><input type="number" bind:value={queryStat.generation}/></td>
+        
+        <td><Button color="primary" on:click={searchStat}>Buscar</Button></td>
+		<td><Button color="secondary" on:click={restore}>Restaurar</Button></td>
+        
+      </tr>
+    </tbody>
+  </Table>
 
+  <h3> Plataformas </h3>
   <!-- Table -->
   <Table borderer>
     <thead>
@@ -325,43 +428,58 @@
         <th> Plataforma </th>
         <th> Año </th>
         <th> Unidades vendidas </th>
-        <th> Generación </th>
+        <th> Generatcion </th>
         <th>Acciones</th>
+		<th>Acciones</th>
       </tr>
     </thead>
-	
-	<tbody>
-            <tr>
-                <td><input bind:value={newStat.country}></td>
-				<td><input bind:value={newStat.platform}></td>
-                <td><input type=number bind:value={newStat.year}></td>
-				<td><input type=number bind:value={newStat["sold-unit"]}></td>
-                <td><input type=number bind:value={newStat.generation}></td>
-                
-                <td><Button on:click={insertStat}>insertar</Button></td>
-            </tr>
-            
-            {#each platformsStats as data}
-                <tr>
-                    <td><a href="#/platforms/{data.country}/{data.year}">{data.country}</a></td>
-                    <td>{data.platform}</td>
-                    <td>{data.year}</td>
-					<td>{data["sold-unit"]}</td>
-                    <td>{data.generation}</td>
-                    
-                    <td><Button on:click={deleteStat(data.country,data.year)}>Borrar</Button></td>
-                    
-                </tr>
-            
-            {/each}
-            
-                   
-            
-                
-        </tbody>
-    
-  </Table>
+    <tbody>
+      <tr>
+        <td><input type="text" bind:value={newStat.country}/></td>
+        <td><input type="text" bind:value={newStat.platform}/></td>
+        <td><input type="number" bind:value={newStat.year}/></td>
+        <td><input type="number" bind:value={newStat["sold-unit"]}/></td>
+        <td><input type="number" bind:value={newStat.generation}/></td>
+		
+        <td><Button color="primary" on:click={insertStat}>Insertar</Button></td>
+      </tr>
 
+      {#if isASearch==true}
+        {#each resultQuery as stat}
+          <tr>
+            <td>{stat.country}</td>
+            <td>{stat.platform}</td>
+            <td>{stat.year}</td>
+            <td>{stat["sold-unit"]}</td>
+            <td>{stat.generation}</td>
+            <td>
+              <a href="#/platforms/{stat.country}/{stat.year}">
+                <Button color="primary">Editar</Button>
+              </a></td>
+            <td><Button color="secondary" on:click={deleteStat(stat.country, stat.year)}>Borrar</Button></td>
+          </tr>
+        {/each}
+      {:else}
+        {#each platformsStats as stat}
+          <tr>
+            <td>{stat.country}</td>
+            <td>{stat.platform}</td>
+            <td>{stat.year}</td>
+            <td>{stat["sold-unit"]}</td>
+			<td>{stat.generation}</td>
+            <td>
+              <a href="#/platforms/{stat.country}/{stat.year}">
+                <Button color="primary">Editar</Button>
+              </a></td>
+            <td><Button color="secondary" on:click={deleteStat(stat.country, stat.year)}>Borrar</Button></td>
+          </tr>
+        {/each}
+      {/if}
+    </tbody>
+  </Table>
+  
+
+ 
   <!-- Pagination -->
   <Pagination ariaLabel="Web pagination">
     <PaginationItem class={current_page === 1 ? "disabled" : ""}>
