@@ -123,7 +123,7 @@
           <a href="https://sos2021-28.herokuapp.com/api/v1/games">
             <Button color="primary">API</Button>
           </a>
-          <a href="/#/platforms">
+          <a href="/#/games">
             <Button color="primary">Interfaz</Button>
           </a>
           <a href="https://documenter.getpostman.com/view/14967482/TzJu8cmV">

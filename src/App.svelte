@@ -9,6 +9,10 @@
 	
 	import PlatformsAPI from "./front/PlatformsAPI/PlatformsAPI.svelte";
 	import EditPlatformsAPI from "./front/PlatformsAPI/EditPlatforms.svelte";
+
+
+	import GamesAPI from "./front/GamesAPI/GamesAPI.svelte";
+	import EditGames from "./front/GamesAPI/EditGames.svelte";
 	
 	
 	
@@ -23,6 +27,8 @@
         "/awards/:country/:year": AwardsPUT,
 		"/platforms": PlatformsAPI,
 		"/platforms/:country/:year": EditPlatformsAPI,
+		"/games": GamesAPI,
+		"/games/:country/:year": EditGames,
         "*": NotFound
         
         
