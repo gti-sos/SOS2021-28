@@ -8,7 +8,7 @@
   let stat = {};
   
   let updateCountry = "XXXX";
-  let updatePlatforms = "XXXX";
+  let updatePlatform = "XXXX";
   let updateYear = 1999;
   let updateSold = 999999;
   let updateGeneration = 99;
@@ -27,7 +27,7 @@
       const json = await res.json();
       stat = json;
       updateCountry = stat.country;
-	  updatePlatform = stat.pltform;
+	  updatePlatform = stat.platform;
       updateYear = stat.year;
       updateSold = stat["sold-unit"];
       updateGeneration = stat.generation;
@@ -45,13 +45,13 @@
     }
   }
 
-  async function updatePlatform() {
+  async function updatePlatformsss() {
 console.log("Updating platform..." + JSON.stringify(params.country));
 const res = await fetch("/api/v1/platforms/" + params.country + "/" + params.year, {
     method: "PUT",
     body: JSON.stringify({
         "country": params.country,
-		"platform": params.platform,
+		"platform": updatePlatform,
         "year": params.year,
         "sold-unit": updateSold,
         "generation": updateGeneration,
@@ -60,9 +60,25 @@ const res = await fetch("/api/v1/platforms/" + params.country + "/" + params.yea
         "Content-Type": "application/json"
     }
 }).then(function (res) {
-    getStat();
-});
-  }
+       okMsg = "Operación realizada correctamente, vuelva atras para ver todos los datos en la tabla";
+      //getStat();
+      if (res.ok) {
+        console.log("OK");
+        getAward();
+        okMsg = "Operación realizada correctamente, vuelva atras para ver todos los datos en la tabla";
+      } else {
+        if(res.status===404){
+          errorMsg = "No se encuentra el dato a editar";
+        }else if(res.status ===500){
+          errorMsg = "No se han podido acceder a la base de datos";
+        }else if(res.status ===400){
+          errorMsg = "se han introducido datos erroneos";
+          }        
+        okMsg = "";
+        console.log("ERROR!" + errorMsg);
+      }
+  });
+    }
 
   onMount(getStat);
 </script>
@@ -77,7 +93,7 @@ const res = await fetch("/api/v1/platforms/" + params.country + "/" + params.yea
   <h2>
     Editar campo 
 	<strong>{params.country}</strong>
-	<strong>{params.platform}</strong>
+	
     <strong>{params.year}</strong>
   </h2>
   <Table bordered>
@@ -93,13 +109,13 @@ const res = await fetch("/api/v1/platforms/" + params.country + "/" + params.yea
     </thead>
     <tbody>
       <tr>
-        <td>{updateCountry}</td>
-		<td>{updatePlatforms}</td>
-        <td>{updateYear}</td>
-        <td><input type="number" placeholder="200000" min="1"   bind:value={updateSold} /></td>
-        <td><input type="number" placeholder="8" min="1"   bind:value={updateGeneration} /></td>
+        <td>{params.country}</td>
+		<td><input bind:value="{updatePlatform}"></td>
+        <td>{params.year}</td>
+        <td><input type="number" bind:value={updateSold} /></td>
+        <td><input type="number" bind:value={updateGeneration} /></td>
         <td>
-          <Button outline color="primary" on:click={updatePlatform}>Actualizar</Button>
+          <Button outline color="primary" on:click={updatePlatformsss}>Actualizar</Button>
         </td>
       </tr>
     </tbody>
