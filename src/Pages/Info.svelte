@@ -99,7 +99,7 @@
           <a href="https://sos2021-28.herokuapp.com/api/v1/platforms">
             <Button color="primary">API</Button>
           </a>
-          <a href="/#/pltforms">
+          <a href="/#/platforms">
             <Button color="primary">Interfaz</Button>
           </a>
           <a href="https://documenter.getpostman.com/view/14944973/TzJsexb1">
