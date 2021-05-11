@@ -36,6 +36,7 @@
     const BASE_CONTACT_API_PATH = "/api/v1";
   
     let gamesStats = [];
+    let resultQuery = [];
   
     let newStat = {
       "country": "",
@@ -44,6 +45,14 @@
       "sold-unit": 0,
       "company": ""
     };
+
+    let queryStat = {
+    country: "",
+    game: "",
+    year: "",
+    "sold-unit": "",
+    company: "",
+  };
   
     //Alertas
     let errorMsg = "";
@@ -59,6 +68,27 @@
     let current_page = 1;
     let last_page = 1;
     let total = 0;
+
+
+    let isASearch = false;
+  // Functiones de ayuda
+  function resetInputs(flag) {
+    console.log("Reseting inputs: " + flag);
+    let resetStat = {
+      country: "",
+      game: "",
+      year: "",
+      "sold-unit": "",
+      company: "",
+    };
+    if (flag == 1) {
+      queryStat = resetStat;
+      current_page = 1;
+      current_offset = 0;
+    } else {
+      newStat = resetStat;
+    }
+  }
   
     //Functions
   
@@ -87,7 +117,11 @@
   
     async function searchStat() {
       console.log("Searching stat...");
-  
+      var msg = "";
+      if(isASearch==false){
+        current_offset=0;
+        current_page=1;
+      }
       var campos = new Map(
         Object.entries(newStat).filter((o) => {
           return o[1] != "";
@@ -95,14 +129,44 @@
       );
       let querySymbol = "?";
       for (var [clave, valor] of campos.entries()) {
+        msg += clave + "=" + valor + " ";
         querySymbol += clave + "=" + valor + "&";
       }
       fullQuery = querySymbol.slice(0, -1);
   
       if (fullQuery != "") {
         const res = await fetch(
-          BASE_CONTACT_API_PATH + "/games/" + fullQuery
+          BASE_CONTACT_API_PATH + 
+          "/games/" + 
+          fullQuery  + 
+          "&limit=" + 
+          limit + 
+          "&offset=" + 
+          current_offset
         );
+        if (res.ok) {
+        console.log("OK");
+        const json = await res.json();
+        resultQuery = json;
+        okMsg = "Resultado de la busqueda con " + msg;
+        isASearch = true;
+        getNumTotalQuery();
+      } else {
+        resultQuery = [];
+        if (res.status === 404) {
+          errorMsg = "No existe un dato con " + msg;
+        } else if (res.status === 500) {
+          errorMsg = "No se ha podido acceder a la base de datos";
+        }
+        okMsg = "";
+        console.log("ERROR!" + errorMsg);
+      }
+    } else {
+      errorMsg = "Se necesita un campo a buscar";
+      okMsg = "";
+    }
+
+        /*
         if (res.ok) {
           console.log("OK");
           const json = await res.json();
@@ -123,6 +187,32 @@
         okMsg = "Búsqueda realizada correctamente";
         getStats();
       }
+      */
+    }
+
+    async function getNumTotalQuery() {
+    console.log("Total entities of query");
+    const res = await fetch(
+      BASE_CONTACT_API_PATH + "/games" + fullQuery
+    );
+    if (res.ok) {
+      const json = await res.json();
+      total = json.length;
+      console.log("getTotal: " + total);
+      changePage(current_page, current_offset, isASearch);
+    } else {
+      errorMsg = "No se ha encontrado datos.";
+    }
+  }
+
+    function restore() {
+    if (isASearch == true) {
+      resetInputs(1);
+      isASearch = false;
+    }
+      current_offset=0;
+      current_page=1;
+      getNumTotal();
     }
   
     //Total de datos en la BD
@@ -335,6 +425,35 @@
     {/if}
   
     <!-- Table -->
+    <h4>Buscador</h4>
+  <Table borderer>
+    <thead>
+      <tr>
+        <th> País </th>
+        <th> Juego </th>
+        <th> Año </th>
+        <th> Unidades vendidas </th>
+        <th> Compañia </th>
+        <th>Acciones</th>
+		<th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><input type="text" bind:value={queryStat.country}/></td>
+        <td><input type="text" bind:value={queryStat.game}/></td>
+        <td><input type="number" bind:value={queryStat.year}/></td>
+        <td><input type="number" bind:value={queryStat["sold-unit"]}/></td>
+		<td><input type="text" bind:value={queryStat.company}/></td>
+        
+        <td><Button color="primary" on:click={searchStat}>Buscar</Button></td>
+		<td><Button color="secondary" on:click={restore}>Restaurar</Button></td>
+        
+      </tr>
+    </tbody>
+  </Table>
+
+  <h3> Juegos </h3>
     <Table borderer>
       <thead>
         <tr>
@@ -357,7 +476,41 @@
                   
                   <td><Button on:click={insertStat}>insertar</Button></td>
               </tr>
-              
+              {#if isASearch==true}
+        {#each resultQuery as stat}
+          <tr>
+            <td>{stat.country}</td>
+            <td>{stat.game}</td>
+            <td>{stat.year}</td>
+            <td>{stat["sold-unit"]}</td>
+            <td>{stat.company}</td>
+            <td>
+              <a href="#/games/{stat.country}/{stat.year}">
+                <Button color="primary">Editar</Button>
+              </a></td>
+            <td><Button color="secondary" on:click={deleteStat(stat.country, stat.year)}>Borrar</Button></td>
+          </tr>
+        {/each}
+      {:else}
+        {#each gamesStats as stat}
+          <tr>
+            <td>{stat.country}</td>
+            <td>{stat.game}</td>
+            <td>{stat.year}</td>
+            <td>{stat["sold-unit"]}</td>
+			<td>{stat.company}</td>
+            <td>
+              <a href="#/games/{stat.country}/{stat.year}">
+                <Button color="primary">Editar</Button>
+              </a></td>
+            <td><Button color="secondary" on:click={deleteStat(stat.country, stat.year)}>Borrar</Button></td>
+          </tr>
+        {/each}
+      {/if}
+
+
+
+              <!--
               {#each gamesStats as data}
                   <tr>
                       <td><a href="#/games/{data.country}/{data.year}">{data.country}</a></td>
@@ -371,7 +524,7 @@
                   </tr>
               
               {/each}
-              
+              -->
                      
               
                   
