@@ -123,7 +123,7 @@
         current_page=1;
       }
       var campos = new Map(
-        Object.entries(newStat).filter((o) => {
+        Object.entries(queryStat).filter((o) => {
           return o[1] != "";
         })
       );

@@ -79,7 +79,6 @@
       platform: "",
       year: "",
       "sold-unit": "",
-      "women-born": "",
       generation: "",
     };
     if (flag == 1) {
@@ -150,7 +149,7 @@
         console.log("OK");
         const json = await res.json();
         resultQuery = json;
-        okMsg = "Resulado de la busqueda con " + msg;
+        okMsg = "Resultado de la busqueda con " + msg;
         isASearch = true;
         getNumTotalQuery();
       } else {
