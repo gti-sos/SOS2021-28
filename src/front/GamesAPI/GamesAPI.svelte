@@ -433,7 +433,7 @@
         <th> Juego </th>
         <th> Año </th>
         <th> Unidades vendidas </th>
-        <th> Compañia </th>
+        <th> Compañía </th>
         <th>Acciones</th>
 		<th>Acciones</th>
       </tr>
@@ -461,7 +461,7 @@
           <th> Juego </th>
           <th> Año </th>
           <th> Unidades vendidas </th>
-          <th> Compañia </th>
+          <th> Compañía </th>
           <th>Acciones</th>
         </tr>
       </thead>
