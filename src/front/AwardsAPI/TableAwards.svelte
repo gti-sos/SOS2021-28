@@ -251,9 +251,7 @@
       errorMsg = "No se encuentra el dato solicitado";
       okMsg = "";
       console.log("ERROR!" + errorMsg);
-      getAwards();
-      
-    }  
+    }
       
       
     }
