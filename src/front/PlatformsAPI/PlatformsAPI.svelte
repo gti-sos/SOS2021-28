@@ -398,7 +398,7 @@
         <th> Plataforma </th>
         <th> Año </th>
         <th> Unidades vendidas </th>
-        <th> Generacion </th>
+        <th> Generación </th>
         <th>Acciones</th>
 		<th>Acciones</th>
       </tr>
