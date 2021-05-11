@@ -68,7 +68,7 @@
       const json = await res.json();
       awards = json;
       console.log(`We have received ${awards.length} __.`);
-      errorMsg = "";
+      //  errorMsg = "";
       getNumTotal();
     } else {
       if (awards.length === 0) {
@@ -251,6 +251,7 @@
       errorMsg = "No se encuentra el dato solicitado";
       okMsg = "";
       console.log("ERROR!" + errorMsg);
+      getAwards();
     }
       
       
