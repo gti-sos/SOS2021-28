@@ -59,10 +59,11 @@
           "Content-Type": "application/json"
       }
   }).then(function (res) {
+    okMsg = "Operación realizada correctamente, vuelva atras para ver todos los datos en la tabla";
       //getStat();
       if (res.ok) {
         console.log("OK");
-        getAward();
+        getStat();
         okMsg = "Operación realizada correctamente, vuelva atras para ver todos los datos en la tabla";
       } else {
         if(res.status===404){
