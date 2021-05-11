@@ -36,6 +36,7 @@
 
     }
 
+
     let fullQuery = "";
 
     //Pagination
@@ -219,7 +220,7 @@
     );
     let querySymbol = "?";
     for (var [clave, valor] of campos.entries()) {
-      if(valor != ""){  
+      if(valor != "" && valor != null){  
       querySymbol += clave + "=" + valor + "&";
       }
     }
@@ -233,9 +234,9 @@
         console.log("OK");
         const json = await res.json();
         awards = json;
+        errorMsg = ""
         okMsg="Búsqueda realizada correctamente"
       } else {
-        awards = [];
         if (res.status === 404) {
           errorMsg = "No se encuentra el dato solicitado";
         } else if (res.status === 500) {
@@ -243,15 +244,20 @@
         }
         okMsg = "";
         console.log("ERROR!" + errorMsg);
+
       }
+      
     }else {
       errorMsg = "No se encuentra el dato solicitado";
       okMsg = "";
       console.log("ERROR!" + errorMsg);
+      getAwards();
+      
+    }  
       
       
     }
-  }
+  
 
   //Total de datos en la BD
   async function getNumTotal() {
