@@ -315,7 +315,7 @@
   
   
   
-	
+	/*
 	 async function insertStat(){
         console.log("Inserting platform "+ JSON.stringify(newStat));
 
@@ -327,11 +327,70 @@
                                     "Content-Type": "application/json"
                                 }
                             }
-                           ).then( (res) => {
-                               getStats();
-                           })
-    }
+                           ).then(function (res) {
+       okMsg = "Operación realizada correctamente, vuelva atras para ver todos los datos en la tabla";
+      //getStat();
+      if (res.ok) {
+        console.log("OK");
+        getAward();
+        okMsg = "Operación realizada correctamente, vuelva atras para ver todos los datos en la tabla";
+      } else {
+        if(res.status===404){
+          errorMsg = "No se encuentra el dato a editar";
+        }else if(res.status ===500){
+          errorMsg = "No se han podido acceder a la base de datos";
+        }else if(res.status ===400){
+          errorMsg = "se han introducido datos erroneos";
+          }        
+        okMsg = "";
+        console.log("ERROR!" + errorMsg);
+      }
+  });
+  }
+  */
   
+  
+  
+  
+   async function insertStat(){
+        console.log("Inserting platforms "+ JSON.stringify(newStat));
+        if (newStat.country === "" || newStat.year === 0){
+            errorMsg = "debe introducir pais y año";
+            okMsg = "";
+            console.log("ERROR!" + errorMsg);
+        }else{
+
+        const res = await fetch(BASE_CONTACT_API_PATH +"/platforms",
+                            {
+                                method: "POST",
+                                body: JSON.stringify(newStat),
+                                headers:{
+                                    "Content-Type": "application/json"
+                                }
+                            }
+                           ).then( (res) => {
+                               
+                               if(res.ok){
+                                    console.log("Ok.");
+                                    getStats();
+                                    errorMsg = ""
+                                    errorStatus = 0
+                                    okMsg = "Dato cargado correctamente"
+                                    
+                                }else{
+                                    if(res.status === 500) {
+                                        errorMsg = "No se han podido acceder a la base de datos";
+                                    }else if(res.status ===409){
+                                            errorMsg = "ya existe el recurso dado";
+                                        }else if(res.status ===400){
+                                            errorMsg = "se han introducido datos erroneos";
+                                        }
+                                    okMsg = "";
+                                    console.log("ERROR!" + errorMsg);
+            }
+        })
+        }
+    }
 
   onMount(getStats);
   getNumTotal();
