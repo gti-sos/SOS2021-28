@@ -296,7 +296,84 @@
 
     onMount(getAwards);
 
+  async function loadGraph(){
+    Highcharts.chart('container', {
+
+      title: {
+          text: 'Datos sobre los premios en videojuegos'
+      },
+
+      subtitle: {
+          text: 'fuente: API Awards'
+      },
+
+      yAxis: {
+          title: {
+              text: 'Número de premios ganados'
+          }
+      },
+
+      xAxis: {
+          accessibility: {
+              rangeDescription: 'Año de la gala de premios'
+          }
+      },
+
+      legend: {
+          layout: 'vertical',
+          align: 'right',
+          verticalAlign: 'middle'
+      },
+
+      plotOptions: {
+          series: {
+              label: {
+                  connectorAllowed: false
+              },
+              pointStart: 2014
+          }
+      },
+
+      series: [{
+          name: 'Número de plataformas',
+          data: awards["n-platform"]
+      }, {
+          name: 'Reino Unido',
+          data: [newAward.year]
+      }, {
+          name: 'Canadá',
+          data: awards["n-platform"]
+      }, {
+          name: 'Francia',
+          data: awards["n-award"]
+      }, {
+          name: 'Estados Unidos',
+          data: [1,2,3,4]
+      }],
+
+      responsive: {
+          rules: [{
+              condition: {
+                  maxWidth: 500
+              },
+              chartOptions: {
+                  legend: {
+                      layout: 'horizontal',
+                      align: 'center',
+                      verticalAlign: 'bottom'
+                  }
+              }
+          }]
+      }
+
+      });
+  }
+
 </script>
+
+<svelte:head>
+    <script src="https://code.highcharts.com/highcharts.js"on:load="{loadGraph}"></script>
+</svelte:head>
 
 <main>
     <h1>Tabla relacionada con los premios a videojuegos</h1>
@@ -352,17 +429,22 @@
                     
                 </tr>
             
-            {/each}
-            
-                   
-            
-                
+            {/each}    
         </tbody>
     </Table>
     <tr>
         <td> <Button on:click={deleteAllAwards}>Borrar Todo</Button> </td>
         <td> <Button on:click={getLoadAwards}>Cargar Valores Iniciales</Button> </td>
     </tr> 
+
+    <figure class="highcharts-figure">
+        <div id="container"></div>
+        <p class="highcharts-description">
+            Este gráfico contiene los datos de la API
+            <code>Awards</code> 
+            
+        </p>
+    </figure>
 
     <!-- Pagination -->
   <Pagination ariaLabel="Web pagination">
@@ -394,6 +476,40 @@
 </main>
 
 <style>
+    .highcharts-figure, .highcharts-data-table table {
+      min-width: 360px; 
+      max-width: 800px;
+      margin: 1em auto;
+    }
+
+    .highcharts-data-table table {
+      font-family: Verdana, sans-serif;
+      border-collapse: collapse;
+      border: 1px solid #EBEBEB;
+      margin: 10px auto;
+      text-align: center;
+      width: 100%;
+      max-width: 500px;
+    }
+    .highcharts-data-table caption {
+        padding: 1em 0;
+        font-size: 1.2em;
+        color: #555;
+    }
+    .highcharts-data-table th {
+      font-weight: 600;
+        padding: 0.5em;
+    }
+    .highcharts-data-table td, .highcharts-data-table th, .highcharts-data-table caption {
+        padding: 0.5em;
+    }
+    .highcharts-data-table thead tr, .highcharts-data-table tr:nth-child(even) {
+        background: #f8f8f8;
+    }
+    .highcharts-data-table tr:hover {
+        background: #f1f7ff;
+    }
+
     main {
       text-align: center;
       padding: 1em;
