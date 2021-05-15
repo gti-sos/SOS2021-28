@@ -9,6 +9,7 @@
 	
 	import PlatformsAPI from "./front/PlatformsAPI/PlatformsAPI.svelte";
 	import EditPlatformsAPI from "./front/PlatformsAPI/EditPlatforms.svelte";
+	import PlatformCharts from "./front/PlatformsAPI/PlatformsChart.svelte";
 
 
 	import GamesAPI from "./front/GamesAPI/GamesAPI.svelte";
@@ -27,13 +28,11 @@
         "/awards/:country/:year": AwardsPUT,
 		"/platforms": PlatformsAPI,
 		"/platforms/:country/:year": EditPlatformsAPI,
+		"/platforms/platformCharts": PlatformCharts,
 		"/games": GamesAPI,
 		"/games/:country/:year": EditGames,
-        "*": NotFound
-        
-        
-
-    }
+        "*": NotFound 
+	};
 </script>
 
 <main>

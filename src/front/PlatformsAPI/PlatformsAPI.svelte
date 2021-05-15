@@ -405,6 +405,10 @@
     <NavItem>
       <NavLink href="/">Volver</NavLink>
     </NavItem>
+	<NavItem>
+      <NavLink href="/#/platforms/platformCharts">Análiticas</NavLink>
+    </NavItem>
+	
     <NavItem>
       <NavLink href="#" on:click={toggle1}>Cargar datos inciales</NavLink>
       <Modal isOpen={open1} {toggle1}>
