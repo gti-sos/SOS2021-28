@@ -382,6 +382,9 @@
         <NavLink href="/">Volver</NavLink>
       </NavItem>
       <NavItem>
+        <NavLink href="/#/games/gamesCharts">Análiticas</NavLink>
+      </NavItem>
+      <NavItem>
         <NavLink href="#" on:click={toggle1}>Cargar datos inciales</NavLink>
         <Modal isOpen={open1} {toggle1}>
           <ModalHeader {toggle1}>¿Cargar los datos iniciales?</ModalHeader>
