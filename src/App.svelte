@@ -14,6 +14,7 @@
 
 	import GamesAPI from "./front/GamesAPI/GamesAPI.svelte";
 	import EditGames from "./front/GamesAPI/EditGames.svelte";
+	import GamesCharts from "./front/GamesAPI/GamesChart.svelte";
 	
 	
 	
@@ -33,6 +34,7 @@ import AwardsChart from './front/AwardsAPI/AwardsChart.svelte';
 		"/awards/awardsCharts": AwardsChart,
 		"/games": GamesAPI,
 		"/games/:country/:year": EditGames,
+		"/games/gamesCharts": GamesCharts,
         "*": NotFound 
 	};
 </script>
