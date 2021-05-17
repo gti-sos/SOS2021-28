@@ -54,6 +54,9 @@
   <a href="/#/info">
     <Button color="primary">Info</Button>
   </a>
+  <a href="/#/GeneralChart">
+    <Button color="primary">Gráfica conjunta</Button>
+  </a>
 
   <p />
 

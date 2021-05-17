@@ -1,28 +1,8 @@
-{"country":"EEUU","game":"Terraria","year":2011,"sold-unit":20000000,"company":"505 Games","_id":"1n6Q47t5NRlix4xq"}
-{"country":"EEUU","game":"The Sims 2","year":2004,"sold-unit":20000000,"company":"Electronic Arts","_id":"3R7dvhsiwqYoR6EI"}
-{"country":"Japan","game":"Super Mario Bros.","year":1985,"sold-unit":40240000,"company":"Nintendo","_id":"HpX2WcktNlEsc6u8"}
-{"country":"EEUU","game":"Call of Duty Modern Warfare 3","year":2011,"sold-unit":26500000,"company":"Activision","_id":"RwpOn0ZZdu5QUpZy"}
-{"country":"EEUU","game":"Grand Theft Auto San Andreas","year":2004,"sold-unit":27500000,"company":"Rockstar Games","_id":"SpVF4rVPJ3ON68oJ"}
-{"country":"EEUU","game":"FIFA 18","year":2017,"sold-unit":24000000,"company":"EA Sports","_id":"gF2aNmemjeh2XZSZ"}
-{"country":"Japan","game":"Pokemon Gold/Silver/Crystal","year":1999,"sold-unit":31380000,"company":"Nintendo","_id":"ilo2KkVfv4zQ0LDT"}
-{"country":"Sweden","game":"Minecraft","year":2011,"sold-unit":200000000,"company":"Mojang","_id":"vZUUfkc7pAdnjocW"}
-{"country":"asdfsdf","game":"dsfsdf","year":456,"sold-unit":4564,"company":"dsfsf","_id":"XlbQwEClm7NUq1pD"}
-{"$$deleted":true,"_id":"XlbQwEClm7NUq1pD"}
-{"country":"fdgdfg","game":"dfgdgd","year":4524,"sold-unit":4242,"company":"fhgfhfgh","_id":"VMwSYzuuTPVPhzOk"}
-{"$$deleted":true,"_id":"VMwSYzuuTPVPhzOk"}
-{"$$deleted":true,"_id":"1n6Q47t5NRlix4xq"}
-{"$$deleted":true,"_id":"3R7dvhsiwqYoR6EI"}
-{"$$deleted":true,"_id":"HpX2WcktNlEsc6u8"}
-{"$$deleted":true,"_id":"RwpOn0ZZdu5QUpZy"}
-{"$$deleted":true,"_id":"SpVF4rVPJ3ON68oJ"}
-{"$$deleted":true,"_id":"gF2aNmemjeh2XZSZ"}
-{"$$deleted":true,"_id":"ilo2KkVfv4zQ0LDT"}
-{"$$deleted":true,"_id":"vZUUfkc7pAdnjocW"}
-{"country":"Japan","game":"Super Mario Bros.","year":1985,"sold-unit":40240000,"company":"Nintendo","_id":"30aJ0T5twc3iWrmw"}
 {"country":"Japan","game":"Pokemon Gold/Silver/Crystal","year":1999,"sold-unit":31380000,"company":"Nintendo","_id":"1YRaDTph2m412ZJW"}
+{"country":"Japan","game":"Super Mario Bros.","year":1985,"sold-unit":40240000,"company":"Nintendo","_id":"30aJ0T5twc3iWrmw"}
+{"country":"EEUU","game":"The Sims 2","year":2004,"sold-unit":20000000,"company":"Electronic Arts","_id":"88owsEI79vBbl2La"}
+{"country":"EEUU","game":"FIFA 18","year":2017,"sold-unit":24000000,"company":"EA Sports","_id":"Ib8fCUIOaV0xRErd"}
+{"country":"Sweden","game":"Minecraft","year":2011,"sold-unit":200000000,"company":"Mojang","_id":"VObW8URWy0YJJp16"}
 {"country":"EEUU","game":"Call of Duty Modern Warfare 3","year":2011,"sold-unit":26500000,"company":"Activision","_id":"iPmPFilvcVgsMHDO"}
 {"country":"EEUU","game":"Grand Theft Auto San Andreas","year":2004,"sold-unit":27500000,"company":"Rockstar Games","_id":"mcvN558VQ5Xz7EKm"}
-{"country":"EEUU","game":"The Sims 2","year":2004,"sold-unit":20000000,"company":"Electronic Arts","_id":"88owsEI79vBbl2La"}
-{"country":"Sweden","game":"Minecraft","year":2011,"sold-unit":200000000,"company":"Mojang","_id":"VObW8URWy0YJJp16"}
-{"country":"EEUU","game":"FIFA 18","year":2017,"sold-unit":24000000,"company":"EA Sports","_id":"Ib8fCUIOaV0xRErd"}
 {"country":"EEUU","game":"Terraria","year":2011,"sold-unit":20000000,"company":"505 Games","_id":"vlEzdfczDRHfBbqY"}

@@ -5,7 +5,7 @@
 	
     import Awards from './front/AwardsAPI/TableAwards.svelte';
     import AwardsPUT from './front/AwardsAPI/TableAwardsEdit.svelte'; 
-	
+	import AwardsChart from './front/AwardsAPI/AwardsChart.svelte';
 	
 	import PlatformsAPI from "./front/PlatformsAPI/PlatformsAPI.svelte";
 	import EditPlatformsAPI from "./front/PlatformsAPI/EditPlatforms.svelte";
@@ -21,11 +21,12 @@
     import Home from './Pages/Home.svelte';
     import NotFound from './Pages/NotFound.svelte';
     import Info from './Pages/Info.svelte';
-import AwardsChart from './front/AwardsAPI/AwardsChart.svelte';
+	import GeneralChart from './Pages/GeneralChart.svelte';
 	
     const routes = {
         "/": Home,
 		"/info":Info,
+		"/GeneralChart":GeneralChart,
         "/awards": Awards,
         "/awards/:country/:year": AwardsPUT,
 		"/platforms": PlatformsAPI,
