@@ -20,6 +20,7 @@
     import Home from './Pages/Home.svelte';
     import NotFound from './Pages/NotFound.svelte';
     import Info from './Pages/Info.svelte';
+import AwardsChart from './front/AwardsAPI/AwardsChart.svelte';
 	
     const routes = {
         "/": Home,
@@ -29,6 +30,7 @@
 		"/platforms": PlatformsAPI,
 		"/platforms/:country/:year": EditPlatformsAPI,
 		"/platforms/platformCharts": PlatformCharts,
+		"/awards/awardsCharts": AwardsChart,
 		"/games": GamesAPI,
 		"/games/:country/:year": EditGames,
         "*": NotFound 
