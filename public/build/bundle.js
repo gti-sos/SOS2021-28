@@ -27047,7 +27047,7 @@ var app = (function () {
     const { console: console_1 } = globals;
     const file$1 = "src\\Pages\\GeneralChart.svelte";
 
-    // (162:8) <NavLink href="/">
+    // (174:8) <NavLink href="/">
     function create_default_slot_8(ctx) {
     	let t;
 
@@ -27067,14 +27067,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_8.name,
     		type: "slot",
-    		source: "(162:8) <NavLink href=\\\"/\\\">",
+    		source: "(174:8) <NavLink href=\\\"/\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (161:6) <NavItem>
+    // (173:6) <NavItem>
     function create_default_slot_7(ctx) {
     	let navlink;
     	let current;
@@ -27123,14 +27123,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_7.name,
     		type: "slot",
-    		source: "(161:6) <NavItem>",
+    		source: "(173:6) <NavItem>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (165:8) <NavLink href="#/awards">
+    // (177:8) <NavLink href="#/awards">
     function create_default_slot_6(ctx) {
     	let t;
 
@@ -27150,14 +27150,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_6.name,
     		type: "slot",
-    		source: "(165:8) <NavLink href=\\\"#/awards\\\">",
+    		source: "(177:8) <NavLink href=\\\"#/awards\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (164:6) <NavItem>
+    // (176:6) <NavItem>
     function create_default_slot_5(ctx) {
     	let navlink;
     	let current;
@@ -27206,14 +27206,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_5.name,
     		type: "slot",
-    		source: "(164:6) <NavItem>",
+    		source: "(176:6) <NavItem>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (168:8) <NavLink href="#/platforms">
+    // (180:8) <NavLink href="#/platforms">
     function create_default_slot_4(ctx) {
     	let t;
 
@@ -27233,14 +27233,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_4.name,
     		type: "slot",
-    		source: "(168:8) <NavLink href=\\\"#/platforms\\\">",
+    		source: "(180:8) <NavLink href=\\\"#/platforms\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (167:6) <NavItem>
+    // (179:6) <NavItem>
     function create_default_slot_3(ctx) {
     	let navlink;
     	let current;
@@ -27289,14 +27289,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_3.name,
     		type: "slot",
-    		source: "(167:6) <NavItem>",
+    		source: "(179:6) <NavItem>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (171:8) <NavLink href="#/games">
+    // (183:8) <NavLink href="#/games">
     function create_default_slot_2(ctx) {
     	let t;
 
@@ -27316,14 +27316,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_2.name,
     		type: "slot",
-    		source: "(171:8) <NavLink href=\\\"#/games\\\">",
+    		source: "(183:8) <NavLink href=\\\"#/games\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (170:6) <NavItem>
+    // (182:6) <NavItem>
     function create_default_slot_1(ctx) {
     	let navlink;
     	let current;
@@ -27372,14 +27372,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_1.name,
     		type: "slot",
-    		source: "(170:6) <NavItem>",
+    		source: "(182:6) <NavItem>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (160:4) <Nav>
+    // (172:4) <Nav>
     function create_default_slot(ctx) {
     	let navitem0;
     	let t0;
@@ -27502,14 +27502,14 @@ var app = (function () {
     		block,
     		id: create_default_slot.name,
     		type: "slot",
-    		source: "(160:4) <Nav>",
+    		source: "(172:4) <Nav>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (182:6) {#if errorMsg}
+    // (194:6) {#if errorMsg}
     function create_if_block_1(ctx) {
     	let p;
 
@@ -27519,7 +27519,7 @@ var app = (function () {
     			p.textContent = `ERROR: ${/*errorMsg*/ ctx[0]}`;
     			attr_dev(p, "class", "msgRed");
     			set_style(p, "color", "#9d1c24");
-    			add_location(p, file$1, 182, 8, 5117);
+    			add_location(p, file$1, 194, 8, 5523);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -27534,14 +27534,14 @@ var app = (function () {
     		block,
     		id: create_if_block_1.name,
     		type: "if",
-    		source: "(182:6) {#if errorMsg}",
+    		source: "(194:6) {#if errorMsg}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (185:6) {#if okMsg}
+    // (197:6) {#if okMsg}
     function create_if_block(ctx) {
     	let p;
 
@@ -27551,7 +27551,7 @@ var app = (function () {
     			p.textContent = `${/*okMsg*/ ctx[1]}`;
     			attr_dev(p, "class", "msgGreen");
     			set_style(p, "color", "#155724");
-    			add_location(p, file$1, 185, 8, 5221);
+    			add_location(p, file$1, 197, 8, 5627);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -27566,7 +27566,7 @@ var app = (function () {
     		block,
     		id: create_if_block.name,
     		type: "if",
-    		source: "(185:6) {#if okMsg}",
+    		source: "(197:6) {#if okMsg}",
     		ctx
     	});
 
@@ -27641,26 +27641,26 @@ var app = (function () {
     			p = element("p");
     			p.textContent = "Gráfico de líneas básico que muestra los diferentes valores de las diferentes apis implementadas.";
     			if (script0.src !== (script0_src_value = "https://code.highcharts.com/highcharts.js")) attr_dev(script0, "src", script0_src_value);
-    			add_location(script0, file$1, 150, 4, 4146);
+    			add_location(script0, file$1, 162, 4, 4552);
     			if (script1.src !== (script1_src_value = "https://code.highcharts.com/modules/series-label.js")) attr_dev(script1, "src", script1_src_value);
-    			add_location(script1, file$1, 151, 4, 4217);
+    			add_location(script1, file$1, 163, 4, 4623);
     			if (script2.src !== (script2_src_value = "https://code.highcharts.com/modules/exporting.js")) attr_dev(script2, "src", script2_src_value);
-    			add_location(script2, file$1, 152, 4, 4298);
+    			add_location(script2, file$1, 164, 4, 4704);
     			if (script3.src !== (script3_src_value = "https://code.highcharts.com/modules/export-data.js")) attr_dev(script3, "src", script3_src_value);
-    			add_location(script3, file$1, 153, 4, 4376);
+    			add_location(script3, file$1, 165, 4, 4782);
     			if (script4.src !== (script4_src_value = "https://code.highcharts.com/modules/accessibility.js")) attr_dev(script4, "src", script4_src_value);
-    			add_location(script4, file$1, 154, 4, 4456);
-    			add_location(h2, file$1, 175, 6, 5021);
-    			add_location(div0, file$1, 174, 4, 5008);
-    			add_location(div1, file$1, 180, 4, 5080);
+    			add_location(script4, file$1, 166, 4, 4862);
+    			add_location(h2, file$1, 187, 6, 5427);
+    			add_location(div0, file$1, 186, 4, 5414);
+    			add_location(div1, file$1, 192, 4, 5486);
     			attr_dev(div2, "id", "container");
-    			add_location(div2, file$1, 191, 8, 5367);
+    			add_location(div2, file$1, 203, 8, 5773);
     			attr_dev(p, "class", "highcharts-description");
-    			add_location(p, file$1, 192, 8, 5399);
+    			add_location(p, file$1, 204, 8, 5805);
     			attr_dev(figure, "class", "highcharts-figure");
-    			add_location(figure, file$1, 190, 6, 5323);
-    			add_location(div3, file$1, 189, 4, 5310);
-    			add_location(main, file$1, 158, 2, 4588);
+    			add_location(figure, file$1, 202, 6, 5729);
+    			add_location(div3, file$1, 201, 4, 5716);
+    			add_location(main, file$1, 170, 2, 4994);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -27778,7 +27778,12 @@ var app = (function () {
     					countryData.push(stat.country);
     				}
 
-    				yearData.push(stat.year);
+    				if (stat.year in yearData) {
+    					console.log("ya esta almacenado el year" + stat.year);
+    				} else {
+    					yearData.push(stat.year);
+    				}
+
     				nAwardData.push(stat["n-award"]);
     				unitGamesData.push("sin datos");
     				soldUnitPlatformData.push("sin datos");
@@ -27796,7 +27801,12 @@ var app = (function () {
     					countryData.push(stat.country);
     				}
 
-    				yearData.push(stat.year);
+    				if (stat.year in yearData) {
+    					console.log("ya esta almacenado el year" + stat.year);
+    				} else {
+    					yearData.push(stat.year);
+    				}
+
     				unitGamesData.push(stat["sold-unit"]);
     				soldUnitPlatformData.push("sin datos");
     				nAwardData.push("sin datos");
@@ -27814,7 +27824,12 @@ var app = (function () {
     					countryData.push(stat.country);
     				}
 
-    				yearData.push(stat.year);
+    				if (stat.year in yearData) {
+    					console.log("ya esta almacenado el year" + stat.year);
+    				} else {
+    					yearData.push(stat.year);
+    				}
+
     				soldUnitPlatformData.push(stat["sold-unit"]);
     				nAwardData.push("sin datos");
     				unitGamesData.push("sin datos");

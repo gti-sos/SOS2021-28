@@ -32,8 +32,12 @@
             console.log("ya esta almacenado el country" + stat.country)
         }else{
             countryData.push(stat.country);
-        }  
-        yearData.push(stat.year);
+        }
+        if (stat.year in yearData){
+            console.log("ya esta almacenado el year" + stat.year)
+        }else{
+            yearData.push(stat.year);
+        } 
         nAwardData.push(stat["n-award"]);
         unitGamesData.push("sin datos");
         soldUnitPlatformData.push("sin datos");
@@ -49,7 +53,11 @@
             countryData.push(stat.country);
         }
        
-        yearData.push(stat.year);
+        if (stat.year in yearData){
+            console.log("ya esta almacenado el year" + stat.year)
+        }else{
+            yearData.push(stat.year);
+        } 
         unitGamesData.push(stat["sold-unit"]);
         soldUnitPlatformData.push("sin datos");
         nAwardData.push("sin datos");
@@ -64,7 +72,11 @@
         }else{
             countryData.push(stat.country);
         }
-        yearData.push(stat.year);
+        if (stat.year in yearData){
+            console.log("ya esta almacenado el year" + stat.year)
+        }else{
+            yearData.push(stat.year);
+        } 
         soldUnitPlatformData.push(stat["sold-unit"]);
         nAwardData.push("sin datos");
         unitGamesData.push("sin datos");
