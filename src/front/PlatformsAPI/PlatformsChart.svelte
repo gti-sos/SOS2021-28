@@ -45,7 +45,7 @@ let platChartGenerationData = [];
       },
       xAxis: {
         title: {
-          text: "País",
+          text: "País-Plataforma",
         },
         categories: platChartCountryData,
       },
