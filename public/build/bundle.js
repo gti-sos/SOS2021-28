@@ -16419,7 +16419,7 @@ var app = (function () {
     const { console: console_1$4 } = globals;
     const file$8 = "src/front/PlatformsAPI/PlatformsChart.svelte";
 
-    // (119:6) <NavLink href="/">
+    // (125:6) <NavLink href="/">
     function create_default_slot_4$6(ctx) {
     	let t;
 
@@ -16439,14 +16439,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_4$6.name,
     		type: "slot",
-    		source: "(119:6) <NavLink href=\\\"/\\\">",
+    		source: "(125:6) <NavLink href=\\\"/\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (118:4) <NavItem>
+    // (124:4) <NavItem>
     function create_default_slot_3$6(ctx) {
     	let navlink;
     	let current;
@@ -16495,14 +16495,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_3$6.name,
     		type: "slot",
-    		source: "(118:4) <NavItem>",
+    		source: "(124:4) <NavItem>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (122:6) <NavLink href="#/platforms">
+    // (128:6) <NavLink href="#/platforms">
     function create_default_slot_2$6(ctx) {
     	let t;
 
@@ -16522,14 +16522,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_2$6.name,
     		type: "slot",
-    		source: "(122:6) <NavLink href=\\\"#/platforms\\\">",
+    		source: "(128:6) <NavLink href=\\\"#/platforms\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (121:4) <NavItem>
+    // (127:4) <NavItem>
     function create_default_slot_1$6(ctx) {
     	let navlink;
     	let current;
@@ -16578,14 +16578,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_1$6.name,
     		type: "slot",
-    		source: "(121:4) <NavItem>",
+    		source: "(127:4) <NavItem>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (117:2) <Nav>
+    // (123:2) <Nav>
     function create_default_slot$7(ctx) {
     	let navitem0;
     	let t;
@@ -16658,14 +16658,14 @@ var app = (function () {
     		block,
     		id: create_default_slot$7.name,
     		type: "slot",
-    		source: "(117:2) <Nav>",
+    		source: "(123:2) <Nav>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (133:4) {#if errorMsg}
+    // (139:4) {#if errorMsg}
     function create_if_block_1$4(ctx) {
     	let p;
 
@@ -16675,7 +16675,7 @@ var app = (function () {
     			p.textContent = `ERROR: ${/*errorMsg*/ ctx[0]}`;
     			attr_dev(p, "class", "msgRed svelte-1l3z8hi");
     			set_style(p, "color", "#9d1c24");
-    			add_location(p, file$8, 133, 6, 3219);
+    			add_location(p, file$8, 139, 6, 3272);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -16690,14 +16690,14 @@ var app = (function () {
     		block,
     		id: create_if_block_1$4.name,
     		type: "if",
-    		source: "(133:4) {#if errorMsg}",
+    		source: "(139:4) {#if errorMsg}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (136:4) {#if okMsg}
+    // (142:4) {#if okMsg}
     function create_if_block$4(ctx) {
     	let p;
 
@@ -16707,7 +16707,7 @@ var app = (function () {
     			p.textContent = `${/*okMsg*/ ctx[1]}`;
     			attr_dev(p, "class", "msgGreen svelte-1l3z8hi");
     			set_style(p, "color", "#155724");
-    			add_location(p, file$8, 136, 6, 3314);
+    			add_location(p, file$8, 142, 6, 3367);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -16722,7 +16722,7 @@ var app = (function () {
     		block,
     		id: create_if_block$4.name,
     		type: "if",
-    		source: "(136:4) {#if okMsg}",
+    		source: "(142:4) {#if okMsg}",
     		ctx
     	});
 
@@ -16797,31 +16797,31 @@ var app = (function () {
     			p = element("p");
     			p.textContent = "Gráfico de líneas básico que muestra los diferentes valores para los campos de platforms.";
     			if (script0.src !== (script0_src_value = "https://code.highcharts.com/highcharts.js")) attr_dev(script0, "src", script0_src_value);
-    			add_location(script0, file$8, 107, 2, 2530);
+    			add_location(script0, file$8, 113, 2, 2583);
     			if (script1.src !== (script1_src_value = "https://code.highcharts.com/modules/series-label.js")) attr_dev(script1, "src", script1_src_value);
-    			add_location(script1, file$8, 108, 2, 2598);
+    			add_location(script1, file$8, 114, 2, 2651);
     			if (script2.src !== (script2_src_value = "https://code.highcharts.com/modules/exporting.js")) attr_dev(script2, "src", script2_src_value);
-    			add_location(script2, file$8, 109, 2, 2676);
+    			add_location(script2, file$8, 115, 2, 2729);
     			if (script3.src !== (script3_src_value = "https://code.highcharts.com/modules/export-data.js")) attr_dev(script3, "src", script3_src_value);
-    			add_location(script3, file$8, 110, 2, 2751);
+    			add_location(script3, file$8, 116, 2, 2804);
     			if (script4.src !== (script4_src_value = "https://code.highcharts.com/modules/accessibility.js")) attr_dev(script4, "src", script4_src_value);
-    			add_location(script4, file$8, 111, 2, 2828);
-    			add_location(h2, file$8, 126, 4, 3144);
+    			add_location(script4, file$8, 117, 2, 2881);
+    			add_location(h2, file$8, 132, 4, 3197);
     			attr_dev(div0, "class", "svelte-1l3z8hi");
-    			add_location(div0, file$8, 125, 2, 3134);
+    			add_location(div0, file$8, 131, 2, 3187);
     			attr_dev(div1, "class", "svelte-1l3z8hi");
-    			add_location(div1, file$8, 131, 2, 3188);
+    			add_location(div1, file$8, 137, 2, 3241);
     			attr_dev(div2, "id", "container");
     			attr_dev(div2, "class", "svelte-1l3z8hi");
-    			add_location(div2, file$8, 142, 6, 3442);
+    			add_location(div2, file$8, 148, 6, 3495);
     			attr_dev(p, "class", "highcharts-description svelte-1l3z8hi");
-    			add_location(p, file$8, 143, 6, 3471);
+    			add_location(p, file$8, 149, 6, 3524);
     			attr_dev(figure, "class", "highcharts-figure svelte-1l3z8hi");
-    			add_location(figure, file$8, 141, 4, 3401);
+    			add_location(figure, file$8, 147, 4, 3454);
     			attr_dev(div3, "class", "svelte-1l3z8hi");
-    			add_location(div3, file$8, 140, 2, 3391);
+    			add_location(div3, file$8, 146, 2, 3444);
     			attr_dev(main, "class", "svelte-1l3z8hi");
-    			add_location(main, file$8, 115, 0, 2948);
+    			add_location(main, file$8, 121, 0, 3001);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -16942,6 +16942,7 @@ var app = (function () {
     		console.log("Platform Chart DaTa: " + pChartData);
 
     		Highcharts.chart("container", {
+    			chart: { type: "area" },
     			title: { text: "Grafica de Plataformas" },
     			yAxis: { title: { text: "Valor" } },
     			xAxis: {
