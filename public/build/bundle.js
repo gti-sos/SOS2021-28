@@ -16419,7 +16419,7 @@ var app = (function () {
     const { console: console_1$4 } = globals;
     const file$8 = "src/front/PlatformsAPI/PlatformsChart.svelte";
 
-    // (125:6) <NavLink href="/">
+    // (130:6) <NavLink href="/">
     function create_default_slot_4$6(ctx) {
     	let t;
 
@@ -16439,14 +16439,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_4$6.name,
     		type: "slot",
-    		source: "(125:6) <NavLink href=\\\"/\\\">",
+    		source: "(130:6) <NavLink href=\\\"/\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (124:4) <NavItem>
+    // (129:4) <NavItem>
     function create_default_slot_3$6(ctx) {
     	let navlink;
     	let current;
@@ -16495,14 +16495,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_3$6.name,
     		type: "slot",
-    		source: "(124:4) <NavItem>",
+    		source: "(129:4) <NavItem>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (128:6) <NavLink href="#/platforms">
+    // (133:6) <NavLink href="#/platforms">
     function create_default_slot_2$6(ctx) {
     	let t;
 
@@ -16522,14 +16522,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_2$6.name,
     		type: "slot",
-    		source: "(128:6) <NavLink href=\\\"#/platforms\\\">",
+    		source: "(133:6) <NavLink href=\\\"#/platforms\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (127:4) <NavItem>
+    // (132:4) <NavItem>
     function create_default_slot_1$6(ctx) {
     	let navlink;
     	let current;
@@ -16578,14 +16578,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_1$6.name,
     		type: "slot",
-    		source: "(127:4) <NavItem>",
+    		source: "(132:4) <NavItem>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (123:2) <Nav>
+    // (128:2) <Nav>
     function create_default_slot$7(ctx) {
     	let navitem0;
     	let t;
@@ -16658,14 +16658,14 @@ var app = (function () {
     		block,
     		id: create_default_slot$7.name,
     		type: "slot",
-    		source: "(123:2) <Nav>",
+    		source: "(128:2) <Nav>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (139:4) {#if errorMsg}
+    // (144:4) {#if errorMsg}
     function create_if_block_1$4(ctx) {
     	let p;
 
@@ -16675,7 +16675,7 @@ var app = (function () {
     			p.textContent = `ERROR: ${/*errorMsg*/ ctx[0]}`;
     			attr_dev(p, "class", "msgRed svelte-1l3z8hi");
     			set_style(p, "color", "#9d1c24");
-    			add_location(p, file$8, 139, 6, 3272);
+    			add_location(p, file$8, 144, 6, 3762);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -16690,14 +16690,14 @@ var app = (function () {
     		block,
     		id: create_if_block_1$4.name,
     		type: "if",
-    		source: "(139:4) {#if errorMsg}",
+    		source: "(144:4) {#if errorMsg}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (142:4) {#if okMsg}
+    // (147:4) {#if okMsg}
     function create_if_block$4(ctx) {
     	let p;
 
@@ -16707,7 +16707,7 @@ var app = (function () {
     			p.textContent = `${/*okMsg*/ ctx[1]}`;
     			attr_dev(p, "class", "msgGreen svelte-1l3z8hi");
     			set_style(p, "color", "#155724");
-    			add_location(p, file$8, 142, 6, 3367);
+    			add_location(p, file$8, 147, 6, 3857);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -16722,7 +16722,7 @@ var app = (function () {
     		block,
     		id: create_if_block$4.name,
     		type: "if",
-    		source: "(142:4) {#if okMsg}",
+    		source: "(147:4) {#if okMsg}",
     		ctx
     	});
 
@@ -16736,10 +16736,18 @@ var app = (function () {
     	let script1_src_value;
     	let script2;
     	let script2_src_value;
+    	let link0;
+    	let link1;
     	let script3;
     	let script3_src_value;
     	let script4;
     	let script4_src_value;
+    	let script5;
+    	let script5_src_value;
+    	let script6;
+    	let script6_src_value;
+    	let script7;
+    	let script7_src_value;
     	let t0;
     	let main;
     	let nav;
@@ -16775,8 +16783,13 @@ var app = (function () {
     			script0 = element("script");
     			script1 = element("script");
     			script2 = element("script");
+    			link0 = element("link");
+    			link1 = element("link");
     			script3 = element("script");
     			script4 = element("script");
+    			script5 = element("script");
+    			script6 = element("script");
+    			script7 = element("script");
     			t0 = space();
     			main = element("main");
     			create_component(nav.$$.fragment);
@@ -16796,32 +16809,46 @@ var app = (function () {
     			t6 = space();
     			p = element("p");
     			p.textContent = "Gráfico de líneas básico que muestra los diferentes valores para los campos de platforms.";
-    			if (script0.src !== (script0_src_value = "https://code.highcharts.com/highcharts.js")) attr_dev(script0, "src", script0_src_value);
-    			add_location(script0, file$8, 113, 2, 2583);
-    			if (script1.src !== (script1_src_value = "https://code.highcharts.com/modules/series-label.js")) attr_dev(script1, "src", script1_src_value);
-    			add_location(script1, file$8, 114, 2, 2651);
-    			if (script2.src !== (script2_src_value = "https://code.highcharts.com/modules/exporting.js")) attr_dev(script2, "src", script2_src_value);
-    			add_location(script2, file$8, 115, 2, 2729);
-    			if (script3.src !== (script3_src_value = "https://code.highcharts.com/modules/export-data.js")) attr_dev(script3, "src", script3_src_value);
-    			add_location(script3, file$8, 116, 2, 2804);
-    			if (script4.src !== (script4_src_value = "https://code.highcharts.com/modules/accessibility.js")) attr_dev(script4, "src", script4_src_value);
-    			add_location(script4, file$8, 117, 2, 2881);
-    			add_location(h2, file$8, 132, 4, 3197);
+    			if (script0.src !== (script0_src_value = "https://cdn.anychart.com/releases/v8/js/anychart-base.min.js")) attr_dev(script0, "src", script0_src_value);
+    			add_location(script0, file$8, 111, 2, 2581);
+    			if (script1.src !== (script1_src_value = "https://cdn.anychart.com/releases/v8/js/anychart-ui.min.js")) attr_dev(script1, "src", script1_src_value);
+    			add_location(script1, file$8, 112, 2, 2668);
+    			if (script2.src !== (script2_src_value = "https://cdn.anychart.com/releases/v8/js/anychart-exports.min.js")) attr_dev(script2, "src", script2_src_value);
+    			add_location(script2, file$8, 113, 2, 2753);
+    			attr_dev(link0, "href", "https://cdn.anychart.com/releases/v8/css/anychart-ui.min.css");
+    			attr_dev(link0, "type", "text/css");
+    			attr_dev(link0, "rel", "stylesheet");
+    			add_location(link0, file$8, 114, 2, 2843);
+    			attr_dev(link1, "href", "https://cdn.anychart.com/releases/v8/fonts/css/anychart-font.min.css");
+    			attr_dev(link1, "type", "text/css");
+    			attr_dev(link1, "rel", "stylesheet");
+    			add_location(link1, file$8, 115, 2, 2953);
+    			if (script3.src !== (script3_src_value = "https://code.highcharts.com/highcharts.js")) attr_dev(script3, "src", script3_src_value);
+    			add_location(script3, file$8, 118, 2, 3073);
+    			if (script4.src !== (script4_src_value = "https://code.highcharts.com/modules/series-label.js")) attr_dev(script4, "src", script4_src_value);
+    			add_location(script4, file$8, 119, 2, 3141);
+    			if (script5.src !== (script5_src_value = "https://code.highcharts.com/modules/exporting.js")) attr_dev(script5, "src", script5_src_value);
+    			add_location(script5, file$8, 120, 2, 3219);
+    			if (script6.src !== (script6_src_value = "https://code.highcharts.com/modules/export-data.js")) attr_dev(script6, "src", script6_src_value);
+    			add_location(script6, file$8, 121, 2, 3294);
+    			if (script7.src !== (script7_src_value = "https://code.highcharts.com/modules/accessibility.js")) attr_dev(script7, "src", script7_src_value);
+    			add_location(script7, file$8, 122, 2, 3371);
+    			add_location(h2, file$8, 137, 4, 3687);
     			attr_dev(div0, "class", "svelte-1l3z8hi");
-    			add_location(div0, file$8, 131, 2, 3187);
+    			add_location(div0, file$8, 136, 2, 3677);
     			attr_dev(div1, "class", "svelte-1l3z8hi");
-    			add_location(div1, file$8, 137, 2, 3241);
+    			add_location(div1, file$8, 142, 2, 3731);
     			attr_dev(div2, "id", "container");
     			attr_dev(div2, "class", "svelte-1l3z8hi");
-    			add_location(div2, file$8, 148, 6, 3495);
+    			add_location(div2, file$8, 153, 6, 3985);
     			attr_dev(p, "class", "highcharts-description svelte-1l3z8hi");
-    			add_location(p, file$8, 149, 6, 3524);
+    			add_location(p, file$8, 154, 6, 4014);
     			attr_dev(figure, "class", "highcharts-figure svelte-1l3z8hi");
-    			add_location(figure, file$8, 147, 4, 3454);
+    			add_location(figure, file$8, 152, 4, 3944);
     			attr_dev(div3, "class", "svelte-1l3z8hi");
-    			add_location(div3, file$8, 146, 2, 3444);
+    			add_location(div3, file$8, 151, 2, 3934);
     			attr_dev(main, "class", "svelte-1l3z8hi");
-    			add_location(main, file$8, 121, 0, 3001);
+    			add_location(main, file$8, 126, 0, 3491);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -16830,8 +16857,13 @@ var app = (function () {
     			append_dev(document.head, script0);
     			append_dev(document.head, script1);
     			append_dev(document.head, script2);
+    			append_dev(document.head, link0);
+    			append_dev(document.head, link1);
     			append_dev(document.head, script3);
     			append_dev(document.head, script4);
+    			append_dev(document.head, script5);
+    			append_dev(document.head, script6);
+    			append_dev(document.head, script7);
     			insert_dev(target, t0, anchor);
     			insert_dev(target, main, anchor);
     			mount_component(nav, main, null);
@@ -16852,7 +16884,7 @@ var app = (function () {
     			current = true;
 
     			if (!mounted) {
-    				dispose = listen_dev(script4, "load", /*loadChart*/ ctx[2], false, false, false);
+    				dispose = listen_dev(script7, "load", /*loadChart*/ ctx[2], false, false, false);
     				mounted = true;
     			}
     		},
@@ -16880,8 +16912,13 @@ var app = (function () {
     			detach_dev(script0);
     			detach_dev(script1);
     			detach_dev(script2);
+    			detach_dev(link0);
+    			detach_dev(link1);
     			detach_dev(script3);
     			detach_dev(script4);
+    			detach_dev(script5);
+    			detach_dev(script6);
+    			detach_dev(script7);
     			if (detaching) detach_dev(t0);
     			if (detaching) detach_dev(main);
     			destroy_component(nav);
