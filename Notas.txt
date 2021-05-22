@@ -9,8 +9,7 @@
 //Instalar: npm install sveltestrap
 //npm install
 //npm run dev
-
-
+//Si falla -> borrar package.json -> npm init 
 
 
 ----F03:
@@ -119,4 +118,4 @@ Hay que poner en el postman: puerto + /api/v1/platforms
 ay que poner en el postman: puerto + /api/v1/platforms
 -> En el terminal del postman aparece: OK y en este: Resources deleted
 
-////
+///
