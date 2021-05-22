@@ -16808,7 +16808,7 @@ var app = (function () {
     			div2 = element("div");
     			t6 = space();
     			p = element("p");
-    			p.textContent = "Gráfico de líneas básico que muestra los diferentes valores para los campos de platforms.";
+    			p.textContent = "Gráfico de areas básico que muestra los diferentes valores para los campos de platforms.";
     			if (script0.src !== (script0_src_value = "https://cdn.anychart.com/releases/v8/js/anychart-base.min.js")) attr_dev(script0, "src", script0_src_value);
     			add_location(script0, file$8, 111, 2, 2581);
     			if (script1.src !== (script1_src_value = "https://cdn.anychart.com/releases/v8/js/anychart-ui.min.js")) attr_dev(script1, "src", script1_src_value);
