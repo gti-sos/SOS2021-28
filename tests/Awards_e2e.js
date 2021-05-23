@@ -23,7 +23,8 @@ const puppeteer = require('puppeteer');
     console.log("Timeout! Taking an screenshot...");
 
     await page.screenshot({ path: './tests/screenshots/02.png' });
-
+    await page.click("body > main > main > tr > td:nth-child(2) > button");
+    await page.waitForTimeout(2000);
     var initialrowCount = (await page.$$("body > main > main > table > tbody > tr")).length;
     console.log(`Initial row count = ${initialrowCount}`);
     if(initialrowCount != 10){
@@ -44,7 +45,7 @@ const puppeteer = require('puppeteer');
     
     await page.screenshot({ path: './tests/screenshots/04.png' });
     
-    
+    await page.waitForTimeout(2000);
     var pushrowCount = (await page.$$("body > main > main > table > tbody > tr")).length;
 
     console.log(`Push row count = ${pushrowCount}`);
@@ -60,12 +61,11 @@ const puppeteer = require('puppeteer');
     await page.click("body > main > main > tr > td:nth-child(1) > button");
     await page.screenshot({ path: './tests/screenshots/05.png' });
     await page.waitForTimeout(2000);
-    await page.click("body > main > main > tr > td:nth-child(2) > button");
-    await page.waitForTimeout(2000);
+    
     var finalrowCount = (await page.$$("body > main > main > table > tbody > tr")).length;
 
     console.log(`final row count = ${finalrowCount}`);
-    if(initialrowCount != finalrowCount){
+    if(2 != finalrowCount){
         console.error("not reset")
         process.exit(1)
     }
