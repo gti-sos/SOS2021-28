@@ -7,7 +7,7 @@
 //Instalar: npm install newman
 //Instalar: npm install svelte-spa-router
 //Instalar: npm install sveltestrap
-//npm install
+//npm install (importante)
 //npm run dev
 //Si falla -> borrar package.json -> npm init 
 
