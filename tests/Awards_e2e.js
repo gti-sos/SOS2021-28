@@ -5,7 +5,7 @@ const puppeteer = require('puppeteer');
     console.log("Browser opened.");
 
     const page = await browser.newPage();
-    await page.goto('http://localhost:10000/');
+    await page.goto('http://sos2021-28.herokuapp.com');
  
     console.log("Page opened! Taking an screenshot...");
 
