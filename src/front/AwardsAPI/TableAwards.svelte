@@ -112,11 +112,7 @@
 
     async function insertAwards(){
         console.log("Inserting award "+ JSON.stringify(newAward));
-        if (newAward.country === "" || newAward.year === 0){
-            errorMsg = "debe introducir pais y año";
-            okMsg = "";
-            console.log("ERROR!" + errorMsg);
-        }else{
+        
 
         const res = await fetch(BASE +"/awards",
                             {
@@ -148,7 +144,7 @@
             }
         })
         }
-    }
+    
                 
     
     
@@ -337,7 +333,7 @@
                 <td><input bind:value={newAward.winner}></td>
                 <td><input type=number bind:value={newAward["n-platform"]}></td>
                 <td><input type=number bind:value={newAward["n-award"]}></td>
-                <td><Button on:click={insertAwards}>insertar</Button></td>
+                <td><Button id="add"  on:click={insertAwards}>insertar</Button></td>
                 
             </tr>
 
@@ -368,8 +364,8 @@
         </tbody>
     </Table>
     <tr>
-        <td> <Button on:click={deleteAllAwards}>Borrar Todo</Button> </td>
-        <td> <Button on:click={getLoadAwards}>Cargar Valores Iniciales</Button> </td>
+        <td> <Button  on:click={deleteAllAwards}>Borrar Todo</Button> </td>
+        <td> <Button  on:click={getLoadAwards}>Cargar Valores Iniciales</Button> </td>
     </tr> 
 
     <!-- Pagination -->
