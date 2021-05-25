@@ -1,8 +1,6 @@
 <script>
     import Router from 'svelte-spa-router';
 	
-	
-	
     import Awards from './front/AwardsAPI/TableAwards.svelte';
     import AwardsPUT from './front/AwardsAPI/TableAwardsEdit.svelte'; 
 	import AwardsChart from './front/AwardsAPI/AwardsChart.svelte';
@@ -17,12 +15,15 @@
 	import GamesCharts from "./front/GamesAPI/GamesChart.svelte";
 	
 	
+	import Integraciones from "./front/integrations/Integrations.svelte";
+	import IntegrationApiMonedasExterna from "./front/integrations/Platforms-Integrations/ApiMonedas.svelte";
+	
 	
     import Home from './Pages/Home.svelte';
     import NotFound from './Pages/NotFound.svelte';
     import Info from './Pages/Info.svelte';
 	import GeneralChart from './Pages/GeneralChart.svelte';
-	import Integraciones from "./front/Integrations/Integrations.svelte";
+	
 	
     const routes = {
         "/": Home,
@@ -37,7 +38,9 @@
 		"/games": GamesAPI,
 		"/games/:country/:year": EditGames,
 		"/games/gamesCharts": GamesCharts,
-		"/integraciones": Integraciones,
+		"/integrations": Integraciones,
+		"/integrations/monedas-externalApi":IntegrationApiMonedasExterna,
+		
         "*": NotFound 
 	};
 </script>

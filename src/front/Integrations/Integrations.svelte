@@ -7,6 +7,8 @@
 
     <div> <b>Integraciones de la API de Plataformas</b></div>
     <br>
+    <a href="#/integrations/monedas-externalApi"> Integración con la API Externa de criptomonedas</a>
+    <br>
     <!--Plataformas-->
     <!--Plataformas-->
     <br>
