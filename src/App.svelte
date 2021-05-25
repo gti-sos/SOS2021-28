@@ -22,6 +22,7 @@
     import NotFound from './Pages/NotFound.svelte';
     import Info from './Pages/Info.svelte';
 	import GeneralChart from './Pages/GeneralChart.svelte';
+	import Integraciones from "./front/Integrations/Integrations.svelte";
 	
     const routes = {
         "/": Home,
@@ -36,6 +37,7 @@
 		"/games": GamesAPI,
 		"/games/:country/:year": EditGames,
 		"/games/gamesCharts": GamesCharts,
+		"/integraciones": Integraciones,
         "*": NotFound 
 	};
 </script>

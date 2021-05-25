@@ -57,6 +57,9 @@
   <a href="/#/GeneralChart">
     <Button color="primary">Gráfica conjunta</Button>
   </a>
+  <a href="/#/integraciones">
+    <Button color="primary">Integraciones</Button>
+  </a>
 
   <p />
 
