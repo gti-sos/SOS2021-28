@@ -13,7 +13,7 @@ const puppeteer = require('puppeteer');
     
     const [response] = await Promise.all([
         page.waitForNavigation(),
-        page.click("body > main > main > div:nth-child(13) > div:nth-child(3) > div > div.card-body > a:nth-child(3) > button"),
+        page.click("body > main > main > div:nth-child(15) > div:nth-child(3) > div > div.card-body > a:nth-child(3) > button"),
       ]);
     console.log("Clicked \"Game table\" link, waiting for contacts...");
       
