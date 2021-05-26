@@ -15,8 +15,8 @@
 	import GamesCharts from "./front/GamesAPI/GamesChart.svelte";
 	
 	
-	import Integraciones from "./front/integrations/Integrations.svelte";
-	import IntegrationApiMonedasExterna from "./front/integrations/Platforms-Integrations/ApiMonedas.svelte";
+	import Integraciones from "./front/Integrations/Integrations.svelte";
+	import IntegrationApiMonedasExterna from "./front/Integrations/Platforms-Integrations/ApiMonedas.svelte";
 	
 	
     import Home from './Pages/Home.svelte';
@@ -29,7 +29,7 @@
         "/": Home,
 		"/info":Info,
 		"/Analytics":GeneralChart,
-		"/about":About,
+		
         "/awards": Awards,
         "/awards/:country/:year": AwardsPUT,
 		"/platforms": PlatformsAPI,
@@ -41,7 +41,7 @@
 		"/games/gamesCharts": GamesCharts,
 		"/integrations": Integraciones,
 		"/integrations/monedas-externalApi":IntegrationApiMonedasExterna,
-		
+		"/about":About,
         "*": NotFound 
 	};
 </script>
