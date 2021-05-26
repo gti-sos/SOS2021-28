@@ -12392,6 +12392,7 @@ var app = (function () {
 
     	navlink = new NavLink({
     			props: {
+    				id: "myHeader",
     				href: "#",
     				$$slots: { default: [create_default_slot_23$4] },
     				$$scope: { ctx }
@@ -12528,7 +12529,7 @@ var app = (function () {
     	return block;
     }
 
-    // (431:8) <NavLink href="#" on:click={toggle2}>
+    // (431:8) <NavLink id="myHeader" href="#" on:click={toggle2}>
     function create_default_slot_23$4(ctx) {
     	let t;
 
@@ -12548,7 +12549,7 @@ var app = (function () {
     		block,
     		id: create_default_slot_23$4.name,
     		type: "slot",
-    		source: "(431:8) <NavLink href=\\\"#\\\" on:click={toggle2}>",
+    		source: "(431:8) <NavLink id=\\\"myHeader\\\" href=\\\"#\\\" on:click={toggle2}>",
     		ctx
     	});
 
@@ -12855,7 +12856,7 @@ var app = (function () {
     	return block;
     }
 
-    // (427:8) <NavLink disabled href="#" on:click={toggle2}            >
+    // (427:8) <NavLink disabled href="#"  on:click={toggle2}            >
     function create_default_slot_16$4(ctx) {
     	let t;
 
@@ -12875,7 +12876,7 @@ var app = (function () {
     		block,
     		id: create_default_slot_16$4.name,
     		type: "slot",
-    		source: "(427:8) <NavLink disabled href=\\\"#\\\" on:click={toggle2}            >",
+    		source: "(427:8) <NavLink disabled href=\\\"#\\\"  on:click={toggle2}            >",
     		ctx
     	});
 
@@ -13104,7 +13105,7 @@ var app = (function () {
     			t0 = text("ERROR: ");
     			t1 = text(/*errorMsg*/ ctx[6]);
     			set_style(p, "color", "red");
-    			add_location(p, file$d, 448, 4, 12775);
+    			add_location(p, file$d, 448, 4, 12790);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -13140,7 +13141,7 @@ var app = (function () {
     			p = element("p");
     			t = text(/*okMsg*/ ctx[7]);
     			set_style(p, "color", "green");
-    			add_location(p, file$d, 451, 4, 12848);
+    			add_location(p, file$d, 451, 4, 12863);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -13332,34 +13333,34 @@ var app = (function () {
     			t19 = space();
     			td6 = element("td");
     			create_component(button1.$$.fragment);
-    			add_location(th0, file$d, 459, 8, 12992);
-    			add_location(th1, file$d, 460, 8, 13017);
-    			add_location(th2, file$d, 461, 8, 13048);
-    			add_location(th3, file$d, 462, 8, 13072);
-    			add_location(th4, file$d, 463, 8, 13110);
-    			add_location(th5, file$d, 464, 8, 13141);
-    			add_location(th6, file$d, 465, 2, 13162);
-    			add_location(tr0, file$d, 458, 6, 12978);
-    			add_location(thead, file$d, 457, 4, 12963);
+    			add_location(th0, file$d, 459, 8, 13007);
+    			add_location(th1, file$d, 460, 8, 13032);
+    			add_location(th2, file$d, 461, 8, 13063);
+    			add_location(th3, file$d, 462, 8, 13087);
+    			add_location(th4, file$d, 463, 8, 13125);
+    			add_location(th5, file$d, 464, 8, 13156);
+    			add_location(th6, file$d, 465, 2, 13177);
+    			add_location(tr0, file$d, 458, 6, 12993);
+    			add_location(thead, file$d, 457, 4, 12978);
     			attr_dev(input0, "type", "text");
-    			add_location(input0, file$d, 470, 12, 13245);
-    			add_location(td0, file$d, 470, 8, 13241);
+    			add_location(input0, file$d, 470, 12, 13260);
+    			add_location(td0, file$d, 470, 8, 13256);
     			attr_dev(input1, "type", "text");
-    			add_location(input1, file$d, 471, 12, 13315);
-    			add_location(td1, file$d, 471, 8, 13311);
+    			add_location(input1, file$d, 471, 12, 13330);
+    			add_location(td1, file$d, 471, 8, 13326);
     			attr_dev(input2, "type", "number");
-    			add_location(input2, file$d, 472, 12, 13386);
-    			add_location(td2, file$d, 472, 8, 13382);
+    			add_location(input2, file$d, 472, 12, 13401);
+    			add_location(td2, file$d, 472, 8, 13397);
     			attr_dev(input3, "type", "number");
-    			add_location(input3, file$d, 473, 12, 13455);
-    			add_location(td3, file$d, 473, 8, 13451);
+    			add_location(input3, file$d, 473, 12, 13470);
+    			add_location(td3, file$d, 473, 8, 13466);
     			attr_dev(input4, "type", "number");
-    			add_location(input4, file$d, 474, 6, 13526);
-    			add_location(td4, file$d, 474, 2, 13522);
-    			add_location(td5, file$d, 476, 8, 13607);
-    			add_location(td6, file$d, 477, 2, 13681);
-    			add_location(tr1, file$d, 469, 6, 13227);
-    			add_location(tbody, file$d, 468, 4, 13212);
+    			add_location(input4, file$d, 474, 6, 13541);
+    			add_location(td4, file$d, 474, 2, 13537);
+    			add_location(td5, file$d, 476, 8, 13622);
+    			add_location(td6, file$d, 477, 2, 13696);
+    			add_location(tr1, file$d, 469, 6, 13242);
+    			add_location(tbody, file$d, 468, 4, 13227);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, thead, anchor);
@@ -13841,16 +13842,16 @@ var app = (function () {
     			td6 = element("td");
     			create_component(button1.$$.fragment);
     			t11 = space();
-    			add_location(td0, file$d, 526, 12, 15263);
-    			add_location(td1, file$d, 527, 12, 15300);
-    			add_location(td2, file$d, 528, 12, 15338);
-    			add_location(td3, file$d, 529, 12, 15372);
-    			add_location(td4, file$d, 530, 3, 15405);
+    			add_location(td0, file$d, 526, 12, 15278);
+    			add_location(td1, file$d, 527, 12, 15315);
+    			add_location(td2, file$d, 528, 12, 15353);
+    			add_location(td3, file$d, 529, 12, 15387);
+    			add_location(td4, file$d, 530, 3, 15420);
     			attr_dev(a, "href", a_href_value = "#/platforms/" + /*stat*/ ctx[47].country + "/" + /*stat*/ ctx[47].year);
-    			add_location(a, file$d, 532, 14, 15465);
-    			add_location(td5, file$d, 531, 12, 15445);
-    			add_location(td6, file$d, 535, 12, 15610);
-    			add_location(tr, file$d, 525, 10, 15245);
+    			add_location(a, file$d, 532, 14, 15480);
+    			add_location(td5, file$d, 531, 12, 15460);
+    			add_location(td6, file$d, 535, 12, 15625);
+    			add_location(tr, file$d, 525, 10, 15260);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, tr, anchor);
@@ -14068,16 +14069,16 @@ var app = (function () {
     			td6 = element("td");
     			create_component(button1.$$.fragment);
     			t11 = space();
-    			add_location(td0, file$d, 511, 12, 14691);
-    			add_location(td1, file$d, 512, 12, 14728);
-    			add_location(td2, file$d, 513, 12, 14766);
-    			add_location(td3, file$d, 514, 12, 14800);
-    			add_location(td4, file$d, 515, 12, 14842);
+    			add_location(td0, file$d, 511, 12, 14706);
+    			add_location(td1, file$d, 512, 12, 14743);
+    			add_location(td2, file$d, 513, 12, 14781);
+    			add_location(td3, file$d, 514, 12, 14815);
+    			add_location(td4, file$d, 515, 12, 14857);
     			attr_dev(a, "href", a_href_value = "#/platforms/" + /*stat*/ ctx[47].country + "/" + /*stat*/ ctx[47].year);
-    			add_location(a, file$d, 517, 14, 14902);
-    			add_location(td5, file$d, 516, 12, 14882);
-    			add_location(td6, file$d, 520, 12, 15047);
-    			add_location(tr, file$d, 510, 10, 14673);
+    			add_location(a, file$d, 517, 14, 14917);
+    			add_location(td5, file$d, 516, 12, 14897);
+    			add_location(td6, file$d, 520, 12, 15062);
+    			add_location(tr, file$d, 510, 10, 14688);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, tr, anchor);
@@ -14272,33 +14273,33 @@ var app = (function () {
     			create_component(button.$$.fragment);
     			t19 = space();
     			if_block.c();
-    			add_location(th0, file$d, 488, 8, 13903);
-    			add_location(th1, file$d, 489, 8, 13928);
-    			add_location(th2, file$d, 490, 8, 13959);
-    			add_location(th3, file$d, 491, 8, 13983);
-    			add_location(th4, file$d, 492, 8, 14021);
-    			add_location(th5, file$d, 493, 8, 14052);
-    			add_location(th6, file$d, 494, 2, 14073);
-    			add_location(tr0, file$d, 487, 6, 13889);
-    			add_location(thead, file$d, 486, 4, 13874);
+    			add_location(th0, file$d, 488, 8, 13918);
+    			add_location(th1, file$d, 489, 8, 13943);
+    			add_location(th2, file$d, 490, 8, 13974);
+    			add_location(th3, file$d, 491, 8, 13998);
+    			add_location(th4, file$d, 492, 8, 14036);
+    			add_location(th5, file$d, 493, 8, 14067);
+    			add_location(th6, file$d, 494, 2, 14088);
+    			add_location(tr0, file$d, 487, 6, 13904);
+    			add_location(thead, file$d, 486, 4, 13889);
     			attr_dev(input0, "type", "text");
-    			add_location(input0, file$d, 499, 12, 14156);
-    			add_location(td0, file$d, 499, 8, 14152);
+    			add_location(input0, file$d, 499, 12, 14171);
+    			add_location(td0, file$d, 499, 8, 14167);
     			attr_dev(input1, "type", "text");
-    			add_location(input1, file$d, 500, 12, 14224);
-    			add_location(td1, file$d, 500, 8, 14220);
+    			add_location(input1, file$d, 500, 12, 14239);
+    			add_location(td1, file$d, 500, 8, 14235);
     			attr_dev(input2, "type", "number");
-    			add_location(input2, file$d, 501, 12, 14293);
-    			add_location(td2, file$d, 501, 8, 14289);
+    			add_location(input2, file$d, 501, 12, 14308);
+    			add_location(td2, file$d, 501, 8, 14304);
     			attr_dev(input3, "type", "number");
-    			add_location(input3, file$d, 502, 12, 14360);
-    			add_location(td3, file$d, 502, 8, 14356);
+    			add_location(input3, file$d, 502, 12, 14375);
+    			add_location(td3, file$d, 502, 8, 14371);
     			attr_dev(input4, "type", "number");
-    			add_location(input4, file$d, 503, 12, 14435);
-    			add_location(td4, file$d, 503, 8, 14431);
-    			add_location(td5, file$d, 505, 8, 14508);
-    			add_location(tr1, file$d, 498, 6, 14138);
-    			add_location(tbody, file$d, 497, 4, 14123);
+    			add_location(input4, file$d, 503, 12, 14450);
+    			add_location(td4, file$d, 503, 8, 14446);
+    			add_location(td5, file$d, 505, 8, 14523);
+    			add_location(tr1, file$d, 498, 6, 14153);
+    			add_location(tbody, file$d, 497, 4, 14138);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, thead, anchor);
@@ -14932,10 +14933,10 @@ var app = (function () {
     			create_component(table1.$$.fragment);
     			t10 = space();
     			create_component(pagination.$$.fragment);
-    			add_location(p0, file$d, 444, 2, 12735);
-    			add_location(p1, file$d, 446, 2, 12746);
-    			add_location(h4, file$d, 455, 2, 12920);
-    			add_location(h3, file$d, 483, 2, 13808);
+    			add_location(p0, file$d, 444, 2, 12750);
+    			add_location(p1, file$d, 446, 2, 12761);
+    			add_location(h4, file$d, 455, 2, 12935);
+    			add_location(h3, file$d, 483, 2, 13823);
     			attr_dev(main, "class", "svelte-1uggtpz");
     			add_location(main, file$d, 402, 0, 11280);
     		},

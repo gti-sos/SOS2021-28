@@ -424,7 +424,7 @@
     </NavItem>
     <NavItem>
       {#if platformsStats.length === 0}
-        <NavLink disabled href="#" on:click={toggle2}
+        <NavLink disabled href="#"  on:click={toggle2}
           >Borrar todos los datos</NavLink
         >
       {:else}
