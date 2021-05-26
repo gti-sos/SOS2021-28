@@ -54,11 +54,14 @@
   <a href="/#/info">
     <Button color="primary">Info</Button>
   </a>
-  <a href="/#/GeneralChart">
+  <a href="/#/analytics">
     <Button color="primary">Gráfica conjunta</Button>
   </a>
   <a href="/#/integrations">
     <Button color="primary">Integraciones</Button>
+  </a>
+  <a href="/#/about">
+    <Button color="primary">Videos</Button>
   </a>
 
   <p />
@@ -79,9 +82,10 @@
           <a href="/#/awards">
             <Button color="primary">Interfaz</Button>
           </a>
+          <a href="video"><Button color="primary">Video</Button></a>
           <a href="https://documenter.getpostman.com/view/14941757/TzJoE12q"
-            ><Button color="info">Documentación de Postman</Button></a
-          >
+            ><Button color="info">Documentación de Postman</Button></a>
+            
         </CardBody>
         <CardFooter
           >
@@ -106,6 +110,7 @@
           <a href="/#/platforms">
             <Button color="primary">Interfaz</Button>
           </a>
+          <a href="video"><Button color="primary">Video</Button></a>
           <a href="https://documenter.getpostman.com/view/14944973/TzJsexb1">
             <Button color="info">Documentación de Postman</Button>
           </a>
@@ -132,6 +137,7 @@
           <a href="/#/games">
             <Button color="primary">Interfaz</Button>
           </a>
+          <a href="video"><Button color="primary">Video</Button></a>
           <a href="https://documenter.getpostman.com/view/14967482/TzJu8cmV">
             <Button color="info">Documentación de Postman</Button>
           </a>

@@ -22,13 +22,14 @@
     import Home from './Pages/Home.svelte';
     import NotFound from './Pages/NotFound.svelte';
     import Info from './Pages/Info.svelte';
-	import GeneralChart from './Pages/GeneralChart.svelte';
-	
+	import GeneralChart from './Pages/Analytics.svelte';
+	import About from './Pages/about.svelte'; 
 	
     const routes = {
         "/": Home,
 		"/info":Info,
-		"/GeneralChart":GeneralChart,
+		"/Analytics":GeneralChart,
+		"/about":About,
         "/awards": Awards,
         "/awards/:country/:year": AwardsPUT,
 		"/platforms": PlatformsAPI,

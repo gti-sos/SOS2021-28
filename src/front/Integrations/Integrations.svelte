@@ -1,3 +1,24 @@
+<script>
+    import {
+      Button,
+      Icon,
+      Card,
+      CardBody,
+      CardFooter,
+      CardHeader,
+      CardSubtitle,
+      CardText,
+      CardTitle,
+      Col,
+      Container,
+      Nav,
+      NavItem,
+      NavLink,
+      Row,
+    } from "sveltestrap";
+  </script>
+
+
 <main>
     <div> <b>Integraciones de la API de Premios</b></div>
     <br>
