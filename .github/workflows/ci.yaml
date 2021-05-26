@@ -16,3 +16,5 @@ jobs:
       - run: npx newman run tests/SOS2021-28-platforms.postman_collection.json
       - run: npx newman run tests/SOS2021-28-games.postman_collection.json
       - run: node tests/Awards_e2e.js
+      - run: node tests/Platforms_e2e.js
+      - run: node tests/Games_e2e.js
