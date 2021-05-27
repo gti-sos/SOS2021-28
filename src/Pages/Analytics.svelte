@@ -86,6 +86,9 @@
       
       console.log("awards Chart DaTa: " + pChartData);
       Highcharts.chart("container", {
+        chart: {
+            type: 'area'
+        },
         title: {
           text: "Grafica General",
         },
