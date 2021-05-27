@@ -35,27 +35,42 @@
         nAwardData.push(stat["n-award"]);
         
         });
-     
-     
-      
       }
-      
       console.log("awards Chart DaTa: " + pChartData);
 
       var colors = Highcharts.getOptions().colors;
 
       Highcharts.chart('container', {
     chart: {
-        type: 'area',
-        inverted: true
+        type: 'bar'
     },
     title: {
-        text: 'Gráfica con los valores de la api awards'
+        text: 'valores de la Api awards'
     },
-    accessibility: {
-        keyboardNavigation: {
-            seriesNavigation: {
-                mode: 'serialize'
+    
+    xAxis: {
+        categories: countryWinnerData,
+        title: {
+            text: null
+        }
+    },
+    yAxis: {
+        min: 0,
+        title: {
+            text: 'valores',
+            align: 'high'
+        },
+        labels: {
+            overflow: 'justify'
+        }
+    },
+    tooltip: {
+        valueSuffix: ' millions'
+    },
+    plotOptions: {
+        bar: {
+            dataLabels: {
+                enabled: true
             }
         }
     },
@@ -64,40 +79,23 @@
           align: "right",
           verticalAlign: "middle",
         },
-    xAxis: {
-      title: {
-            text: 'Pais y ganador'
-        },
-        categories: countryWinnerData
-    },
-    yAxis: {
-        title: {
-            text: 'Valores'
-        },
-        allowDecimals: false,
-        min: 0
-    },
-    plotOptions: {
-        area: {
-            fillOpacity: 0.5
-        }
+    credits: {
+        enabled: false
     },
     series: [{
+        name: 'Año',
+        data: yearData
+        
+    }, {
+        name: 'Gala',
+        data: galaData
+    }, {
         name: 'Numero de plataformas',
         data: nPlatformData
     }, {
         name: 'Numero de premios',
         data: nAwardData
-    },
-    {
-        name: 'Gala',
-        data: galaData
-    },
-    {
-        name: 'Año',
-        data: yearData
-    }
-      ]
+    }]
 });
 
       /*

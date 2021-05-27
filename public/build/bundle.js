@@ -11145,7 +11145,7 @@ var app = (function () {
     const { console: console_1$8 } = globals;
     const file$e = "src\\front\\AwardsAPI\\AwardsChart.svelte";
 
-    // (192:8) <NavLink href="/">
+    // (190:8) <NavLink href="/">
     function create_default_slot_4$a(ctx) {
     	let t;
 
@@ -11165,14 +11165,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_4$a.name,
     		type: "slot",
-    		source: "(192:8) <NavLink href=\\\"/\\\">",
+    		source: "(190:8) <NavLink href=\\\"/\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (191:6) <NavItem>
+    // (189:6) <NavItem>
     function create_default_slot_3$a(ctx) {
     	let navlink;
     	let current;
@@ -11221,14 +11221,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_3$a.name,
     		type: "slot",
-    		source: "(191:6) <NavItem>",
+    		source: "(189:6) <NavItem>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (195:8) <NavLink href="#/awards">
+    // (193:8) <NavLink href="#/awards">
     function create_default_slot_2$a(ctx) {
     	let t;
 
@@ -11248,14 +11248,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_2$a.name,
     		type: "slot",
-    		source: "(195:8) <NavLink href=\\\"#/awards\\\">",
+    		source: "(193:8) <NavLink href=\\\"#/awards\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (194:6) <NavItem>
+    // (192:6) <NavItem>
     function create_default_slot_1$a(ctx) {
     	let navlink;
     	let current;
@@ -11304,14 +11304,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_1$a.name,
     		type: "slot",
-    		source: "(194:6) <NavItem>",
+    		source: "(192:6) <NavItem>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (190:4) <Nav>
+    // (188:4) <Nav>
     function create_default_slot$c(ctx) {
     	let navitem0;
     	let t;
@@ -11384,14 +11384,14 @@ var app = (function () {
     		block,
     		id: create_default_slot$c.name,
     		type: "slot",
-    		source: "(190:4) <Nav>",
+    		source: "(188:4) <Nav>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (206:6) {#if errorMsg}
+    // (204:6) {#if errorMsg}
     function create_if_block_1$7(ctx) {
     	let p;
 
@@ -11401,7 +11401,7 @@ var app = (function () {
     			p.textContent = `ERROR: ${/*errorMsg*/ ctx[0]}`;
     			attr_dev(p, "class", "msgRed");
     			set_style(p, "color", "#9d1c24");
-    			add_location(p, file$e, 206, 8, 4795);
+    			add_location(p, file$e, 204, 8, 4765);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -11416,14 +11416,14 @@ var app = (function () {
     		block,
     		id: create_if_block_1$7.name,
     		type: "if",
-    		source: "(206:6) {#if errorMsg}",
+    		source: "(204:6) {#if errorMsg}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (209:6) {#if okMsg}
+    // (207:6) {#if okMsg}
     function create_if_block$7(ctx) {
     	let p;
 
@@ -11433,7 +11433,7 @@ var app = (function () {
     			p.textContent = `${/*okMsg*/ ctx[1]}`;
     			attr_dev(p, "class", "msgGreen");
     			set_style(p, "color", "#155724");
-    			add_location(p, file$e, 209, 8, 4899);
+    			add_location(p, file$e, 207, 8, 4869);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -11448,7 +11448,7 @@ var app = (function () {
     		block,
     		id: create_if_block$7.name,
     		type: "if",
-    		source: "(209:6) {#if okMsg}",
+    		source: "(207:6) {#if okMsg}",
     		ctx
     	});
 
@@ -11520,24 +11520,24 @@ var app = (function () {
     			p = element("p");
     			p.textContent = "Grafica de HighCharts donde se aprecian todos los valores de la API Awards";
     			if (script0.src !== (script0_src_value = "https://code.highcharts.com/highcharts.js")) attr_dev(script0, "src", script0_src_value);
-    			add_location(script0, file$e, 181, 4, 4112);
+    			add_location(script0, file$e, 179, 4, 4082);
     			if (script1.src !== (script1_src_value = "https://code.highcharts.com/modules/exporting.js")) attr_dev(script1, "src", script1_src_value);
-    			add_location(script1, file$e, 182, 4, 4183);
+    			add_location(script1, file$e, 180, 4, 4153);
     			if (script2.src !== (script2_src_value = "https://code.highcharts.com/modules/export-data.js")) attr_dev(script2, "src", script2_src_value);
-    			add_location(script2, file$e, 183, 4, 4261);
+    			add_location(script2, file$e, 181, 4, 4231);
     			if (script3.src !== (script3_src_value = "https://code.highcharts.com/modules/accessibility.js")) attr_dev(script3, "src", script3_src_value);
-    			add_location(script3, file$e, 184, 4, 4341);
-    			add_location(h2, file$e, 199, 6, 4699);
-    			add_location(div0, file$e, 198, 4, 4686);
-    			add_location(div1, file$e, 204, 4, 4758);
+    			add_location(script3, file$e, 182, 4, 4311);
+    			add_location(h2, file$e, 197, 6, 4669);
+    			add_location(div0, file$e, 196, 4, 4656);
+    			add_location(div1, file$e, 202, 4, 4728);
     			attr_dev(div2, "id", "container");
-    			add_location(div2, file$e, 215, 8, 5045);
+    			add_location(div2, file$e, 213, 8, 5015);
     			attr_dev(p, "class", "highcharts-description");
-    			add_location(p, file$e, 216, 8, 5081);
+    			add_location(p, file$e, 214, 8, 5051);
     			attr_dev(figure, "class", "highcharts-figure svelte-1o9mzhx");
-    			add_location(figure, file$e, 214, 6, 5001);
-    			add_location(div3, file$e, 213, 4, 4988);
-    			add_location(main, file$e, 188, 2, 4473);
+    			add_location(figure, file$e, 212, 6, 4971);
+    			add_location(div3, file$e, 211, 4, 4958);
+    			add_location(main, file$e, 186, 2, 4443);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -11664,29 +11664,28 @@ var app = (function () {
     		Highcharts.getOptions().colors;
 
     		Highcharts.chart("container", {
-    			chart: { type: "area", inverted: true },
-    			title: {
-    				text: "Gráfica con los valores de la api awards"
+    			chart: { type: "bar" },
+    			title: { text: "valores de la Api awards" },
+    			xAxis: {
+    				categories: countryWinnerData,
+    				title: { text: null }
     			},
-    			accessibility: {
-    				keyboardNavigation: { seriesNavigation: { mode: "serialize" } }
+    			yAxis: {
+    				min: 0,
+    				title: { text: "valores", align: "high" },
+    				labels: { overflow: "justify" }
     			},
+    			tooltip: { valueSuffix: " millions" },
+    			plotOptions: { bar: { dataLabels: { enabled: true } } },
     			legend: {
     				layout: "vertical",
     				align: "right",
     				verticalAlign: "middle"
     			},
-    			xAxis: {
-    				title: { text: "Pais y ganador" },
-    				categories: countryWinnerData
-    			},
-    			yAxis: {
-    				title: { text: "Valores" },
-    				allowDecimals: false,
-    				min: 0
-    			},
-    			plotOptions: { area: { fillOpacity: 0.5 } },
+    			credits: { enabled: false },
     			series: [
+    				{ name: "Año", data: yearData },
+    				{ name: "Gala", data: galaData },
     				{
     					name: "Numero de plataformas",
     					data: nPlatformData
@@ -11694,9 +11693,7 @@ var app = (function () {
     				{
     					name: "Numero de premios",
     					data: nAwardData
-    				},
-    				{ name: "Gala", data: galaData },
-    				{ name: "Año", data: yearData }
+    				}
     			]
     		});
     	} /*
