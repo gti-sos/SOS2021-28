@@ -3,8 +3,9 @@
 	
     import Awards from './front/AwardsAPI/TableAwards.svelte';
     import AwardsPUT from './front/AwardsAPI/TableAwardsEdit.svelte'; 
-	import AwardsChart from './front/AwardsAPI/AwardsChart.svelte';
-	
+	import AwardsChart from './front/AwardsAPI/AwardsCharts.svelte';
+	import AwardsChart1 from './front/AwardsAPI/AwardsChart.svelte';
+	import AwardsChart2 from './front/AwardsAPI/AwardsChart2.svelte';
 	import PlatformsAPI from "./front/PlatformsAPI/PlatformsAPI.svelte";
 	import EditPlatformsAPI from "./front/PlatformsAPI/EditPlatforms.svelte";
 	import PlatformCharts from "./front/PlatformsAPI/PlatformsChart.svelte";
@@ -36,6 +37,8 @@
 		"/platforms/:country/:year": EditPlatformsAPI,
 		"/platforms/platformCharts": PlatformCharts,
 		"/awards/awardsCharts": AwardsChart,
+		"/awards/awardsChart": AwardsChart1,
+		"/awards/awardsChart2": AwardsChart2,
 		"/games": GamesAPI,
 		"/games/:country/:year": EditGames,
 		"/games/gamesCharts": GamesCharts,

@@ -1,6 +1,8 @@
 <script>
     import { onMount } from "svelte";
     import { Table, Button, Nav, NavItem, NavLink } from "sveltestrap";
+
+    //var zingchart = require("zingchart");
     
     const BASE_CONTACT_API_PATH = "/api/v1";
     let pData = [];
@@ -175,6 +177,7 @@
       */
       
     }
+    
   </script>
   <svelte:head>
     <script src="https://code.highcharts.com/highcharts.js"></script>
