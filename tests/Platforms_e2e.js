@@ -24,10 +24,17 @@ const puppeteer = require('puppeteer');
     await page.screenshot({ path: './tests/screenshots/platforms/02.png' });//Foto de tabla de plataformas
     
 
+
+    await page.waitForTimeout(3000);
+    await page.click("body > main > main > table:nth-child(7) > tbody");
+    await page.waitForTimeout(3000);
+    await page.screenshot({ path: './tests/screenshots/platforms/Tabla.png' }); //borrar todo
+
     await page.waitForTimeout(2000);
     var initialrowCount = (await page.$$("body > main > main > table:nth-child(7) > tbody > tr")).length;
     await page.waitForTimeout(2000);
 
+    
 
     console.log(`Initial row count = ${initialrowCount}`);
     if(initialrowCount != 9){
