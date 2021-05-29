@@ -21,6 +21,7 @@
 	import IntegrationApiSuicidiosExterna from "./front/Integrations/Platforms-Integrations/ApiSuicidios.svelte";
 	import IntegrationApiArmasExterna from "./front/Integrations/Platforms-Integrations/ApiArmas.svelte";
 	import IntegrationApiGrammys from "./front/Integrations/Awards-Integrations/ApiGrammys.svelte";
+	import IntegrationApiPromotion from "./front/Integrations/Awards-Integrations/ApiPromotion.svelte";
 
 
     import Home from './Pages/Home.svelte';
@@ -50,6 +51,7 @@
 		"/integrations/suicidios-externalApi":IntegrationApiSuicidiosExterna,
 		"/integrations/armas-externalApi":IntegrationApiArmasExterna,
 		"/integrations/grammysApi":IntegrationApiGrammys,
+		"/integrations/promotionApi":IntegrationApiPromotion,
 		"/about":About,
         "*": NotFound 
 	};

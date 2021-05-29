@@ -20,8 +20,8 @@
     
     async function getData(){
         console.log("Fetching data...");
-        const res1 = await fetch(urlproxy + "api/v2/suicide-records/loadInitialData");
-        const res = await fetch(urlproxy +  "api/v2/suicide-records");
+        const res1 = await fetch(urlproxy + "/api/v2/suicide-records/loadInitialData");
+        const res = await fetch(urlproxy +  "/api/v2/suicide-records");
         if(res.ok){
             console.log("Ok.");
             suicides = await res.json();

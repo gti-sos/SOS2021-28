@@ -23,7 +23,10 @@
     <div> <b>Integraciones/Usos de la API de Premios</b></div>
     <br>
     <a href="#/integrations/grammysApi">API Grupo 22 - Premios Grammys</a>
-    <!--Premios-->
+    
+    <br>
+    <br>
+    <a href="#/integrations/promotionApi">API Grupo 27 - Inversión en promoción social</a>
     <br>
 
     <div> <b>Integraciones/Usos de la API de Plataformas</b></div>
