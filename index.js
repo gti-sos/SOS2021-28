@@ -81,18 +81,20 @@ app.post("/hello", (req, res) => {
 });
 
 
-//Marina
-//Uso 1 API suicidios (GRUPO 05) (PROXY)
-//el servidor de datos se encontraría en apiServerHostQL
-// "/ql" es la ruta dónde decido configurar el recurso
-//esto lo que va a hacer es que cada vez que llamemos a "/ql",
-//será como si llamaramos a la variable apiServerHostQL.
-//se define una var url que tendrá la ruta de la api + url original
-
 app.get('/index', (request, response) => {
     response.send(express());
     console.log('New request to /index has arrived, succesfuly');
 });
+
+
+//Marina
+//Uso 1 API suicidios (GRUPO 05) (PROXY)
+//el servidor de datos se encontraría en apiServerHostQL
+// "/proxi-armas" es la ruta dónde decido configurar el recurso
+//esto lo que va a hacer es que cada vez que llamemos a "/ql",
+//será como si llamaramos a la variable apiServerHostQL.
+//se define una var url que tendrá la ruta de la api + url original
+
 
 
 var api05 = "http://sos2021-05.herokuapp.com";
@@ -100,6 +102,25 @@ var path05 = "/api/v1/arms-sales-stats";
 
 app.use("/proxy-armas", function(req, res) {
     var apiServerHostQL = 'http://sos2021-05.herokuapp.com';
+    var url = apiServerHostQL + req.url;
+    //var url = api05 + req.baseUrl  + req.url;
+	console.log('piped: /proxy -> ' + url);
+    // request solo hace get, investigar como hacer put, post, delete, etc.
+    req.pipe(request(url)).pipe(res);
+});
+
+//Marina
+//Uso 1 API suicidios (GRUPO 05) (PROXY)
+//el servidor de datos se encontraría en apiServerHostQL
+// "/proxi-suicidios" es la ruta dónde decido configurar el recurso
+//esto lo que va a hacer es que cada vez que llamemos a "/ql",
+//será como si llamaramos a la variable apiServerHostQL.
+//se define una var url que tendrá la ruta de la api + url original
+
+
+
+app.use("/proxy-suicidios", function(req, res) {
+    var apiServerHostQL = 'http://sos2021-27.herokuapp.com';
     var url = apiServerHostQL + req.url;
     //var url = api05 + req.baseUrl  + req.url;
 	console.log('piped: /proxy -> ' + url);

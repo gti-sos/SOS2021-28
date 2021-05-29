@@ -1,110 +1,161 @@
 <script>
+    import {
+        onMount
+    } from "svelte";
+    import {Jumbotron, Navbar, Nav, NavItem, NavLink, NavbarBrand, Dropdown, DropdownToggle, DropdownMenu, DropdownItem,} from 'sveltestrap';
+    let isOpen = false;
 
-    import { pop } from "svelte-spa-router";
-    import Button from "sveltestrap/src/Button.svelte";
+    let urlproxy = "/proxy-suicidios/"
+
+   const BASE_API_PATH = "/api/v2/suicide-records"
+  
     
-    var BASE_API_PATH = "/api/v2/suicide-records";
-    let ql =[]
+    let suicides=[];
+    let suicKeys=[];
+    let suicMan=[];
+    let suicWoman=[];
+    let suicTotal=[];
+    let suicRate=[];
 
-    async function loadGraph(){
-        const res = await fetch(BASE_API_PATH);
-        let Array_data = [];
+    
+    async function getData(){
+        console.log("Fetching data...");
+        const res1 = await fetch(urlproxy + "api/v2/suicide-records/loadInitialData");
+        const res = await fetch(urlproxy +  "api/v2/suicide-records");
         if(res.ok){
+            console.log("Ok.");
+            suicides = await res.json();
             
-            let json = await res.json();
-            let data_bitcoin = json;
-            let cont = 0;
-            data_bitcoin.forEach( (e) => {
-                cont += 1;
-                if(cont < 10){
-                    Array_data.push({name: "Provincia " + e.province, y: e.year, z: e.suic_man, 
-                                                          z1: e.suic_woman, z2: e.suic_total, z3: e.suic_rate_mw});
-                }
+            suicides.sort((a,b) => (a.province > b.province) ? 1 : ((b.province > a.province) ? -1 : 0));
+            suicides.sort((a,b) => (a.year > b.year) ? 1 : ((b.year > a.year) ? -1 : 0));
+            suicides.forEach(element => {
+                suicKeys.push(element.province+","+element.year);
+                suicMan.push(parseInt(element.suic_man));
+                suicWoman.push(parseInt(element.suic_woman));
+                suicTotal.push(parseInt(element.suic_total));
+                suicRate.push(parseInt(element.suic_rate_mw));
                 
             });
-                 
+            console.log(suicWoman);
+            console.log(`We have received ${suicides.length} data points.`);
         }else{
-            console.log("Error al acceder a la API");
+            console.log("Error!");
         }
-        Highcharts.chart('container', {
-            chart: {
-                type: 'variablepie'
+    }   
+    
+  //  onMount(getData);
+  async function loadGraph(){  
+    getData().then(()=>{
+    
+    Highcharts.chart('container', {
+        chart: {
+                type: 'area'
+      },
+      title: {
+        text: "Gráfica de Suicidios",
+      },
+      yAxis: {
+        title: {
+          text: "Número de Personas",
+        },
+      },
+      xAxis: {
+        title: {
+          text: "Provincia,Año",
+        },
+        categories: suicKeys,
+      },
+      legend: {
+        layout: "vertical",
+        align: "right",
+        verticalAlign: "middle",
+      },
+      annotations: [
+        {
+          labels: [
+            {
+              point: "date",
+              text: "",
             },
-            title: {
-                text: ''
+            {
+              point: "min",
+              text: "Min",
+              backgroundColor: "white",
             },
-            tooltip: {
-                headerFormat: '',
-                pointFormat: '<span style="color:{point.color}">\u25CF</span> <b> {point.name}</b><br/>' +
-                    'Precio: <b>{point.y}</b><br/>' +
-                    'Cantidad: <b>{point.z2}</b><br/>'
-            },
-            series: [{
-                minPointSize: 10,
-                innerSize: '20%',
-                zMin: 0,
-                name: 'types',
-                data: Array_data
+          ],
+        },
+      ],
+        series: [
+        {
+          name: "Hombres",
+          data: suicMan,
+        },
+        {
+          name: "Mujeres",
+          data: suicWoman,
+        },
+        {
+          name: "Total",
+          data: suicTotal,
+        },
+        {
+          name: "Ratio",
+          data: suicRate,
+        }
+        
+      ],
+        responsive: {
+            rules: [{
+                condition: {
+                    maxWidth: 500
+                },
+                chartOptions: {
+                    legend: {
+                        layout: 'horizontal',
+                        align: 'center',
+                        verticalAlign: 'bottom'
+                    }
+                }
             }]
-        });
-    }
+        }
+    });
+  });
+}
+    
 </script>
 
 <svelte:head>
-    <script src="https://code.highcharts.com/highcharts.js"></script>
-    <script src="https://code.highcharts.com/modules/variable-pie.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js" on:load={loadGraph}></script>
+    <script src="https://code.highcharts.com/modules/series-label.js"></script>
     <script src="https://code.highcharts.com/modules/exporting.js"></script>
     <script src="https://code.highcharts.com/modules/export-data.js"></script>
-    <script src="https://code.highcharts.com/modules/accessibility.js" on:load="{loadGraph}"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
 </svelte:head>
 
+
 <main>
+  <body>
 
-    <h1 style="text-align:center"></h1>
-    <h4 style="text-align:center"><a href="https://www.mercadobitcoin.net/api/BTC/trades/1501871369/1501891200/">Información de monedas virtuales.</a></h4>
-
-    <figure class="highcharts-figure">
-        <div id="container"></div>
-    </figure>
-    <Button outline color="secondary" on:click="{pop}">Volver</Button>
-    
-</main> 
-
+  </body>
+  <br>
+  <h1 class="titulo2"> Gráfica de datos </h1>
+  <div style="margin-bottom: 15px">
+      <figure class="highcharts-figure">
+        <div id="container" />
+        <p style="centrado"> Gráfica que relaciona el presupuesto de cada provincia y año con la inversión que realiza cada una de estas en promoción social. </p>
+      </figure>
+    </div>
+</main>
 
 <style>
-    #container {
-	height: 500px;
-    }
-    .highcharts-figure, .highcharts-data-table table {
-        min-width: 320px; 
-        max-width: 700px;
-        margin: 1em auto;
-    }
-    .highcharts-data-table table {
-        font-family: Verdana, sans-serif;
-        border-collapse: collapse;
-        border: 1px solid #EBEBEB;
-        margin: 10px auto;
-        text-align: center;
-        width: 100%;
-        max-width: 500px;
-    }
-    .highcharts-data-table caption {
-        padding: 1em 0;
-        font-size: 1.2em;
-        color: #555;
-    }
-    .highcharts-data-table th {
-        font-weight: 600;
-        padding: 0.5em;
-    }
-    .highcharts-data-table td, .highcharts-data-table th, .highcharts-data-table caption {
-        padding: 0.5em;
-    }
-    .highcharts-data-table thead tr, .highcharts-data-table tr:nth-child(even) {
-        background: #f8f8f8;
-    }
-    .highcharts-data-table tr:hover {
-        background: #f1f7ff;
-    }
+  
+  .titulo2 {
+      color: #000000;
+      text-align: center;
+      font-size: 150%;
+  }
+  .mainDiv{
+      text-align: center;
+      margin: 20px;
+  }
 </style>

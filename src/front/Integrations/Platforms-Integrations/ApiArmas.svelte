@@ -42,7 +42,7 @@
     onMount(buscar)
     async function getData(agno){
         console.log("Fetching data...");
-        const res1 = await fetch(urlproxy + "/api/v1/arms-sales-stats/loadInitialData");
+        //const res1 = await fetch(urlproxy + "/api/v1/arms-sales-stats/loadInitialData");
         const res = await fetch(urlproxy + "/api/v1/arms-sales-stats?year="+agno);
         if(res.ok){
             console.log("Ok.");
