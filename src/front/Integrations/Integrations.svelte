@@ -20,13 +20,13 @@
 
 
 <main>
-    <div> <b>Integraciones de la API de Premios</b></div>
+    <div> <b>Integraciones/Usos de la API de Premios</b></div>
     <br>
     <!--Premios-->
     <!--Premios-->
     <br>
 
-    <div> <b>Integraciones de la API de Plataformas</b></div>
+    <div> <b>Integraciones/Usos de la API de Plataformas</b></div>
     <br>
     <a href="#/integrations/monedas-externalApi">API Externa de criptomonedas</a>
     <br>
@@ -40,11 +40,18 @@
     <!--Plataformas-->
     <br>
 
-    <div> <b>Integraciones de la API de Juegos</b></div>
+    <div> <b>Integraciones/Usos de la API de Juegos</b></div>
     <br>
     <!--Juegos-->
     <!--Juegos-->
     <br>
+
+
+    <Nav>
+    <NavItem>
+      <NavLink href="/">Página Principal</NavLink>
+    </NavItem>
+  </Nav>
 
   
 </main> 
