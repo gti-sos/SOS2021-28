@@ -50,6 +50,8 @@
                         }
                     ]
                     };
+
+                    
         zingchart.render({
             id: 'myChart',
             data: myConfig,
