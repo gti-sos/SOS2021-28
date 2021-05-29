@@ -128,6 +128,13 @@ app.use("/proxy-suicidios", function(req, res) {
     req.pipe(request(url)).pipe(res);
 });
 
+//Jose Proxy API grupo 27 (inversión en promoción social)
+app.use("/proxy-social", function(req, res) {
+    var apiServer = 'http://sos2021-27.herokuapp.com';
+    var urlAward = apiServer + req.url;
+    console.log('piped: /proxy -> ' + urlAward);
+    req.pipe(request(urlAward)).pipe(res);
+});
 
 app.listen(port, () =>{
 	console.log(`Server ready listening on port ${port}`);
