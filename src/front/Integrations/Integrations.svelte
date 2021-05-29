@@ -28,7 +28,13 @@
 
     <div> <b>Integraciones de la API de Plataformas</b></div>
     <br>
-    <a href="#/integrations/monedas-externalApi"> Integración con la API Externa de criptomonedas</a>
+    <a href="#/integrations/monedas-externalApi">API Externa de criptomonedas</a>
+    <br>
+    <br>
+    <a href="#/integrations/suicidios-externalApi">API GRUPO 27 de suicidios</a>
+    <br>
+    <br>
+    <a href="#/integrations/armas-externalApi">API GRUPO 05 de armas</a>
     <br>
     <!--Plataformas-->
     <!--Plataformas-->
@@ -40,5 +46,5 @@
     <!--Juegos-->
     <br>
 
-
+  
 </main> 

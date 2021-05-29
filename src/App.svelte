@@ -18,8 +18,10 @@
 	
 	import Integraciones from "./front/Integrations/Integrations.svelte";
 	import IntegrationApiMonedasExterna from "./front/Integrations/Platforms-Integrations/ApiMonedas.svelte";
-	
-	
+	import IntegrationApiSuicidiosExterna from "./front/Integrations/Platforms-Integrations/ApiSuicidios.svelte";
+	import IntegrationApiArmasExterna from "./front/Integrations/Platforms-Integrations/ApiArmas.svelte";
+
+
     import Home from './Pages/Home.svelte';
     import NotFound from './Pages/NotFound.svelte';
     import Info from './Pages/Info.svelte';
@@ -44,6 +46,8 @@
 		"/games/gamesCharts": GamesCharts,
 		"/integrations": Integraciones,
 		"/integrations/monedas-externalApi":IntegrationApiMonedasExterna,
+		"/integrations/suicidios-externalApi":IntegrationApiSuicidiosExterna,
+		"/integrations/armas-externalApi":IntegrationApiArmasExterna,
 		"/about":About,
         "*": NotFound 
 	};

@@ -4,6 +4,8 @@ var cool = require("cool-ascii-faces");
 var path = require("path");
 var bodyParser = require('body-parser');
 const { Console } = require("console");
+var request = require("request");
+var cors = require("cors");
 
 //VARIABLES PARA LOS SERVIDORES
 var app = express();
@@ -26,6 +28,7 @@ var dbPlatforms = new DatastorePlatforms({filename : platformsFile, autoload : t
 app.use("/", express.static(path.join(__dirname, "public")));
 app.use(bodyParser.json());
 app.use(express.json());
+app.use(cors());
 
 
 //Recurso /cool - F02
@@ -76,6 +79,34 @@ apiGames.register(app);
 app.post("/hello", (req, res) => {
 	res.send("<html><body><h1>POST Hello from this tiny server</h1></body></html>");
 });
+
+
+//Marina
+//Uso 1 API suicidios (GRUPO 05) (PROXY)
+//el servidor de datos se encontraría en apiServerHostQL
+// "/ql" es la ruta dónde decido configurar el recurso
+//esto lo que va a hacer es que cada vez que llamemos a "/ql",
+//será como si llamaramos a la variable apiServerHostQL.
+//se define una var url que tendrá la ruta de la api + url original
+
+app.get('/index', (request, response) => {
+    response.send(express());
+    console.log('New request to /index has arrived, succesfuly');
+});
+
+
+var api05 = "http://sos2021-05.herokuapp.com";
+var path05 = "/api/v1/arms-sales-stats";
+
+app.use("/proxy-armas", function(req, res) {
+    var apiServerHostQL = 'http://sos2021-05.herokuapp.com';
+    var url = apiServerHostQL + req.url;
+    //var url = api05 + req.baseUrl  + req.url;
+	console.log('piped: /proxy -> ' + url);
+    // request solo hace get, investigar como hacer put, post, delete, etc.
+    req.pipe(request(url)).pipe(res);
+});
+
 
 app.listen(port, () =>{
 	console.log(`Server ready listening on port ${port}`);
