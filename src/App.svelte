@@ -20,6 +20,7 @@
 	import IntegrationApiMonedasExterna from "./front/Integrations/Platforms-Integrations/ApiMonedas.svelte";
 	import IntegrationApiSuicidiosExterna from "./front/Integrations/Platforms-Integrations/ApiSuicidios.svelte";
 	import IntegrationApiArmasExterna from "./front/Integrations/Platforms-Integrations/ApiArmas.svelte";
+	import IntegrationApiGrammys from "./front/Integrations/Awards-Integrations/ApiGrammys.svelte";
 
 
     import Home from './Pages/Home.svelte';
@@ -48,6 +49,7 @@
 		"/integrations/monedas-externalApi":IntegrationApiMonedasExterna,
 		"/integrations/suicidios-externalApi":IntegrationApiSuicidiosExterna,
 		"/integrations/armas-externalApi":IntegrationApiArmasExterna,
+		"/integrations/grammysApi":IntegrationApiGrammys,
 		"/about":About,
         "*": NotFound 
 	};
