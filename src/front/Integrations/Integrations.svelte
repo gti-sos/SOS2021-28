@@ -23,18 +23,15 @@
     <div> <b>Integraciones/Usos de la API de Premios</b></div>
     <br>
     <a href="#/integrations/grammysApi">API Grupo 22 - Premios Grammys</a>
-    
     <br>
     <br>
     <a href="#/integrations/promotionApi">API Grupo 27 - Inversión en promoción social</a>
     <br>
-
     <br>
     <a href="#/integrations/freeGamesApi">API Externa - Juegos Gratuitos</a>
     <br>
-
     <br>
-    <a href="#/integrations/externaApi">API Externa - eaaa</a>
+    <a href="#/integrations/externaApi">API Externa - Datos Sobre Covid-19</a>
     <br>
 
     <div> <b>Integraciones/Usos de la API de Plataformas</b></div>
