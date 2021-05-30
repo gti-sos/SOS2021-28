@@ -35,15 +35,12 @@
   
    let urlproxy = "/proxy-armas/"
 
-   const BASE_API_PATH = "/api/v1/arms-sales-stats"
-
     let data = [];
     let array = [];
     onMount(buscar)
     async function getData(agno){
         console.log("Fetching data...");
-        //const res1 = await fetch(urlproxy + "/api/v1/arms-sales-stats/loadInitialData");
-        const res = await fetch(urlproxy + "/api/v1/arms-sales-stats?year="+agno);
+        const res = await fetch( urlproxy + "/api/v2/arms-sales-stats?year="+agno);
         if(res.ok){
             console.log("Ok.");
             const json = await res.json();
@@ -106,7 +103,7 @@
     Highcharts.chart('container', {
         chart: {
                 type: 'area'
-      },
+            },
         title: {
             text: 'Venta de armas en '+ agno
         },
@@ -188,7 +185,6 @@ const delay = ms => new Promise(res => setTimeout(res, ms));
     </figure>  
     <div>
         <Button color="secondary" on:click={pop}>Volver</Button>
-        
     </div>
 
     <Modal isOpen={b} toggle={busqueda} transitionOptions>

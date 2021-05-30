@@ -17,9 +17,13 @@
 	
 	
 	import Integraciones from "./front/Integrations/Integrations.svelte";
+	
 	import IntegrationApiMonedasExterna from "./front/Integrations/Platforms-Integrations/ApiMonedas.svelte";
 	import IntegrationApiSuicidiosExterna from "./front/Integrations/Platforms-Integrations/ApiSuicidios.svelte";
 	import IntegrationApiArmasExterna from "./front/Integrations/Platforms-Integrations/ApiArmas.svelte";
+	import IntegrationApiHomicidioExterna from "./front/Integrations/Platforms-Integrations/ApiHomicidios.svelte";
+	import IntegrationApiSeriesExterna from "./front/Integrations/Platforms-Integrations/ApiSerie.svelte";
+
 	import IntegrationApiGrammys from "./front/Integrations/Awards-Integrations/ApiGrammys.svelte";
 	import IntegrationApiPromotion from "./front/Integrations/Awards-Integrations/ApiPromotion.svelte";
 	import IntegrationApiFreeGames from "./front/Integrations/Awards-Integrations/ApiFreeGames.svelte";
@@ -50,6 +54,8 @@
 		"/integrations/monedas-externalApi":IntegrationApiMonedasExterna,
 		"/integrations/suicidios-externalApi":IntegrationApiSuicidiosExterna,
 		"/integrations/armas-externalApi":IntegrationApiArmasExterna,
+		"/integrations/homicidio-externalApi":IntegrationApiHomicidioExterna,
+		"/integrations/series-externalApi":IntegrationApiSeriesExterna,
 		"/integrations/grammysApi":IntegrationApiGrammys,
 		"/integrations/promotionApi":IntegrationApiPromotion,
 		"/integrations/freeGamesApi":IntegrationApiFreeGames,

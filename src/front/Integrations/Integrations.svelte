@@ -43,6 +43,12 @@
     <br>
     <a href="#/integrations/armas-externalApi">API GRUPO 05 de armas</a>
     <br>
+    <br>
+    <a href="#/integrations/homicidio-externalApi">API GRUPO 05 de homicidios</a>
+    <br>
+    <br>
+    <a href="#/integrations/series-externalApi">API Externa de series</a>
+    <br>
     <!--Plataformas-->
     <!--Plataformas-->
     <br>
