@@ -6,6 +6,7 @@
 	import AwardsChart from './front/AwardsAPI/AwardsCharts.svelte';
 	import AwardsChart1 from './front/AwardsAPI/AwardsChart.svelte';
 	import AwardsChart2 from './front/AwardsAPI/AwardsChart2.svelte';
+	import Awardsd3js from './front/AwardsAPI/AwardsChartD3js.svelte'
 	import PlatformsAPI from "./front/PlatformsAPI/PlatformsAPI.svelte";
 	import EditPlatformsAPI from "./front/PlatformsAPI/EditPlatforms.svelte";
 	import PlatformCharts from "./front/PlatformsAPI/PlatformsChart.svelte";
@@ -28,6 +29,7 @@
 	import IntegrationApiPromotion from "./front/Integrations/Awards-Integrations/ApiPromotion.svelte";
 	import IntegrationApiFreeGames from "./front/Integrations/Awards-Integrations/ApiFreeGames.svelte";
 	import IntegrationApiExterna from "./front/Integrations/Awards-Integrations/ApiExterna.svelte";
+	
 
     import Home from './Pages/Home.svelte';
     import NotFound from './Pages/NotFound.svelte';
@@ -48,6 +50,7 @@
 		"/awards/awardsCharts": AwardsChart,
 		"/awards/awardsChart": AwardsChart1,
 		"/awards/awardsChart2": AwardsChart2,
+		"/awards/awardsD3js": Awardsd3js,
 		"/games": GamesAPI,
 		"/games/:country/:year": EditGames,
 		"/games/gamesCharts": GamesCharts,

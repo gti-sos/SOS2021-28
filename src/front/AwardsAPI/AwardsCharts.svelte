@@ -56,23 +56,19 @@
             
           </Card>
         </Col>
+       
         
-        
-        
-        
-        
+
         <Col xs="auto">
           <Card class="mb-3">
             <CardHeader>
-              <CardTitle><h5>Grafica mediante la biblioteca Zingchart</h5></CardTitle>
+              <CardTitle><h5>Grafica mediante biblioteca Higchart</h5></CardTitle>
             </CardHeader>
             <CardBody>
               <CardSubtitle />
-             
-              <a href="#/awards/awardsChart2">
-                <Button color="primary">Grafica</Button>
-              </a>
               
+              <a href="#/awards/awardsChart">
+                <Button color="primary">Grafica</Button></a>
               
             </CardBody>
             
