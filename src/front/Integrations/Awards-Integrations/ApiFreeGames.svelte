@@ -40,7 +40,7 @@
     });
     if(data.ok){
         juegos = await data.json();
-        
+        console.log(juegos)
         juegos.forEach(e => {
 
             juegosData.push({text:e.title,values:[((e.platforms).split(",")).length]})
@@ -65,7 +65,7 @@
             fontSize: '14px'
             },
             title: {
-            text: 'Population Pyramid by Age Group',
+            text: 'Numero de plataformas de juegos premiados o gratuitos',
             fontSize: '24px'
             },
             options: {

@@ -33,6 +33,10 @@
     <a href="#/integrations/freeGamesApi">API Externa - Juegos Gratuitos</a>
     <br>
 
+    <br>
+    <a href="#/integrations/externaApi">API Externa - eaaa</a>
+    <br>
+
     <div> <b>Integraciones/Usos de la API de Plataformas</b></div>
     <br>
     <a href="#/integrations/monedas-externalApi">API Externa de criptomonedas</a>
