@@ -29,6 +29,10 @@
     <a href="#/integrations/promotionApi">API Grupo 27 - Inversión en promoción social</a>
     <br>
 
+    <br>
+    <a href="#/integrations/freeGamesApi">API Externa - Juegos Gratuitos</a>
+    <br>
+
     <div> <b>Integraciones/Usos de la API de Plataformas</b></div>
     <br>
     <a href="#/integrations/monedas-externalApi">API Externa de criptomonedas</a>

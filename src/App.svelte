@@ -22,7 +22,7 @@
 	import IntegrationApiArmasExterna from "./front/Integrations/Platforms-Integrations/ApiArmas.svelte";
 	import IntegrationApiGrammys from "./front/Integrations/Awards-Integrations/ApiGrammys.svelte";
 	import IntegrationApiPromotion from "./front/Integrations/Awards-Integrations/ApiPromotion.svelte";
-
+	import IntegrationApiFreeGames from "./front/Integrations/Awards-Integrations/ApiFreeGames.svelte";
 
     import Home from './Pages/Home.svelte';
     import NotFound from './Pages/NotFound.svelte';
@@ -52,6 +52,7 @@
 		"/integrations/armas-externalApi":IntegrationApiArmasExterna,
 		"/integrations/grammysApi":IntegrationApiGrammys,
 		"/integrations/promotionApi":IntegrationApiPromotion,
+		"/integrations/freeGamesApi":IntegrationApiFreeGames,
 		"/about":About,
         "*": NotFound 
 	};
