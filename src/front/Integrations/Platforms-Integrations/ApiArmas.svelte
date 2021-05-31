@@ -64,7 +64,8 @@
     }
     function getVisibilidad(n) {
         
-        return n.includes("Alab")||n.includes("Main")||n.includes("Idaho");
+        //return n.includes("Alab")||n.includes("Main")||n.includes("Idaho");
+        return n.includes("Alab");
     }
    function loadGraph(){  
     
@@ -170,7 +171,8 @@ const delay = ms => new Promise(res => setTimeout(res, ms));
 </script>
 
 <svelte:head>
-    
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/highcharts.src.js"></script>
     <script src="https://code.highcharts.com/highcharts.src.js" on:load="{loadGraph}"></script>
     
     

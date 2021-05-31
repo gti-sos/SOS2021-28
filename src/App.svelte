@@ -24,6 +24,8 @@
 	import IntegrationApiArmasExterna from "./front/Integrations/Platforms-Integrations/ApiArmas.svelte";
 	import IntegrationApiHomicidioExterna from "./front/Integrations/Platforms-Integrations/ApiHomicidios.svelte";
 	import IntegrationApiSeriesExterna from "./front/Integrations/Platforms-Integrations/ApiSerie.svelte";
+	import IntegrationApiLifeExterna from "./front/Integrations/Platforms-Integrations/ApiLife.svelte";
+
 
 	import IntegrationApiGrammys from "./front/Integrations/Awards-Integrations/ApiGrammys.svelte";
 	import IntegrationApiPromotion from "./front/Integrations/Awards-Integrations/ApiPromotion.svelte";
@@ -60,6 +62,7 @@
 		"/integrations/armas-externalApi":IntegrationApiArmasExterna,
 		"/integrations/homicidio-externalApi":IntegrationApiHomicidioExterna,
 		"/integrations/series-externalApi":IntegrationApiSeriesExterna,
+		"/integrations/life-externalApi":IntegrationApiLifeExterna,
 		"/integrations/grammysApi":IntegrationApiGrammys,
 		"/integrations/promotionApi":IntegrationApiPromotion,
 		"/integrations/freeGamesApi":IntegrationApiFreeGames,
