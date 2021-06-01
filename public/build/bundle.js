@@ -28392,13 +28392,13 @@ var app = (function () {
     			t1 = space();
     			div = element("div");
     			input = element("input");
-    			add_location(p, file$d, 194, 12, 5358);
+    			add_location(p, file$d, 194, 12, 5357);
     			attr_dev(input, "type", "number");
     			attr_dev(input, "min", "2010");
     			attr_dev(input, "max", "2020");
-    			add_location(input, file$d, 196, 24, 5499);
+    			add_location(input, file$d, 196, 24, 5498);
     			set_style(div, "text-align", "center");
-    			add_location(div, file$d, 195, 20, 5439);
+    			add_location(div, file$d, 195, 20, 5438);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -28740,17 +28740,17 @@ var app = (function () {
     			t2 = space();
     			create_component(modal.$$.fragment);
     			if (script0.src !== (script0_src_value = "https://code.highcharts.com/highcharts.js")) attr_dev(script0, "src", script0_src_value);
-    			add_location(script0, file$d, 173, 4, 4708);
+    			add_location(script0, file$d, 173, 4, 4707);
     			if (script1.src !== (script1_src_value = "https://code.highcharts.com/highcharts.src.js")) attr_dev(script1, "src", script1_src_value);
-    			add_location(script1, file$d, 174, 4, 4779);
+    			add_location(script1, file$d, 174, 4, 4778);
     			if (script2.src !== (script2_src_value = "https://code.highcharts.com/highcharts.src.js")) attr_dev(script2, "src", script2_src_value);
-    			add_location(script2, file$d, 175, 4, 4854);
+    			add_location(script2, file$d, 175, 4, 4853);
     			attr_dev(div0, "id", "container");
-    			add_location(div0, file$d, 184, 8, 5048);
+    			add_location(div0, file$d, 184, 8, 5047);
     			attr_dev(figure, "class", "highcharts-figure");
-    			add_location(figure, file$d, 183, 4, 5004);
-    			add_location(div1, file$d, 187, 4, 5107);
-    			add_location(main, file$d, 181, 0, 4986);
+    			add_location(figure, file$d, 183, 4, 5003);
+    			add_location(div1, file$d, 187, 4, 5106);
+    			add_location(main, file$d, 181, 0, 4985);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -28954,7 +28954,7 @@ var app = (function () {
 
     		//SERIES PARA LOS ESTADOS
     		Highcharts.chart("container", {
-    			chart: { type: "area" },
+    			chart: { type: "bar" },
     			title: { text: "Venta de armas en " + agno },
     			yAxis: { title: { text: "Armas vendidas" } },
     			xAxis: {
@@ -29152,13 +29152,13 @@ var app = (function () {
     			div1 = element("div");
     			create_component(button.$$.fragment);
     			if (script.src !== (script_src_value = "https://code.highcharts.com/highcharts.src.js")) attr_dev(script, "src", script_src_value);
-    			add_location(script, file$c, 169, 4, 4230);
+    			add_location(script, file$c, 169, 4, 4232);
     			attr_dev(div0, "id", "container");
-    			add_location(div0, file$c, 178, 8, 4424);
+    			add_location(div0, file$c, 178, 8, 4426);
     			attr_dev(figure, "class", "highcharts-figure");
-    			add_location(figure, file$c, 177, 4, 4380);
-    			add_location(div1, file$c, 181, 4, 4483);
-    			add_location(main, file$c, 175, 0, 4362);
+    			add_location(figure, file$c, 177, 4, 4382);
+    			add_location(div1, file$c, 181, 4, 4485);
+    			add_location(main, file$c, 175, 0, 4364);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -29342,7 +29342,7 @@ var app = (function () {
 
     		//SERIES PARA LOS ESTADOS
     		Highcharts.chart("container", {
-    			chart: { type: "area" },
+    			chart: { type: "column" },
     			title: {
     				text: "Homicidios por armas de fuego 2010-2019"
     			},

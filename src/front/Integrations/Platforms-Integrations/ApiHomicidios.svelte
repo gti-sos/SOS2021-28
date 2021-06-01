@@ -99,7 +99,7 @@
     //SERIES PARA LOS ESTADOS
     Highcharts.chart('container', {
          chart: {
-                type: 'area'
+                type: 'column'
             },
         title: {
     text: 'Homicidios por armas de fuego 2010-2019'

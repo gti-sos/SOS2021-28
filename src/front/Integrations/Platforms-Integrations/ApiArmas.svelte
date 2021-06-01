@@ -103,7 +103,7 @@
     //SERIES PARA LOS ESTADOS
     Highcharts.chart('container', {
         chart: {
-                type: 'area'
+                type: 'bar'
             },
         title: {
             text: 'Venta de armas en '+ agno
