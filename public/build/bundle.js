@@ -27349,7 +27349,7 @@ var app = (function () {
     			attr_dev(link1, "rel", "stylesheet");
     			add_location(link1, file$k, 81, 4, 2975);
     			attr_dev(div, "id", "container");
-    			attr_dev(div, "class", "svelte-1jnyo8u");
+    			attr_dev(div, "class", "svelte-uzsj83");
     			add_location(div, file$k, 85, 4, 3122);
     			add_location(main, file$k, 84, 0, 3110);
     		},
