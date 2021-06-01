@@ -27456,7 +27456,7 @@ var app = (function () {
     		// set chart title text settings
     		chart.title("Gráfico que muestra las plataformas vendidas por paises").// set chart radius
     		radius("43%").// create empty area in pie chart
-    		innerRadius("30%");
+    		innerRadius("50%");
 
     		// set container id for the chart
     		chart.container("container");
@@ -33015,28 +33015,28 @@ var app = (function () {
     			br8 = element("br");
     			t20 = space();
     			a4 = element("a");
-    			a4.textContent = "API GRUPO 01 - Calidad de vida";
+    			a4.textContent = "API GRUPO 05 - Venta de armas";
     			t22 = space();
     			br9 = element("br");
     			t23 = space();
     			br10 = element("br");
     			t24 = space();
     			a5 = element("a");
-    			a5.textContent = "API GRUPO 05 - Venta de armas";
+    			a5.textContent = "API GRUPO 05 - Homicidios por armas de fuego";
     			t26 = space();
     			br11 = element("br");
     			t27 = space();
     			br12 = element("br");
     			t28 = space();
     			a6 = element("a");
-    			a6.textContent = "API GRUPO 05 - Homicidios por armas de fuego";
+    			a6.textContent = "API GRUPO 27 - Suicidios";
     			t30 = space();
     			br13 = element("br");
     			t31 = space();
     			br14 = element("br");
     			t32 = space();
     			a7 = element("a");
-    			a7.textContent = "API GRUPO 27 - Suicidios";
+    			a7.textContent = "API Externa de series";
     			t34 = space();
     			br15 = element("br");
     			t35 = space();
@@ -33050,7 +33050,7 @@ var app = (function () {
     			br18 = element("br");
     			t40 = space();
     			a9 = element("a");
-    			a9.textContent = "API Externa de series";
+    			a9.textContent = "API GRUPO 01 - Calidad de vida";
     			t42 = space();
     			br19 = element("br");
     			t43 = space();
@@ -33086,28 +33086,28 @@ var app = (function () {
     			add_location(b1, file$g, 36, 10, 796);
     			add_location(div1, file$g, 36, 4, 790);
     			add_location(br8, file$g, 37, 4, 858);
-    			attr_dev(a4, "href", "#/integrations/life-externalApi");
+    			attr_dev(a4, "href", "#/integrations/armas-externalApi");
     			add_location(a4, file$g, 38, 4, 868);
     			add_location(br9, file$g, 39, 4, 950);
     			add_location(br10, file$g, 40, 4, 960);
-    			attr_dev(a5, "href", "#/integrations/armas-externalApi");
+    			attr_dev(a5, "href", "#/integrations/homicidio-externalApi");
     			add_location(a5, file$g, 41, 4, 970);
-    			add_location(br11, file$g, 42, 4, 1052);
-    			add_location(br12, file$g, 43, 4, 1062);
-    			attr_dev(a6, "href", "#/integrations/homicidio-externalApi");
-    			add_location(a6, file$g, 44, 4, 1072);
-    			add_location(br13, file$g, 45, 4, 1173);
-    			add_location(br14, file$g, 46, 4, 1183);
-    			attr_dev(a7, "href", "#/integrations/suicidios-externalApi");
-    			add_location(a7, file$g, 47, 4, 1193);
-    			add_location(br15, file$g, 48, 4, 1274);
-    			add_location(br16, file$g, 49, 4, 1284);
+    			add_location(br11, file$g, 42, 4, 1071);
+    			add_location(br12, file$g, 43, 4, 1081);
+    			attr_dev(a6, "href", "#/integrations/suicidios-externalApi");
+    			add_location(a6, file$g, 44, 4, 1091);
+    			add_location(br13, file$g, 45, 4, 1172);
+    			add_location(br14, file$g, 46, 4, 1182);
+    			attr_dev(a7, "href", "#/integrations/series-externalApi");
+    			add_location(a7, file$g, 47, 4, 1192);
+    			add_location(br15, file$g, 48, 4, 1267);
+    			add_location(br16, file$g, 49, 4, 1277);
     			attr_dev(a8, "href", "#/integrations/monedas-externalApi");
-    			add_location(a8, file$g, 50, 4, 1294);
-    			add_location(br17, file$g, 51, 4, 1377);
-    			add_location(br18, file$g, 52, 4, 1387);
-    			attr_dev(a9, "href", "#/integrations/series-externalApi");
-    			add_location(a9, file$g, 53, 4, 1397);
+    			add_location(a8, file$g, 50, 4, 1287);
+    			add_location(br17, file$g, 51, 4, 1370);
+    			add_location(br18, file$g, 52, 4, 1380);
+    			attr_dev(a9, "href", "#/integrations/life-externalApi");
+    			add_location(a9, file$g, 53, 4, 1390);
     			add_location(br19, file$g, 54, 4, 1472);
     			add_location(br20, file$g, 57, 4, 1530);
     			add_location(b2, file$g, 59, 10, 1548);

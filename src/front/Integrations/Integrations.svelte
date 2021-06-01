@@ -36,9 +36,6 @@
 
     <div> <b>Integraciones/Usos de la API de Plataformas</b></div>
     <br>
-    <a href="#/integrations/life-externalApi">API GRUPO 01 - Calidad de vida</a>
-    <br>
-    <br>
     <a href="#/integrations/armas-externalApi">API GRUPO 05 - Venta de armas</a>
     <br>
     <br>
@@ -48,10 +45,13 @@
     <a href="#/integrations/suicidios-externalApi">API GRUPO 27 - Suicidios</a>
     <br>
     <br>
+    <a href="#/integrations/series-externalApi">API Externa de series</a>
+    <br>
+    <br>
     <a href="#/integrations/monedas-externalApi">API Externa de criptomonedas</a>
     <br>
     <br>
-    <a href="#/integrations/series-externalApi">API Externa de series</a>
+    <a href="#/integrations/life-externalApi">API GRUPO 01 - Calidad de vida</a>
     <br>
     <!--Plataformas-->
     <!--Plataformas-->

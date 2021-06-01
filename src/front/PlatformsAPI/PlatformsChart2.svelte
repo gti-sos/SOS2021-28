@@ -66,7 +66,7 @@
         // set chart radius
         .radius('43%')
         // create empty area in pie chart
-        .innerRadius('30%');
+        .innerRadius('50%');
       // set container id for the chart
       chart.container('container');
       // initiate chart drawing
