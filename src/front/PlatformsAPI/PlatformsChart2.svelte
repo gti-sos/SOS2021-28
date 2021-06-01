@@ -36,7 +36,7 @@
                 pData.forEach(stat => {
 
                     //platChartCountryData.push(stat.country +"-"+stat.platform);
-                    //platChartPlatformData.push(stat.platform);
+                   // platChartPlatformData.push(stat.platform);
                     //platChartYearData.push(stat.year);
                     ventas.push(stat["sold-unit"]);
                     //platChartGenerationData.push(stat.generation);
@@ -62,7 +62,7 @@
       var chart = anychart.pie(paises);
       // set chart title text settings
       chart
-        .title('Gráfico que muestra las plataformas vendidas por paises')
+        .title('Gráfico que muestra el numero de las plataformas vendidas por paises')
         // set chart radius
         .radius('43%')
         // create empty area in pie chart

@@ -27335,23 +27335,23 @@ var app = (function () {
     			main = element("main");
     			div = element("div");
     			if (script0.src !== (script0_src_value = "https://cdn.anychart.com/releases/v8/js/anychart-base.min.js")) attr_dev(script0, "src", script0_src_value);
-    			add_location(script0, file$k, 77, 4, 2578);
+    			add_location(script0, file$k, 77, 4, 2591);
     			if (script1.src !== (script1_src_value = "https://cdn.anychart.com/releases/v8/js/anychart-ui.min.js")) attr_dev(script1, "src", script1_src_value);
-    			add_location(script1, file$k, 78, 4, 2668);
+    			add_location(script1, file$k, 78, 4, 2681);
     			if (script2.src !== (script2_src_value = "https://cdn.anychart.com/releases/v8/js/anychart-exports.min.js")) attr_dev(script2, "src", script2_src_value);
-    			add_location(script2, file$k, 79, 4, 2756);
+    			add_location(script2, file$k, 79, 4, 2769);
     			attr_dev(link0, "href", "https://cdn.anychart.com/releases/v8/css/anychart-ui.min.css");
     			attr_dev(link0, "type", "text/css");
     			attr_dev(link0, "rel", "stylesheet");
-    			add_location(link0, file$k, 80, 4, 2849);
+    			add_location(link0, file$k, 80, 4, 2862);
     			attr_dev(link1, "href", "https://cdn.anychart.com/releases/v8/fonts/css/anychart-font.min.css");
     			attr_dev(link1, "type", "text/css");
     			attr_dev(link1, "rel", "stylesheet");
-    			add_location(link1, file$k, 81, 4, 2962);
+    			add_location(link1, file$k, 81, 4, 2975);
     			attr_dev(div, "id", "container");
     			attr_dev(div, "class", "svelte-1jnyo8u");
-    			add_location(div, file$k, 85, 4, 3109);
-    			add_location(main, file$k, 84, 0, 3097);
+    			add_location(div, file$k, 85, 4, 3122);
+    			add_location(main, file$k, 84, 0, 3110);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -27428,7 +27428,7 @@ var app = (function () {
 
     				pData.forEach(stat => {
     					//platChartCountryData.push(stat.country +"-"+stat.platform);
-    					//platChartPlatformData.push(stat.platform);
+    					// platChartPlatformData.push(stat.platform);
     					//platChartYearData.push(stat.year);
     					ventas.push(stat["sold-unit"]);
     				}); //platChartGenerationData.push(stat.generation);
@@ -27454,7 +27454,7 @@ var app = (function () {
     		var chart = anychart.pie(paises);
 
     		// set chart title text settings
-    		chart.title("Gráfico que muestra las plataformas vendidas por paises").// set chart radius
+    		chart.title("Gráfico que muestra el numero de las plataformas vendidas por paises").// set chart radius
     		radius("43%").// create empty area in pie chart
     		innerRadius("50%");
 
