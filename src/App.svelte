@@ -10,6 +10,7 @@
 	import PlatformsAPI from "./front/PlatformsAPI/PlatformsAPI.svelte";
 	import EditPlatformsAPI from "./front/PlatformsAPI/EditPlatforms.svelte";
 	import PlatformCharts from "./front/PlatformsAPI/PlatformsChart.svelte";
+	import PlatformCharts2 from "./front/PlatformsAPI/PlatformsChart2.svelte";
 
 
 	import GamesAPI from "./front/GamesAPI/GamesAPI.svelte";
@@ -49,6 +50,7 @@
 		"/platforms": PlatformsAPI,
 		"/platforms/:country/:year": EditPlatformsAPI,
 		"/platforms/platformCharts": PlatformCharts,
+		"/platforms/platformCharts2": PlatformCharts2,
 		"/awards/awardsCharts": AwardsChart,
 		"/awards/awardsChart": AwardsChart1,
 		"/awards/awardsChart2": AwardsChart2,

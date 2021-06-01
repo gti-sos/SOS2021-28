@@ -407,6 +407,7 @@
     </NavItem>
 	<NavItem>
       <NavLink href="/#/platforms/platformCharts">Análiticas</NavLink>
+      <NavLink href="/#/platforms/platformCharts2">Análiticas2</NavLink>
     </NavItem>
 	
     <NavItem>
