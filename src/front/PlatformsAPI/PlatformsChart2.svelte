@@ -17,10 +17,10 @@
     
     anychart.onDocumentReady(async function () {
         //Obtenemos paises
-        let paawards = [];
+        let pplatforms = [];
         const data = await fetch(BASE_API_URL + "/platforms");
-        paawards = await data.json();
-        paawards.forEach((x) => {
+        pplatforms = await data.json();
+        pplatforms.forEach((x) => {
             if (!country.includes(x.country)){
                 country.push(x.country);
             }
@@ -41,16 +41,6 @@
                     ventas.push(stat["sold-unit"]);
                     //platChartGenerationData.push(stat.generation);
                  });
-                /*
-                const json = await res.json();
-                
-                array.push(`${c}`);
-                 json.forEach((p) => {
-                     console.log(p["sold-unit"]);
-                   // var trofeos = parseInt(p.platform);
-                    //suma=suma+trofeos;
-                });
-                */
             } 
             else {
                 ventas.push(`${c}`);
