@@ -26,6 +26,7 @@
 	import IntegrationApiHomicidioExterna from "./front/Integrations/Platforms-Integrations/ApiHomicidios.svelte";
 	import IntegrationApiSeriesExterna from "./front/Integrations/Platforms-Integrations/ApiSerie.svelte";
 	import IntegrationApiLifeExterna from "./front/Integrations/Platforms-Integrations/ApiLife.svelte";
+	import IntegrationApiPrincesaExterna from "./front/Integrations/Platforms-Integrations/ApiPrincesa.svelte";
 
 
 	import IntegrationApiGrammys from "./front/Integrations/Awards-Integrations/ApiGrammys.svelte";
@@ -65,6 +66,7 @@
 		"/integrations/homicidio-externalApi":IntegrationApiHomicidioExterna,
 		"/integrations/series-externalApi":IntegrationApiSeriesExterna,
 		"/integrations/life-externalApi":IntegrationApiLifeExterna,
+		"/integrations/premios-externalApi":IntegrationApiPrincesaExterna,
 		"/integrations/grammysApi":IntegrationApiGrammys,
 		"/integrations/promotionApi":IntegrationApiPromotion,
 		"/integrations/freeGamesApi":IntegrationApiFreeGames,

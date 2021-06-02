@@ -36,19 +36,23 @@
 
     <div> <b>Integraciones/Usos de la API de Plataformas</b></div>
     <br>
-    <a href="#/integrations/armas-externalApi">API GRUPO 05 - Venta de armas</a>
-    <br>
-    <br>
-    <a href="#/integrations/homicidio-externalApi">API GRUPO 05 - Homicidios por armas de fuego</a>
-    <br>
-    <br>
     <a href="#/integrations/suicidios-externalApi">API GRUPO 27 - Suicidios</a>
+    <br>
+    <br>
+    <a href="#/integrations/premios-externalApi">API GRUPO 22 - Premios princesa</a>
     <br>
     <br>
     <a href="#/integrations/series-externalApi">API Externa de series</a>
     <br>
     <br>
     <a href="#/integrations/monedas-externalApi">API Externa de criptomonedas</a>
+    <br>
+    <h6> Extras: </h6>
+    <br>
+    <a href="#/integrations/armas-externalApi">API GRUPO 05 - Venta de armas</a>
+    <br>
+    <br>
+    <a href="#/integrations/homicidio-externalApi">API GRUPO 05 - Homicidios por armas de fuego</a>
     <br>
     <br>
     <a href="#/integrations/life-externalApi">API GRUPO 01 - Calidad de vida</a>

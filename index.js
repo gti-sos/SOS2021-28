@@ -104,6 +104,24 @@ app.use("/proxy-life", function(req, res) {
     req.pipe(request(url)).pipe(res);
 });
 
+//Marina
+//Uso 1 API suicidios (GRUPO 01) (PROXY)
+//el servidor de datos se encontraría en apiServerHostQL
+// "/proxi-life" es la ruta dónde decido configurar el recurso
+//esto lo que va a hacer es que cada vez que llamemos a "/proxi-life",
+//será como si llamaramos a la variable apiServerHostQL.
+//se define una var url que tendrá la ruta de la api + url original
+
+
+app.use("/proxy-princesa", function(req, res) {
+    var apiServerHostQL = 'http://sos2021-22.herokuapp.com';
+    var url = apiServerHostQL + req.url;
+    //var url = api05 + req.baseUrl  + req.url;
+	console.log('piped: /proxy -> ' + url);
+    // request solo hace get, investigar como hacer put, post, delete, etc.
+    req.pipe(request(url)).pipe(res);
+});
+
 
 //Marina
 //Uso 1 API suicidios (GRUPO 05) (PROXY)

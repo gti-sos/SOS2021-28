@@ -84,6 +84,11 @@
 
 <main>
     <div id="container"></div>
+    <Nav>
+        <NavItem>
+            <NavLink href="/#/integrations">Volver</NavLink>
+        </NavItem>
+    </Nav>
 </main>
 
 <style>

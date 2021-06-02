@@ -118,6 +118,9 @@
       <NavItem>
         <NavLink href="/">Página Principal</NavLink>
       </NavItem>
+      <NavItem>
+            <NavLink href="/#/integrations">Volver</NavLink>
+      </NavItem>
   </Nav>
 
   <div>
