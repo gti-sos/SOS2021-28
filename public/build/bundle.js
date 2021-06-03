@@ -38406,7 +38406,7 @@ var app = (function () {
     	return block;
     }
 
-    // (113:26) <Button color="primary">
+    // (113:83) <Button color="primary">
     function create_default_slot_16$2(ctx) {
     	let t;
 
@@ -38426,7 +38426,7 @@ var app = (function () {
     		block,
     		id: create_default_slot_16$2.name,
     		type: "slot",
-    		source: "(113:26) <Button color=\\\"primary\\\">",
+    		source: "(113:83) <Button color=\\\"primary\\\">",
     		ctx
     	});
 
@@ -38533,10 +38533,10 @@ var app = (function () {
     			add_location(a0, file$5, 106, 10, 2650);
     			attr_dev(a1, "href", "/#/platforms");
     			add_location(a1, file$5, 109, 10, 2788);
-    			attr_dev(a2, "href", "video");
+    			attr_dev(a2, "href", "https://www.youtube.com/watch?v=r1Kt_G5gAZA&ab_channel=MarinaB");
     			add_location(a2, file$5, 112, 10, 2894);
     			attr_dev(a3, "href", "https://documenter.getpostman.com/view/14944973/TzJsexb1");
-    			add_location(a3, file$5, 113, 10, 2964);
+    			add_location(a3, file$5, 113, 10, 3021);
     		},
     		m: function mount(target, anchor) {
     			mount_component(cardsubtitle, target, anchor);
@@ -38638,7 +38638,7 @@ var app = (function () {
     			a = element("a");
     			a.textContent = "Marina Barragán Candel";
     			attr_dev(a, "href", "https://github.com/MarinaBC");
-    			add_location(a, file$5, 119, 10, 3182);
+    			add_location(a, file$5, 119, 10, 3239);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, a, anchor);
@@ -38828,7 +38828,7 @@ var app = (function () {
     		c: function create() {
     			h5 = element("h5");
     			h5.textContent = "Games";
-    			add_location(h5, file$5, 128, 21, 3392);
+    			add_location(h5, file$5, 128, 21, 3449);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h5, anchor);
@@ -39082,13 +39082,13 @@ var app = (function () {
     			a3 = element("a");
     			create_component(button3.$$.fragment);
     			attr_dev(a0, "href", "https://sos2021-28.herokuapp.com/api/v1/games");
-    			add_location(a0, file$5, 133, 10, 3513);
+    			add_location(a0, file$5, 133, 10, 3570);
     			attr_dev(a1, "href", "/#/games");
-    			add_location(a1, file$5, 136, 10, 3647);
+    			add_location(a1, file$5, 136, 10, 3704);
     			attr_dev(a2, "href", "video");
-    			add_location(a2, file$5, 139, 10, 3749);
+    			add_location(a2, file$5, 139, 10, 3806);
     			attr_dev(a3, "href", "https://documenter.getpostman.com/view/14967482/TzJu8cmV");
-    			add_location(a3, file$5, 140, 10, 3819);
+    			add_location(a3, file$5, 140, 10, 3876);
     		},
     		m: function mount(target, anchor) {
     			mount_component(cardsubtitle, target, anchor);
@@ -39190,7 +39190,7 @@ var app = (function () {
     			a = element("a");
     			a.textContent = "Fernando Olmedo Delgado";
     			attr_dev(a, "href", "https://github.com/Fernasilver");
-    			add_location(a, file$5, 146, 10, 4037);
+    			add_location(a, file$5, 146, 10, 4094);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, a, anchor);
@@ -43915,7 +43915,7 @@ var app = (function () {
     			t = space();
     			a = element("a");
     			create_component(button.$$.fragment);
-    			attr_dev(a, "href", "video");
+    			attr_dev(a, "href", "https://www.youtube.com/watch?v=r1Kt_G5gAZA&ab_channel=MarinaB");
     			add_location(a, file$1, 71, 14, 1370);
     		},
     		m: function mount(target, anchor) {
@@ -44108,7 +44108,7 @@ var app = (function () {
     		c: function create() {
     			h5 = element("h5");
     			h5.textContent = "Videos de la API Juegos";
-    			add_location(h5, file$1, 88, 25, 1727);
+    			add_location(h5, file$1, 88, 25, 1784);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h5, anchor);
@@ -44236,7 +44236,7 @@ var app = (function () {
     			a = element("a");
     			create_component(button.$$.fragment);
     			attr_dev(a, "href", "video");
-    			add_location(a, file$1, 93, 14, 1886);
+    			add_location(a, file$1, 93, 14, 1943);
     		},
     		m: function mount(target, anchor) {
     			mount_component(cardsubtitle, target, anchor);

@@ -110,7 +110,7 @@
           <a href="/#/platforms">
             <Button color="primary">Interfaz</Button>
           </a>
-          <a href="video"><Button color="primary">Video</Button></a>
+          <a href="https://www.youtube.com/watch?v=r1Kt_G5gAZA&ab_channel=MarinaB"><Button color="primary">Video</Button></a>
           <a href="https://documenter.getpostman.com/view/14944973/TzJsexb1">
             <Button color="info">Documentación de Postman</Button>
           </a>

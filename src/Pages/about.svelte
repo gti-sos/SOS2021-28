@@ -69,7 +69,7 @@
             <CardBody>
               <CardSubtitle />
              
-              <a href="video">
+              <a href="https://www.youtube.com/watch?v=r1Kt_G5gAZA&ab_channel=MarinaB">
                 <Button color="primary">Video</Button>
               </a>
               
