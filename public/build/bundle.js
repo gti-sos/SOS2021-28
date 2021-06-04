@@ -38525,7 +38525,7 @@ var app = (function () {
     			add_location(a0, file$5, 106, 10, 2650);
     			attr_dev(a1, "href", "/#/platforms");
     			add_location(a1, file$5, 109, 10, 2788);
-    			attr_dev(a2, "href", "https://www.youtube.com/watch?v=r1Kt_G5gAZA&ab_channel=MarinaB");
+    			attr_dev(a2, "href", "https://www.youtube.com/watch?v=uBi3JUzmtWU&ab_channel=MarinaB");
     			add_location(a2, file$5, 112, 10, 2894);
     			attr_dev(a3, "href", "https://documenter.getpostman.com/view/14944973/TzJsexb1");
     			add_location(a3, file$5, 113, 10, 3021);
@@ -43907,7 +43907,7 @@ var app = (function () {
     			t = space();
     			a = element("a");
     			create_component(button.$$.fragment);
-    			attr_dev(a, "href", "https://www.youtube.com/watch?v=r1Kt_G5gAZA&ab_channel=MarinaB");
+    			attr_dev(a, "href", "https://www.youtube.com/watch?v=uBi3JUzmtWU&ab_channel=MarinaB");
     			add_location(a, file$1, 71, 14, 1370);
     		},
     		m: function mount(target, anchor) {
