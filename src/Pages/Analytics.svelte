@@ -87,7 +87,7 @@
       console.log("awards Chart DaTa: " + pChartData);
       Highcharts.chart("container", {
         chart: {
-            type: 'area'
+            type: 'spline'
         },
         title: {
           text: "Grafica General",
@@ -206,7 +206,7 @@
       <figure class="highcharts-figure">
         <div id="container" />
         <p class="highcharts-description">
-          Gráfico de líneas básico que muestra los diferentes valores de las diferentes apis implementadas.
+          Gráfico de type: 'spline' que muestra los diferentes valores de las diferentes apis implementadas.
         </p>
       </figure>
     </div>

@@ -47,7 +47,6 @@
     <br>
     <a href="#/integrations/monedas-externalApi">API Externa de criptomonedas</a>
     <br>
-    <h6> Extras: </h6>
     <br>
     <a href="#/integrations/armas-externalApi">API GRUPO 05 - Venta de armas</a>
     <br>

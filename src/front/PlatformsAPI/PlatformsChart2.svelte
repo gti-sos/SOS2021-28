@@ -76,7 +76,7 @@
     <div id="container"></div>
     <Nav>
         <NavItem>
-            <NavLink href="/#/integrations">Volver</NavLink>
+            <NavLink href="#/platforms">Datos</NavLink>
         </NavItem>
     </Nav>
 </main>
