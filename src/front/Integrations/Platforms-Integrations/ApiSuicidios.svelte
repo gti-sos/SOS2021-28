@@ -49,7 +49,7 @@
     
     Highcharts.chart('container', {
         chart: {
-                type: 'area'
+                type: 'areaspline'
       },
       title: {
         text: "Gráfica de Suicidios",

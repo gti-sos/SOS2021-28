@@ -33928,28 +33928,28 @@ var app = (function () {
     			t7 = space();
     			create_component(nav.$$.fragment);
     			if (script0.src !== (script0_src_value = "https://code.highcharts.com/highcharts.js")) attr_dev(script0, "src", script0_src_value);
-    			add_location(script0, file$f, 127, 4, 3301);
+    			add_location(script0, file$f, 127, 4, 3307);
     			if (script1.src !== (script1_src_value = "https://code.highcharts.com/modules/series-label.js")) attr_dev(script1, "src", script1_src_value);
-    			add_location(script1, file$f, 128, 4, 3392);
+    			add_location(script1, file$f, 128, 4, 3398);
     			if (script2.src !== (script2_src_value = "https://code.highcharts.com/modules/exporting.js")) attr_dev(script2, "src", script2_src_value);
-    			add_location(script2, file$f, 129, 4, 3473);
+    			add_location(script2, file$f, 129, 4, 3479);
     			if (script3.src !== (script3_src_value = "https://code.highcharts.com/modules/export-data.js")) attr_dev(script3, "src", script3_src_value);
-    			add_location(script3, file$f, 130, 4, 3551);
+    			add_location(script3, file$f, 130, 4, 3557);
     			if (script4.src !== (script4_src_value = "https://code.highcharts.com/modules/accessibility.js")) attr_dev(script4, "src", script4_src_value);
-    			add_location(script4, file$f, 131, 4, 3631);
-    			add_location(body, file$f, 136, 2, 3739);
-    			add_location(br, file$f, 139, 2, 3762);
+    			add_location(script4, file$f, 131, 4, 3637);
+    			add_location(body, file$f, 136, 2, 3745);
+    			add_location(br, file$f, 139, 2, 3768);
     			attr_dev(h1, "class", "titulo2 svelte-a9l0bp");
-    			add_location(h1, file$f, 140, 2, 3770);
+    			add_location(h1, file$f, 140, 2, 3776);
     			attr_dev(div0, "id", "container");
-    			add_location(div0, file$f, 143, 8, 3902);
+    			add_location(div0, file$f, 143, 8, 3908);
     			attr_dev(p, "style", "centrado");
-    			add_location(p, file$f, 144, 8, 3934);
+    			add_location(p, file$f, 144, 8, 3940);
     			attr_dev(figure, "class", "highcharts-figure");
-    			add_location(figure, file$f, 142, 6, 3858);
+    			add_location(figure, file$f, 142, 6, 3864);
     			set_style(div1, "margin-bottom", "15px");
-    			add_location(div1, file$f, 141, 2, 3817);
-    			add_location(main, file$f, 135, 0, 3729);
+    			add_location(div1, file$f, 141, 2, 3823);
+    			add_location(main, file$f, 135, 0, 3735);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -34073,7 +34073,7 @@ var app = (function () {
     	async function loadGraph() {
     		getData().then(() => {
     			Highcharts.chart("container", {
-    				chart: { type: "area" },
+    				chart: { type: "areaspline" },
     				title: { text: "Gráfica de Suicidios" },
     				yAxis: { title: { text: "Número de Personas" } },
     				xAxis: {
