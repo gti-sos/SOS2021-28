@@ -383,6 +383,7 @@
       </NavItem>
       <NavItem>
         <NavLink href="/#/games/gamesCharts">Análiticas</NavLink>
+        <NavLink href="/#/games/gamesCharts2">Análiticas2</NavLink>
       </NavItem>
       <NavItem>
         <NavLink href="#" on:click={toggle1}>Cargar datos inciales</NavLink>

@@ -16,6 +16,7 @@
 	import GamesAPI from "./front/GamesAPI/GamesAPI.svelte";
 	import EditGames from "./front/GamesAPI/EditGames.svelte";
 	import GamesCharts from "./front/GamesAPI/GamesChart.svelte";
+	import GamesCharts2 from "./front/GamesAPI/GamesChart2.svelte";
 	
 	
 	import Integraciones from "./front/Integrations/Integrations.svelte";
@@ -65,6 +66,7 @@
 		"/games": GamesAPI,
 		"/games/:country/:year": EditGames,
 		"/games/gamesCharts": GamesCharts,
+		"/games/gamesCharts2": GamesCharts2,
 		"/integrations": Integraciones,
 		"/integrations/monedas-externalApi":IntegrationApiMonedasExterna,
 		"/integrations/suicidios-externalApi":IntegrationApiSuicidiosExterna,
