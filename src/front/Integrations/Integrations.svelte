@@ -62,6 +62,19 @@
 
     <div> <b>Integraciones/Usos de la API de Juegos</b></div>
     <br>
+    <a href="#/integrations/povertyApi">API GRUPO 4 - Riesgos de pobreza</a>
+    <br>
+    <br>
+    <a href="#/integrations/azarApi">API GRUPO 27 - Actividad en loteria</a>
+    <br>
+    <br>
+    <a href="#/integrations/population-externalApi">API Externa de poblacion</a>
+    <br>
+    <br>
+    <a href="#/integrations/country-externalApi">API Externa de Paises</a>
+    <br>
+    <br>
+    <br>
     <!--Juegos-->
     <!--Juegos-->
     <br>

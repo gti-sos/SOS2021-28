@@ -172,6 +172,22 @@ app.use("/proxy-social", function(req, res) {
     req.pipe(request(urlAward)).pipe(res);
 });
 
+//Ferna Proxy API grupo 4
+app.use("/proxy-poverty", function(req, res) {
+    var apiServer = 'https://endpoint-poverty-risks.herokuapp.com';
+    var urlGame = apiServer + req.url;
+    console.log('piped: /proxy -> ' + urlGame);
+    req.pipe(request(urlGame)).pipe(res);
+});
+
+//Ferna Proxy API grupo 27
+app.use("/azar-games", function(req, res) {
+    var apiServer = 'http://sos2021-27.herokuapp.com';
+    var urlGame = apiServer + req.url;
+    console.log('piped: /proxy -> ' + urlGame);
+    req.pipe(request(urlGame)).pipe(res);
+});
+
 app.listen(port, () =>{
 	console.log(`Server ready listening on port ${port}`);
 });

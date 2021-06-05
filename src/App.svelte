@@ -33,6 +33,12 @@
 	import IntegrationApiPromotion from "./front/Integrations/Awards-Integrations/ApiPromotion.svelte";
 	import IntegrationApiFreeGames from "./front/Integrations/Awards-Integrations/ApiFreeGames.svelte";
 	import IntegrationApiExterna from "./front/Integrations/Awards-Integrations/ApiExterna.svelte";
+
+
+	import IntegrationApiPoverty from "./front/Integrations/Games-Integrations/ApiPoverty.svelte";
+	import IntegrationApiAzar from "./front/Integrations/Games-Integrations/ApiAzar.svelte";
+	import IntegrationApiPopulationExterna from "./front/Integrations/Games-Integrations/ApiPopulation.svelte";
+	import IntegrationApiCountryExterna from "./front/Integrations/Games-Integrations/ApiCountry.svelte";
 	
 
     import Home from './Pages/Home.svelte';
@@ -67,10 +73,14 @@
 		"/integrations/series-externalApi":IntegrationApiSeriesExterna,
 		"/integrations/life-externalApi":IntegrationApiLifeExterna,
 		"/integrations/premios-externalApi":IntegrationApiPrincesaExterna,
+		"/integrations/population-externalApi":IntegrationApiPopulationExterna,
+		"/integrations/country-externalApi":IntegrationApiCountryExterna,
 		"/integrations/grammysApi":IntegrationApiGrammys,
 		"/integrations/promotionApi":IntegrationApiPromotion,
 		"/integrations/freeGamesApi":IntegrationApiFreeGames,
 		"/integrations/externaApi":IntegrationApiExterna,
+		"/integrations/povertyApi":IntegrationApiPoverty,
+		"/integrations/azarApi":IntegrationApiAzar,
 		"/about":About,
         "*": NotFound 
 	};
