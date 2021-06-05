@@ -91,7 +91,7 @@
             <CardBody>
               <CardSubtitle />
               
-              <a href="video">
+              <a href="https://youtu.be/wPc-n3VcXXc">
                 <Button color="primary">Video</Button></a>
               
             </CardBody>

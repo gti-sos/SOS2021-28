@@ -82,7 +82,7 @@
           <a href="/#/awards">
             <Button color="primary">Interfaz</Button>
           </a>
-          <a href="video"><Button color="primary">Video</Button></a>
+          <a href="https://youtu.be/wPc-n3VcXXc"><Button color="primary">Video</Button></a>
           <a href="https://documenter.getpostman.com/view/14941757/TzJoE12q"
             ><Button color="info">Documentación de Postman</Button></a>
             

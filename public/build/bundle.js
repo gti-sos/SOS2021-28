@@ -32137,11 +32137,11 @@ var app = (function () {
     			t2 = space();
     			div = element("div");
     			if (script.src !== (script_src_value = "https://cdn.zingchart.com/zingchart.min.js")) attr_dev(script, "src", script_src_value);
-    			add_location(script, file$c, 109, 2, 2869);
-    			add_location(h1, file$c, 115, 2, 2995);
+    			add_location(script, file$c, 109, 2, 2892);
+    			add_location(h1, file$c, 115, 2, 3018);
     			attr_dev(div, "id", "myChart");
-    			add_location(div, file$c, 116, 2, 3034);
-    			add_location(main, file$c, 114, 0, 2985);
+    			add_location(div, file$c, 116, 2, 3057);
+    			add_location(main, file$c, 114, 0, 3008);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -32221,7 +32221,7 @@ var app = (function () {
     				marker: { type: "triangle", size: "7px" }
     			},
     			title: {
-    				text: "Average Temperature",
+    				text: "Datos relacionados con la promocion social",
     				backgroundColor: "#ffffff",
     				fontColor: "#000"
     			},
@@ -35442,7 +35442,7 @@ var app = (function () {
     	return block;
     }
 
-    // (85:26) <Button color="primary">
+    // (85:49) <Button color="primary">
     function create_default_slot_26$1(ctx) {
     	let t;
 
@@ -35462,7 +35462,7 @@ var app = (function () {
     		block,
     		id: create_default_slot_26$1.name,
     		type: "slot",
-    		source: "(85:26) <Button color=\\\"primary\\\">",
+    		source: "(85:49) <Button color=\\\"primary\\\">",
     		ctx
     	});
 
@@ -35569,10 +35569,10 @@ var app = (function () {
     			add_location(a0, file$5, 78, 10, 1773);
     			attr_dev(a1, "href", "/#/awards");
     			add_location(a1, file$5, 81, 10, 1908);
-    			attr_dev(a2, "href", "video");
+    			attr_dev(a2, "href", "https://youtu.be/wPc-n3VcXXc");
     			add_location(a2, file$5, 84, 10, 2011);
     			attr_dev(a3, "href", "https://documenter.getpostman.com/view/14941757/TzJoE12q");
-    			add_location(a3, file$5, 85, 10, 2081);
+    			add_location(a3, file$5, 85, 10, 2104);
     		},
     		m: function mount(target, anchor) {
     			mount_component(cardsubtitle, target, anchor);
@@ -35674,7 +35674,7 @@ var app = (function () {
     			a = element("a");
     			a.textContent = "José Manuel Martín de los Santos";
     			attr_dev(a, "href", "https://github.com/spartano27");
-    			add_location(a, file$5, 91, 10, 2301);
+    			add_location(a, file$5, 91, 10, 2324);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, a, anchor);
@@ -35864,7 +35864,7 @@ var app = (function () {
     		c: function create() {
     			h5 = element("h5");
     			h5.textContent = "Platforms";
-    			add_location(h5, file$5, 101, 21, 2525);
+    			add_location(h5, file$5, 101, 21, 2548);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h5, anchor);
@@ -36118,13 +36118,13 @@ var app = (function () {
     			a3 = element("a");
     			create_component(button3.$$.fragment);
     			attr_dev(a0, "href", "https://sos2021-28.herokuapp.com/api/v1/platforms");
-    			add_location(a0, file$5, 106, 10, 2650);
+    			add_location(a0, file$5, 106, 10, 2673);
     			attr_dev(a1, "href", "/#/platforms");
-    			add_location(a1, file$5, 109, 10, 2788);
+    			add_location(a1, file$5, 109, 10, 2811);
     			attr_dev(a2, "href", "https://www.youtube.com/watch?v=uBi3JUzmtWU&ab_channel=MarinaB");
-    			add_location(a2, file$5, 112, 10, 2894);
+    			add_location(a2, file$5, 112, 10, 2917);
     			attr_dev(a3, "href", "https://documenter.getpostman.com/view/14944973/TzJsexb1");
-    			add_location(a3, file$5, 113, 10, 3021);
+    			add_location(a3, file$5, 113, 10, 3044);
     		},
     		m: function mount(target, anchor) {
     			mount_component(cardsubtitle, target, anchor);
@@ -36226,7 +36226,7 @@ var app = (function () {
     			a = element("a");
     			a.textContent = "Marina Barragán Candel";
     			attr_dev(a, "href", "https://github.com/MarinaBC");
-    			add_location(a, file$5, 119, 10, 3239);
+    			add_location(a, file$5, 119, 10, 3262);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, a, anchor);
@@ -36416,7 +36416,7 @@ var app = (function () {
     		c: function create() {
     			h5 = element("h5");
     			h5.textContent = "Games";
-    			add_location(h5, file$5, 128, 21, 3449);
+    			add_location(h5, file$5, 128, 21, 3472);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h5, anchor);
@@ -36670,13 +36670,13 @@ var app = (function () {
     			a3 = element("a");
     			create_component(button3.$$.fragment);
     			attr_dev(a0, "href", "https://sos2021-28.herokuapp.com/api/v1/games");
-    			add_location(a0, file$5, 133, 10, 3570);
+    			add_location(a0, file$5, 133, 10, 3593);
     			attr_dev(a1, "href", "/#/games");
-    			add_location(a1, file$5, 136, 10, 3704);
+    			add_location(a1, file$5, 136, 10, 3727);
     			attr_dev(a2, "href", "video");
-    			add_location(a2, file$5, 139, 10, 3806);
+    			add_location(a2, file$5, 139, 10, 3829);
     			attr_dev(a3, "href", "https://documenter.getpostman.com/view/14967482/TzJu8cmV");
-    			add_location(a3, file$5, 140, 10, 3876);
+    			add_location(a3, file$5, 140, 10, 3899);
     		},
     		m: function mount(target, anchor) {
     			mount_component(cardsubtitle, target, anchor);
@@ -36778,7 +36778,7 @@ var app = (function () {
     			a = element("a");
     			a.textContent = "Fernando Olmedo Delgado";
     			attr_dev(a, "href", "https://github.com/Fernasilver");
-    			add_location(a, file$5, 146, 10, 4094);
+    			add_location(a, file$5, 146, 10, 4117);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, a, anchor);
@@ -41823,7 +41823,7 @@ var app = (function () {
     			t = space();
     			a = element("a");
     			create_component(button.$$.fragment);
-    			attr_dev(a, "href", "video");
+    			attr_dev(a, "href", "https://youtu.be/wPc-n3VcXXc");
     			add_location(a, file$1, 93, 14, 1943);
     		},
     		m: function mount(target, anchor) {

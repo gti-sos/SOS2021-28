@@ -40,7 +40,7 @@
         },
       },
       title: {
-        text: 'Average Temperature',
+        text: 'Datos relacionados con la promocion social',
         backgroundColor: '#ffffff',
         fontColor: '#000'
       },
