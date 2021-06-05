@@ -17,6 +17,12 @@ const puppeteer = require('puppeteer');
       ]);
     console.log("Clicked \"Game table\" link, waiting for contacts...");
       
+    //Cargar para las capturas -> Postman hace al final un ../delete/plaforms
+    await page.click("body > main > main > ul > li:nth-child(3) > a");
+    await page.waitForTimeout(3000);
+    await page.click("body > main > main > ul > li:nth-child(3) > div > div.modal.show.d-block > div > div > div.modal-footer > button.btn.btn-primary");
+    await page.waitForTimeout(3000);
+   //
     await page.waitForTimeout(1000);  
 
     console.log("Timeout! Taking an screenshot...");
