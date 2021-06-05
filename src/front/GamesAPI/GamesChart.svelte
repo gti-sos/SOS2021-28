@@ -65,7 +65,7 @@
         },
         xAxis: {
           title: {
-            text: "País-Juego",
+            text: "País-Juego-Compañia",
           },
           categories: gamesChartCountry,
         },
