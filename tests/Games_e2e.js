@@ -19,12 +19,12 @@ const puppeteer = require('puppeteer');
 
     //Cargar para las capturas -> Postman hace al final un ../delete/plaforms
 
-    /*
+    
     await page.click("body > main > main > ul > li:nth-child(3) > a");
     await page.waitForTimeout(3000);
     await page.click("body > main > main > ul > li:nth-child(3) > div > div.modal.show.d-block > div > div > div.modal-footer > button.btn.btn-primary");
     await page.waitForTimeout(3000);
-*/
+
     
    //
     console.log("Clicked \"Game table\" link, waiting for contacts..."); 
@@ -45,7 +45,7 @@ const puppeteer = require('puppeteer');
     
     await page.waitForTimeout(2000);
     //var initialrowCount = (await page.$$("body > main > main > table:nth-child(8) > tbody > tr:nth-child(1)")).length;
-    var initialrowCount = (await page.$$("body > main > main > table:nth-child(8) > tbody > tr")).length;
+    var initialrowCount = (await page.$$("body > main > main > table:nth-child(9) > tbody > tr")).length;
     await page.waitForTimeout(2000);
     console.log(`Initial row count = ${initialrowCount}`);
     if(initialrowCount != 9){
@@ -54,15 +54,17 @@ const puppeteer = require('puppeteer');
     }
     await page.waitForTimeout(2000);
     
+    //await page.screenshot({ path: './tests/screenshots/games/prueba.png' });
     
-    await page.$eval('body > main > main > table:nth-child(8) > tbody > tr:nth-child(1) > td:nth-child(1) > input', el => el.value = 'GPrueba');
-    await page.$eval('body > main > main > table:nth-child(8) > tbody > tr:nth-child(1) > td:nth-child(2) > input', el => el.value = 'GPrueba');
-    await page.$eval('body > main > main > table:nth-child(8) > tbody > tr:nth-child(1) > td:nth-child(3) > input[type=number]', el => el.value = '2021');
-    await page.$eval('body > main > main > table:nth-child(8) > tbody > tr:nth-child(1) > td:nth-child(4) > input[type=number]', el => el.value = '2021');
-    await page.$eval('body > main > main > table:nth-child(8) > tbody > tr:nth-child(1) > td:nth-child(5) > input', el => el.value = 'GPrueba');
+
+    await page.$eval('body > main > main > table:nth-child(9) > tbody > tr:nth-child(1) > td:nth-child(1) > input', el => el.value = 'GPrueba');
+    await page.$eval('body > main > main > table:nth-child(9) > tbody > tr:nth-child(1) > td:nth-child(2) > input', el => el.value = 'GPrueba');
+    await page.$eval('body > main > main > table:nth-child(9) > tbody > tr:nth-child(1) > td:nth-child(3) > input[type=number]', el => el.value = '2021');
+    await page.$eval('body > main > main > table:nth-child(9) > tbody > tr:nth-child(1) > td:nth-child(4) > input[type=number]', el => el.value = '2021');
+    await page.$eval('body > main > main > table:nth-child(9) > tbody > tr:nth-child(1) > td:nth-child(5) > input', el => el.value = 'GPrueba');
 
     await page.screenshot({ path: './tests/screenshots/games/03-insertarDato.png' });
-    await page.$eval('body > main > main > table:nth-child(8) > tbody > tr:nth-child(1) > td:nth-child(6) > button', el => el.click());
+    await page.$eval('body > main > main > table:nth-child(9) > tbody > tr:nth-child(1) > td:nth-child(6) > button', el => el.click());
     await page.waitForTimeout(2000);
 
     await page.click("body > main > main > ul > li:nth-child(4) > a");
@@ -113,10 +115,6 @@ const puppeteer = require('puppeteer');
     await page.click("body > main > main > ul > li:nth-child(4) > div > div.modal.show.d-block > div > div > div.modal-footer > button.btn.btn-danger");
     await page.waitForTimeout(3000);
     //
-    await page.click("body > main > main > ul > li:nth-child(3) > a");
-    await page.waitForTimeout(3000);
-    await page.click("body > main > main > ul > li:nth-child(3) > div > div.modal.show.d-block > div > div > div.modal-footer > button.btn.btn-primary");
-    await page.waitForTimeout(3000);
 
     await browser.close();
 

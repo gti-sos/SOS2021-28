@@ -39,7 +39,7 @@
         });
         console.log("Done");
       }
-      const res1 = await fetch(urlproxy + "/api/v2/suicide-records/loadInitialData");
+      await fetch(urlproxy + "/api/v1/suicide-records/loadInitialData");
       const res2 = await fetch(urlproxy + "/api/v1/");
         if (res2.ok) {
             console.log("Ok");

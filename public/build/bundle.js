@@ -38218,17 +38218,17 @@ var app = (function () {
     			div = element("div");
     			attr_dev(script0, "type", "text/javascript");
     			if (script0.src !== (script0_src_value = "https://cdnjs.cloudflare.com/ajax/libs/d3/3.4.11/d3.js")) attr_dev(script0, "src", script0_src_value);
-    			add_location(script0, file$9, 99, 4, 3244);
+    			add_location(script0, file$9, 99, 4, 3231);
     			attr_dev(script1, "type", "text/javascript");
     			if (script1.src !== (script1_src_value = "https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.11/c3.js")) attr_dev(script1, "src", script1_src_value);
-    			add_location(script1, file$9, 100, 4, 3374);
+    			add_location(script1, file$9, 100, 4, 3361);
     			attr_dev(link, "href", "https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.11/c3.css");
     			attr_dev(link, "rel", "stylesheet");
     			attr_dev(link, "type", "text/css");
-    			add_location(link, file$9, 101, 4, 3504);
+    			add_location(link, file$9, 101, 4, 3491);
     			attr_dev(div, "id", "chart");
-    			add_location(div, file$9, 113, 2, 3817);
-    			add_location(main, file$9, 104, 0, 3626);
+    			add_location(div, file$9, 113, 2, 3804);
+    			add_location(main, file$9, 104, 0, 3613);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -38334,7 +38334,7 @@ var app = (function () {
     			console.log("Done");
     		}
 
-    		await fetch(urlproxy + "/api/v2/suicide-records/loadInitialData");
+    		await fetch(urlproxy + "/api/v1/suicide-records/loadInitialData");
     		const res2 = await fetch(urlproxy + "/api/v1/");
 
     		if (res2.ok) {
