@@ -15,22 +15,27 @@ const puppeteer = require('puppeteer');
         page.waitForNavigation(),
         page.click("body > main > main > div:nth-child(15) > div:nth-child(3) > div > div.card-body > a:nth-child(3) > button"),
       ]);
-    console.log("Clicked \"Game table\" link, waiting for contacts...");
-      
+    
+
     //Cargar para las capturas -> Postman hace al final un ../delete/plaforms
+
+    /*
     await page.click("body > main > main > ul > li:nth-child(3) > a");
     await page.waitForTimeout(3000);
     await page.click("body > main > main > ul > li:nth-child(3) > div > div.modal.show.d-block > div > div > div.modal-footer > button.btn.btn-primary");
     await page.waitForTimeout(3000);
+*/
+    
    //
+    console.log("Clicked \"Game table\" link, waiting for contacts..."); 
+
     await page.waitForTimeout(1000);  
 
     console.log("Timeout! Taking an screenshot...");
 
     await page.screenshot({ path: './tests/screenshots/games/02-tabla.png' });
     //await page.click("body > main > main > ul > li:nth-child(3) > a");
-
-    /*
+/*
     await page.waitForTimeout(3000);
     await page.click("body > main > main > ul > li:nth-child(3) > a");
     await page.waitForTimeout(3000);
@@ -39,7 +44,8 @@ const puppeteer = require('puppeteer');
 */
     
     await page.waitForTimeout(2000);
-    var initialrowCount = (await page.$$("body > main > main > table:nth-child(8) > tbody > tr:nth-child(1)")).length;
+    //var initialrowCount = (await page.$$("body > main > main > table:nth-child(8) > tbody > tr:nth-child(1)")).length;
+    var initialrowCount = (await page.$$("body > main > main > table:nth-child(8) > tbody > tr")).length;
     await page.waitForTimeout(2000);
     console.log(`Initial row count = ${initialrowCount}`);
     if(initialrowCount != 9){
