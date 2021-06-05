@@ -32,7 +32,7 @@
   
       if (res.ok) {
         gamesData.forEach(stat => {
-        gamesChartCountry.push(stat.country+"-"+stat.game);
+        gamesChartCountry.push(stat.country+"-"+stat.game+"-"+stat.company);
         gamesChartGame.push(stat.game);
         gamesChartYear.push(stat.year);
         gamesChartUnit.push(stat["sold-unit"]);
@@ -43,6 +43,18 @@
       console.log("games Chart DaTa: " + gamesChartData);
   
       Highcharts.chart("container", {
+        chart: {
+          type: 'lollipop'
+        /*
+        type: 'cylinder',
+                options3d: {
+                    enabled: true,
+                    alpha: 15,
+                    beta: 15,
+                    depth: 50,
+                    viewDistance: 25
+                }
+              */},
         title: {
           text: "Estadística de juegos",
         },
@@ -112,6 +124,11 @@
     <script src="https://code.highcharts.com/modules/series-label.js"></script>
     <script src="https://code.highcharts.com/modules/exporting.js"></script>
     <script src="https://code.highcharts.com/modules/export-data.js"></script>
+
+    <script src="https://code.highcharts.com/highcharts-more.js"></script>
+<script src="https://code.highcharts.com/modules/dumbbell.js"></script>
+<script src="https://code.highcharts.com/modules/lollipop.js"></script>
+
     <script
       src="https://code.highcharts.com/modules/accessibility.js"
       on:load={loadChart}></script>

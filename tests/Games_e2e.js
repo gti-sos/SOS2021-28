@@ -22,6 +22,7 @@ const puppeteer = require('puppeteer');
     
     await page.click("body > main > main > ul > li:nth-child(3) > a");
     await page.waitForTimeout(3000);
+    await page.screenshot({ path: './tests/screenshots/games/fallito.png' });
     await page.click("body > main > main > ul > li:nth-child(3) > div > div.modal.show.d-block > div > div > div.modal-footer > button.btn.btn-primary");
     await page.waitForTimeout(3000);
 

@@ -27925,7 +27925,7 @@ var app = (function () {
 
     	const block = {
     		c: function create() {
-    			t = text("Cargar datos inciales");
+    			t = text("Cargar datos iniciales");
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, t, anchor);
@@ -29053,7 +29053,7 @@ var app = (function () {
     			t0 = text("ERROR: ");
     			t1 = text(/*errorMsg*/ ctx[6]);
     			set_style(p, "color", "red");
-    			add_location(p, file$p, 424, 6, 12509);
+    			add_location(p, file$p, 424, 6, 12510);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -29089,7 +29089,7 @@ var app = (function () {
     			p = element("p");
     			t = text(/*okMsg*/ ctx[7]);
     			set_style(p, "color", "green");
-    			add_location(p, file$p, 427, 6, 12588);
+    			add_location(p, file$p, 427, 6, 12589);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -29281,34 +29281,34 @@ var app = (function () {
     			t19 = space();
     			td6 = element("td");
     			create_component(button1.$$.fragment);
-    			add_location(th0, file$p, 435, 8, 12736);
-    			add_location(th1, file$p, 436, 8, 12761);
-    			add_location(th2, file$p, 437, 8, 12787);
-    			add_location(th3, file$p, 438, 8, 12811);
-    			add_location(th4, file$p, 439, 8, 12849);
-    			add_location(th5, file$p, 440, 8, 12878);
-    			add_location(th6, file$p, 441, 2, 12899);
-    			add_location(tr0, file$p, 434, 6, 12722);
-    			add_location(thead, file$p, 433, 4, 12707);
+    			add_location(th0, file$p, 435, 8, 12737);
+    			add_location(th1, file$p, 436, 8, 12762);
+    			add_location(th2, file$p, 437, 8, 12788);
+    			add_location(th3, file$p, 438, 8, 12812);
+    			add_location(th4, file$p, 439, 8, 12850);
+    			add_location(th5, file$p, 440, 8, 12879);
+    			add_location(th6, file$p, 441, 2, 12900);
+    			add_location(tr0, file$p, 434, 6, 12723);
+    			add_location(thead, file$p, 433, 4, 12708);
     			attr_dev(input0, "type", "text");
-    			add_location(input0, file$p, 446, 12, 12982);
-    			add_location(td0, file$p, 446, 8, 12978);
+    			add_location(input0, file$p, 446, 12, 12983);
+    			add_location(td0, file$p, 446, 8, 12979);
     			attr_dev(input1, "type", "text");
-    			add_location(input1, file$p, 447, 12, 13052);
-    			add_location(td1, file$p, 447, 8, 13048);
+    			add_location(input1, file$p, 447, 12, 13053);
+    			add_location(td1, file$p, 447, 8, 13049);
     			attr_dev(input2, "type", "number");
-    			add_location(input2, file$p, 448, 12, 13119);
-    			add_location(td2, file$p, 448, 8, 13115);
+    			add_location(input2, file$p, 448, 12, 13120);
+    			add_location(td2, file$p, 448, 8, 13116);
     			attr_dev(input3, "type", "number");
-    			add_location(input3, file$p, 449, 12, 13188);
-    			add_location(td3, file$p, 449, 8, 13184);
+    			add_location(input3, file$p, 449, 12, 13189);
+    			add_location(td3, file$p, 449, 8, 13185);
     			attr_dev(input4, "type", "text");
-    			add_location(input4, file$p, 450, 6, 13259);
-    			add_location(td4, file$p, 450, 2, 13255);
-    			add_location(td5, file$p, 452, 8, 13335);
-    			add_location(td6, file$p, 453, 2, 13409);
-    			add_location(tr1, file$p, 445, 6, 12964);
-    			add_location(tbody, file$p, 444, 4, 12949);
+    			add_location(input4, file$p, 450, 6, 13260);
+    			add_location(td4, file$p, 450, 2, 13256);
+    			add_location(td5, file$p, 452, 8, 13336);
+    			add_location(td6, file$p, 453, 2, 13410);
+    			add_location(tr1, file$p, 445, 6, 12965);
+    			add_location(tbody, file$p, 444, 4, 12950);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, thead, anchor);
@@ -29790,16 +29790,16 @@ var app = (function () {
     			td6 = element("td");
     			create_component(button1.$$.fragment);
     			t11 = space();
-    			add_location(td0, file$p, 500, 12, 14985);
-    			add_location(td1, file$p, 501, 12, 15022);
-    			add_location(td2, file$p, 502, 12, 15056);
-    			add_location(td3, file$p, 503, 12, 15090);
-    			add_location(td4, file$p, 504, 3, 15123);
+    			add_location(td0, file$p, 500, 12, 14986);
+    			add_location(td1, file$p, 501, 12, 15023);
+    			add_location(td2, file$p, 502, 12, 15057);
+    			add_location(td3, file$p, 503, 12, 15091);
+    			add_location(td4, file$p, 504, 3, 15124);
     			attr_dev(a, "href", a_href_value = "#/games/" + /*stat*/ ctx[47].country + "/" + /*stat*/ ctx[47].year);
-    			add_location(a, file$p, 506, 14, 15180);
-    			add_location(td5, file$p, 505, 12, 15160);
-    			add_location(td6, file$p, 509, 12, 15321);
-    			add_location(tr, file$p, 499, 10, 14967);
+    			add_location(a, file$p, 506, 14, 15181);
+    			add_location(td5, file$p, 505, 12, 15161);
+    			add_location(td6, file$p, 509, 12, 15322);
+    			add_location(tr, file$p, 499, 10, 14968);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, tr, anchor);
@@ -30017,16 +30017,16 @@ var app = (function () {
     			td6 = element("td");
     			create_component(button1.$$.fragment);
     			t11 = space();
-    			add_location(td0, file$p, 485, 12, 14428);
-    			add_location(td1, file$p, 486, 12, 14465);
-    			add_location(td2, file$p, 487, 12, 14499);
-    			add_location(td3, file$p, 488, 12, 14533);
-    			add_location(td4, file$p, 489, 12, 14575);
+    			add_location(td0, file$p, 485, 12, 14429);
+    			add_location(td1, file$p, 486, 12, 14466);
+    			add_location(td2, file$p, 487, 12, 14500);
+    			add_location(td3, file$p, 488, 12, 14534);
+    			add_location(td4, file$p, 489, 12, 14576);
     			attr_dev(a, "href", a_href_value = "#/games/" + /*stat*/ ctx[47].country + "/" + /*stat*/ ctx[47].year);
-    			add_location(a, file$p, 491, 14, 14632);
-    			add_location(td5, file$p, 490, 12, 14612);
-    			add_location(td6, file$p, 494, 12, 14773);
-    			add_location(tr, file$p, 484, 10, 14410);
+    			add_location(a, file$p, 491, 14, 14633);
+    			add_location(td5, file$p, 490, 12, 14613);
+    			add_location(td6, file$p, 494, 12, 14774);
+    			add_location(tr, file$p, 484, 10, 14411);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, tr, anchor);
@@ -30215,29 +30215,29 @@ var app = (function () {
     			create_component(button.$$.fragment);
     			t17 = space();
     			if_block.c();
-    			add_location(th0, file$p, 463, 10, 13616);
-    			add_location(th1, file$p, 464, 10, 13643);
-    			add_location(th2, file$p, 465, 10, 13671);
-    			add_location(th3, file$p, 466, 10, 13697);
-    			add_location(th4, file$p, 467, 10, 13737);
-    			add_location(th5, file$p, 468, 10, 13768);
-    			add_location(tr0, file$p, 462, 8, 13600);
-    			add_location(thead, file$p, 461, 6, 13583);
-    			add_location(input0, file$p, 474, 22, 13883);
-    			add_location(td0, file$p, 474, 18, 13879);
-    			add_location(input1, file$p, 475, 22, 13948);
-    			add_location(td1, file$p, 475, 18, 13944);
+    			add_location(th0, file$p, 463, 10, 13617);
+    			add_location(th1, file$p, 464, 10, 13644);
+    			add_location(th2, file$p, 465, 10, 13672);
+    			add_location(th3, file$p, 466, 10, 13698);
+    			add_location(th4, file$p, 467, 10, 13738);
+    			add_location(th5, file$p, 468, 10, 13769);
+    			add_location(tr0, file$p, 462, 8, 13601);
+    			add_location(thead, file$p, 461, 6, 13584);
+    			add_location(input0, file$p, 474, 22, 13884);
+    			add_location(td0, file$p, 474, 18, 13880);
+    			add_location(input1, file$p, 475, 22, 13949);
+    			add_location(td1, file$p, 475, 18, 13945);
     			attr_dev(input2, "type", "number");
-    			add_location(input2, file$p, 476, 22, 14010);
-    			add_location(td2, file$p, 476, 18, 14006);
+    			add_location(input2, file$p, 476, 22, 14011);
+    			add_location(td2, file$p, 476, 18, 14007);
     			attr_dev(input3, "type", "number");
-    			add_location(input3, file$p, 477, 22, 14084);
-    			add_location(td3, file$p, 477, 18, 14080);
-    			add_location(input4, file$p, 478, 22, 14166);
-    			add_location(td4, file$p, 478, 18, 14162);
-    			add_location(td5, file$p, 480, 18, 14247);
-    			add_location(tr1, file$p, 473, 14, 13855);
-    			add_location(tbody, file$p, 472, 6, 13832);
+    			add_location(input3, file$p, 477, 22, 14085);
+    			add_location(td3, file$p, 477, 18, 14081);
+    			add_location(input4, file$p, 478, 22, 14167);
+    			add_location(td4, file$p, 478, 18, 14163);
+    			add_location(td5, file$p, 480, 18, 14248);
+    			add_location(tr1, file$p, 473, 14, 13856);
+    			add_location(tbody, file$p, 472, 6, 13833);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, thead, anchor);
@@ -30875,11 +30875,11 @@ var app = (function () {
     			t12 = space();
     			create_component(pagination.$$.fragment);
     			attr_dev(h2, "class", "svelte-x1papj");
-    			add_location(h2, file$p, 418, 4, 12436);
-    			add_location(p0, file$p, 420, 4, 12461);
-    			add_location(p1, file$p, 422, 4, 12476);
-    			add_location(h4, file$p, 431, 4, 12664);
-    			add_location(h3, file$p, 459, 2, 13536);
+    			add_location(h2, file$p, 418, 4, 12437);
+    			add_location(p0, file$p, 420, 4, 12462);
+    			add_location(p1, file$p, 422, 4, 12477);
+    			add_location(h4, file$p, 431, 4, 12665);
+    			add_location(h3, file$p, 459, 2, 13537);
     			attr_dev(main, "class", "svelte-x1papj");
     			add_location(main, file$p, 378, 2, 10851);
     		},
@@ -32326,7 +32326,7 @@ var app = (function () {
     const { console: console_1$f } = globals;
     const file$n = "src\\front\\GamesAPI\\GamesChart.svelte";
 
-    // (122:8) <NavLink href="/">
+    // (139:8) <NavLink href="/">
     function create_default_slot_4$b(ctx) {
     	let t;
 
@@ -32346,14 +32346,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_4$b.name,
     		type: "slot",
-    		source: "(122:8) <NavLink href=\\\"/\\\">",
+    		source: "(139:8) <NavLink href=\\\"/\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (121:6) <NavItem>
+    // (138:6) <NavItem>
     function create_default_slot_3$b(ctx) {
     	let navlink;
     	let current;
@@ -32402,14 +32402,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_3$b.name,
     		type: "slot",
-    		source: "(121:6) <NavItem>",
+    		source: "(138:6) <NavItem>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (125:8) <NavLink href="#/games">
+    // (142:8) <NavLink href="#/games">
     function create_default_slot_2$e(ctx) {
     	let t;
 
@@ -32429,14 +32429,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_2$e.name,
     		type: "slot",
-    		source: "(125:8) <NavLink href=\\\"#/games\\\">",
+    		source: "(142:8) <NavLink href=\\\"#/games\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (124:6) <NavItem>
+    // (141:6) <NavItem>
     function create_default_slot_1$e(ctx) {
     	let navlink;
     	let current;
@@ -32485,14 +32485,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_1$e.name,
     		type: "slot",
-    		source: "(124:6) <NavItem>",
+    		source: "(141:6) <NavItem>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (120:4) <Nav>
+    // (137:4) <Nav>
     function create_default_slot$h(ctx) {
     	let navitem0;
     	let t;
@@ -32565,14 +32565,14 @@ var app = (function () {
     		block,
     		id: create_default_slot$h.name,
     		type: "slot",
-    		source: "(120:4) <Nav>",
+    		source: "(137:4) <Nav>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (136:6) {#if errorMsg}
+    // (153:6) {#if errorMsg}
     function create_if_block_1$1(ctx) {
     	let p;
 
@@ -32582,7 +32582,7 @@ var app = (function () {
     			p.textContent = `ERROR: ${/*errorMsg*/ ctx[0]}`;
     			attr_dev(p, "class", "msgRed svelte-1r4wqw6");
     			set_style(p, "color", "#9d1c24");
-    			add_location(p, file$n, 136, 8, 3456);
+    			add_location(p, file$n, 153, 8, 4022);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -32597,14 +32597,14 @@ var app = (function () {
     		block,
     		id: create_if_block_1$1.name,
     		type: "if",
-    		source: "(136:6) {#if errorMsg}",
+    		source: "(153:6) {#if errorMsg}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (139:6) {#if okMsg}
+    // (156:6) {#if okMsg}
     function create_if_block$1(ctx) {
     	let p;
 
@@ -32614,7 +32614,7 @@ var app = (function () {
     			p.textContent = `${/*okMsg*/ ctx[1]}`;
     			attr_dev(p, "class", "msgGreen svelte-1r4wqw6");
     			set_style(p, "color", "#155724");
-    			add_location(p, file$n, 139, 8, 3560);
+    			add_location(p, file$n, 156, 8, 4126);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -32629,7 +32629,7 @@ var app = (function () {
     		block,
     		id: create_if_block$1.name,
     		type: "if",
-    		source: "(139:6) {#if okMsg}",
+    		source: "(156:6) {#if okMsg}",
     		ctx
     	});
 
@@ -32647,6 +32647,12 @@ var app = (function () {
     	let script3_src_value;
     	let script4;
     	let script4_src_value;
+    	let script5;
+    	let script5_src_value;
+    	let script6;
+    	let script6_src_value;
+    	let script7;
+    	let script7_src_value;
     	let t0;
     	let main;
     	let nav;
@@ -32684,6 +32690,9 @@ var app = (function () {
     			script2 = element("script");
     			script3 = element("script");
     			script4 = element("script");
+    			script5 = element("script");
+    			script6 = element("script");
+    			script7 = element("script");
     			t0 = space();
     			main = element("main");
     			create_component(nav.$$.fragment);
@@ -32704,31 +32713,37 @@ var app = (function () {
     			p = element("p");
     			p.textContent = "Gráfico de líneas básico que muestra los diferentes valores para los campos de juegos.";
     			if (script0.src !== (script0_src_value = "https://code.highcharts.com/highcharts.js")) attr_dev(script0, "src", script0_src_value);
-    			add_location(script0, file$n, 110, 4, 2693);
+    			add_location(script0, file$n, 122, 4, 3033);
     			if (script1.src !== (script1_src_value = "https://code.highcharts.com/modules/series-label.js")) attr_dev(script1, "src", script1_src_value);
-    			add_location(script1, file$n, 111, 4, 2764);
+    			add_location(script1, file$n, 123, 4, 3104);
     			if (script2.src !== (script2_src_value = "https://code.highcharts.com/modules/exporting.js")) attr_dev(script2, "src", script2_src_value);
-    			add_location(script2, file$n, 112, 4, 2845);
+    			add_location(script2, file$n, 124, 4, 3185);
     			if (script3.src !== (script3_src_value = "https://code.highcharts.com/modules/export-data.js")) attr_dev(script3, "src", script3_src_value);
-    			add_location(script3, file$n, 113, 4, 2923);
-    			if (script4.src !== (script4_src_value = "https://code.highcharts.com/modules/accessibility.js")) attr_dev(script4, "src", script4_src_value);
-    			add_location(script4, file$n, 114, 4, 3003);
-    			add_location(h2, file$n, 129, 6, 3360);
+    			add_location(script3, file$n, 125, 4, 3263);
+    			if (script4.src !== (script4_src_value = "https://code.highcharts.com/highcharts-more.js")) attr_dev(script4, "src", script4_src_value);
+    			add_location(script4, file$n, 127, 4, 3345);
+    			if (script5.src !== (script5_src_value = "https://code.highcharts.com/modules/dumbbell.js")) attr_dev(script5, "src", script5_src_value);
+    			add_location(script5, file$n, 128, 0, 3417);
+    			if (script6.src !== (script6_src_value = "https://code.highcharts.com/modules/lollipop.js")) attr_dev(script6, "src", script6_src_value);
+    			add_location(script6, file$n, 129, 0, 3490);
+    			if (script7.src !== (script7_src_value = "https://code.highcharts.com/modules/accessibility.js")) attr_dev(script7, "src", script7_src_value);
+    			add_location(script7, file$n, 131, 4, 3569);
+    			add_location(h2, file$n, 146, 6, 3926);
     			attr_dev(div0, "class", "svelte-1r4wqw6");
-    			add_location(div0, file$n, 128, 4, 3347);
+    			add_location(div0, file$n, 145, 4, 3913);
     			attr_dev(div1, "class", "svelte-1r4wqw6");
-    			add_location(div1, file$n, 134, 4, 3419);
+    			add_location(div1, file$n, 151, 4, 3985);
     			attr_dev(div2, "id", "container");
     			attr_dev(div2, "class", "svelte-1r4wqw6");
-    			add_location(div2, file$n, 145, 8, 3706);
+    			add_location(div2, file$n, 162, 8, 4272);
     			attr_dev(p, "class", "highcharts-description svelte-1r4wqw6");
-    			add_location(p, file$n, 146, 8, 3738);
+    			add_location(p, file$n, 163, 8, 4304);
     			attr_dev(figure, "class", "highcharts-figure svelte-1r4wqw6");
-    			add_location(figure, file$n, 144, 6, 3662);
+    			add_location(figure, file$n, 161, 6, 4228);
     			attr_dev(div3, "class", "svelte-1r4wqw6");
-    			add_location(div3, file$n, 143, 4, 3649);
+    			add_location(div3, file$n, 160, 4, 4215);
     			attr_dev(main, "class", "svelte-1r4wqw6");
-    			add_location(main, file$n, 118, 2, 3135);
+    			add_location(main, file$n, 135, 2, 3701);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -32739,6 +32754,9 @@ var app = (function () {
     			append_dev(document.head, script2);
     			append_dev(document.head, script3);
     			append_dev(document.head, script4);
+    			append_dev(document.head, script5);
+    			append_dev(document.head, script6);
+    			append_dev(document.head, script7);
     			insert_dev(target, t0, anchor);
     			insert_dev(target, main, anchor);
     			mount_component(nav, main, null);
@@ -32759,7 +32777,7 @@ var app = (function () {
     			current = true;
 
     			if (!mounted) {
-    				dispose = listen_dev(script4, "load", /*loadChart*/ ctx[2], false, false, false);
+    				dispose = listen_dev(script7, "load", /*loadChart*/ ctx[2], false, false, false);
     				mounted = true;
     			}
     		},
@@ -32789,6 +32807,9 @@ var app = (function () {
     			detach_dev(script2);
     			detach_dev(script3);
     			detach_dev(script4);
+    			detach_dev(script5);
+    			detach_dev(script6);
+    			detach_dev(script7);
     			if (detaching) detach_dev(t0);
     			if (detaching) detach_dev(main);
     			destroy_component(nav);
@@ -32838,7 +32859,7 @@ var app = (function () {
 
     		if (res.ok) {
     			gamesData.forEach(stat => {
-    				gamesChartCountry.push(stat.country + "-" + stat.game);
+    				gamesChartCountry.push(stat.country + "-" + stat.game + "-" + stat.company);
     				gamesChartGame.push(stat.game);
     				gamesChartYear.push(stat.year);
     				gamesChartUnit.push(stat["sold-unit"]);
@@ -32849,6 +32870,16 @@ var app = (function () {
     		console.log("games Chart DaTa: " + gamesChartData);
 
     		Highcharts.chart("container", {
+    			chart: { type: "lollipop" }, /*
+    type: 'cylinder',
+            options3d: {
+                enabled: true,
+                alpha: 15,
+                beta: 15,
+                depth: 50,
+                viewDistance: 25
+            }
+          */
     			title: { text: "Estadística de juegos" },
     			yAxis: { title: { text: "Valor" } },
     			xAxis: {
