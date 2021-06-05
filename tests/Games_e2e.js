@@ -23,6 +23,13 @@ const puppeteer = require('puppeteer');
 
     await page.screenshot({ path: './tests/screenshots/games/02-tabla.png' });
     //await page.click("body > main > main > ul > li:nth-child(3) > a");
+
+    await page.waitForTimeout(3000);
+    await page.click("body > main > main > ul > li:nth-child(3) > a");
+    await page.waitForTimeout(3000);
+    await page.click("body > main > main > ul > li:nth-child(3) > div > div.modal.show.d-block > div > div > div.modal-footer > button.btn.btn-primary");
+    await page.waitForTimeout(3000);
+
     
     await page.waitForTimeout(2000);
     var initialrowCount = (await page.$$("body > main > main > table:nth-child(8) > tbody > tr:nth-child(1)")).length;
