@@ -94,8 +94,6 @@
       </Card>
     </Col>
 	
-	
-	
     <Col xs="auto">
       <Card class="mb-3">
         <CardHeader>
