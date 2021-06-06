@@ -49,7 +49,7 @@
             <CardBody>
               <CardSubtitle />
               
-              <a href="video">
+              <a href="https://youtu.be/wPc-n3VcXXc">
                 <Button color="primary">Video</Button></a>
               
             </CardBody>
@@ -91,7 +91,7 @@
             <CardBody>
               <CardSubtitle />
               
-              <a href="https://youtu.be/wPc-n3VcXXc">
+              <a href="https://youtu.be/qF9TtjOIHYw">
                 <Button color="primary">Video</Button></a>
               
             </CardBody>
