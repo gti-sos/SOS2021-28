@@ -162,7 +162,7 @@
       <figure class="highcharts-figure">
         <div id="container" />
         <p class="highcharts-description">
-          Gráfico de líneas básico que muestra los diferentes valores para los campos de juegos.
+          Gráfico lollipop que muestra los diferentes valores para los campos de juegos.
         </p>
       </figure>
     </div>

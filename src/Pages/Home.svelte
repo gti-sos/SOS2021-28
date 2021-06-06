@@ -137,7 +137,7 @@
           <a href="/#/games">
             <Button color="primary">Interfaz</Button>
           </a>
-          <a href="video"><Button color="primary">Video</Button></a>
+          <a href="https://youtu.be/qF9TtjOIHYw"><Button color="primary">Video</Button></a>
           <a href="https://documenter.getpostman.com/view/14967482/TzJu8cmV">
             <Button color="info">Documentación de Postman</Button>
           </a>
