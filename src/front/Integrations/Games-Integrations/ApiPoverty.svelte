@@ -39,7 +39,7 @@
         });
         console.log("Done");
       }
-      await fetch(urlproxy + "/api/v1/suicide-records/loadInitialData");
+      await fetch("https://endpoint-poverty-risks.herokuapp.com/api/v1/loadInitialData");
       const res2 = await fetch(urlproxy + "/api/v1/");
         if (res2.ok) {
             console.log("Ok");
